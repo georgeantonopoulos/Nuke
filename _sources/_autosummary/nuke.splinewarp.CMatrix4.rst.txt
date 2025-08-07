@@ -1,0 +1,33 @@
+nuke.splinewarp.CMatrix4
+========================
+
+.. currentmodule:: nuke.splinewarp
+
+.. autoclass:: CMatrix4
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~CMatrix4.makeIdentity
+      ~CMatrix4.rotateX
+      ~CMatrix4.rotateY
+      ~CMatrix4.rotateZ
+      ~CMatrix4.scale
+      ~CMatrix4.skew
+      ~CMatrix4.translate
+      ~CMatrix4.translation
+      ~CMatrix4.transpose
+   
+   
+
+   
+   
+   

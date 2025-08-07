@@ -1,0 +1,6 @@
+nuke.pluginExists
+=================
+
+.. currentmodule:: nuke
+
+.. autofunction:: pluginExists

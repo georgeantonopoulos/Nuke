@@ -1,0 +1,6 @@
+nukescripts.cameraProjectionMatrix
+==================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: cameraProjectionMatrix

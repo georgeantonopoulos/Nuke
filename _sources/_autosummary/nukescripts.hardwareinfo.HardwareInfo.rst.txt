@@ -1,0 +1,47 @@
+nukescripts.hardwareinfo.HardwareInfo
+=====================================
+
+.. currentmodule:: nukescripts.hardwareinfo
+
+.. autoclass:: HardwareInfo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~HardwareInfo.MapDictionaries
+      ~HardwareInfo.ParseProcVersion
+      ~HardwareInfo.RunCmdWin
+      ~HardwareInfo.SafeCall
+      ~HardwareInfo.getRegistryNumSubKeys
+      ~HardwareInfo.getRegistryValue
+      ~HardwareInfo.getWindowsL2Cache
+      ~HardwareInfo.getWindowsMachineName
+      ~HardwareInfo.getWindowsOSVersion
+      ~HardwareInfo.getWindowsRam
+      ~HardwareInfo.initLinux
+      ~HardwareInfo.initMac
+      ~HardwareInfo.initMacHardware
+      ~HardwareInfo.initMacSoftware
+      ~HardwareInfo.initWin
+      ~HardwareInfo.parseCPUInfo
+      ~HardwareInfo.parseMemInfo
+      ~HardwareInfo.parseProcInfo
+      ~HardwareInfo.parseProcInfoStr
+      ~HardwareInfo.parseProcSimple
+      ~HardwareInfo.printDict
+      ~HardwareInfo.printXML
+      ~HardwareInfo.testCatCommand
+   
+   
+
+   
+   
+   

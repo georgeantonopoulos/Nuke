@@ -1,0 +1,6 @@
+nuke.selectAll
+==============
+
+.. currentmodule:: nuke
+
+.. autofunction:: selectAll

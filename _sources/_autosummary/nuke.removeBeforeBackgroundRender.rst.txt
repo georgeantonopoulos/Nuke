@@ -1,0 +1,6 @@
+nuke.removeBeforeBackgroundRender
+=================================
+
+.. currentmodule:: nuke
+
+.. autofunction:: removeBeforeBackgroundRender

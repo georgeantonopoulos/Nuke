@@ -1,0 +1,6 @@
+nuke.inputs
+===========
+
+.. currentmodule:: nuke
+
+.. autofunction:: inputs

@@ -1,0 +1,6 @@
+nukescripts.toolbars.createPrmanRender
+======================================
+
+.. currentmodule:: nukescripts.toolbars
+
+.. autofunction:: createPrmanRender

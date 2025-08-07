@@ -1,0 +1,28 @@
+nukescripts.cattery.PackageInfo
+===============================
+
+.. currentmodule:: nukescripts.cattery
+
+.. autoclass:: PackageInfo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~PackageInfo.from_dict
+      ~PackageInfo.from_json
+      ~PackageInfo.to_dict
+      ~PackageInfo.to_json
+   
+   
+
+   
+   
+   

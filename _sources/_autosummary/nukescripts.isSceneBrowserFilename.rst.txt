@@ -1,0 +1,6 @@
+nukescripts.isSceneBrowserFilename
+==================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: isSceneBrowserFilename

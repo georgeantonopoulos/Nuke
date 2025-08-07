@@ -1,0 +1,6 @@
+nuke.stopEventGraphTimers
+=========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: stopEventGraphTimers

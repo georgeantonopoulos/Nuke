@@ -1,0 +1,6 @@
+nukescripts.edit.branch
+=======================
+
+.. currentmodule:: nukescripts.edit
+
+.. autofunction:: branch

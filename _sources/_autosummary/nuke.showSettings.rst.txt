@@ -1,0 +1,6 @@
+nuke.showSettings
+=================
+
+.. currentmodule:: nuke
+
+.. autofunction:: showSettings

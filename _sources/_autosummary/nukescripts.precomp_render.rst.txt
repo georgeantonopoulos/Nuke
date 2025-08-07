@@ -1,0 +1,6 @@
+nukescripts.precomp\_render
+===========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: precomp_render

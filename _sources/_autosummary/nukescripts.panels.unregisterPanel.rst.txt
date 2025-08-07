@@ -1,0 +1,6 @@
+nukescripts.panels.unregisterPanel
+==================================
+
+.. currentmodule:: nukescripts.panels
+
+.. autofunction:: unregisterPanel

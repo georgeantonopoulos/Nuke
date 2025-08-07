@@ -1,0 +1,6 @@
+nuke.executeInMainThread
+========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: executeInMainThread

@@ -1,0 +1,6 @@
+nukescripts.create.isAudioFilename
+==================================
+
+.. currentmodule:: nukescripts.create
+
+.. autofunction:: isAudioFilename

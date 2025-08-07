@@ -1,0 +1,6 @@
+nukescripts.transpose\_matrix3
+==============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: transpose_matrix3

@@ -1,0 +1,6 @@
+nuke.localization.addReadCallback
+=================================
+
+.. currentmodule:: nuke.localization
+
+.. autofunction:: addReadCallback

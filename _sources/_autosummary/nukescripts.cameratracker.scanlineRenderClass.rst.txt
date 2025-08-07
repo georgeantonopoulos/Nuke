@@ -1,0 +1,6 @@
+nukescripts.cameratracker.scanlineRenderClass
+=============================================
+
+.. currentmodule:: nukescripts.cameratracker
+
+.. autofunction:: scanlineRenderClass

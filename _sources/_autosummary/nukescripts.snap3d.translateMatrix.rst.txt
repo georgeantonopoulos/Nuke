@@ -1,0 +1,6 @@
+nukescripts.snap3d.translateMatrix
+==================================
+
+.. currentmodule:: nukescripts.snap3d
+
+.. autofunction:: translateMatrix

@@ -1,0 +1,6 @@
+nuke.ask
+========
+
+.. currentmodule:: nuke
+
+.. autofunction:: ask

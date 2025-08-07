@@ -1,0 +1,119 @@
+.. _formats-ref-label:
+
+Formats
+=======
+
+This chapter explains how to handle formats.
+
+Reading Formats
+-------------------
+You can get all the formats in the current NUKE session using **nuke.formats()**, which returns each format object::
+
+	scriptFormats = nuke.formats()
+
+The format object has all sorts of handy methods, such as the following::
+
+	for f in scriptFormats:
+		print f.name()
+		print f.width()
+		print f.height()
+		print f.pixelAspect()
+		print 10*'-'
+
+::
+
+		# Result:
+		PC_Video
+		640
+		480
+		1.0
+		----------
+		NTSC
+		720
+		486
+		0.910000026226
+		----------
+		PAL
+		720
+		576
+		1.09000003338
+		----------
+		HD
+		1920
+		1080
+		1.0
+		...
+
+For more methods, check out **dir(nuke.Format)**::
+
+	dir(nuke.Format)
+	# Result:
+	['__class__', '__delattr__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'add', 'fromUV', 'height', 'name', 'pixelAspect', 'scaled', 'setHeight', 'setName', 'setPixelAspect', 'setWidth', 'toUV', 'width']
+
+The node object also has a **format()** method to retrieve its current format. With a node in the Node Graph selected, try::
+
+	node = nuke.selectedNode()
+	nodeFormat = node.format()
+	print nodeFormat.name()
+
+When having to convert normalized texture space to pixel values of a certain format, **fromUV** and **toUV** are very handy.
+The following always gives you the center of the format in pixel coordinates::
+
+	nodeFormat.fromUV( .5, .5 )
+	# Result:
+	[1024.0, 778.0]
+
+While this gives you the normalized texture coordinates based on pixel coordinates:
+
+	nodeFormat.toUV( 1024, 788 )
+	# Result:
+	[0.5, 0.50642675161361694]
+
+
+Adding a New Format
+-------------------
+To add a new format, you define its parameters as a string using TCl syntax (which basically means the values are delimited by white spaces), then create a new **Format** object. You need to define at least the width, height, and name to create a new format::
+
+	square2k = '2048 2048 square 2k'
+	nuke.addFormat( square2k )
+
+This makes the new format available:
+
+* in all the **format** menus throughout the UI
+* through the Python API.
+
+.. image:: images/formats_01.png
+
+To add a bounding box or set the pixel aspect ratio, set the respective values between the height and name arguments::
+
+	nuke.addFormat( '2048 2048 48 48 2000 2000 2 square 2k (bbox anamorphic)' )
+
+.. image:: images/formats_02.png
+
+Setting Formats
+---------------
+To set a node's format, simply use the usual knob methods to assign the format by name::
+
+	n = nuke.createNode( 'CheckerBoard2' )
+	n['format'].setValue( 'square 2k' )
+
+The same applies when setting the root format::
+	nuke.root()['format'].setValue( 'square 2k' )
+
+To set a format for the root's proxy knob, you need to first set the root to use the *format* as the proxy type::
+
+	# DEFINE BASE AND PROXY FORMATS
+	square2k = '2048 2048 square 2k'
+	square1k = '1024 1024 square 1k'
+
+	# ADD FORMATS TO SESSION
+	for f in ( square2k, square1k ):
+	    nuke.addFormat( f )
+
+	# SET THE ROOT TO USE BOTH BASE AND PROXY FORMATS
+	root = nuke.root()
+	root['format'].setValue( 'square 2k' )
+	root['proxy_type'].setValue( 'format' )
+	root['proxy_format'].setValue( 'square 1k' )
+
+.. image:: images/formats_03.png

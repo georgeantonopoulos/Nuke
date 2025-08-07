@@ -1,0 +1,41 @@
+nukescripts.renderdialog.Thread
+===============================
+
+.. currentmodule:: nukescripts.renderdialog
+
+.. autoclass:: Thread
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Thread.getName
+      ~Thread.isDaemon
+      ~Thread.is_alive
+      ~Thread.join
+      ~Thread.run
+      ~Thread.setDaemon
+      ~Thread.setName
+      ~Thread.start
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Thread.daemon
+      ~Thread.ident
+      ~Thread.name
+      ~Thread.native_id
+   
+   

@@ -1,0 +1,36 @@
+nuke.curvelib.TransformOrder
+============================
+
+.. currentmodule:: nuke.curvelib
+
+.. autoclass:: TransformOrder
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~TransformOrder.eRSTTransformOrder
+      ~TransformOrder.eRTSTransformOrder
+      ~TransformOrder.eSRTTransformOrder
+      ~TransformOrder.eSTRTransformOrder
+      ~TransformOrder.eTRSTransformOrder
+      ~TransformOrder.eTSRTransformOrder
+      ~TransformOrder.eUndefineTransformOrder
+   
+   

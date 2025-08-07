@@ -1,0 +1,32 @@
+nukescripts.captureViewer
+=========================
+
+.. automodule:: nukescripts.captureViewer
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      CaptureViewer
+   
+   
+
+   
+   
+   
+
+
+

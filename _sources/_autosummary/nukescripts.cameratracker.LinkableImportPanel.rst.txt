@@ -1,0 +1,57 @@
+nukescripts.cameratracker.LinkableImportPanel
+=============================================
+
+.. currentmodule:: nukescripts.cameratracker
+
+.. autoclass:: LinkableImportPanel
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~LinkableImportPanel.accept
+      ~LinkableImportPanel.add
+      ~LinkableImportPanel.addCallback
+      ~LinkableImportPanel.addKnob
+      ~LinkableImportPanel.addToPane
+      ~LinkableImportPanel.cancel
+      ~LinkableImportPanel.close
+      ~LinkableImportPanel.create
+      ~LinkableImportPanel.destroy
+      ~LinkableImportPanel.finishModalDialog
+      ~LinkableImportPanel.height
+      ~LinkableImportPanel.hide
+      ~LinkableImportPanel.isEnabled
+      ~LinkableImportPanel.isValid
+      ~LinkableImportPanel.knobChanged
+      ~LinkableImportPanel.knobChangedCallback
+      ~LinkableImportPanel.knobs
+      ~LinkableImportPanel.ok
+      ~LinkableImportPanel.readKnobs
+      ~LinkableImportPanel.reject
+      ~LinkableImportPanel.removeCallback
+      ~LinkableImportPanel.removeKnob
+      ~LinkableImportPanel.setEnabled
+      ~LinkableImportPanel.setMaximumSize
+      ~LinkableImportPanel.setMinimumSize
+      ~LinkableImportPanel.setTooltip
+      ~LinkableImportPanel.setVisible
+      ~LinkableImportPanel.show
+      ~LinkableImportPanel.showModal
+      ~LinkableImportPanel.showModalDialog
+      ~LinkableImportPanel.tooltip
+      ~LinkableImportPanel.width
+      ~LinkableImportPanel.writeKnobs
+   
+   
+
+   
+   
+   

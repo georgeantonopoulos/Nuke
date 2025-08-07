@@ -1,0 +1,86 @@
+nukescripts.usdhighlighter.UsdHighlighter
+=========================================
+
+.. currentmodule:: nukescripts.usdhighlighter
+
+.. autoclass:: UsdHighlighter
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~UsdHighlighter.blockSignals
+      ~UsdHighlighter.childEvent
+      ~UsdHighlighter.children
+      ~UsdHighlighter.connect
+      ~UsdHighlighter.connectNotify
+      ~UsdHighlighter.currentBlock
+      ~UsdHighlighter.currentBlockState
+      ~UsdHighlighter.currentBlockUserData
+      ~UsdHighlighter.customEvent
+      ~UsdHighlighter.deleteLater
+      ~UsdHighlighter.disconnect
+      ~UsdHighlighter.disconnectNotify
+      ~UsdHighlighter.document
+      ~UsdHighlighter.dumpObjectInfo
+      ~UsdHighlighter.dumpObjectTree
+      ~UsdHighlighter.dynamicPropertyNames
+      ~UsdHighlighter.emit
+      ~UsdHighlighter.event
+      ~UsdHighlighter.eventFilter
+      ~UsdHighlighter.findChild
+      ~UsdHighlighter.findChildren
+      ~UsdHighlighter.format
+      ~UsdHighlighter.highlightBlock
+      ~UsdHighlighter.inherits
+      ~UsdHighlighter.installEventFilter
+      ~UsdHighlighter.isQuickItemType
+      ~UsdHighlighter.isSignalConnected
+      ~UsdHighlighter.isWidgetType
+      ~UsdHighlighter.isWindowType
+      ~UsdHighlighter.killTimer
+      ~UsdHighlighter.metaObject
+      ~UsdHighlighter.moveToThread
+      ~UsdHighlighter.objectName
+      ~UsdHighlighter.parent
+      ~UsdHighlighter.previousBlockState
+      ~UsdHighlighter.property
+      ~UsdHighlighter.receivers
+      ~UsdHighlighter.rehighlight
+      ~UsdHighlighter.rehighlightBlock
+      ~UsdHighlighter.removeEventFilter
+      ~UsdHighlighter.sender
+      ~UsdHighlighter.senderSignalIndex
+      ~UsdHighlighter.setCurrentBlockState
+      ~UsdHighlighter.setCurrentBlockUserData
+      ~UsdHighlighter.setDocument
+      ~UsdHighlighter.setFormat
+      ~UsdHighlighter.setObjectName
+      ~UsdHighlighter.setParent
+      ~UsdHighlighter.setProperty
+      ~UsdHighlighter.signalsBlocked
+      ~UsdHighlighter.startTimer
+      ~UsdHighlighter.thread
+      ~UsdHighlighter.timerEvent
+      ~UsdHighlighter.tr
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~UsdHighlighter.destroyed
+      ~UsdHighlighter.objectNameChanged
+      ~UsdHighlighter.staticMetaObject
+   
+   

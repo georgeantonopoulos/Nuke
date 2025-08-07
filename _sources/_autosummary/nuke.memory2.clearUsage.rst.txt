@@ -1,0 +1,6 @@
+nuke.memory2.clearUsage
+=======================
+
+.. currentmodule:: nuke.memory2
+
+.. autofunction:: clearUsage

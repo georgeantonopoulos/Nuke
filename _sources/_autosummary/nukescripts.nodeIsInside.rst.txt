@@ -1,0 +1,6 @@
+nukescripts.nodeIsInside
+========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: nodeIsInside

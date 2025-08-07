@@ -1,0 +1,6 @@
+nukescripts.script.script\_directory
+====================================
+
+.. currentmodule:: nukescripts.script
+
+.. autofunction:: script_directory

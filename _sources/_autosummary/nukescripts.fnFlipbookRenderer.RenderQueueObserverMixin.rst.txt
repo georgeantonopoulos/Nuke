@@ -1,0 +1,30 @@
+nukescripts.fnFlipbookRenderer.RenderQueueObserverMixin
+=======================================================
+
+.. currentmodule:: nukescripts.fnFlipbookRenderer
+
+.. autoclass:: RenderQueueObserverMixin
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~RenderQueueObserverMixin.onFrameRenderCancelled
+      ~RenderQueueObserverMixin.onFrameRenderError
+      ~RenderQueueObserverMixin.onFrameRenderInProgress
+      ~RenderQueueObserverMixin.onFrameRenderQueued
+      ~RenderQueueObserverMixin.onFrameRendered
+      ~RenderQueueObserverMixin.onRenderQueued
+   
+   
+
+   
+   
+   

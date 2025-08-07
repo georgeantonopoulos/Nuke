@@ -1,0 +1,31 @@
+nukescripts.group
+=================
+
+.. automodule:: nukescripts.group
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      groupmake
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

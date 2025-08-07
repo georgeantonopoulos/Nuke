@@ -1,0 +1,6 @@
+nukescripts.snap3d.rotateMatrixXYZ
+==================================
+
+.. currentmodule:: nukescripts.snap3d
+
+.. autofunction:: rotateMatrixXYZ

@@ -1,0 +1,6 @@
+nuke.localization.addFileCallback
+=================================
+
+.. currentmodule:: nuke.localization
+
+.. autofunction:: addFileCallback

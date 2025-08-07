@@ -1,0 +1,59 @@
+nukescripts.nodepresets.CreateNodePresetsPanel
+==============================================
+
+.. currentmodule:: nukescripts.nodepresets
+
+.. autoclass:: CreateNodePresetsPanel
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~CreateNodePresetsPanel.accept
+      ~CreateNodePresetsPanel.add
+      ~CreateNodePresetsPanel.addCallback
+      ~CreateNodePresetsPanel.addKnob
+      ~CreateNodePresetsPanel.addToPane
+      ~CreateNodePresetsPanel.cancel
+      ~CreateNodePresetsPanel.close
+      ~CreateNodePresetsPanel.create
+      ~CreateNodePresetsPanel.createPreset
+      ~CreateNodePresetsPanel.destroy
+      ~CreateNodePresetsPanel.finishModalDialog
+      ~CreateNodePresetsPanel.getPresetPath
+      ~CreateNodePresetsPanel.height
+      ~CreateNodePresetsPanel.hide
+      ~CreateNodePresetsPanel.isEnabled
+      ~CreateNodePresetsPanel.isValid
+      ~CreateNodePresetsPanel.knobChanged
+      ~CreateNodePresetsPanel.knobChangedCallback
+      ~CreateNodePresetsPanel.knobs
+      ~CreateNodePresetsPanel.ok
+      ~CreateNodePresetsPanel.readKnobs
+      ~CreateNodePresetsPanel.reject
+      ~CreateNodePresetsPanel.removeCallback
+      ~CreateNodePresetsPanel.removeKnob
+      ~CreateNodePresetsPanel.setEnabled
+      ~CreateNodePresetsPanel.setMaximumSize
+      ~CreateNodePresetsPanel.setMinimumSize
+      ~CreateNodePresetsPanel.setTooltip
+      ~CreateNodePresetsPanel.setVisible
+      ~CreateNodePresetsPanel.show
+      ~CreateNodePresetsPanel.showModal
+      ~CreateNodePresetsPanel.showModalDialog
+      ~CreateNodePresetsPanel.tooltip
+      ~CreateNodePresetsPanel.width
+      ~CreateNodePresetsPanel.writeKnobs
+   
+   
+
+   
+   
+   

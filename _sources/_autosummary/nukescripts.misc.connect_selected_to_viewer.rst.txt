@@ -1,0 +1,6 @@
+nukescripts.misc.connect\_selected\_to\_viewer
+==============================================
+
+.. currentmodule:: nukescripts.misc
+
+.. autofunction:: connect_selected_to_viewer

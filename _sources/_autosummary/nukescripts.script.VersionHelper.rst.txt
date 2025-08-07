@@ -1,0 +1,31 @@
+nukescripts.script.VersionHelper
+================================
+
+.. currentmodule:: nukescripts.script
+
+.. autoclass:: VersionHelper
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~VersionHelper.currentVersionString
+      ~VersionHelper.hasVersion
+      ~VersionHelper.maxVersion
+      ~VersionHelper.maxVersionString
+      ~VersionHelper.nextVersion
+      ~VersionHelper.nextVersionString
+      ~VersionHelper.versionString
+   
+   
+
+   
+   
+   

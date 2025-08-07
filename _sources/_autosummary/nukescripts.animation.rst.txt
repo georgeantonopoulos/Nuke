@@ -1,0 +1,33 @@
+nukescripts.animation
+=====================
+
+.. automodule:: nukescripts.animation
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      animation_loop
+      animation_negate
+      animation_reverse
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

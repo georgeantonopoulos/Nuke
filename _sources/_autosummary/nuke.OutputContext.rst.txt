@@ -1,0 +1,32 @@
+nuke.OutputContext
+==================
+
+.. currentmodule:: nuke
+
+.. autoclass:: OutputContext
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~OutputContext.frame
+      ~OutputContext.setFrame
+      ~OutputContext.setView
+      ~OutputContext.view
+      ~OutputContext.viewFromName
+      ~OutputContext.viewcount
+      ~OutputContext.viewname
+      ~OutputContext.viewshort
+   
+   
+
+   
+   
+   

@@ -1,0 +1,86 @@
+nukescripts.InputHighlighter
+============================
+
+.. currentmodule:: nukescripts
+
+.. autoclass:: InputHighlighter
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~InputHighlighter.blockSignals
+      ~InputHighlighter.childEvent
+      ~InputHighlighter.children
+      ~InputHighlighter.connect
+      ~InputHighlighter.connectNotify
+      ~InputHighlighter.currentBlock
+      ~InputHighlighter.currentBlockState
+      ~InputHighlighter.currentBlockUserData
+      ~InputHighlighter.customEvent
+      ~InputHighlighter.deleteLater
+      ~InputHighlighter.disconnect
+      ~InputHighlighter.disconnectNotify
+      ~InputHighlighter.document
+      ~InputHighlighter.dumpObjectInfo
+      ~InputHighlighter.dumpObjectTree
+      ~InputHighlighter.dynamicPropertyNames
+      ~InputHighlighter.emit
+      ~InputHighlighter.event
+      ~InputHighlighter.eventFilter
+      ~InputHighlighter.findChild
+      ~InputHighlighter.findChildren
+      ~InputHighlighter.format
+      ~InputHighlighter.highlightBlock
+      ~InputHighlighter.inherits
+      ~InputHighlighter.installEventFilter
+      ~InputHighlighter.isQuickItemType
+      ~InputHighlighter.isSignalConnected
+      ~InputHighlighter.isWidgetType
+      ~InputHighlighter.isWindowType
+      ~InputHighlighter.killTimer
+      ~InputHighlighter.metaObject
+      ~InputHighlighter.moveToThread
+      ~InputHighlighter.objectName
+      ~InputHighlighter.parent
+      ~InputHighlighter.previousBlockState
+      ~InputHighlighter.property
+      ~InputHighlighter.receivers
+      ~InputHighlighter.rehighlight
+      ~InputHighlighter.rehighlightBlock
+      ~InputHighlighter.removeEventFilter
+      ~InputHighlighter.sender
+      ~InputHighlighter.senderSignalIndex
+      ~InputHighlighter.setCurrentBlockState
+      ~InputHighlighter.setCurrentBlockUserData
+      ~InputHighlighter.setDocument
+      ~InputHighlighter.setFormat
+      ~InputHighlighter.setObjectName
+      ~InputHighlighter.setParent
+      ~InputHighlighter.setProperty
+      ~InputHighlighter.signalsBlocked
+      ~InputHighlighter.startTimer
+      ~InputHighlighter.thread
+      ~InputHighlighter.timerEvent
+      ~InputHighlighter.tr
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~InputHighlighter.destroyed
+      ~InputHighlighter.objectNameChanged
+      ~InputHighlighter.staticMetaObject
+   
+   

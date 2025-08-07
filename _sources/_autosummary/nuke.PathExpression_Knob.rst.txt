@@ -1,0 +1,81 @@
+nuke.PathExpression\_Knob
+=========================
+
+.. currentmodule:: nuke
+
+.. autoclass:: PathExpression_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~PathExpression_Knob.Class
+      ~PathExpression_Knob.ClassID
+      ~PathExpression_Knob.clearAnimated
+      ~PathExpression_Knob.clearFlag
+      ~PathExpression_Knob.critical
+      ~PathExpression_Knob.debug
+      ~PathExpression_Knob.enabled
+      ~PathExpression_Knob.error
+      ~PathExpression_Knob.evaluate
+      ~PathExpression_Knob.fromScript
+      ~PathExpression_Knob.fullyQualifiedName
+      ~PathExpression_Knob.getAuthorMode
+      ~PathExpression_Knob.getAuthorModes
+      ~PathExpression_Knob.getDerivative
+      ~PathExpression_Knob.getFlag
+      ~PathExpression_Knob.getIntegral
+      ~PathExpression_Knob.getKeyIndex
+      ~PathExpression_Knob.getKeyList
+      ~PathExpression_Knob.getKeyTime
+      ~PathExpression_Knob.getNthDerivative
+      ~PathExpression_Knob.getNumKeys
+      ~PathExpression_Knob.getText
+      ~PathExpression_Knob.getValue
+      ~PathExpression_Knob.getValueAt
+      ~PathExpression_Knob.hasExpression
+      ~PathExpression_Knob.isAnimated
+      ~PathExpression_Knob.isKey
+      ~PathExpression_Knob.isKeyAt
+      ~PathExpression_Knob.label
+      ~PathExpression_Knob.makeWidget
+      ~PathExpression_Knob.match
+      ~PathExpression_Knob.name
+      ~PathExpression_Knob.node
+      ~PathExpression_Knob.notDefault
+      ~PathExpression_Knob.removeKey
+      ~PathExpression_Knob.removeKeyAt
+      ~PathExpression_Knob.setAnimated
+      ~PathExpression_Knob.setAuthorMode
+      ~PathExpression_Knob.setEnabled
+      ~PathExpression_Knob.setExpression
+      ~PathExpression_Knob.setFlag
+      ~PathExpression_Knob.setLabel
+      ~PathExpression_Knob.setName
+      ~PathExpression_Knob.setText
+      ~PathExpression_Knob.setTooltip
+      ~PathExpression_Knob.setValue
+      ~PathExpression_Knob.setValueAt
+      ~PathExpression_Knob.setVisible
+      ~PathExpression_Knob.splitView
+      ~PathExpression_Knob.stagePaths
+      ~PathExpression_Knob.toScript
+      ~PathExpression_Knob.toScriptPrefix
+      ~PathExpression_Knob.tooltip
+      ~PathExpression_Knob.unsplitView
+      ~PathExpression_Knob.value
+      ~PathExpression_Knob.visible
+      ~PathExpression_Knob.warning
+   
+   
+
+   
+   
+   

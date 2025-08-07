@@ -1,0 +1,6 @@
+nuke.removeBeforeRender
+=======================
+
+.. currentmodule:: nuke
+
+.. autofunction:: removeBeforeRender

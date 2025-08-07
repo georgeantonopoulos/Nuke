@@ -1,0 +1,6 @@
+nukescripts.script.timeline\_write\_version\_set
+================================================
+
+.. currentmodule:: nukescripts.script
+
+.. autofunction:: timeline_write_version_set

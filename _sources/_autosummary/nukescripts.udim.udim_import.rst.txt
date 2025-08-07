@@ -1,0 +1,6 @@
+nukescripts.udim.udim\_import
+=============================
+
+.. currentmodule:: nukescripts.udim
+
+.. autofunction:: udim_import

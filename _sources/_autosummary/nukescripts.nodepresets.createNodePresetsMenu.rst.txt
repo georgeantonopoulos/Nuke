@@ -1,0 +1,6 @@
+nukescripts.nodepresets.createNodePresetsMenu
+=============================================
+
+.. currentmodule:: nukescripts.nodepresets
+
+.. autofunction:: createNodePresetsMenu

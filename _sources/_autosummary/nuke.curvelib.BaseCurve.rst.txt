@@ -1,0 +1,37 @@
+nuke.curvelib.BaseCurve
+=======================
+
+.. currentmodule:: nuke.curvelib
+
+.. autoclass:: BaseCurve
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~BaseCurve.getFlag
+      ~BaseCurve.setFlag
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~BaseCurve.curveTension
+      ~BaseCurve.curveType
+      ~BaseCurve.kDefaultCurveFlag
+      ~BaseCurve.kDefaultCurveTension
+      ~BaseCurve.kDefaultCurveType
+      ~BaseCurve.name
+   
+   

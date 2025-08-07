@@ -1,0 +1,74 @@
+nuke.FreeType\_Knob
+===================
+
+.. currentmodule:: nuke
+
+.. autoclass:: FreeType_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~FreeType_Knob.Class
+      ~FreeType_Knob.ClassID
+      ~FreeType_Knob.clearAnimated
+      ~FreeType_Knob.clearFlag
+      ~FreeType_Knob.critical
+      ~FreeType_Knob.debug
+      ~FreeType_Knob.enabled
+      ~FreeType_Knob.error
+      ~FreeType_Knob.fromScript
+      ~FreeType_Knob.fullyQualifiedName
+      ~FreeType_Knob.getAuthorMode
+      ~FreeType_Knob.getAuthorModes
+      ~FreeType_Knob.getDerivative
+      ~FreeType_Knob.getFlag
+      ~FreeType_Knob.getIntegral
+      ~FreeType_Knob.getKeyIndex
+      ~FreeType_Knob.getKeyList
+      ~FreeType_Knob.getKeyTime
+      ~FreeType_Knob.getNthDerivative
+      ~FreeType_Knob.getNumKeys
+      ~FreeType_Knob.getValue
+      ~FreeType_Knob.getValueAt
+      ~FreeType_Knob.hasExpression
+      ~FreeType_Knob.isAnimated
+      ~FreeType_Knob.isKey
+      ~FreeType_Knob.isKeyAt
+      ~FreeType_Knob.label
+      ~FreeType_Knob.makeWidget
+      ~FreeType_Knob.name
+      ~FreeType_Knob.node
+      ~FreeType_Knob.notDefault
+      ~FreeType_Knob.removeKey
+      ~FreeType_Knob.removeKeyAt
+      ~FreeType_Knob.setAnimated
+      ~FreeType_Knob.setAuthorMode
+      ~FreeType_Knob.setEnabled
+      ~FreeType_Knob.setExpression
+      ~FreeType_Knob.setFlag
+      ~FreeType_Knob.setLabel
+      ~FreeType_Knob.setName
+      ~FreeType_Knob.setTooltip
+      ~FreeType_Knob.setValue
+      ~FreeType_Knob.setValueAt
+      ~FreeType_Knob.setVisible
+      ~FreeType_Knob.toScript
+      ~FreeType_Knob.toScriptPrefix
+      ~FreeType_Knob.tooltip
+      ~FreeType_Knob.value
+      ~FreeType_Knob.visible
+      ~FreeType_Knob.warning
+   
+   
+
+   
+   
+   

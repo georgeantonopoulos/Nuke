@@ -1,0 +1,42 @@
+nuke.splinewarp.AnimCurveKey
+============================
+
+.. currentmodule:: nuke.splinewarp
+
+.. autoclass:: AnimCurveKey
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~AnimCurveKey.getFlag
+      ~AnimCurveKey.reset
+      ~AnimCurveKey.setFlag
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~AnimCurveKey.interpolationType
+      ~AnimCurveKey.kDefaultAnimCurveKeyInterpolation
+      ~AnimCurveKey.kDefaultAnimCurveKeyTime
+      ~AnimCurveKey.kDefaultAnimCurveKeyValue
+      ~AnimCurveKey.la
+      ~AnimCurveKey.lslope
+      ~AnimCurveKey.ra
+      ~AnimCurveKey.rslope
+      ~AnimCurveKey.time
+      ~AnimCurveKey.value
+   
+   

@@ -1,0 +1,78 @@
+nuke.String\_Knob
+=================
+
+.. currentmodule:: nuke
+
+.. autoclass:: String_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~String_Knob.Class
+      ~String_Knob.ClassID
+      ~String_Knob.clearAnimated
+      ~String_Knob.clearFlag
+      ~String_Knob.critical
+      ~String_Knob.debug
+      ~String_Knob.enabled
+      ~String_Knob.error
+      ~String_Knob.fromScript
+      ~String_Knob.fullyQualifiedName
+      ~String_Knob.getAuthorMode
+      ~String_Knob.getAuthorModes
+      ~String_Knob.getDerivative
+      ~String_Knob.getFlag
+      ~String_Knob.getIntegral
+      ~String_Knob.getKeyIndex
+      ~String_Knob.getKeyList
+      ~String_Knob.getKeyTime
+      ~String_Knob.getNthDerivative
+      ~String_Knob.getNumKeys
+      ~String_Knob.getText
+      ~String_Knob.getValue
+      ~String_Knob.getValueAt
+      ~String_Knob.hasExpression
+      ~String_Knob.isAnimated
+      ~String_Knob.isKey
+      ~String_Knob.isKeyAt
+      ~String_Knob.label
+      ~String_Knob.makeWidget
+      ~String_Knob.name
+      ~String_Knob.node
+      ~String_Knob.notDefault
+      ~String_Knob.removeKey
+      ~String_Knob.removeKeyAt
+      ~String_Knob.setAnimated
+      ~String_Knob.setAuthorMode
+      ~String_Knob.setEnabled
+      ~String_Knob.setExpression
+      ~String_Knob.setFlag
+      ~String_Knob.setLabel
+      ~String_Knob.setName
+      ~String_Knob.setText
+      ~String_Knob.setTooltip
+      ~String_Knob.setValue
+      ~String_Knob.setValueAt
+      ~String_Knob.setVisible
+      ~String_Knob.splitView
+      ~String_Knob.toScript
+      ~String_Knob.toScriptPrefix
+      ~String_Knob.tooltip
+      ~String_Knob.unsplitView
+      ~String_Knob.value
+      ~String_Knob.visible
+      ~String_Knob.warning
+   
+   
+
+   
+   
+   

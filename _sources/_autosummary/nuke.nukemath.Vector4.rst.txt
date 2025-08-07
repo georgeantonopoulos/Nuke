@@ -1,0 +1,33 @@
+nuke.nukemath.Vector4
+=====================
+
+.. currentmodule:: nuke.nukemath
+
+.. autoclass:: Vector4
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Vector4.w
+      ~Vector4.x
+      ~Vector4.y
+      ~Vector4.z
+   
+   

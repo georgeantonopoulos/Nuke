@@ -1,0 +1,82 @@
+nuke.PyCustom\_Knob
+===================
+
+.. currentmodule:: nuke
+
+.. autoclass:: PyCustom_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~PyCustom_Knob.Class
+      ~PyCustom_Knob.ClassID
+      ~PyCustom_Knob.clearAnimated
+      ~PyCustom_Knob.clearFlag
+      ~PyCustom_Knob.command
+      ~PyCustom_Knob.critical
+      ~PyCustom_Knob.debug
+      ~PyCustom_Knob.enabled
+      ~PyCustom_Knob.error
+      ~PyCustom_Knob.execute
+      ~PyCustom_Knob.fromScript
+      ~PyCustom_Knob.fullyQualifiedName
+      ~PyCustom_Knob.getAuthorMode
+      ~PyCustom_Knob.getAuthorModes
+      ~PyCustom_Knob.getDerivative
+      ~PyCustom_Knob.getFlag
+      ~PyCustom_Knob.getIntegral
+      ~PyCustom_Knob.getKeyIndex
+      ~PyCustom_Knob.getKeyList
+      ~PyCustom_Knob.getKeyTime
+      ~PyCustom_Knob.getNthDerivative
+      ~PyCustom_Knob.getNumKeys
+      ~PyCustom_Knob.getObject
+      ~PyCustom_Knob.getText
+      ~PyCustom_Knob.getValue
+      ~PyCustom_Knob.getValueAt
+      ~PyCustom_Knob.hasExpression
+      ~PyCustom_Knob.isAnimated
+      ~PyCustom_Knob.isKey
+      ~PyCustom_Knob.isKeyAt
+      ~PyCustom_Knob.label
+      ~PyCustom_Knob.makeWidget
+      ~PyCustom_Knob.name
+      ~PyCustom_Knob.node
+      ~PyCustom_Knob.notDefault
+      ~PyCustom_Knob.removeKey
+      ~PyCustom_Knob.removeKeyAt
+      ~PyCustom_Knob.setAnimated
+      ~PyCustom_Knob.setAuthorMode
+      ~PyCustom_Knob.setCommand
+      ~PyCustom_Knob.setEnabled
+      ~PyCustom_Knob.setExpression
+      ~PyCustom_Knob.setFlag
+      ~PyCustom_Knob.setLabel
+      ~PyCustom_Knob.setName
+      ~PyCustom_Knob.setText
+      ~PyCustom_Knob.setTooltip
+      ~PyCustom_Knob.setValue
+      ~PyCustom_Knob.setValueAt
+      ~PyCustom_Knob.setVisible
+      ~PyCustom_Knob.splitView
+      ~PyCustom_Knob.toScript
+      ~PyCustom_Knob.toScriptPrefix
+      ~PyCustom_Knob.tooltip
+      ~PyCustom_Knob.unsplitView
+      ~PyCustom_Knob.value
+      ~PyCustom_Knob.visible
+      ~PyCustom_Knob.warning
+   
+   
+
+   
+   
+   

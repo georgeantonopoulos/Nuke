@@ -1,0 +1,6 @@
+nukescripts.replaceHashes
+=========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: replaceHashes

@@ -1,0 +1,35 @@
+nuke.ToolBar
+============
+
+.. currentmodule:: nuke
+
+.. autoclass:: ToolBar
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~ToolBar.addAction
+      ~ToolBar.addCommand
+      ~ToolBar.addMenu
+      ~ToolBar.addSeparator
+      ~ToolBar.clearMenu
+      ~ToolBar.findItem
+      ~ToolBar.items
+      ~ToolBar.menu
+      ~ToolBar.name
+      ~ToolBar.removeItem
+      ~ToolBar.updateMenuItems
+   
+   
+
+   
+   
+   

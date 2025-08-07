@@ -1,0 +1,6 @@
+nukescripts.viewsettingsprefs.onCreateRoot
+==========================================
+
+.. currentmodule:: nukescripts.viewsettingsprefs
+
+.. autofunction:: onCreateRoot

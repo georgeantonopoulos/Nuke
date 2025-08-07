@@ -1,0 +1,6 @@
+nuke.animations
+===============
+
+.. currentmodule:: nuke
+
+.. autofunction:: animations

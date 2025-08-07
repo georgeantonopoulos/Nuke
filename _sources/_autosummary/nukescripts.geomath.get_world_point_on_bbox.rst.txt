@@ -1,0 +1,6 @@
+nukescripts.geomath.get\_world\_point\_on\_bbox
+===============================================
+
+.. currentmodule:: nukescripts.geomath
+
+.. autofunction:: get_world_point_on_bbox

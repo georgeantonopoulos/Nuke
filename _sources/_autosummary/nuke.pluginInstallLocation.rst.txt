@@ -1,0 +1,6 @@
+nuke.pluginInstallLocation
+==========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: pluginInstallLocation

@@ -1,0 +1,6 @@
+nuke.createScenefileBrowser
+===========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: createScenefileBrowser

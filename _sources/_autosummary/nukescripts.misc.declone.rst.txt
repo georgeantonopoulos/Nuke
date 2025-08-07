@@ -1,0 +1,6 @@
+nukescripts.misc.declone
+========================
+
+.. currentmodule:: nukescripts.misc
+
+.. autofunction:: declone

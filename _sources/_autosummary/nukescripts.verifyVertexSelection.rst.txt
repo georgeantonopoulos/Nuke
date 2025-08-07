@@ -1,0 +1,6 @@
+nukescripts.verifyVertexSelection
+=================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: verifyVertexSelection

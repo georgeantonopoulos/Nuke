@@ -1,0 +1,6 @@
+nukescripts.get\_stage\_from\_active\_viewer
+============================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: get_stage_from_active_viewer

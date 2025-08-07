@@ -1,0 +1,6 @@
+nukescripts.checkUdimValue
+==========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: checkUdimValue

@@ -1,0 +1,6 @@
+nukescripts.camerapresets.getLabels
+===================================
+
+.. currentmodule:: nukescripts.camerapresets
+
+.. autofunction:: getLabels

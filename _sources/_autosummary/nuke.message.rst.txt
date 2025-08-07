@@ -1,0 +1,6 @@
+nuke.message
+============
+
+.. currentmodule:: nuke
+
+.. autofunction:: message

@@ -1,0 +1,6 @@
+nuke.removeAfterFrameRender
+===========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: removeAfterFrameRender

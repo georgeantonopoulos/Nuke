@@ -1,0 +1,6 @@
+nukescripts.translateToPointsVerified
+=====================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: translateToPointsVerified

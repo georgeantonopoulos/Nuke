@@ -1,0 +1,77 @@
+nuke.LookupCurves\_Knob
+=======================
+
+.. currentmodule:: nuke
+
+.. autoclass:: LookupCurves_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~LookupCurves_Knob.Class
+      ~LookupCurves_Knob.ClassID
+      ~LookupCurves_Knob.addCurve
+      ~LookupCurves_Knob.clearAnimated
+      ~LookupCurves_Knob.clearFlag
+      ~LookupCurves_Knob.critical
+      ~LookupCurves_Knob.debug
+      ~LookupCurves_Knob.delCurve
+      ~LookupCurves_Knob.editCurve
+      ~LookupCurves_Knob.enabled
+      ~LookupCurves_Knob.error
+      ~LookupCurves_Knob.fromScript
+      ~LookupCurves_Knob.fullyQualifiedName
+      ~LookupCurves_Knob.getAuthorMode
+      ~LookupCurves_Knob.getAuthorModes
+      ~LookupCurves_Knob.getDerivative
+      ~LookupCurves_Knob.getFlag
+      ~LookupCurves_Knob.getIntegral
+      ~LookupCurves_Knob.getKeyIndex
+      ~LookupCurves_Knob.getKeyList
+      ~LookupCurves_Knob.getKeyTime
+      ~LookupCurves_Knob.getNthDerivative
+      ~LookupCurves_Knob.getNumKeys
+      ~LookupCurves_Knob.getValue
+      ~LookupCurves_Knob.getValueAt
+      ~LookupCurves_Knob.hasExpression
+      ~LookupCurves_Knob.isAnimated
+      ~LookupCurves_Knob.isKey
+      ~LookupCurves_Knob.isKeyAt
+      ~LookupCurves_Knob.label
+      ~LookupCurves_Knob.makeWidget
+      ~LookupCurves_Knob.name
+      ~LookupCurves_Knob.node
+      ~LookupCurves_Knob.notDefault
+      ~LookupCurves_Knob.removeKey
+      ~LookupCurves_Knob.removeKeyAt
+      ~LookupCurves_Knob.setAnimated
+      ~LookupCurves_Knob.setAuthorMode
+      ~LookupCurves_Knob.setEnabled
+      ~LookupCurves_Knob.setExpression
+      ~LookupCurves_Knob.setFlag
+      ~LookupCurves_Knob.setLabel
+      ~LookupCurves_Knob.setName
+      ~LookupCurves_Knob.setTooltip
+      ~LookupCurves_Knob.setValue
+      ~LookupCurves_Knob.setValueAt
+      ~LookupCurves_Knob.setVisible
+      ~LookupCurves_Knob.toScript
+      ~LookupCurves_Knob.toScriptPrefix
+      ~LookupCurves_Knob.tooltip
+      ~LookupCurves_Knob.value
+      ~LookupCurves_Knob.visible
+      ~LookupCurves_Knob.warning
+   
+   
+
+   
+   
+   

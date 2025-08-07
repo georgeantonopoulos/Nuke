@@ -1,0 +1,6 @@
+nukescripts.showReportDialog
+============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: showReportDialog

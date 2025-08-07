@@ -1,0 +1,6 @@
+nukescripts.get\_scale\_enabled
+===============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: get_scale_enabled

@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.get\_rotate\_enabled
+==========================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: get_rotate_enabled

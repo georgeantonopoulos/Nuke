@@ -1,0 +1,6 @@
+nukescripts.hardwareinfo.ConvertSpeedUnitsToMhZ
+===============================================
+
+.. currentmodule:: nukescripts.hardwareinfo
+
+.. autofunction:: ConvertSpeedUnitsToMhZ

@@ -1,0 +1,81 @@
+nuke.File\_Knob
+===============
+
+.. currentmodule:: nuke
+
+.. autoclass:: File_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~File_Knob.Class
+      ~File_Knob.ClassID
+      ~File_Knob.clearAnimated
+      ~File_Knob.clearFlag
+      ~File_Knob.critical
+      ~File_Knob.debug
+      ~File_Knob.enabled
+      ~File_Knob.error
+      ~File_Knob.evaluate
+      ~File_Knob.fromScript
+      ~File_Knob.fromUserText
+      ~File_Knob.fullyQualifiedName
+      ~File_Knob.getAuthorMode
+      ~File_Knob.getAuthorModes
+      ~File_Knob.getDerivative
+      ~File_Knob.getEvaluatedValue
+      ~File_Knob.getFlag
+      ~File_Knob.getIntegral
+      ~File_Knob.getKeyIndex
+      ~File_Knob.getKeyList
+      ~File_Knob.getKeyTime
+      ~File_Knob.getNthDerivative
+      ~File_Knob.getNumKeys
+      ~File_Knob.getText
+      ~File_Knob.getValue
+      ~File_Knob.getValueAt
+      ~File_Knob.hasExpression
+      ~File_Knob.isAnimated
+      ~File_Knob.isKey
+      ~File_Knob.isKeyAt
+      ~File_Knob.label
+      ~File_Knob.makeWidget
+      ~File_Knob.name
+      ~File_Knob.node
+      ~File_Knob.notDefault
+      ~File_Knob.removeKey
+      ~File_Knob.removeKeyAt
+      ~File_Knob.setAnimated
+      ~File_Knob.setAuthorMode
+      ~File_Knob.setEnabled
+      ~File_Knob.setExpression
+      ~File_Knob.setFlag
+      ~File_Knob.setLabel
+      ~File_Knob.setName
+      ~File_Knob.setText
+      ~File_Knob.setTooltip
+      ~File_Knob.setValue
+      ~File_Knob.setValueAt
+      ~File_Knob.setVisible
+      ~File_Knob.splitView
+      ~File_Knob.toScript
+      ~File_Knob.toScriptPrefix
+      ~File_Knob.tooltip
+      ~File_Knob.unsplitView
+      ~File_Knob.value
+      ~File_Knob.visible
+      ~File_Knob.warning
+   
+   
+
+   
+   
+   

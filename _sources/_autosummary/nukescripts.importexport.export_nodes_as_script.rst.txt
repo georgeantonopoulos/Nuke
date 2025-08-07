@@ -1,0 +1,6 @@
+nukescripts.importexport.export\_nodes\_as\_script
+==================================================
+
+.. currentmodule:: nukescripts.importexport
+
+.. autofunction:: export_nodes_as_script

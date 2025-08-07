@@ -1,0 +1,31 @@
+nukescripts.plugin\_menu
+========================
+
+.. automodule:: nukescripts.plugin_menu
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      update_plugin_menu
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

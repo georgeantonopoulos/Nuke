@@ -1,0 +1,6 @@
+nuke.expr
+=========
+
+.. currentmodule:: nuke
+
+.. autofunction:: expr

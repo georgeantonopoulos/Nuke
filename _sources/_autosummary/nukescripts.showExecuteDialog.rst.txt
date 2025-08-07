@@ -1,0 +1,6 @@
+nukescripts.showExecuteDialog
+=============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: showExecuteDialog

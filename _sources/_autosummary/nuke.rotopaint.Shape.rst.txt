@@ -1,0 +1,43 @@
+nuke.rotopaint.Shape
+====================
+
+.. currentmodule:: nuke.rotopaint
+
+.. autoclass:: Shape
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Shape.append
+      ~Shape.clone
+      ~Shape.evaluate
+      ~Shape.getAttributes
+      ~Shape.getFlag
+      ~Shape.getTransform
+      ~Shape.getVisible
+      ~Shape.insert
+      ~Shape.remove
+      ~Shape.serialise
+      ~Shape.setFlag
+      ~Shape.setVisible
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Shape.locked
+      ~Shape.name
+   
+   

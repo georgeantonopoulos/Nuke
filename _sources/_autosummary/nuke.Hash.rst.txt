@@ -1,0 +1,28 @@
+nuke.Hash
+=========
+
+.. currentmodule:: nuke
+
+.. autoclass:: Hash
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Hash.append
+      ~Hash.getHash
+      ~Hash.reset
+      ~Hash.setHash
+   
+   
+
+   
+   
+   

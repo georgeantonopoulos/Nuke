@@ -1,0 +1,76 @@
+nukescripts.renderdialog.RenderDialog
+=====================================
+
+.. currentmodule:: nukescripts.renderdialog
+
+.. autoclass:: RenderDialog
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~RenderDialog.accept
+      ~RenderDialog.add
+      ~RenderDialog.addCallback
+      ~RenderDialog.addKnob
+      ~RenderDialog.addToPane
+      ~RenderDialog.backgroundRenderAvailable
+      ~RenderDialog.cancel
+      ~RenderDialog.close
+      ~RenderDialog.create
+      ~RenderDialog.destroy
+      ~RenderDialog.extractContainerNodes
+      ~RenderDialog.finishModalDialog
+      ~RenderDialog.frameserverRenderAvailable
+      ~RenderDialog.getNodeSelection
+      ~RenderDialog.height
+      ~RenderDialog.hide
+      ~RenderDialog.isBackgrounded
+      ~RenderDialog.isEnabled
+      ~RenderDialog.isFrameserverEnabled
+      ~RenderDialog.isTimelineWrite
+      ~RenderDialog.isValid
+      ~RenderDialog.knobChanged
+      ~RenderDialog.knobChangedCallback
+      ~RenderDialog.knobs
+      ~RenderDialog.ok
+      ~RenderDialog.readKnobs
+      ~RenderDialog.reject
+      ~RenderDialog.removeCallback
+      ~RenderDialog.removeKnob
+      ~RenderDialog.renderContainsContainers
+      ~RenderDialog.renderToFrameServer
+      ~RenderDialog.run
+      ~RenderDialog.saveFileToRender
+      ~RenderDialog.setEnabled
+      ~RenderDialog.setMaximumSize
+      ~RenderDialog.setMinimumSize
+      ~RenderDialog.setTooltip
+      ~RenderDialog.setVisible
+      ~RenderDialog.show
+      ~RenderDialog.showModal
+      ~RenderDialog.showModalDialog
+      ~RenderDialog.tooltip
+      ~RenderDialog.width
+      ~RenderDialog.writeKnobs
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~RenderDialog.ShowWarning
+      ~RenderDialog.deprecatedWarningShown
+      ~RenderDialog.shouldShowBGRender
+   
+   

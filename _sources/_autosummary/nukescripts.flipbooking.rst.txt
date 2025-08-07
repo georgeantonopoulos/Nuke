@@ -1,0 +1,44 @@
+nukescripts.flipbooking
+=======================
+
+.. automodule:: nukescripts.flipbooking
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      getLUTPath
+      register
+      registerLUTPath
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      FlipbookApplication
+      FlipbookFactory
+      FlipbookLUTPathRegistry
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,38 @@
+nuke.curveknob.CurveWidget
+==========================
+
+.. currentmodule:: nuke.curveknob
+
+.. autoclass:: CurveWidget
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~CurveWidget.add
+      ~CurveWidget.clone
+      ~CurveWidget.getSelectedItems
+      ~CurveWidget.getVisible
+      ~CurveWidget.remove
+      ~CurveWidget.serialise
+      ~CurveWidget.setVisible
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~CurveWidget.locked
+      ~CurveWidget.name
+   
+   

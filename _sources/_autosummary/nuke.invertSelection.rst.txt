@@ -1,0 +1,6 @@
+nuke.invertSelection
+====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: invertSelection

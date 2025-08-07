@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.rotate\_pivot\_to\_points\_verified
+=========================================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: rotate_pivot_to_points_verified

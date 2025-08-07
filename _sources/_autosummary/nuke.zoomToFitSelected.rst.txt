@@ -1,0 +1,6 @@
+nuke.zoomToFitSelected
+======================
+
+.. currentmodule:: nuke
+
+.. autofunction:: zoomToFitSelected

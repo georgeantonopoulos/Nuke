@@ -1,0 +1,6 @@
+nukescripts.precomp.execute\_panel
+==================================
+
+.. currentmodule:: nukescripts.precomp
+
+.. autofunction:: execute_panel

@@ -1,0 +1,78 @@
+nuke.splinewarp.AnimCTransform
+==============================
+
+.. currentmodule:: nuke.splinewarp
+
+.. autoclass:: AnimCTransform
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~AnimCTransform.addPivotPointKey
+      ~AnimCTransform.addRotationKey
+      ~AnimCTransform.addScaleKey
+      ~AnimCTransform.addSkewXKey
+      ~AnimCTransform.addTransformKey
+      ~AnimCTransform.addTranslationKey
+      ~AnimCTransform.evaluate
+      ~AnimCTransform.getExtraMatrixAnimCurve
+      ~AnimCTransform.getNumberOfPivotPointKeys
+      ~AnimCTransform.getNumberOfRotationKeys
+      ~AnimCTransform.getNumberOfScaleKeys
+      ~AnimCTransform.getNumberOfSkewXKeys
+      ~AnimCTransform.getNumberOfTransformKeys
+      ~AnimCTransform.getNumberOfTranslationKeys
+      ~AnimCTransform.getPivotPointAnimCurve
+      ~AnimCTransform.getPivotPointKeyTime
+      ~AnimCTransform.getPivotPointKeyTimes
+      ~AnimCTransform.getRotationAnimCurve
+      ~AnimCTransform.getRotationKeyTime
+      ~AnimCTransform.getRotationKeyTimes
+      ~AnimCTransform.getScaleAnimCurve
+      ~AnimCTransform.getScaleKeyTime
+      ~AnimCTransform.getScaleKeyTimes
+      ~AnimCTransform.getSkewXAnimCurve
+      ~AnimCTransform.getSkewXKeyTime
+      ~AnimCTransform.getSkewXKeyTimes
+      ~AnimCTransform.getTransformKeyTime
+      ~AnimCTransform.getTransformKeyTimes
+      ~AnimCTransform.getTranslationAnimCurve
+      ~AnimCTransform.getTranslationKeyTime
+      ~AnimCTransform.getTranslationKeyTimes
+      ~AnimCTransform.isDefault
+      ~AnimCTransform.removePivotPointKey
+      ~AnimCTransform.removeRotationKey
+      ~AnimCTransform.removeScaleKey
+      ~AnimCTransform.removeSkewXKey
+      ~AnimCTransform.removeTransformKey
+      ~AnimCTransform.removeTranslationKey
+      ~AnimCTransform.reset
+      ~AnimCTransform.setExtraMatrixAnimCurve
+      ~AnimCTransform.setIdentity
+      ~AnimCTransform.setPivotPointAnimCurve
+      ~AnimCTransform.setRotationAnimCurve
+      ~AnimCTransform.setScaleAnimCurve
+      ~AnimCTransform.setSkewXAnimCurve
+      ~AnimCTransform.setTranslationAnimCurve
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~AnimCTransform.name
+      ~AnimCTransform.rotationOrder
+      ~AnimCTransform.transformOrder
+   
+   

@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.get\_selected\_prim\_path
+===============================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: get_selected_prim_path

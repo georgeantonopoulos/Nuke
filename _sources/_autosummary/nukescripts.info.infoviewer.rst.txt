@@ -1,0 +1,6 @@
+nukescripts.info.infoviewer
+===========================
+
+.. currentmodule:: nukescripts.info
+
+.. autofunction:: infoviewer

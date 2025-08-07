@@ -1,0 +1,6 @@
+nukescripts.bookmarks.jumpTo
+============================
+
+.. currentmodule:: nukescripts.bookmarks
+
+.. autofunction:: jumpTo

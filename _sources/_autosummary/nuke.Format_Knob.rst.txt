@@ -1,0 +1,75 @@
+nuke.Format\_Knob
+=================
+
+.. currentmodule:: nuke
+
+.. autoclass:: Format_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Format_Knob.Class
+      ~Format_Knob.ClassID
+      ~Format_Knob.actualValue
+      ~Format_Knob.clearAnimated
+      ~Format_Knob.clearFlag
+      ~Format_Knob.critical
+      ~Format_Knob.debug
+      ~Format_Knob.enabled
+      ~Format_Knob.error
+      ~Format_Knob.fromScript
+      ~Format_Knob.fullyQualifiedName
+      ~Format_Knob.getAuthorMode
+      ~Format_Knob.getAuthorModes
+      ~Format_Knob.getDerivative
+      ~Format_Knob.getFlag
+      ~Format_Knob.getIntegral
+      ~Format_Knob.getKeyIndex
+      ~Format_Knob.getKeyList
+      ~Format_Knob.getKeyTime
+      ~Format_Knob.getNthDerivative
+      ~Format_Knob.getNumKeys
+      ~Format_Knob.getValue
+      ~Format_Knob.getValueAt
+      ~Format_Knob.hasExpression
+      ~Format_Knob.isAnimated
+      ~Format_Knob.isKey
+      ~Format_Knob.isKeyAt
+      ~Format_Knob.label
+      ~Format_Knob.makeWidget
+      ~Format_Knob.name
+      ~Format_Knob.node
+      ~Format_Knob.notDefault
+      ~Format_Knob.removeKey
+      ~Format_Knob.removeKeyAt
+      ~Format_Knob.setAnimated
+      ~Format_Knob.setAuthorMode
+      ~Format_Knob.setEnabled
+      ~Format_Knob.setExpression
+      ~Format_Knob.setFlag
+      ~Format_Knob.setLabel
+      ~Format_Knob.setName
+      ~Format_Knob.setTooltip
+      ~Format_Knob.setValue
+      ~Format_Knob.setValueAt
+      ~Format_Knob.setVisible
+      ~Format_Knob.toScript
+      ~Format_Knob.toScriptPrefix
+      ~Format_Knob.tooltip
+      ~Format_Knob.value
+      ~Format_Knob.visible
+      ~Format_Knob.warning
+   
+   
+
+   
+   
+   

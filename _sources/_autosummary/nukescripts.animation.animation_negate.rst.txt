@@ -1,0 +1,6 @@
+nukescripts.animation.animation\_negate
+=======================================
+
+.. currentmodule:: nukescripts.animation
+
+.. autofunction:: animation_negate

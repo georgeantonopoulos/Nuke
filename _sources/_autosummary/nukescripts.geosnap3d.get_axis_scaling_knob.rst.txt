@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.get\_axis\_scaling\_knob
+==============================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: get_axis_scaling_knob

@@ -1,0 +1,6 @@
+nuke.selectConnectedNodes
+=========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: selectConnectedNodes

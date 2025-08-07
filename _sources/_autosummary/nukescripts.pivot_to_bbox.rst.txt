@@ -1,0 +1,6 @@
+nukescripts.pivot\_to\_bbox
+===========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: pivot_to_bbox

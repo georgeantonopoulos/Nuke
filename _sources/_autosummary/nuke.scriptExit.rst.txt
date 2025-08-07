@@ -1,0 +1,6 @@
+nuke.scriptExit
+===============
+
+.. currentmodule:: nuke
+
+.. autofunction:: scriptExit

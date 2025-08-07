@@ -1,0 +1,6 @@
+nukescripts.script.get\_reads
+=============================
+
+.. currentmodule:: nukescripts.script
+
+.. autofunction:: get_reads

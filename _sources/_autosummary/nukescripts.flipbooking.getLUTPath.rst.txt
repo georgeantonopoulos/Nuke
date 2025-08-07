@@ -1,0 +1,6 @@
+nukescripts.flipbooking.getLUTPath
+==================================
+
+.. currentmodule:: nukescripts.flipbooking
+
+.. autofunction:: getLUTPath

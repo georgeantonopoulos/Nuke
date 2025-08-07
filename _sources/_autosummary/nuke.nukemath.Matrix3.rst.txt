@@ -1,0 +1,41 @@
+nuke.nukemath.Matrix3
+=====================
+
+.. currentmodule:: nuke.nukemath
+
+.. autoclass:: Matrix3
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Matrix3.determinant
+      ~Matrix3.identity
+      ~Matrix3.inverse
+      ~Matrix3.makeIdentity
+      ~Matrix3.rotate
+      ~Matrix3.rotateX
+      ~Matrix3.rotateY
+      ~Matrix3.rotateZ
+      ~Matrix3.rotation
+      ~Matrix3.rotationX
+      ~Matrix3.rotationY
+      ~Matrix3.rotationZ
+      ~Matrix3.scale
+      ~Matrix3.scaling
+      ~Matrix3.set
+      ~Matrix3.skew
+      ~Matrix3.transform
+   
+   
+
+   
+   
+   

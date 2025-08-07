@@ -1,0 +1,6 @@
+nuke.createToolset
+==================
+
+.. currentmodule:: nuke
+
+.. autofunction:: createToolset

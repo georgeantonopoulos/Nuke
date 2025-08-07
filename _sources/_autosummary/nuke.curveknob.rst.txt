@@ -1,0 +1,38 @@
+﻿nuke.curveknob
+==============
+
+.. automodule:: nuke.curveknob
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      CurveKnob
+      CurveWidget
+      Element
+      Layer
+      Shape
+      ShapeControlPoint
+      Stroke
+   
+   
+
+   
+   
+   
+
+
+

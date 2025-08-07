@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.verify\_vertex\_selection\_for\_rotation
+==============================================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: verify_vertex_selection_for_rotation

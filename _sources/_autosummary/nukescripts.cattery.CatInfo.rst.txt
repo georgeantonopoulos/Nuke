@@ -1,0 +1,27 @@
+nukescripts.cattery.CatInfo
+===========================
+
+.. currentmodule:: nukescripts.cattery
+
+.. autoclass:: CatInfo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~CatInfo.from_dict
+      ~CatInfo.nuke_script
+      ~CatInfo.to_dict
+   
+   
+
+   
+   
+   

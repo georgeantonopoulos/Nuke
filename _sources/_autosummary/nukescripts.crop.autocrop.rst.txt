@@ -1,0 +1,6 @@
+nukescripts.crop.autocrop
+=========================
+
+.. currentmodule:: nukescripts.crop
+
+.. autofunction:: autocrop

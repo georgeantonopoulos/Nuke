@@ -1,0 +1,6 @@
+nukescripts.toolsets.traversePluginPaths
+========================================
+
+.. currentmodule:: nukescripts.toolsets
+
+.. autofunction:: traversePluginPaths

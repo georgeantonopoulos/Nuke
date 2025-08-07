@@ -1,0 +1,6 @@
+nukescripts.nodepresets.processPresetFile
+=========================================
+
+.. currentmodule:: nukescripts.nodepresets
+
+.. autofunction:: processPresetFile

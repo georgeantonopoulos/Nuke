@@ -1,0 +1,6 @@
+nukescripts.cattery.populate\_menu
+==================================
+
+.. currentmodule:: nukescripts.cattery
+
+.. autofunction:: populate_menu

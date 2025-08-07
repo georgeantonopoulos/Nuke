@@ -1,0 +1,6 @@
+nuke.setGeoSelection
+====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: setGeoSelection

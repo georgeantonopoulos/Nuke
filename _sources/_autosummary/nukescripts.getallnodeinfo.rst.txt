@@ -1,0 +1,6 @@
+nukescripts.getallnodeinfo
+==========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: getallnodeinfo

@@ -1,0 +1,36 @@
+nuke.rotopaint.CurveType
+========================
+
+.. currentmodule:: nuke.rotopaint
+
+.. autoclass:: CurveType
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~CurveType.eBSplineCurveType
+      ~CurveType.eBezierCurveType
+      ~CurveType.eCardinalCurveType
+      ~CurveType.eCatmullRomCurveType
+      ~CurveType.eHermiteCurveType
+      ~CurveType.eNurbsCurveType
+      ~CurveType.eUndefineCurveType
+   
+   

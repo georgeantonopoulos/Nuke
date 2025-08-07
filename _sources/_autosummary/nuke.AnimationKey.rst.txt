@@ -1,0 +1,38 @@
+nuke.AnimationKey
+=================
+
+.. currentmodule:: nuke
+
+.. autoclass:: AnimationKey
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~AnimationKey.extrapolation
+      ~AnimationKey.interpolation
+      ~AnimationKey.la
+      ~AnimationKey.lslope
+      ~AnimationKey.ra
+      ~AnimationKey.rslope
+      ~AnimationKey.selected
+      ~AnimationKey.x
+      ~AnimationKey.y
+   
+   

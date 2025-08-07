@@ -1,0 +1,27 @@
+nuke.GeoSelection
+=================
+
+.. currentmodule:: nuke
+
+.. autoclass:: GeoSelection
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~GeoSelection.selectFaces
+      ~GeoSelection.selectObject
+      ~GeoSelection.selectVertices
+   
+   
+
+   
+   
+   

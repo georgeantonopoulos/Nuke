@@ -1,0 +1,6 @@
+nuke.scriptClear
+================
+
+.. currentmodule:: nuke
+
+.. autofunction:: scriptClear

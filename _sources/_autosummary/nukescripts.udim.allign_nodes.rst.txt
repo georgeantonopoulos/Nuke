@@ -1,0 +1,6 @@
+nukescripts.udim.allign\_nodes
+==============================
+
+.. currentmodule:: nukescripts.udim
+
+.. autofunction:: allign_nodes

@@ -1,0 +1,6 @@
+nuke.forceLoad
+==============
+
+.. currentmodule:: nuke
+
+.. autofunction:: forceLoad

@@ -1,0 +1,33 @@
+nuke.splinewarp.CVec4
+=====================
+
+.. currentmodule:: nuke.splinewarp
+
+.. autoclass:: CVec4
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~CVec4.w
+      ~CVec4.x
+      ~CVec4.y
+      ~CVec4.z
+   
+   

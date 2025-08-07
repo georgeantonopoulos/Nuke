@@ -1,0 +1,6 @@
+nukescripts.panels.registerWidgetAsPanel
+========================================
+
+.. currentmodule:: nukescripts.panels
+
+.. autofunction:: registerWidgetAsPanel

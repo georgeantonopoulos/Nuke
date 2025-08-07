@@ -1,0 +1,6 @@
+nuke.getColor
+=============
+
+.. currentmodule:: nuke
+
+.. autofunction:: getColor

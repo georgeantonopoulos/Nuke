@@ -1,0 +1,6 @@
+nuke.clearDiskCache
+===================
+
+.. currentmodule:: nuke
+
+.. autofunction:: clearDiskCache

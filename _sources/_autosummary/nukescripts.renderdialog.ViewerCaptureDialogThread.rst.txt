@@ -1,0 +1,41 @@
+nukescripts.renderdialog.ViewerCaptureDialogThread
+==================================================
+
+.. currentmodule:: nukescripts.renderdialog
+
+.. autoclass:: ViewerCaptureDialogThread
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~ViewerCaptureDialogThread.getName
+      ~ViewerCaptureDialogThread.isDaemon
+      ~ViewerCaptureDialogThread.is_alive
+      ~ViewerCaptureDialogThread.join
+      ~ViewerCaptureDialogThread.run
+      ~ViewerCaptureDialogThread.setDaemon
+      ~ViewerCaptureDialogThread.setName
+      ~ViewerCaptureDialogThread.start
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ViewerCaptureDialogThread.daemon
+      ~ViewerCaptureDialogThread.ident
+      ~ViewerCaptureDialogThread.name
+      ~ViewerCaptureDialogThread.native_id
+   
+   

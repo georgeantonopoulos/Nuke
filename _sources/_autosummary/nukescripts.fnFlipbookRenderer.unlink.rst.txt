@@ -1,0 +1,6 @@
+nukescripts.fnFlipbookRenderer.unlink
+=====================================
+
+.. currentmodule:: nukescripts.fnFlipbookRenderer
+
+.. autofunction:: unlink

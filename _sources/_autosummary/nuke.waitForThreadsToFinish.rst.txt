@@ -1,0 +1,6 @@
+nuke.waitForThreadsToFinish
+===========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: waitForThreadsToFinish

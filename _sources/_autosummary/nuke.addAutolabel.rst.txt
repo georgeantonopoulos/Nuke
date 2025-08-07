@@ -1,0 +1,6 @@
+nuke.addAutolabel
+=================
+
+.. currentmodule:: nuke
+
+.. autofunction:: addAutolabel

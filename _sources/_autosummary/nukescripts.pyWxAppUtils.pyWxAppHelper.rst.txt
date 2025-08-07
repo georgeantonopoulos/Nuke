@@ -1,0 +1,29 @@
+nukescripts.pyWxAppUtils.pyWxAppHelper
+======================================
+
+.. currentmodule:: nukescripts.pyWxAppUtils
+
+.. autoclass:: pyWxAppHelper
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~pyWxAppHelper.getApplication
+      ~pyWxAppHelper.initiate
+      ~pyWxAppHelper.run
+      ~pyWxAppHelper.start
+      ~pyWxAppHelper.terminate
+   
+   
+
+   
+   
+   

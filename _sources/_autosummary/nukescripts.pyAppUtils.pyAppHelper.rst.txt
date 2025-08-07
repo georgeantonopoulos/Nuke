@@ -1,0 +1,27 @@
+nukescripts.pyAppUtils.pyAppHelper
+==================================
+
+.. currentmodule:: nukescripts.pyAppUtils
+
+.. autoclass:: pyAppHelper
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~pyAppHelper.initiate
+      ~pyAppHelper.run
+      ~pyAppHelper.terminate
+   
+   
+
+   
+   
+   

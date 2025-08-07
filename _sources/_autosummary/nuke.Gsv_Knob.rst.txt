@@ -1,0 +1,90 @@
+nuke.Gsv\_Knob
+==============
+
+.. currentmodule:: nuke
+
+.. autoclass:: Gsv_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Gsv_Knob.Class
+      ~Gsv_Knob.ClassID
+      ~Gsv_Knob.addGsvSet
+      ~Gsv_Knob.clearAnimated
+      ~Gsv_Knob.clearFlag
+      ~Gsv_Knob.contains
+      ~Gsv_Knob.critical
+      ~Gsv_Knob.debug
+      ~Gsv_Knob.enabled
+      ~Gsv_Knob.error
+      ~Gsv_Knob.fromScript
+      ~Gsv_Knob.fullyQualifiedName
+      ~Gsv_Knob.getAuthorMode
+      ~Gsv_Knob.getAuthorModes
+      ~Gsv_Knob.getDataType
+      ~Gsv_Knob.getDerivative
+      ~Gsv_Knob.getFlag
+      ~Gsv_Knob.getGsvValue
+      ~Gsv_Knob.getIntegral
+      ~Gsv_Knob.getKeyIndex
+      ~Gsv_Knob.getKeyList
+      ~Gsv_Knob.getKeyTime
+      ~Gsv_Knob.getLabel
+      ~Gsv_Knob.getListOptions
+      ~Gsv_Knob.getNthDerivative
+      ~Gsv_Knob.getNumKeys
+      ~Gsv_Knob.getTooltip
+      ~Gsv_Knob.getValue
+      ~Gsv_Knob.getValueAt
+      ~Gsv_Knob.hasExpression
+      ~Gsv_Knob.isAnimated
+      ~Gsv_Knob.isFavorite
+      ~Gsv_Knob.isKey
+      ~Gsv_Knob.isKeyAt
+      ~Gsv_Knob.label
+      ~Gsv_Knob.makeWidget
+      ~Gsv_Knob.name
+      ~Gsv_Knob.node
+      ~Gsv_Knob.notDefault
+      ~Gsv_Knob.removeGsv
+      ~Gsv_Knob.removeGsvSet
+      ~Gsv_Knob.removeKey
+      ~Gsv_Knob.removeKeyAt
+      ~Gsv_Knob.renameGsv
+      ~Gsv_Knob.renameGsvSet
+      ~Gsv_Knob.setAnimated
+      ~Gsv_Knob.setAuthorMode
+      ~Gsv_Knob.setDataType
+      ~Gsv_Knob.setEnabled
+      ~Gsv_Knob.setExpression
+      ~Gsv_Knob.setFavorite
+      ~Gsv_Knob.setFlag
+      ~Gsv_Knob.setGsvValue
+      ~Gsv_Knob.setLabel
+      ~Gsv_Knob.setListOptions
+      ~Gsv_Knob.setName
+      ~Gsv_Knob.setTooltip
+      ~Gsv_Knob.setValue
+      ~Gsv_Knob.setValueAt
+      ~Gsv_Knob.setVisible
+      ~Gsv_Knob.toScript
+      ~Gsv_Knob.toScriptPrefix
+      ~Gsv_Knob.tooltip
+      ~Gsv_Knob.value
+      ~Gsv_Knob.visible
+      ~Gsv_Knob.warning
+   
+   
+
+   
+   
+   

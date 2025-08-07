@@ -1,0 +1,105 @@
+nuke.Enumeration\_Knob
+======================
+
+.. currentmodule:: nuke
+
+.. autoclass:: Enumeration_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Enumeration_Knob.Class
+      ~Enumeration_Knob.ClassID
+      ~Enumeration_Knob.animation
+      ~Enumeration_Knob.animations
+      ~Enumeration_Knob.array
+      ~Enumeration_Knob.arraySize
+      ~Enumeration_Knob.clearAnimated
+      ~Enumeration_Knob.clearFlag
+      ~Enumeration_Knob.copyAnimation
+      ~Enumeration_Knob.copyAnimations
+      ~Enumeration_Knob.critical
+      ~Enumeration_Knob.debug
+      ~Enumeration_Knob.defaultValue
+      ~Enumeration_Knob.deleteAnimation
+      ~Enumeration_Knob.dimensions
+      ~Enumeration_Knob.enabled
+      ~Enumeration_Knob.enumName
+      ~Enumeration_Knob.error
+      ~Enumeration_Knob.frame
+      ~Enumeration_Knob.fromScript
+      ~Enumeration_Knob.fullyQualifiedName
+      ~Enumeration_Knob.getAuthorMode
+      ~Enumeration_Knob.getAuthorModes
+      ~Enumeration_Knob.getDerivative
+      ~Enumeration_Knob.getDisplayStrFromID
+      ~Enumeration_Knob.getFlag
+      ~Enumeration_Knob.getIntegral
+      ~Enumeration_Knob.getKeyIndex
+      ~Enumeration_Knob.getKeyList
+      ~Enumeration_Knob.getKeyTime
+      ~Enumeration_Knob.getNthDerivative
+      ~Enumeration_Knob.getNumKeys
+      ~Enumeration_Knob.getValue
+      ~Enumeration_Knob.getValueAt
+      ~Enumeration_Knob.hasExpression
+      ~Enumeration_Knob.height
+      ~Enumeration_Knob.isAnimated
+      ~Enumeration_Knob.isKey
+      ~Enumeration_Knob.isKeyAt
+      ~Enumeration_Knob.label
+      ~Enumeration_Knob.makeWidget
+      ~Enumeration_Knob.max
+      ~Enumeration_Knob.maximum
+      ~Enumeration_Knob.min
+      ~Enumeration_Knob.minimum
+      ~Enumeration_Knob.name
+      ~Enumeration_Knob.node
+      ~Enumeration_Knob.notDefault
+      ~Enumeration_Knob.numValues
+      ~Enumeration_Knob.removeKey
+      ~Enumeration_Knob.removeKeyAt
+      ~Enumeration_Knob.resize
+      ~Enumeration_Knob.setAnimated
+      ~Enumeration_Knob.setAuthorMode
+      ~Enumeration_Knob.setDefaultValue
+      ~Enumeration_Knob.setEnabled
+      ~Enumeration_Knob.setExpression
+      ~Enumeration_Knob.setFlag
+      ~Enumeration_Knob.setKeyAt
+      ~Enumeration_Knob.setLabel
+      ~Enumeration_Knob.setName
+      ~Enumeration_Knob.setRange
+      ~Enumeration_Knob.setSingleValue
+      ~Enumeration_Knob.setTooltip
+      ~Enumeration_Knob.setValue
+      ~Enumeration_Knob.setValueAt
+      ~Enumeration_Knob.setValues
+      ~Enumeration_Knob.setVisible
+      ~Enumeration_Knob.singleValue
+      ~Enumeration_Knob.splitView
+      ~Enumeration_Knob.toScript
+      ~Enumeration_Knob.toScriptPrefix
+      ~Enumeration_Knob.tooltip
+      ~Enumeration_Knob.unsplitView
+      ~Enumeration_Knob.value
+      ~Enumeration_Knob.valueAt
+      ~Enumeration_Knob.values
+      ~Enumeration_Knob.vect
+      ~Enumeration_Knob.visible
+      ~Enumeration_Knob.warning
+      ~Enumeration_Knob.width
+   
+   
+
+   
+   
+   

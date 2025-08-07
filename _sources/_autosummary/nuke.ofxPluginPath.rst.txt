@@ -1,0 +1,6 @@
+nuke.ofxPluginPath
+==================
+
+.. currentmodule:: nuke
+
+.. autofunction:: ofxPluginPath

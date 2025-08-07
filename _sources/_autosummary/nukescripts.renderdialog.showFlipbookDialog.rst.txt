@@ -1,0 +1,6 @@
+nukescripts.renderdialog.showFlipbookDialog
+===========================================
+
+.. currentmodule:: nukescripts.renderdialog
+
+.. autofunction:: showFlipbookDialog

@@ -1,0 +1,6 @@
+nukescripts.create.isDeepFilename
+=================================
+
+.. currentmodule:: nukescripts.create
+
+.. autofunction:: isDeepFilename

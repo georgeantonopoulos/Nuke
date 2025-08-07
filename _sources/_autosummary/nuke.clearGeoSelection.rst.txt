@@ -1,0 +1,6 @@
+nuke.clearGeoSelection
+======================
+
+.. currentmodule:: nuke
+
+.. autofunction:: clearGeoSelection

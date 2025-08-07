@@ -1,0 +1,43 @@
+nukescripts.widgetgroup
+=======================
+
+.. automodule:: nukescripts.widgetgroup
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      GroupWidget
+      GroupWidgetButton
+      QCheckBox
+      QPainter
+      QPainterPath
+      QPalette
+      QSizePolicy
+      QStyle
+      QStyleOptionButton
+      QVBoxLayout
+      QWidget
+      Qt
+   
+   
+
+   
+   
+   
+
+
+

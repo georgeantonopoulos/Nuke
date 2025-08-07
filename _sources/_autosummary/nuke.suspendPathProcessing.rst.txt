@@ -1,0 +1,6 @@
+nuke.suspendPathProcessing
+==========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: suspendPathProcessing

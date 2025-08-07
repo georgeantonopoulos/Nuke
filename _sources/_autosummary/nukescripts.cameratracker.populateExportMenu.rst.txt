@@ -1,0 +1,6 @@
+nukescripts.cameratracker.populateExportMenu
+============================================
+
+.. currentmodule:: nukescripts.cameratracker
+
+.. autofunction:: populateExportMenu

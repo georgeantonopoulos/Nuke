@@ -1,0 +1,6 @@
+nukescripts.snap3d.projectPoint
+===============================
+
+.. currentmodule:: nukescripts.snap3d
+
+.. autofunction:: projectPoint

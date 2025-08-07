@@ -1,0 +1,75 @@
+nuke.MultiView\_Knob
+====================
+
+.. currentmodule:: nuke
+
+.. autoclass:: MultiView_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~MultiView_Knob.Class
+      ~MultiView_Knob.ClassID
+      ~MultiView_Knob.clearAnimated
+      ~MultiView_Knob.clearFlag
+      ~MultiView_Knob.critical
+      ~MultiView_Knob.debug
+      ~MultiView_Knob.enabled
+      ~MultiView_Knob.error
+      ~MultiView_Knob.fromScript
+      ~MultiView_Knob.fullyQualifiedName
+      ~MultiView_Knob.getAuthorMode
+      ~MultiView_Knob.getAuthorModes
+      ~MultiView_Knob.getDerivative
+      ~MultiView_Knob.getFlag
+      ~MultiView_Knob.getIntegral
+      ~MultiView_Knob.getKeyIndex
+      ~MultiView_Knob.getKeyList
+      ~MultiView_Knob.getKeyTime
+      ~MultiView_Knob.getNthDerivative
+      ~MultiView_Knob.getNumKeys
+      ~MultiView_Knob.getValue
+      ~MultiView_Knob.getValueAt
+      ~MultiView_Knob.hasExpression
+      ~MultiView_Knob.isAnimated
+      ~MultiView_Knob.isKey
+      ~MultiView_Knob.isKeyAt
+      ~MultiView_Knob.label
+      ~MultiView_Knob.makeWidget
+      ~MultiView_Knob.name
+      ~MultiView_Knob.node
+      ~MultiView_Knob.notDefault
+      ~MultiView_Knob.removeKey
+      ~MultiView_Knob.removeKeyAt
+      ~MultiView_Knob.setAnimated
+      ~MultiView_Knob.setAuthorMode
+      ~MultiView_Knob.setEnabled
+      ~MultiView_Knob.setExpression
+      ~MultiView_Knob.setFlag
+      ~MultiView_Knob.setLabel
+      ~MultiView_Knob.setName
+      ~MultiView_Knob.setTooltip
+      ~MultiView_Knob.setValue
+      ~MultiView_Knob.setValueAt
+      ~MultiView_Knob.setVisible
+      ~MultiView_Knob.toScript
+      ~MultiView_Knob.toScriptPrefix
+      ~MultiView_Knob.toScriptPrefixUserKnob
+      ~MultiView_Knob.tooltip
+      ~MultiView_Knob.value
+      ~MultiView_Knob.visible
+      ~MultiView_Knob.warning
+   
+   
+
+   
+   
+   

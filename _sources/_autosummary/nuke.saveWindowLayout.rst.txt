@@ -1,0 +1,6 @@
+nuke.saveWindowLayout
+=====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: saveWindowLayout

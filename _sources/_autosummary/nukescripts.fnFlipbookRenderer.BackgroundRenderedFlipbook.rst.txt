@@ -1,0 +1,30 @@
+nukescripts.fnFlipbookRenderer.BackgroundRenderedFlipbook
+=========================================================
+
+.. currentmodule:: nukescripts.fnFlipbookRenderer
+
+.. autoclass:: BackgroundRenderedFlipbook
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~BackgroundRenderedFlipbook.doFlipbook
+      ~BackgroundRenderedFlipbook.getFlipbookOptions
+      ~BackgroundRenderedFlipbook.getOptions
+      ~BackgroundRenderedFlipbook.initializeFlipbookNode
+      ~BackgroundRenderedFlipbook.renderFlipbookNode
+      ~BackgroundRenderedFlipbook.runFlipbook
+   
+   
+
+   
+   
+   

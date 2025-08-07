@@ -1,0 +1,36 @@
+nukescripts.nukeprofiler.NukeProfiler
+=====================================
+
+.. currentmodule:: nukescripts.nukeprofiler
+
+.. autoclass:: NukeProfiler
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~NukeProfiler.CloseTag
+      ~NukeProfiler.NodeProfile
+      ~NukeProfiler.OpenTag
+      ~NukeProfiler.WriteDictInner
+      ~NukeProfiler.addFrameProfileAndResetTimers
+      ~NukeProfiler.endProfile
+      ~NukeProfiler.indentString
+      ~NukeProfiler.initProfileDesc
+      ~NukeProfiler.resetTimersAndStartProfile
+      ~NukeProfiler.setPathToFile
+      ~NukeProfiler.writeProfileDesc
+      ~NukeProfiler.writeXMLInfo
+   
+   
+
+   
+   
+   

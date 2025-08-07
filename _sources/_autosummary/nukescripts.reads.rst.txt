@@ -1,0 +1,31 @@
+nukescripts.reads
+=================
+
+.. automodule:: nukescripts.reads
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      get_reads
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

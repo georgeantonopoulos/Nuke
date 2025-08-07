@@ -1,0 +1,79 @@
+nuke.EvalString\_Knob
+=====================
+
+.. currentmodule:: nuke
+
+.. autoclass:: EvalString_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~EvalString_Knob.Class
+      ~EvalString_Knob.ClassID
+      ~EvalString_Knob.clearAnimated
+      ~EvalString_Knob.clearFlag
+      ~EvalString_Knob.critical
+      ~EvalString_Knob.debug
+      ~EvalString_Knob.enabled
+      ~EvalString_Knob.error
+      ~EvalString_Knob.evaluate
+      ~EvalString_Knob.fromScript
+      ~EvalString_Knob.fullyQualifiedName
+      ~EvalString_Knob.getAuthorMode
+      ~EvalString_Knob.getAuthorModes
+      ~EvalString_Knob.getDerivative
+      ~EvalString_Knob.getFlag
+      ~EvalString_Knob.getIntegral
+      ~EvalString_Knob.getKeyIndex
+      ~EvalString_Knob.getKeyList
+      ~EvalString_Knob.getKeyTime
+      ~EvalString_Knob.getNthDerivative
+      ~EvalString_Knob.getNumKeys
+      ~EvalString_Knob.getText
+      ~EvalString_Knob.getValue
+      ~EvalString_Knob.getValueAt
+      ~EvalString_Knob.hasExpression
+      ~EvalString_Knob.isAnimated
+      ~EvalString_Knob.isKey
+      ~EvalString_Knob.isKeyAt
+      ~EvalString_Knob.label
+      ~EvalString_Knob.makeWidget
+      ~EvalString_Knob.name
+      ~EvalString_Knob.node
+      ~EvalString_Knob.notDefault
+      ~EvalString_Knob.removeKey
+      ~EvalString_Knob.removeKeyAt
+      ~EvalString_Knob.setAnimated
+      ~EvalString_Knob.setAuthorMode
+      ~EvalString_Knob.setEnabled
+      ~EvalString_Knob.setExpression
+      ~EvalString_Knob.setFlag
+      ~EvalString_Knob.setLabel
+      ~EvalString_Knob.setName
+      ~EvalString_Knob.setText
+      ~EvalString_Knob.setTooltip
+      ~EvalString_Knob.setValue
+      ~EvalString_Knob.setValueAt
+      ~EvalString_Knob.setVisible
+      ~EvalString_Knob.splitView
+      ~EvalString_Knob.toScript
+      ~EvalString_Knob.toScriptPrefix
+      ~EvalString_Knob.tooltip
+      ~EvalString_Knob.unsplitView
+      ~EvalString_Knob.value
+      ~EvalString_Knob.visible
+      ~EvalString_Knob.warning
+   
+   
+
+   
+   
+   

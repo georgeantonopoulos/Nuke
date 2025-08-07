@@ -1,0 +1,6 @@
+nuke.localization.removeFileCallback
+====================================
+
+.. currentmodule:: nuke.localization
+
+.. autofunction:: removeFileCallback

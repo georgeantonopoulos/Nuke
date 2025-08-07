@@ -1,0 +1,6 @@
+nuke.thisKnob
+=============
+
+.. currentmodule:: nuke
+
+.. autofunction:: thisKnob

@@ -1,0 +1,52 @@
+nukescripts.script
+==================
+
+.. automodule:: nukescripts.script
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      findMaxVersionForFileName
+      get_reads
+      get_script_data
+      script_and_write_nodes_version_up
+      script_command
+      script_data
+      script_directory
+      script_version_up
+      set_fileknob_version
+      timeline_write_version_set
+      version_get
+      version_set
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      VersionConflictDialog
+      VersionHelper
+   
+   
+
+   
+   
+   
+
+
+

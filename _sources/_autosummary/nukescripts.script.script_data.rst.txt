@@ -1,0 +1,6 @@
+nukescripts.script.script\_data
+===============================
+
+.. currentmodule:: nukescripts.script
+
+.. autofunction:: script_data

@@ -1,0 +1,57 @@
+nukescripts.precomp.PrecompOptionsDialog
+========================================
+
+.. currentmodule:: nukescripts.precomp
+
+.. autoclass:: PrecompOptionsDialog
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~PrecompOptionsDialog.accept
+      ~PrecompOptionsDialog.add
+      ~PrecompOptionsDialog.addCallback
+      ~PrecompOptionsDialog.addKnob
+      ~PrecompOptionsDialog.addToPane
+      ~PrecompOptionsDialog.cancel
+      ~PrecompOptionsDialog.close
+      ~PrecompOptionsDialog.create
+      ~PrecompOptionsDialog.destroy
+      ~PrecompOptionsDialog.finishModalDialog
+      ~PrecompOptionsDialog.height
+      ~PrecompOptionsDialog.hide
+      ~PrecompOptionsDialog.isEnabled
+      ~PrecompOptionsDialog.isValid
+      ~PrecompOptionsDialog.knobChanged
+      ~PrecompOptionsDialog.knobChangedCallback
+      ~PrecompOptionsDialog.knobs
+      ~PrecompOptionsDialog.ok
+      ~PrecompOptionsDialog.readKnobs
+      ~PrecompOptionsDialog.reject
+      ~PrecompOptionsDialog.removeCallback
+      ~PrecompOptionsDialog.removeKnob
+      ~PrecompOptionsDialog.setEnabled
+      ~PrecompOptionsDialog.setMaximumSize
+      ~PrecompOptionsDialog.setMinimumSize
+      ~PrecompOptionsDialog.setTooltip
+      ~PrecompOptionsDialog.setVisible
+      ~PrecompOptionsDialog.show
+      ~PrecompOptionsDialog.showModal
+      ~PrecompOptionsDialog.showModalDialog
+      ~PrecompOptionsDialog.tooltip
+      ~PrecompOptionsDialog.width
+      ~PrecompOptionsDialog.writeKnobs
+   
+   
+
+   
+   
+   

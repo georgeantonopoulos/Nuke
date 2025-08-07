@@ -1,0 +1,33 @@
+nukescripts.stereo
+==================
+
+.. automodule:: nukescripts.stereo
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      setViewsForMono
+      setViewsForStereo
+      setViewsForStereoOrMono
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

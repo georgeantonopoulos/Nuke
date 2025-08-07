@@ -1,0 +1,6 @@
+nukescripts.showname
+====================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: showname

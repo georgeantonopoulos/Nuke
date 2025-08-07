@@ -1,0 +1,6 @@
+nuke.localization.setMode
+=========================
+
+.. currentmodule:: nuke.localization
+
+.. autofunction:: setMode

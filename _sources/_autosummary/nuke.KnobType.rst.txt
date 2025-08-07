@@ -1,0 +1,119 @@
+nuke.KnobType
+=============
+
+.. currentmodule:: nuke
+
+.. autoclass:: KnobType
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~KnobType.eAColorKnob
+      ~KnobType.eArrayKnob
+      ~KnobType.eAxisKnob
+      ~KnobType.eBBoxKnob
+      ~KnobType.eBitMaskKnob
+      ~KnobType.eBoolKnob
+      ~KnobType.eBox3Knob
+      ~KnobType.eCachedFileKnob
+      ~KnobType.eCancelExecutionKnob
+      ~KnobType.eCascadingEnumerationKnob
+      ~KnobType.eChannelKnob
+      ~KnobType.eChannelMaskKnob
+      ~KnobType.eColorChipKnob
+      ~KnobType.eColorKnob
+      ~KnobType.eColorspaceKnob
+      ~KnobType.eControlPointCollectionKnob
+      ~KnobType.eCpKnob
+      ~KnobType.eCustomKnob
+      ~KnobType.eDisableKnob
+      ~KnobType.eDoubleKnob
+      ~KnobType.eDynamicBitmaskKnob
+      ~KnobType.eEditableEnumerationKnob
+      ~KnobType.eEnumKnob
+      ~KnobType.eExoGroupKnob
+      ~KnobType.eEyeDropperKnob
+      ~KnobType.eFileKnob
+      ~KnobType.eFloatKnob
+      ~KnobType.eFormatKnob
+      ~KnobType.eFrameExtentKnob
+      ~KnobType.eFreeTypeKnob
+      ~KnobType.eGeoSelectKnob
+      ~KnobType.eHelpKnob
+      ~KnobType.eHistogramKnob
+      ~KnobType.eIconKnob
+      ~KnobType.eInputOnlyChannelKnob
+      ~KnobType.eInputOnlyChannelMaskKnob
+      ~KnobType.eIntKnob
+      ~KnobType.eKeyerKnob
+      ~KnobType.eLinkKnob
+      ~KnobType.eListKnob
+      ~KnobType.eLookupCurvesKnob
+      ~KnobType.eMenuKnob
+      ~KnobType.eMetaDataKnob
+      ~KnobType.eMetaKeyFrameKnob
+      ~KnobType.eMultiArrayKnob
+      ~KnobType.eMultiViewKnob
+      ~KnobType.eMultilineEvalStringKnob
+      ~KnobType.eMultilineStringKnob
+      ~KnobType.eObsoleteKnob
+      ~KnobType.eOneViewKnob
+      ~KnobType.eParticleChannelsKnob
+      ~KnobType.ePasswordKnob
+      ~KnobType.ePathExpressionKnob
+      ~KnobType.ePathKnob
+      ~KnobType.ePixelAspectKnob
+      ~KnobType.ePluginPythonKnob
+      ~KnobType.ePositionVectorKnob
+      ~KnobType.ePulldownKnob
+      ~KnobType.ePyPulldownKnob
+      ~KnobType.ePyScriptKnob
+      ~KnobType.ePythonKnob
+      ~KnobType.eRadioKnob
+      ~KnobType.eRangeKnob
+      ~KnobType.eResizableArrayKnob
+      ~KnobType.eRippleKnob
+      ~KnobType.eScaleKnob
+      ~KnobType.eSceneGraphKnob
+      ~KnobType.eSceneViewKnob
+      ~KnobType.eScriptKnob
+      ~KnobType.eSimpleArrayKnob
+      ~KnobType.eSizeKnob
+      ~KnobType.eSpacerKnob
+      ~KnobType.eStringKnob
+      ~KnobType.eTabGroupKnob
+      ~KnobType.eTabKnob
+      ~KnobType.eTableKnob
+      ~KnobType.eTextEditorKnob
+      ~KnobType.eTextKnob
+      ~KnobType.eToolbarKnob
+      ~KnobType.eToolboxKnob
+      ~KnobType.eTooltipKnob
+      ~KnobType.eTransform2DKnob
+      ~KnobType.eTransformJackKnob
+      ~KnobType.eUVKnob
+      ~KnobType.eVSpacerKnob
+      ~KnobType.eViewPairKnob
+      ~KnobType.eViewViewKnob
+      ~KnobType.eWHKnob
+      ~KnobType.eXYKnob
+      ~KnobType.eXYZKnob
+   
+   

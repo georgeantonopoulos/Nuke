@@ -1,0 +1,6 @@
+nukescripts.pyQtExamples.pyQtRender.startQtRenderDialog
+=======================================================
+
+.. currentmodule:: nukescripts.pyQtExamples.pyQtRender
+
+.. autofunction:: startQtRenderDialog

@@ -1,0 +1,6 @@
+nukescripts.misc.clear\_selection\_recursive
+============================================
+
+.. currentmodule:: nukescripts.misc
+
+.. autofunction:: clear_selection_recursive

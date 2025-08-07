@@ -1,0 +1,6 @@
+nuke.oculaPresent
+=================
+
+.. currentmodule:: nuke
+
+.. autofunction:: oculaPresent

@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.should\_animate
+=====================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: should_animate

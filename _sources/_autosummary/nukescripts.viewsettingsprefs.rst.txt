@@ -1,0 +1,31 @@
+nukescripts.viewsettingsprefs
+=============================
+
+.. automodule:: nukescripts.viewsettingsprefs
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      onCreateRoot
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

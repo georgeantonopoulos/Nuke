@@ -1,0 +1,49 @@
+nuke.curvelib.AnimControlPoint
+==============================
+
+.. currentmodule:: nuke.curvelib
+
+.. autoclass:: AnimControlPoint
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~AnimControlPoint.addControlPoint
+      ~AnimControlPoint.addKey
+      ~AnimControlPoint.addPositionKey
+      ~AnimControlPoint.evaluate
+      ~AnimControlPoint.getControlPointKeyTimes
+      ~AnimControlPoint.getFlag
+      ~AnimControlPoint.getPosition
+      ~AnimControlPoint.getPositionAnimCurve
+      ~AnimControlPoint.getPositionKeyTime
+      ~AnimControlPoint.removeAllKeys
+      ~AnimControlPoint.removeKey
+      ~AnimControlPoint.removePositionKey
+      ~AnimControlPoint.reset
+      ~AnimControlPoint.setFlag
+      ~AnimControlPoint.setPosition
+      ~AnimControlPoint.setPositionAnimCurve
+      ~AnimControlPoint.setPositionKey
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~AnimControlPoint.dim
+      ~AnimControlPoint.hash
+      ~AnimControlPoint.name
+   
+   

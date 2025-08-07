@@ -1,0 +1,6 @@
+nuke.activeViewer
+=================
+
+.. currentmodule:: nuke
+
+.. autofunction:: activeViewer

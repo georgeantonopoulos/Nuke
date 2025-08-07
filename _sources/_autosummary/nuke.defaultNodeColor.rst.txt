@@ -1,0 +1,6 @@
+nuke.defaultNodeColor
+=====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: defaultNodeColor

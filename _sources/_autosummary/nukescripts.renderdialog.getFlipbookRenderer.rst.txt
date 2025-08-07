@@ -1,0 +1,6 @@
+nukescripts.renderdialog.getFlipbookRenderer
+============================================
+
+.. currentmodule:: nukescripts.renderdialog
+
+.. autofunction:: getFlipbookRenderer

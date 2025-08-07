@@ -1,0 +1,6 @@
+nuke.unlinkSelected
+===================
+
+.. currentmodule:: nuke
+
+.. autofunction:: unlinkSelected

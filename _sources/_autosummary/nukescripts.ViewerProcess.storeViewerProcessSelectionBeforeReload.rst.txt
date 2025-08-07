@@ -1,0 +1,6 @@
+nukescripts.ViewerProcess.storeViewerProcessSelectionBeforeReload
+=================================================================
+
+.. currentmodule:: nukescripts.ViewerProcess
+
+.. autofunction:: storeViewerProcessSelectionBeforeReload

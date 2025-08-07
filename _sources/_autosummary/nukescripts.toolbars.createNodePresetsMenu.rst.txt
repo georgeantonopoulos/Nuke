@@ -1,0 +1,6 @@
+nukescripts.toolbars.createNodePresetsMenu
+==========================================
+
+.. currentmodule:: nukescripts.toolbars
+
+.. autofunction:: createNodePresetsMenu

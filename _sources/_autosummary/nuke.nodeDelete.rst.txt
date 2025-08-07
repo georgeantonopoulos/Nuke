@@ -1,0 +1,6 @@
+nuke.nodeDelete
+===============
+
+.. currentmodule:: nuke
+
+.. autofunction:: nodeDelete

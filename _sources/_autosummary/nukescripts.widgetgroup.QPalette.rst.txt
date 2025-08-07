@@ -1,0 +1,59 @@
+nukescripts.widgetgroup.QPalette
+================================
+
+.. currentmodule:: nukescripts.widgetgroup
+
+.. autoclass:: QPalette
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~QPalette.alternateBase
+      ~QPalette.base
+      ~QPalette.brightText
+      ~QPalette.brush
+      ~QPalette.button
+      ~QPalette.buttonText
+      ~QPalette.cacheKey
+      ~QPalette.color
+      ~QPalette.currentColorGroup
+      ~QPalette.dark
+      ~QPalette.highlight
+      ~QPalette.highlightedText
+      ~QPalette.isBrushSet
+      ~QPalette.isCopyOf
+      ~QPalette.isEqual
+      ~QPalette.light
+      ~QPalette.link
+      ~QPalette.linkVisited
+      ~QPalette.mid
+      ~QPalette.midlight
+      ~QPalette.placeholderText
+      ~QPalette.resolve
+      ~QPalette.resolveMask
+      ~QPalette.setBrush
+      ~QPalette.setColor
+      ~QPalette.setColorGroup
+      ~QPalette.setCurrentColorGroup
+      ~QPalette.setResolveMask
+      ~QPalette.shadow
+      ~QPalette.swap
+      ~QPalette.text
+      ~QPalette.toolTipBase
+      ~QPalette.toolTipText
+      ~QPalette.window
+      ~QPalette.windowText
+   
+   
+
+   
+   
+   

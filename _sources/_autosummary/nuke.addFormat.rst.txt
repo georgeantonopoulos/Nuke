@@ -1,0 +1,6 @@
+nuke.addFormat
+==============
+
+.. currentmodule:: nuke
+
+.. autofunction:: addFormat

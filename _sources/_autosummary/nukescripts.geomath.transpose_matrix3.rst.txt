@@ -1,0 +1,6 @@
+nukescripts.geomath.transpose\_matrix3
+======================================
+
+.. currentmodule:: nukescripts.geomath
+
+.. autofunction:: transpose_matrix3

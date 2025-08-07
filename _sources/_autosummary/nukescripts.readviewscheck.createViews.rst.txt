@@ -1,0 +1,6 @@
+nukescripts.readviewscheck.createViews
+======================================
+
+.. currentmodule:: nukescripts.readviewscheck
+
+.. autofunction:: createViews

@@ -1,0 +1,6 @@
+nuke.afterBackgroundRender
+==========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: afterBackgroundRender

@@ -1,0 +1,6 @@
+nuke.removeOnCreate
+===================
+
+.. currentmodule:: nuke
+
+.. autofunction:: removeOnCreate

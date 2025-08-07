@@ -1,0 +1,6 @@
+nuke.debug
+==========
+
+.. currentmodule:: nuke
+
+.. autofunction:: debug

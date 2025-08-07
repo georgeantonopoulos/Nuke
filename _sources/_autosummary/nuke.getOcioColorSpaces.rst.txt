@@ -1,0 +1,6 @@
+nuke.getOcioColorSpaces
+=======================
+
+.. currentmodule:: nuke
+
+.. autofunction:: getOcioColorSpaces

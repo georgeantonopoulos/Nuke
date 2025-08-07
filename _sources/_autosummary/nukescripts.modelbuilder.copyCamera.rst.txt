@@ -1,0 +1,6 @@
+nukescripts.modelbuilder.copyCamera
+===================================
+
+.. currentmodule:: nukescripts.modelbuilder
+
+.. autofunction:: copyCamera

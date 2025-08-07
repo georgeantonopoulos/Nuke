@@ -1,0 +1,6 @@
+nukescripts.translate\_matrix
+=============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: translate_matrix

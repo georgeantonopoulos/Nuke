@@ -1,0 +1,6 @@
+nukescripts.udimStr
+===================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: udimStr

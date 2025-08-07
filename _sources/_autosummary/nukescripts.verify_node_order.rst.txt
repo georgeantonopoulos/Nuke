@@ -1,0 +1,6 @@
+nukescripts.verify\_node\_order
+===============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: verify_node_order

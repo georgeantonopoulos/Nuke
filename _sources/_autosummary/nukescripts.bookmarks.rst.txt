@@ -1,0 +1,33 @@
+nukescripts.bookmarks
+=====================
+
+.. automodule:: nukescripts.bookmarks
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      jumpTo
+      quickRestore
+      quickSave
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

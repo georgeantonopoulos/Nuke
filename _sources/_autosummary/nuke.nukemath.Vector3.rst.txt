@@ -1,0 +1,46 @@
+nuke.nukemath.Vector3
+=====================
+
+.. currentmodule:: nuke.nukemath
+
+.. autoclass:: Vector3
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Vector3.cross
+      ~Vector3.distanceBetween
+      ~Vector3.distanceFromPlane
+      ~Vector3.distanceSquared
+      ~Vector3.dot
+      ~Vector3.fast_normalize
+      ~Vector3.length
+      ~Vector3.lengthSquared
+      ~Vector3.maximum
+      ~Vector3.minimum
+      ~Vector3.negate
+      ~Vector3.normalize
+      ~Vector3.reflect
+      ~Vector3.set
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Vector3.x
+      ~Vector3.y
+      ~Vector3.z
+   
+   

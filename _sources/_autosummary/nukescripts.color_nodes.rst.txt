@@ -1,0 +1,6 @@
+nukescripts.color\_nodes
+========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: color_nodes

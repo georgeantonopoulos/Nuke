@@ -1,0 +1,6 @@
+nuke.createLiveInput
+====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: createLiveInput

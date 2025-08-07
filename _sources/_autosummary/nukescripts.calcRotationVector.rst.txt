@@ -1,0 +1,6 @@
+nukescripts.calcRotationVector
+==============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: calcRotationVector

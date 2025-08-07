@@ -1,0 +1,6 @@
+nukescripts.findNextNodeName
+============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: findNextNodeName

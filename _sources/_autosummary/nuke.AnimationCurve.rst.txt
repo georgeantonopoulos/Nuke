@@ -1,0 +1,48 @@
+nuke.AnimationCurve
+===================
+
+.. currentmodule:: nuke
+
+.. autoclass:: AnimationCurve
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~AnimationCurve.addKey
+      ~AnimationCurve.changeInterpolation
+      ~AnimationCurve.clear
+      ~AnimationCurve.constant
+      ~AnimationCurve.derivative
+      ~AnimationCurve.evaluate
+      ~AnimationCurve.expression
+      ~AnimationCurve.fixSlopes
+      ~AnimationCurve.fromScript
+      ~AnimationCurve.identity
+      ~AnimationCurve.integrate
+      ~AnimationCurve.inverse
+      ~AnimationCurve.keys
+      ~AnimationCurve.knob
+      ~AnimationCurve.knobAndFieldName
+      ~AnimationCurve.knobIndex
+      ~AnimationCurve.noExpression
+      ~AnimationCurve.removeKey
+      ~AnimationCurve.selected
+      ~AnimationCurve.setExpression
+      ~AnimationCurve.setKey
+      ~AnimationCurve.size
+      ~AnimationCurve.toScript
+      ~AnimationCurve.view
+   
+   
+
+   
+   
+   

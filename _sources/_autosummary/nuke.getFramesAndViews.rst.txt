@@ -1,0 +1,6 @@
+nuke.getFramesAndViews
+======================
+
+.. currentmodule:: nuke
+
+.. autofunction:: getFramesAndViews

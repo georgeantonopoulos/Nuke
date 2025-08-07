@@ -1,0 +1,105 @@
+nuke.CascadingEnumeration\_Knob
+===============================
+
+.. currentmodule:: nuke
+
+.. autoclass:: CascadingEnumeration_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~CascadingEnumeration_Knob.Class
+      ~CascadingEnumeration_Knob.ClassID
+      ~CascadingEnumeration_Knob.animation
+      ~CascadingEnumeration_Knob.animations
+      ~CascadingEnumeration_Knob.array
+      ~CascadingEnumeration_Knob.arraySize
+      ~CascadingEnumeration_Knob.clearAnimated
+      ~CascadingEnumeration_Knob.clearFlag
+      ~CascadingEnumeration_Knob.copyAnimation
+      ~CascadingEnumeration_Knob.copyAnimations
+      ~CascadingEnumeration_Knob.critical
+      ~CascadingEnumeration_Knob.debug
+      ~CascadingEnumeration_Knob.defaultValue
+      ~CascadingEnumeration_Knob.deleteAnimation
+      ~CascadingEnumeration_Knob.dimensions
+      ~CascadingEnumeration_Knob.enabled
+      ~CascadingEnumeration_Knob.enumName
+      ~CascadingEnumeration_Knob.error
+      ~CascadingEnumeration_Knob.frame
+      ~CascadingEnumeration_Knob.fromScript
+      ~CascadingEnumeration_Knob.fullyQualifiedName
+      ~CascadingEnumeration_Knob.getAuthorMode
+      ~CascadingEnumeration_Knob.getAuthorModes
+      ~CascadingEnumeration_Knob.getDerivative
+      ~CascadingEnumeration_Knob.getDisplayStrFromID
+      ~CascadingEnumeration_Knob.getFlag
+      ~CascadingEnumeration_Knob.getIntegral
+      ~CascadingEnumeration_Knob.getKeyIndex
+      ~CascadingEnumeration_Knob.getKeyList
+      ~CascadingEnumeration_Knob.getKeyTime
+      ~CascadingEnumeration_Knob.getNthDerivative
+      ~CascadingEnumeration_Knob.getNumKeys
+      ~CascadingEnumeration_Knob.getValue
+      ~CascadingEnumeration_Knob.getValueAt
+      ~CascadingEnumeration_Knob.hasExpression
+      ~CascadingEnumeration_Knob.height
+      ~CascadingEnumeration_Knob.isAnimated
+      ~CascadingEnumeration_Knob.isKey
+      ~CascadingEnumeration_Knob.isKeyAt
+      ~CascadingEnumeration_Knob.label
+      ~CascadingEnumeration_Knob.makeWidget
+      ~CascadingEnumeration_Knob.max
+      ~CascadingEnumeration_Knob.maximum
+      ~CascadingEnumeration_Knob.min
+      ~CascadingEnumeration_Knob.minimum
+      ~CascadingEnumeration_Knob.name
+      ~CascadingEnumeration_Knob.node
+      ~CascadingEnumeration_Knob.notDefault
+      ~CascadingEnumeration_Knob.numValues
+      ~CascadingEnumeration_Knob.removeKey
+      ~CascadingEnumeration_Knob.removeKeyAt
+      ~CascadingEnumeration_Knob.resize
+      ~CascadingEnumeration_Knob.setAnimated
+      ~CascadingEnumeration_Knob.setAuthorMode
+      ~CascadingEnumeration_Knob.setDefaultValue
+      ~CascadingEnumeration_Knob.setEnabled
+      ~CascadingEnumeration_Knob.setExpression
+      ~CascadingEnumeration_Knob.setFlag
+      ~CascadingEnumeration_Knob.setKeyAt
+      ~CascadingEnumeration_Knob.setLabel
+      ~CascadingEnumeration_Knob.setName
+      ~CascadingEnumeration_Knob.setRange
+      ~CascadingEnumeration_Knob.setSingleValue
+      ~CascadingEnumeration_Knob.setTooltip
+      ~CascadingEnumeration_Knob.setValue
+      ~CascadingEnumeration_Knob.setValueAt
+      ~CascadingEnumeration_Knob.setValues
+      ~CascadingEnumeration_Knob.setVisible
+      ~CascadingEnumeration_Knob.singleValue
+      ~CascadingEnumeration_Knob.splitView
+      ~CascadingEnumeration_Knob.toScript
+      ~CascadingEnumeration_Knob.toScriptPrefix
+      ~CascadingEnumeration_Knob.tooltip
+      ~CascadingEnumeration_Knob.unsplitView
+      ~CascadingEnumeration_Knob.value
+      ~CascadingEnumeration_Knob.valueAt
+      ~CascadingEnumeration_Knob.values
+      ~CascadingEnumeration_Knob.vect
+      ~CascadingEnumeration_Knob.visible
+      ~CascadingEnumeration_Knob.warning
+      ~CascadingEnumeration_Knob.width
+   
+   
+
+   
+   
+   

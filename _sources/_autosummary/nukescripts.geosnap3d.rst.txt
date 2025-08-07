@@ -1,0 +1,93 @@
+nukescripts.geosnap3d
+=====================
+
+.. automodule:: nukescripts.geosnap3d
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      average_normal
+      calc_average_position
+      calc_bounds
+      calc_rotation_vector
+      check_all_point_collinear
+      copy_stage
+      degrees
+      ensure_frame_range
+      fuzzy_is_zero
+      fuzzy_vector3_add
+      geo_to_selection
+      get_axis_pivot_rotate_knob
+      get_axis_pivot_translate_knob
+      get_axis_rotate_knob
+      get_axis_scaling_knob
+      get_axis_translate_knob
+      get_axis_uniform_scaling_knob
+      get_node_transform_matrix
+      get_prim_world_rotation_zxy
+      get_rotate_enabled
+      get_scale_enabled
+      get_selected_prim_path
+      get_stage_from_active_viewer
+      get_translate_enabled
+      get_vertex_selection
+      get_world_point_on_bbox
+      least_significant_axis
+      need_stage_copy
+      on_snap_knob
+      pivot_to_bbox
+      pivot_to_selection
+      plane_rotation
+      radians
+      rotate_geo_to_points_verified
+      rotate_matrix_xyz
+      rotate_matrix_zxy
+      rotate_pivot_to_angles_verified
+      rotate_pivot_to_points_verified
+      scale_geo_to_points_verified
+      scaling_matrix
+      selected_vertex_infos
+      should_animate
+      translate_geo_to_points_verified
+      translate_matrix
+      translate_pivot_to_points_verified
+      translate_pivot_to_world_pos_verified
+      translate_rotate_pivot
+      transpose_matrix3
+      verify_node_order
+      verify_node_to_snap
+      verify_vertex_selection_for_rotation
+      verify_vertex_selection_not_empty
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      GeoVertexInfo
+      GeoVertexSelection
+      Iterable
+   
+   
+
+   
+   
+   
+
+
+

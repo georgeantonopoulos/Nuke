@@ -1,0 +1,79 @@
+nuke.GeoSelect\_Knob
+====================
+
+.. currentmodule:: nuke
+
+.. autoclass:: GeoSelect_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~GeoSelect_Knob.Class
+      ~GeoSelect_Knob.ClassID
+      ~GeoSelect_Knob.clearAnimated
+      ~GeoSelect_Knob.clearFlag
+      ~GeoSelect_Knob.critical
+      ~GeoSelect_Knob.debug
+      ~GeoSelect_Knob.enabled
+      ~GeoSelect_Knob.error
+      ~GeoSelect_Knob.fromScript
+      ~GeoSelect_Knob.fullyQualifiedName
+      ~GeoSelect_Knob.getAuthorMode
+      ~GeoSelect_Knob.getAuthorModes
+      ~GeoSelect_Knob.getDerivative
+      ~GeoSelect_Knob.getFaceWeights
+      ~GeoSelect_Knob.getFlag
+      ~GeoSelect_Knob.getGeometry
+      ~GeoSelect_Knob.getIntegral
+      ~GeoSelect_Knob.getKeyIndex
+      ~GeoSelect_Knob.getKeyList
+      ~GeoSelect_Knob.getKeyTime
+      ~GeoSelect_Knob.getNthDerivative
+      ~GeoSelect_Knob.getNumKeys
+      ~GeoSelect_Knob.getSelectedFaces
+      ~GeoSelect_Knob.getSelection
+      ~GeoSelect_Knob.getSelectionWeights
+      ~GeoSelect_Knob.getValue
+      ~GeoSelect_Knob.getValueAt
+      ~GeoSelect_Knob.hasExpression
+      ~GeoSelect_Knob.isAnimated
+      ~GeoSelect_Knob.isKey
+      ~GeoSelect_Knob.isKeyAt
+      ~GeoSelect_Knob.label
+      ~GeoSelect_Knob.makeWidget
+      ~GeoSelect_Knob.name
+      ~GeoSelect_Knob.node
+      ~GeoSelect_Knob.notDefault
+      ~GeoSelect_Knob.removeKey
+      ~GeoSelect_Knob.removeKeyAt
+      ~GeoSelect_Knob.setAnimated
+      ~GeoSelect_Knob.setAuthorMode
+      ~GeoSelect_Knob.setEnabled
+      ~GeoSelect_Knob.setExpression
+      ~GeoSelect_Knob.setFlag
+      ~GeoSelect_Knob.setLabel
+      ~GeoSelect_Knob.setName
+      ~GeoSelect_Knob.setTooltip
+      ~GeoSelect_Knob.setValue
+      ~GeoSelect_Knob.setValueAt
+      ~GeoSelect_Knob.setVisible
+      ~GeoSelect_Knob.toScript
+      ~GeoSelect_Knob.toScriptPrefix
+      ~GeoSelect_Knob.tooltip
+      ~GeoSelect_Knob.value
+      ~GeoSelect_Knob.visible
+      ~GeoSelect_Knob.warning
+   
+   
+
+   
+   
+   

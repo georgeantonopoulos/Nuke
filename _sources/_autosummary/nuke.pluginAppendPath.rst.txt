@@ -1,0 +1,6 @@
+nuke.pluginAppendPath
+=====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: pluginAppendPath

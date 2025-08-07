@@ -1,0 +1,6 @@
+nukescripts.get\_prim\_world\_rotation\_zxy
+===========================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: get_prim_world_rotation_zxy

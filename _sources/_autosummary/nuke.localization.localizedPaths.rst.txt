@@ -1,0 +1,6 @@
+nuke.localization.localizedPaths
+================================
+
+.. currentmodule:: nuke.localization
+
+.. autofunction:: localizedPaths

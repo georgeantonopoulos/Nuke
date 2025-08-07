@@ -1,0 +1,6 @@
+nuke.getClipname
+================
+
+.. currentmodule:: nuke
+
+.. autofunction:: getClipname

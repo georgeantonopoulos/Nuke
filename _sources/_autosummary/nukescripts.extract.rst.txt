@@ -1,0 +1,6 @@
+nukescripts.extract
+===================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: extract

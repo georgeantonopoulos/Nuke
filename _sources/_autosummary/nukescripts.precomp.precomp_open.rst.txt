@@ -1,0 +1,6 @@
+nukescripts.precomp.precomp\_open
+=================================
+
+.. currentmodule:: nukescripts.precomp
+
+.. autofunction:: precomp_open

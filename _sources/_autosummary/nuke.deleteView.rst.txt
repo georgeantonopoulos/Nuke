@@ -1,0 +1,6 @@
+nuke.deleteView
+===============
+
+.. currentmodule:: nuke
+
+.. autofunction:: deleteView

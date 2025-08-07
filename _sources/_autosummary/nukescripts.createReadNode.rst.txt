@@ -1,0 +1,6 @@
+nukescripts.createReadNode
+==========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: createReadNode

@@ -1,0 +1,104 @@
+nuke.Scale\_Knob
+================
+
+.. currentmodule:: nuke
+
+.. autoclass:: Scale_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Scale_Knob.Class
+      ~Scale_Knob.ClassID
+      ~Scale_Knob.animation
+      ~Scale_Knob.animations
+      ~Scale_Knob.array
+      ~Scale_Knob.arraySize
+      ~Scale_Knob.clearAnimated
+      ~Scale_Knob.clearFlag
+      ~Scale_Knob.copyAnimation
+      ~Scale_Knob.copyAnimations
+      ~Scale_Knob.critical
+      ~Scale_Knob.debug
+      ~Scale_Knob.defaultValue
+      ~Scale_Knob.deleteAnimation
+      ~Scale_Knob.dimensions
+      ~Scale_Knob.enabled
+      ~Scale_Knob.error
+      ~Scale_Knob.frame
+      ~Scale_Knob.fromScript
+      ~Scale_Knob.fullyQualifiedName
+      ~Scale_Knob.getAuthorMode
+      ~Scale_Knob.getAuthorModes
+      ~Scale_Knob.getDerivative
+      ~Scale_Knob.getFlag
+      ~Scale_Knob.getIntegral
+      ~Scale_Knob.getKeyIndex
+      ~Scale_Knob.getKeyList
+      ~Scale_Knob.getKeyTime
+      ~Scale_Knob.getNthDerivative
+      ~Scale_Knob.getNumKeys
+      ~Scale_Knob.getValue
+      ~Scale_Knob.getValueAt
+      ~Scale_Knob.hasExpression
+      ~Scale_Knob.height
+      ~Scale_Knob.isAnimated
+      ~Scale_Knob.isKey
+      ~Scale_Knob.isKeyAt
+      ~Scale_Knob.label
+      ~Scale_Knob.makeWidget
+      ~Scale_Knob.max
+      ~Scale_Knob.maximum
+      ~Scale_Knob.min
+      ~Scale_Knob.minimum
+      ~Scale_Knob.name
+      ~Scale_Knob.names
+      ~Scale_Knob.node
+      ~Scale_Knob.notDefault
+      ~Scale_Knob.removeKey
+      ~Scale_Knob.removeKeyAt
+      ~Scale_Knob.resize
+      ~Scale_Knob.setAnimated
+      ~Scale_Knob.setAuthorMode
+      ~Scale_Knob.setDefaultValue
+      ~Scale_Knob.setEnabled
+      ~Scale_Knob.setExpression
+      ~Scale_Knob.setFlag
+      ~Scale_Knob.setKeyAt
+      ~Scale_Knob.setLabel
+      ~Scale_Knob.setName
+      ~Scale_Knob.setRange
+      ~Scale_Knob.setSingleValue
+      ~Scale_Knob.setTooltip
+      ~Scale_Knob.setValue
+      ~Scale_Knob.setValueAt
+      ~Scale_Knob.setVisible
+      ~Scale_Knob.singleValue
+      ~Scale_Knob.splitView
+      ~Scale_Knob.toScript
+      ~Scale_Knob.toScriptPrefix
+      ~Scale_Knob.tooltip
+      ~Scale_Knob.unsplitView
+      ~Scale_Knob.value
+      ~Scale_Knob.valueAt
+      ~Scale_Knob.vect
+      ~Scale_Knob.visible
+      ~Scale_Knob.warning
+      ~Scale_Knob.width
+      ~Scale_Knob.x
+      ~Scale_Knob.y
+      ~Scale_Knob.z
+   
+   
+
+   
+   
+   

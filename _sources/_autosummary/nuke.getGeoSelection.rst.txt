@@ -1,0 +1,6 @@
+nuke.getGeoSelection
+====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: getGeoSelection

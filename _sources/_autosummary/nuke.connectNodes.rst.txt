@@ -1,0 +1,6 @@
+nuke.connectNodes
+=================
+
+.. currentmodule:: nuke
+
+.. autofunction:: connectNodes

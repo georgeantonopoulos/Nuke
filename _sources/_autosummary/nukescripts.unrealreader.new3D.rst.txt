@@ -1,0 +1,6 @@
+nukescripts.unrealreader.new3D
+==============================
+
+.. currentmodule:: nukescripts.unrealreader
+
+.. autofunction:: new3D

@@ -1,0 +1,6 @@
+nukescripts.check\_all\_point\_collinear
+========================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: check_all_point_collinear

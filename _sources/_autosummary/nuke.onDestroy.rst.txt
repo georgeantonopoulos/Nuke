@@ -1,0 +1,6 @@
+nuke.onDestroy
+==============
+
+.. currentmodule:: nuke
+
+.. autofunction:: onDestroy

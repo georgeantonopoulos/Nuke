@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.fuzzy\_is\_zero
+=====================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: fuzzy_is_zero

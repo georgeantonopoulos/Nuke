@@ -1,0 +1,62 @@
+nuke.nukemath.Matrix4
+=====================
+
+.. currentmodule:: nuke.nukemath
+
+.. autoclass:: Matrix4
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Matrix4.determinant
+      ~Matrix4.identity
+      ~Matrix4.inverse
+      ~Matrix4.makeIdentity
+      ~Matrix4.mapQuadToUnitSquare
+      ~Matrix4.mapUnitSquareToQuad
+      ~Matrix4.ntransform
+      ~Matrix4.projection
+      ~Matrix4.rotate
+      ~Matrix4.rotateX
+      ~Matrix4.rotateY
+      ~Matrix4.rotateZ
+      ~Matrix4.rotation
+      ~Matrix4.rotationOnly
+      ~Matrix4.rotationX
+      ~Matrix4.rotationY
+      ~Matrix4.rotationZ
+      ~Matrix4.rotationsXYZ
+      ~Matrix4.rotationsXZY
+      ~Matrix4.rotationsYXZ
+      ~Matrix4.rotationsYZX
+      ~Matrix4.rotationsZXY
+      ~Matrix4.rotationsZYX
+      ~Matrix4.scale
+      ~Matrix4.scaleAndRotationOnly
+      ~Matrix4.scaleOnly
+      ~Matrix4.scaling
+      ~Matrix4.skew
+      ~Matrix4.skewXY
+      ~Matrix4.transform
+      ~Matrix4.translate
+      ~Matrix4.translation
+      ~Matrix4.translationOnly
+      ~Matrix4.transpose
+      ~Matrix4.vtransform
+      ~Matrix4.xAxis
+      ~Matrix4.yAxis
+      ~Matrix4.zAxis
+   
+   
+
+   
+   
+   

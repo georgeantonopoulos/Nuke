@@ -1,0 +1,6 @@
+nukescripts.nodes.node\_delete
+==============================
+
+.. currentmodule:: nukescripts.nodes
+
+.. autofunction:: node_delete

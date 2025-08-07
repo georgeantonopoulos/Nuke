@@ -1,0 +1,6 @@
+nukescripts.nodepresets.deleteUserNodePreset
+============================================
+
+.. currentmodule:: nukescripts.nodepresets
+
+.. autofunction:: deleteUserNodePreset

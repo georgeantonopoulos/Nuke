@@ -1,0 +1,6 @@
+nukescripts.nodepresets.buildPresetLoadPanel
+============================================
+
+.. currentmodule:: nukescripts.nodepresets
+
+.. autofunction:: buildPresetLoadPanel

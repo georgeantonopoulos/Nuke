@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.calc\_average\_position
+=============================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: calc_average_position

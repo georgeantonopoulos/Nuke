@@ -1,0 +1,6 @@
+nukescripts.camerapresets.getFilmBackSize
+=========================================
+
+.. currentmodule:: nukescripts.camerapresets
+
+.. autofunction:: getFilmBackSize

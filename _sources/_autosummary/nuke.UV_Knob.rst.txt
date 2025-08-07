@@ -1,0 +1,101 @@
+nuke.UV\_Knob
+=============
+
+.. currentmodule:: nuke
+
+.. autoclass:: UV_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~UV_Knob.Class
+      ~UV_Knob.ClassID
+      ~UV_Knob.animation
+      ~UV_Knob.animations
+      ~UV_Knob.array
+      ~UV_Knob.arraySize
+      ~UV_Knob.clearAnimated
+      ~UV_Knob.clearFlag
+      ~UV_Knob.copyAnimation
+      ~UV_Knob.copyAnimations
+      ~UV_Knob.critical
+      ~UV_Knob.debug
+      ~UV_Knob.defaultValue
+      ~UV_Knob.deleteAnimation
+      ~UV_Knob.dimensions
+      ~UV_Knob.enabled
+      ~UV_Knob.error
+      ~UV_Knob.frame
+      ~UV_Knob.fromScript
+      ~UV_Knob.fullyQualifiedName
+      ~UV_Knob.getAuthorMode
+      ~UV_Knob.getAuthorModes
+      ~UV_Knob.getDerivative
+      ~UV_Knob.getFlag
+      ~UV_Knob.getIntegral
+      ~UV_Knob.getKeyIndex
+      ~UV_Knob.getKeyList
+      ~UV_Knob.getKeyTime
+      ~UV_Knob.getNthDerivative
+      ~UV_Knob.getNumKeys
+      ~UV_Knob.getValue
+      ~UV_Knob.getValueAt
+      ~UV_Knob.hasExpression
+      ~UV_Knob.height
+      ~UV_Knob.isAnimated
+      ~UV_Knob.isKey
+      ~UV_Knob.isKeyAt
+      ~UV_Knob.label
+      ~UV_Knob.makeWidget
+      ~UV_Knob.max
+      ~UV_Knob.maximum
+      ~UV_Knob.min
+      ~UV_Knob.minimum
+      ~UV_Knob.name
+      ~UV_Knob.names
+      ~UV_Knob.node
+      ~UV_Knob.notDefault
+      ~UV_Knob.removeKey
+      ~UV_Knob.removeKeyAt
+      ~UV_Knob.resize
+      ~UV_Knob.setAnimated
+      ~UV_Knob.setAuthorMode
+      ~UV_Knob.setDefaultValue
+      ~UV_Knob.setEnabled
+      ~UV_Knob.setExpression
+      ~UV_Knob.setFlag
+      ~UV_Knob.setKeyAt
+      ~UV_Knob.setLabel
+      ~UV_Knob.setName
+      ~UV_Knob.setRange
+      ~UV_Knob.setSingleValue
+      ~UV_Knob.setTooltip
+      ~UV_Knob.setValue
+      ~UV_Knob.setValueAt
+      ~UV_Knob.setVisible
+      ~UV_Knob.singleValue
+      ~UV_Knob.splitView
+      ~UV_Knob.toScript
+      ~UV_Knob.toScriptPrefix
+      ~UV_Knob.tooltip
+      ~UV_Knob.unsplitView
+      ~UV_Knob.value
+      ~UV_Knob.valueAt
+      ~UV_Knob.vect
+      ~UV_Knob.visible
+      ~UV_Knob.warning
+      ~UV_Knob.width
+   
+   
+
+   
+   
+   

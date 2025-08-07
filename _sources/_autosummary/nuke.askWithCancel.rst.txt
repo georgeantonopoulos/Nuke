@@ -1,0 +1,6 @@
+nuke.askWithCancel
+==================
+
+.. currentmodule:: nuke
+
+.. autofunction:: askWithCancel

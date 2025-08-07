@@ -1,0 +1,6 @@
+nuke.resumePathProcessing
+=========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: resumePathProcessing

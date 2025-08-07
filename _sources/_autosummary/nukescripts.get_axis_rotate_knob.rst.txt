@@ -1,0 +1,6 @@
+nukescripts.get\_axis\_rotate\_knob
+===================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: get_axis_rotate_knob

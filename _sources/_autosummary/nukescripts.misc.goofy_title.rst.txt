@@ -1,0 +1,6 @@
+nukescripts.misc.goofy\_title
+=============================
+
+.. currentmodule:: nukescripts.misc
+
+.. autofunction:: goofy_title

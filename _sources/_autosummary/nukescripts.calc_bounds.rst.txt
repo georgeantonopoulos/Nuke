@@ -1,0 +1,6 @@
+nukescripts.calc\_bounds
+========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: calc_bounds

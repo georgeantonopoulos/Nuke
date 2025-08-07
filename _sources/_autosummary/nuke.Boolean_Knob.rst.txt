@@ -1,0 +1,100 @@
+nuke.Boolean\_Knob
+==================
+
+.. currentmodule:: nuke
+
+.. autoclass:: Boolean_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Boolean_Knob.Class
+      ~Boolean_Knob.ClassID
+      ~Boolean_Knob.animation
+      ~Boolean_Knob.animations
+      ~Boolean_Knob.array
+      ~Boolean_Knob.arraySize
+      ~Boolean_Knob.clearAnimated
+      ~Boolean_Knob.clearFlag
+      ~Boolean_Knob.copyAnimation
+      ~Boolean_Knob.copyAnimations
+      ~Boolean_Knob.critical
+      ~Boolean_Knob.debug
+      ~Boolean_Knob.defaultValue
+      ~Boolean_Knob.deleteAnimation
+      ~Boolean_Knob.dimensions
+      ~Boolean_Knob.enabled
+      ~Boolean_Knob.error
+      ~Boolean_Knob.frame
+      ~Boolean_Knob.fromScript
+      ~Boolean_Knob.fullyQualifiedName
+      ~Boolean_Knob.getAuthorMode
+      ~Boolean_Knob.getAuthorModes
+      ~Boolean_Knob.getDerivative
+      ~Boolean_Knob.getFlag
+      ~Boolean_Knob.getIntegral
+      ~Boolean_Knob.getKeyIndex
+      ~Boolean_Knob.getKeyList
+      ~Boolean_Knob.getKeyTime
+      ~Boolean_Knob.getNthDerivative
+      ~Boolean_Knob.getNumKeys
+      ~Boolean_Knob.getValue
+      ~Boolean_Knob.getValueAt
+      ~Boolean_Knob.hasExpression
+      ~Boolean_Knob.height
+      ~Boolean_Knob.isAnimated
+      ~Boolean_Knob.isKey
+      ~Boolean_Knob.isKeyAt
+      ~Boolean_Knob.label
+      ~Boolean_Knob.makeWidget
+      ~Boolean_Knob.max
+      ~Boolean_Knob.maximum
+      ~Boolean_Knob.min
+      ~Boolean_Knob.minimum
+      ~Boolean_Knob.name
+      ~Boolean_Knob.node
+      ~Boolean_Knob.notDefault
+      ~Boolean_Knob.removeKey
+      ~Boolean_Knob.removeKeyAt
+      ~Boolean_Knob.resize
+      ~Boolean_Knob.setAnimated
+      ~Boolean_Knob.setAuthorMode
+      ~Boolean_Knob.setDefaultValue
+      ~Boolean_Knob.setEnabled
+      ~Boolean_Knob.setExpression
+      ~Boolean_Knob.setFlag
+      ~Boolean_Knob.setKeyAt
+      ~Boolean_Knob.setLabel
+      ~Boolean_Knob.setName
+      ~Boolean_Knob.setRange
+      ~Boolean_Knob.setSingleValue
+      ~Boolean_Knob.setTooltip
+      ~Boolean_Knob.setValue
+      ~Boolean_Knob.setValueAt
+      ~Boolean_Knob.setVisible
+      ~Boolean_Knob.singleValue
+      ~Boolean_Knob.splitView
+      ~Boolean_Knob.toScript
+      ~Boolean_Knob.toScriptPrefix
+      ~Boolean_Knob.tooltip
+      ~Boolean_Knob.unsplitView
+      ~Boolean_Knob.value
+      ~Boolean_Knob.valueAt
+      ~Boolean_Knob.vect
+      ~Boolean_Knob.visible
+      ~Boolean_Knob.warning
+      ~Boolean_Knob.width
+   
+   
+
+   
+   
+   

@@ -1,0 +1,41 @@
+nukescripts.applymaterial
+=========================
+
+.. automodule:: nukescripts.applymaterial
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      chooseObjectName
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      ObjectNameChooserDialog
+      PythonPanel
+   
+   
+
+   
+   
+   
+
+
+

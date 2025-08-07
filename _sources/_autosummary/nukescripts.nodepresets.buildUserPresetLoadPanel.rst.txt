@@ -1,0 +1,6 @@
+nukescripts.nodepresets.buildUserPresetLoadPanel
+================================================
+
+.. currentmodule:: nukescripts.nodepresets
+
+.. autofunction:: buildUserPresetLoadPanel

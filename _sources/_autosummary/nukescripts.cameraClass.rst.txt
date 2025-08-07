@@ -1,0 +1,6 @@
+nukescripts.cameraClass
+=======================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: cameraClass

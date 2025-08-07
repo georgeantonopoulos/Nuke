@@ -1,0 +1,32 @@
+nukescripts.fnFlipbookRenderer.FlipbookFrameServerTask
+======================================================
+
+.. currentmodule:: nukescripts.fnFlipbookRenderer
+
+.. autoclass:: FlipbookFrameServerTask
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~FlipbookFrameServerTask.onFrameRenderCancelled
+      ~FlipbookFrameServerTask.onFrameRenderError
+      ~FlipbookFrameServerTask.onFrameRenderInProgress
+      ~FlipbookFrameServerTask.onFrameRenderQueued
+      ~FlipbookFrameServerTask.onFrameRendered
+      ~FlipbookFrameServerTask.onRenderQueued
+      ~FlipbookFrameServerTask.renderFinished
+      ~FlipbookFrameServerTask.showFlipbookWindow
+   
+   
+
+   
+   
+   

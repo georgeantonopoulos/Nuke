@@ -1,0 +1,6 @@
+nuke.clone
+==========
+
+.. currentmodule:: nuke
+
+.. autofunction:: clone

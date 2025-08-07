@@ -1,0 +1,45 @@
+nuke.Menu
+=========
+
+.. currentmodule:: nuke
+
+.. autoclass:: Menu
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Menu.action
+      ~Menu.addAction
+      ~Menu.addCommand
+      ~Menu.addMenu
+      ~Menu.addSeparator
+      ~Menu.clearMenu
+      ~Menu.findItem
+      ~Menu.icon
+      ~Menu.invoke
+      ~Menu.items
+      ~Menu.menu
+      ~Menu.name
+      ~Menu.removeItem
+      ~Menu.script
+      ~Menu.setEnabled
+      ~Menu.setIcon
+      ~Menu.setScript
+      ~Menu.setShortcut
+      ~Menu.setVisible
+      ~Menu.shortcut
+      ~Menu.updateMenuItems
+   
+   
+
+   
+   
+   

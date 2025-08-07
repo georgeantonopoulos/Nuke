@@ -1,0 +1,63 @@
+nukescripts.cameratracker
+=========================
+
+.. automodule:: nukescripts.cameratracker
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      cameraClass
+      cameratrackerCreateCallback
+      cardClass
+      createCamera
+      createCameraRig
+      createCameraSet
+      createCards
+      createEverything
+      createLensDistortion
+      createPointCloud
+      createScene
+      createUndistortion
+      exportTracker
+      exportTracks
+      importTracker
+      importTracks
+      new3D
+      pointCloudClass
+      populateExportMenu
+      populateFilmBackPresets
+      scanlineRenderClass
+      sceneClass
+      setKnobToPreset
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      LinkableImportPanel
+      PythonPanel
+   
+   
+
+   
+   
+   
+
+
+

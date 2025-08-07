@@ -1,0 +1,6 @@
+nuke.clearAssetCache
+====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: clearAssetCache

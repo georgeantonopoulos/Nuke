@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.transpose\_matrix3
+========================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: transpose_matrix3

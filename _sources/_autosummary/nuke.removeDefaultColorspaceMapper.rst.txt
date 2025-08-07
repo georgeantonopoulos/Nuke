@@ -1,0 +1,6 @@
+nuke.removeDefaultColorspaceMapper
+==================================
+
+.. currentmodule:: nuke
+
+.. autofunction:: removeDefaultColorspaceMapper

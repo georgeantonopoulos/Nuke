@@ -1,0 +1,6 @@
+nukescripts.rotateMatrixZXY
+===========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: rotateMatrixZXY

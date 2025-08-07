@@ -1,0 +1,74 @@
+nuke.Histogram\_Knob
+====================
+
+.. currentmodule:: nuke
+
+.. autoclass:: Histogram_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Histogram_Knob.Class
+      ~Histogram_Knob.ClassID
+      ~Histogram_Knob.clearAnimated
+      ~Histogram_Knob.clearFlag
+      ~Histogram_Knob.critical
+      ~Histogram_Knob.debug
+      ~Histogram_Knob.enabled
+      ~Histogram_Knob.error
+      ~Histogram_Knob.fromScript
+      ~Histogram_Knob.fullyQualifiedName
+      ~Histogram_Knob.getAuthorMode
+      ~Histogram_Knob.getAuthorModes
+      ~Histogram_Knob.getDerivative
+      ~Histogram_Knob.getFlag
+      ~Histogram_Knob.getIntegral
+      ~Histogram_Knob.getKeyIndex
+      ~Histogram_Knob.getKeyList
+      ~Histogram_Knob.getKeyTime
+      ~Histogram_Knob.getNthDerivative
+      ~Histogram_Knob.getNumKeys
+      ~Histogram_Knob.getValue
+      ~Histogram_Knob.getValueAt
+      ~Histogram_Knob.hasExpression
+      ~Histogram_Knob.isAnimated
+      ~Histogram_Knob.isKey
+      ~Histogram_Knob.isKeyAt
+      ~Histogram_Knob.label
+      ~Histogram_Knob.makeWidget
+      ~Histogram_Knob.name
+      ~Histogram_Knob.node
+      ~Histogram_Knob.notDefault
+      ~Histogram_Knob.removeKey
+      ~Histogram_Knob.removeKeyAt
+      ~Histogram_Knob.setAnimated
+      ~Histogram_Knob.setAuthorMode
+      ~Histogram_Knob.setEnabled
+      ~Histogram_Knob.setExpression
+      ~Histogram_Knob.setFlag
+      ~Histogram_Knob.setLabel
+      ~Histogram_Knob.setName
+      ~Histogram_Knob.setTooltip
+      ~Histogram_Knob.setValue
+      ~Histogram_Knob.setValueAt
+      ~Histogram_Knob.setVisible
+      ~Histogram_Knob.toScript
+      ~Histogram_Knob.toScriptPrefix
+      ~Histogram_Knob.tooltip
+      ~Histogram_Knob.value
+      ~Histogram_Knob.visible
+      ~Histogram_Knob.warning
+   
+   
+
+   
+   
+   

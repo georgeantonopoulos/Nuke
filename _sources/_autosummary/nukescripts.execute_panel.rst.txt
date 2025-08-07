@@ -1,0 +1,6 @@
+nukescripts.execute\_panel
+==========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: execute_panel

@@ -1,0 +1,6 @@
+nukescripts.hardwareinfo.ConvertUnits
+=====================================
+
+.. currentmodule:: nukescripts.hardwareinfo
+
+.. autofunction:: ConvertUnits

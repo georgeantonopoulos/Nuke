@@ -1,0 +1,6 @@
+nukescripts.create.create\_curve
+================================
+
+.. currentmodule:: nukescripts.create
+
+.. autofunction:: create_curve

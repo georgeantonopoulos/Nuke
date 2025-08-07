@@ -1,0 +1,6 @@
+nukescripts.rollingAutoSave.onAutoSave
+======================================
+
+.. currentmodule:: nukescripts.rollingAutoSave
+
+.. autofunction:: onAutoSave

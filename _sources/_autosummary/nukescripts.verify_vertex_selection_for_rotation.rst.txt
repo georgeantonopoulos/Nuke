@@ -1,0 +1,6 @@
+nukescripts.verify\_vertex\_selection\_for\_rotation
+====================================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: verify_vertex_selection_for_rotation

@@ -1,0 +1,6 @@
+nuke.getReadFileKnob
+====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: getReadFileKnob

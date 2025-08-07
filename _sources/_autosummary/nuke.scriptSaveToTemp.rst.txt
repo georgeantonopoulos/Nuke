@@ -1,0 +1,6 @@
+nuke.scriptSaveToTemp
+=====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: scriptSaveToTemp

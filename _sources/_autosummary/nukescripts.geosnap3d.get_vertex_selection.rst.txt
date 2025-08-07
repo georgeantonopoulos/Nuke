@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.get\_vertex\_selection
+============================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: get_vertex_selection

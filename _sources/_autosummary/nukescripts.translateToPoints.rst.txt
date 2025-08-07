@@ -1,0 +1,6 @@
+nukescripts.translateToPoints
+=============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: translateToPoints

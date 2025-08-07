@@ -1,0 +1,6 @@
+nuke.getNodePresetExcludePaths
+==============================
+
+.. currentmodule:: nuke
+
+.. autofunction:: getNodePresetExcludePaths

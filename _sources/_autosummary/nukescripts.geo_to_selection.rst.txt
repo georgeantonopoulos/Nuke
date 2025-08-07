@@ -1,0 +1,6 @@
+nukescripts.geo\_to\_selection
+==============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: geo_to_selection

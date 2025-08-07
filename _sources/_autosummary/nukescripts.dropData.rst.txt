@@ -1,0 +1,6 @@
+nukescripts.dropData
+====================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: dropData

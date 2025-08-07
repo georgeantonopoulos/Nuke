@@ -1,0 +1,138 @@
+nuke.Viewer
+===========
+
+.. currentmodule:: nuke
+
+.. autoclass:: Viewer
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Viewer.Class
+      ~Viewer.addCallback
+      ~Viewer.addKnob
+      ~Viewer.allKnobs
+      ~Viewer.autoplace
+      ~Viewer.baseNode
+      ~Viewer.bbox
+      ~Viewer.canSetInput
+      ~Viewer.capture
+      ~Viewer.channels
+      ~Viewer.clearCallbacks
+      ~Viewer.clearCustomIcon
+      ~Viewer.cloneInstanceIndex
+      ~Viewer.cloneInstanceNode
+      ~Viewer.cloneInstances
+      ~Viewer.clones
+      ~Viewer.connectInput
+      ~Viewer.deepSample
+      ~Viewer.deepSampleCount
+      ~Viewer.dependencies
+      ~Viewer.dependent
+      ~Viewer.error
+      ~Viewer.executePythonCallback
+      ~Viewer.fileDependencies
+      ~Viewer.firstFrame
+      ~Viewer.forceUpdateLocalization
+      ~Viewer.forceValidate
+      ~Viewer.format
+      ~Viewer.frameCached
+      ~Viewer.frameRange
+      ~Viewer.fullName
+      ~Viewer.getLink
+      ~Viewer.getNumKnobs
+      ~Viewer.getStage
+      ~Viewer.hasError
+      ~Viewer.height
+      ~Viewer.help
+      ~Viewer.helpUrl
+      ~Viewer.hideControlPanel
+      ~Viewer.input
+      ~Viewer.inputs
+      ~Viewer.isClone
+      ~Viewer.isCloneable
+      ~Viewer.isLinked
+      ~Viewer.isLocalizationOutdated
+      ~Viewer.isLocalized
+      ~Viewer.isPlayingOrRecording
+      ~Viewer.isSelected
+      ~Viewer.knob
+      ~Viewer.knobs
+      ~Viewer.lastFrame
+      ~Viewer.linkableKnobs
+      ~Viewer.localizationProgress
+      ~Viewer.lock
+      ~Viewer.locked
+      ~Viewer.maxInputs
+      ~Viewer.maxOutputs
+      ~Viewer.maximumInputs
+      ~Viewer.maximumOutputs
+      ~Viewer.metadata
+      ~Viewer.minInputs
+      ~Viewer.minimumInputs
+      ~Viewer.name
+      ~Viewer.numKnobs
+      ~Viewer.opHashes
+      ~Viewer.optionalInput
+      ~Viewer.overrideKnob
+      ~Viewer.parent
+      ~Viewer.performanceInfo
+      ~Viewer.pixelAspect
+      ~Viewer.playbackRange
+      ~Viewer.proxy
+      ~Viewer.readKnobs
+      ~Viewer.recordMouse
+      ~Viewer.recordMouseStop
+      ~Viewer.redraw
+      ~Viewer.removeCallback
+      ~Viewer.removeKnob
+      ~Viewer.removeOverrideKnob
+      ~Viewer.replayMouseAsync
+      ~Viewer.replayMouseSync
+      ~Viewer.resetKnobsToDefault
+      ~Viewer.roi
+      ~Viewer.roiEnabled
+      ~Viewer.rootNode
+      ~Viewer.running
+      ~Viewer.sample
+      ~Viewer.screenHeight
+      ~Viewer.screenWidth
+      ~Viewer.selectOnly
+      ~Viewer.sendMouseEvent
+      ~Viewer.setCustomIcon
+      ~Viewer.setInput
+      ~Viewer.setName
+      ~Viewer.setRoi
+      ~Viewer.setSelected
+      ~Viewer.setTab
+      ~Viewer.setXYpos
+      ~Viewer.setXpos
+      ~Viewer.setYpos
+      ~Viewer.showControlPanel
+      ~Viewer.showInfo
+      ~Viewer.shown
+      ~Viewer.toggleMouseTrails
+      ~Viewer.toggleWaitOnReplayEvents
+      ~Viewer.treeHasError
+      ~Viewer.unlink
+      ~Viewer.unlock
+      ~Viewer.upstreamFrameRange
+      ~Viewer.visibleRange
+      ~Viewer.width
+      ~Viewer.writeKnobs
+      ~Viewer.xpos
+      ~Viewer.ypos
+   
+   
+
+   
+   
+   

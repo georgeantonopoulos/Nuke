@@ -1,0 +1,6 @@
+nukescripts.allign\_nodes
+=========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: allign_nodes

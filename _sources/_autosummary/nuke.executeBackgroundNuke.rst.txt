@@ -1,0 +1,6 @@
+nuke.executeBackgroundNuke
+==========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: executeBackgroundNuke

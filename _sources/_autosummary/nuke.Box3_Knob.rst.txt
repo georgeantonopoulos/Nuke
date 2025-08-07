@@ -1,0 +1,113 @@
+nuke.Box3\_Knob
+===============
+
+.. currentmodule:: nuke
+
+.. autoclass:: Box3_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Box3_Knob.Class
+      ~Box3_Knob.ClassID
+      ~Box3_Knob.animation
+      ~Box3_Knob.animations
+      ~Box3_Knob.array
+      ~Box3_Knob.arraySize
+      ~Box3_Knob.clearAnimated
+      ~Box3_Knob.clearFlag
+      ~Box3_Knob.copyAnimation
+      ~Box3_Knob.copyAnimations
+      ~Box3_Knob.critical
+      ~Box3_Knob.debug
+      ~Box3_Knob.defaultValue
+      ~Box3_Knob.deleteAnimation
+      ~Box3_Knob.dimensions
+      ~Box3_Knob.enabled
+      ~Box3_Knob.error
+      ~Box3_Knob.f
+      ~Box3_Knob.frame
+      ~Box3_Knob.fromScript
+      ~Box3_Knob.fullyQualifiedName
+      ~Box3_Knob.getAuthorMode
+      ~Box3_Knob.getAuthorModes
+      ~Box3_Knob.getDerivative
+      ~Box3_Knob.getFlag
+      ~Box3_Knob.getIntegral
+      ~Box3_Knob.getKeyIndex
+      ~Box3_Knob.getKeyList
+      ~Box3_Knob.getKeyTime
+      ~Box3_Knob.getNthDerivative
+      ~Box3_Knob.getNumKeys
+      ~Box3_Knob.getValue
+      ~Box3_Knob.getValueAt
+      ~Box3_Knob.hasExpression
+      ~Box3_Knob.height
+      ~Box3_Knob.isAnimated
+      ~Box3_Knob.isKey
+      ~Box3_Knob.isKeyAt
+      ~Box3_Knob.label
+      ~Box3_Knob.makeWidget
+      ~Box3_Knob.max
+      ~Box3_Knob.maximum
+      ~Box3_Knob.min
+      ~Box3_Knob.minimum
+      ~Box3_Knob.n
+      ~Box3_Knob.name
+      ~Box3_Knob.names
+      ~Box3_Knob.node
+      ~Box3_Knob.notDefault
+      ~Box3_Knob.r
+      ~Box3_Knob.removeKey
+      ~Box3_Knob.removeKeyAt
+      ~Box3_Knob.resize
+      ~Box3_Knob.setAnimated
+      ~Box3_Knob.setAuthorMode
+      ~Box3_Knob.setDefaultValue
+      ~Box3_Knob.setEnabled
+      ~Box3_Knob.setExpression
+      ~Box3_Knob.setF
+      ~Box3_Knob.setFlag
+      ~Box3_Knob.setKeyAt
+      ~Box3_Knob.setLabel
+      ~Box3_Knob.setN
+      ~Box3_Knob.setName
+      ~Box3_Knob.setR
+      ~Box3_Knob.setRange
+      ~Box3_Knob.setSingleValue
+      ~Box3_Knob.setT
+      ~Box3_Knob.setTooltip
+      ~Box3_Knob.setValue
+      ~Box3_Knob.setValueAt
+      ~Box3_Knob.setVisible
+      ~Box3_Knob.setX
+      ~Box3_Knob.setY
+      ~Box3_Knob.singleValue
+      ~Box3_Knob.splitView
+      ~Box3_Knob.t
+      ~Box3_Knob.toScript
+      ~Box3_Knob.toScriptPrefix
+      ~Box3_Knob.tooltip
+      ~Box3_Knob.unsplitView
+      ~Box3_Knob.value
+      ~Box3_Knob.valueAt
+      ~Box3_Knob.vect
+      ~Box3_Knob.visible
+      ~Box3_Knob.warning
+      ~Box3_Knob.width
+      ~Box3_Knob.x
+      ~Box3_Knob.y
+   
+   
+
+   
+   
+   

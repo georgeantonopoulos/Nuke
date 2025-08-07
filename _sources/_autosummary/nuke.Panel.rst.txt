@@ -1,0 +1,45 @@
+nuke.Panel
+==========
+
+.. currentmodule:: nuke
+
+.. autoclass:: Panel
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Panel.addBooleanCheckBox
+      ~Panel.addButton
+      ~Panel.addClipnameSearch
+      ~Panel.addEnumerationPulldown
+      ~Panel.addExpressionInput
+      ~Panel.addFilenameSearch
+      ~Panel.addMultilineTextInput
+      ~Panel.addNotepad
+      ~Panel.addPasswordInput
+      ~Panel.addRGBColorChip
+      ~Panel.addScriptCommand
+      ~Panel.addSingleLineInput
+      ~Panel.addTextFontPulldown
+      ~Panel.clear
+      ~Panel.execute
+      ~Panel.setTitle
+      ~Panel.setWidth
+      ~Panel.show
+      ~Panel.title
+      ~Panel.value
+      ~Panel.width
+   
+   
+
+   
+   
+   

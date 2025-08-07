@@ -1,0 +1,6 @@
+nukescripts.panels.registerPanel
+================================
+
+.. currentmodule:: nukescripts.panels
+
+.. autofunction:: registerPanel

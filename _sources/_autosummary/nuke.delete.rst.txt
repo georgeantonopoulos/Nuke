@@ -1,0 +1,6 @@
+nuke.delete
+===========
+
+.. currentmodule:: nuke
+
+.. autofunction:: delete

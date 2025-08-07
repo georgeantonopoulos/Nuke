@@ -1,0 +1,6 @@
+nukescripts.udim.uv2udim
+========================
+
+.. currentmodule:: nukescripts.udim
+
+.. autofunction:: uv2udim

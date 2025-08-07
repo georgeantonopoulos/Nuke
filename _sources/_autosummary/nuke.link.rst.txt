@@ -1,0 +1,6 @@
+nuke.link
+=========
+
+.. currentmodule:: nuke
+
+.. autofunction:: link

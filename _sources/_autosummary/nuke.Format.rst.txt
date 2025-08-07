@@ -1,0 +1,44 @@
+nuke.Format
+===========
+
+.. currentmodule:: nuke
+
+.. autoclass:: Format
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Format.add
+      ~Format.fromUV
+      ~Format.height
+      ~Format.name
+      ~Format.pixelAspect
+      ~Format.r
+      ~Format.scaled
+      ~Format.setHeight
+      ~Format.setName
+      ~Format.setPixelAspect
+      ~Format.setR
+      ~Format.setT
+      ~Format.setWidth
+      ~Format.setX
+      ~Format.setY
+      ~Format.t
+      ~Format.toUV
+      ~Format.width
+      ~Format.x
+      ~Format.y
+   
+   
+
+   
+   
+   

@@ -1,0 +1,6 @@
+nuke.tabNext
+============
+
+.. currentmodule:: nuke
+
+.. autofunction:: tabNext

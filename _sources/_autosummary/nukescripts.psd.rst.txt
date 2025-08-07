@@ -1,0 +1,43 @@
+nukescripts.psd
+===============
+
+.. automodule:: nukescripts.psd
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      breakoutLayers
+      doReaderBreakout
+      getLayers
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      BreakoutThreadClass
+      Layer
+   
+   
+
+   
+   
+   
+
+
+

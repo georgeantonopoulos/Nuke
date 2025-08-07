@@ -1,0 +1,6 @@
+nukescripts.renderman.filterRIB
+===============================
+
+.. currentmodule:: nukescripts.renderman
+
+.. autofunction:: filterRIB

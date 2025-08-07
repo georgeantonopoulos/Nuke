@@ -1,0 +1,35 @@
+nuke.gsv.DataType
+=================
+
+.. currentmodule:: nuke.gsv
+
+.. autoclass:: DataType
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~DataType.Integer
+      ~DataType.Invalid
+      ~DataType.List
+      ~DataType.String
+      ~DataType.name
+      ~DataType.value
+   
+   

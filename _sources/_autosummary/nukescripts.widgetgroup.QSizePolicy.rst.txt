@@ -1,0 +1,43 @@
+nukescripts.widgetgroup.QSizePolicy
+===================================
+
+.. currentmodule:: nukescripts.widgetgroup
+
+.. autoclass:: QSizePolicy
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~QSizePolicy.controlType
+      ~QSizePolicy.expandingDirections
+      ~QSizePolicy.hasHeightForWidth
+      ~QSizePolicy.hasWidthForHeight
+      ~QSizePolicy.horizontalPolicy
+      ~QSizePolicy.horizontalStretch
+      ~QSizePolicy.retainSizeWhenHidden
+      ~QSizePolicy.setControlType
+      ~QSizePolicy.setHeightForWidth
+      ~QSizePolicy.setHorizontalPolicy
+      ~QSizePolicy.setHorizontalStretch
+      ~QSizePolicy.setRetainSizeWhenHidden
+      ~QSizePolicy.setVerticalPolicy
+      ~QSizePolicy.setVerticalStretch
+      ~QSizePolicy.setWidthForHeight
+      ~QSizePolicy.transpose
+      ~QSizePolicy.transposed
+      ~QSizePolicy.verticalPolicy
+      ~QSizePolicy.verticalStretch
+   
+   
+
+   
+   
+   

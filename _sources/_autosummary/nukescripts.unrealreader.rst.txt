@@ -1,0 +1,34 @@
+nukescripts.unrealreader
+========================
+
+.. automodule:: nukescripts.unrealreader
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      cameraClass
+      createCamera
+      createReadNode
+      new3D
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

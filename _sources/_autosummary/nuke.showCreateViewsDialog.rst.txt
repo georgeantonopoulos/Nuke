@@ -1,0 +1,6 @@
+nuke.showCreateViewsDialog
+==========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: showCreateViewsDialog

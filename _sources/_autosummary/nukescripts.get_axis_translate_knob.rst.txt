@@ -1,0 +1,6 @@
+nukescripts.get\_axis\_translate\_knob
+======================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: get_axis_translate_knob

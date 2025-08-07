@@ -1,0 +1,6 @@
+nukescripts.readviewscheck.checkReadNodeViews
+=============================================
+
+.. currentmodule:: nukescripts.readviewscheck
+
+.. autofunction:: checkReadNodeViews

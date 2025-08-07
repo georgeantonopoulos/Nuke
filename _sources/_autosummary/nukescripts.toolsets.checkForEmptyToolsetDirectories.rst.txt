@@ -1,0 +1,6 @@
+nukescripts.toolsets.checkForEmptyToolsetDirectories
+====================================================
+
+.. currentmodule:: nukescripts.toolsets
+
+.. autofunction:: checkForEmptyToolsetDirectories

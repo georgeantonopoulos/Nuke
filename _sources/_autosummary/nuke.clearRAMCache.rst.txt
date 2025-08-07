@@ -1,0 +1,6 @@
+nuke.clearRAMCache
+==================
+
+.. currentmodule:: nuke
+
+.. autofunction:: clearRAMCache

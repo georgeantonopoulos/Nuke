@@ -1,0 +1,6 @@
+nuke.afterFrameRender
+=====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: afterFrameRender

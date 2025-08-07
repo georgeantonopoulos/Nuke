@@ -1,0 +1,6 @@
+nukescripts.renderdialog.showViewerCaptureDialog
+================================================
+
+.. currentmodule:: nukescripts.renderdialog
+
+.. autofunction:: showViewerCaptureDialog

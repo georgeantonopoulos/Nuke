@@ -1,0 +1,47 @@
+nuke.Box
+========
+
+.. currentmodule:: nuke
+
+.. autoclass:: Box
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Box.centerX
+      ~Box.centerY
+      ~Box.clampX
+      ~Box.clampY
+      ~Box.clear
+      ~Box.h
+      ~Box.intersect
+      ~Box.isConstant
+      ~Box.merge
+      ~Box.move
+      ~Box.pad
+      ~Box.r
+      ~Box.set
+      ~Box.setH
+      ~Box.setR
+      ~Box.setT
+      ~Box.setW
+      ~Box.setX
+      ~Box.setY
+      ~Box.t
+      ~Box.w
+      ~Box.x
+      ~Box.y
+   
+   
+
+   
+   
+   

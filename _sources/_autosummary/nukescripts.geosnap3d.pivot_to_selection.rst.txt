@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.pivot\_to\_selection
+==========================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: pivot_to_selection

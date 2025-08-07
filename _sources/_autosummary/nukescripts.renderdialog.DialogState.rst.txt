@@ -1,0 +1,29 @@
+nukescripts.renderdialog.DialogState
+====================================
+
+.. currentmodule:: nukescripts.renderdialog
+
+.. autoclass:: DialogState
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~DialogState.get
+      ~DialogState.getValue
+      ~DialogState.save
+      ~DialogState.saveValue
+      ~DialogState.setKnob
+   
+   
+
+   
+   
+   

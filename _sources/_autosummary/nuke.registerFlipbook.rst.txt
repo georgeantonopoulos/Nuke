@@ -1,0 +1,6 @@
+nuke.registerFlipbook
+=====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: registerFlipbook

@@ -1,0 +1,6 @@
+nuke.selectedNode
+=================
+
+.. currentmodule:: nuke
+
+.. autofunction:: selectedNode

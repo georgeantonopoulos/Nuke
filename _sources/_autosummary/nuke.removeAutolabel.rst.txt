@@ -1,0 +1,6 @@
+nuke.removeAutolabel
+====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: removeAutolabel

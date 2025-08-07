@@ -1,0 +1,6 @@
+nukescripts.cattery.find\_repositories
+======================================
+
+.. currentmodule:: nukescripts.cattery
+
+.. autofunction:: find_repositories

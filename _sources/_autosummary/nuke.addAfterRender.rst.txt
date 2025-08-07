@@ -1,0 +1,6 @@
+nuke.addAfterRender
+===================
+
+.. currentmodule:: nuke
+
+.. autofunction:: addAfterRender

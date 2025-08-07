@@ -1,0 +1,31 @@
+nuke.curvelib.CorrespondencePoints
+==================================
+
+.. currentmodule:: nuke.curvelib
+
+.. autoclass:: CorrespondencePoints
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~CorrespondencePoints.addPoint
+      ~CorrespondencePoints.getAnimCurve
+      ~CorrespondencePoints.getNumPoints
+      ~CorrespondencePoints.getPointValues
+      ~CorrespondencePoints.modifyPoint
+      ~CorrespondencePoints.removePoint
+      ~CorrespondencePoints.reset
+   
+   
+
+   
+   
+   

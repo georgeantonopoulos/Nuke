@@ -1,0 +1,6 @@
+nuke.defaultColorspaceMapper
+============================
+
+.. currentmodule:: nuke
+
+.. autofunction:: defaultColorspaceMapper

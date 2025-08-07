@@ -1,0 +1,6 @@
+nukescripts.should\_animate
+===========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: should_animate

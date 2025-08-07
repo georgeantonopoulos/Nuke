@@ -1,0 +1,6 @@
+nuke.root
+=========
+
+.. currentmodule:: nuke
+
+.. autofunction:: root

@@ -1,0 +1,6 @@
+nukescripts.animation.animation\_reverse
+========================================
+
+.. currentmodule:: nukescripts.animation
+
+.. autofunction:: animation_reverse

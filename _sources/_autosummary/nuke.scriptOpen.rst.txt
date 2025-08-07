@@ -1,0 +1,6 @@
+nuke.scriptOpen
+===============
+
+.. currentmodule:: nuke
+
+.. autofunction:: scriptOpen

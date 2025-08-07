@@ -1,0 +1,6 @@
+nuke.scriptNew
+==============
+
+.. currentmodule:: nuke
+
+.. autofunction:: scriptNew

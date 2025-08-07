@@ -1,0 +1,30 @@
+nukescripts.fnFlipbookRenderer.FrameserverRenderedFlipbook
+==========================================================
+
+.. currentmodule:: nukescripts.fnFlipbookRenderer
+
+.. autoclass:: FrameserverRenderedFlipbook
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~FrameserverRenderedFlipbook.doFlipbook
+      ~FrameserverRenderedFlipbook.getFlipbookOptions
+      ~FrameserverRenderedFlipbook.getOptions
+      ~FrameserverRenderedFlipbook.initializeFlipbookNode
+      ~FrameserverRenderedFlipbook.renderFlipbookNode
+      ~FrameserverRenderedFlipbook.runFlipbook
+   
+   
+
+   
+   
+   

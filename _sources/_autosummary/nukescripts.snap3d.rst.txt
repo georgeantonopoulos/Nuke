@@ -1,0 +1,98 @@
+nukescripts.snap3d
+==================
+
+.. automodule:: nukescripts.snap3d
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      addSnapFunc
+      allNodes
+      allNodesWithGeoSelectKnob
+      anySelectedPoint
+      anySelectedVertexInfo
+      averageNormal
+      calcAveragePosition
+      calcBounds
+      calcRotationVector
+      callSnapFunc
+      cameraProjectionMatrix
+      checkAllPointCollinear
+      degrees
+      fuzzyIsZero
+      fuzzyVector3Add
+      getAxisKnobPrefix
+      getSelection
+      leastSignificantAxis
+      planeRotation
+      projectPoint
+      projectPoints
+      projectSelectedPoints
+      radians
+      rotateMatrixXYZ
+      rotateMatrixZXY
+      rotatePivotSelectionToPoints
+      rotatePivotToPoints
+      rotatePivotToPointsVerified
+      rotateToPointsVerified
+      scaleToPointsVerified
+      scalingMatrix
+      selectedPoints
+      selectedVertexInfos
+      transformMatrix
+      translateMatrix
+      translatePivotSelectionToPoints
+      translatePivotToPoints
+      translatePivotToPointsVerified
+      translateRotatePivot
+      translateRotatePivotSelectionToPoints
+      translateRotatePivotToPoints
+      translateRotatePivotToPointsVerified
+      translateRotateScaleSelectionToPoints
+      translateRotateScaleThisNodeToPoints
+      translateRotateScaleToPoints
+      translateRotateScaleToPointsVerified
+      translateRotateSelectionToPoints
+      translateRotateThisNodeToPoints
+      translateRotateToPoints
+      translateRotateToPointsVerified
+      translateSelectionToPoints
+      translateThisNodeToPoints
+      translateToPoints
+      translateToPointsVerified
+      transpose
+      verifyNodeOrder
+      verifyNodeToSnap
+      verifyVertexSelection
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      VertexInfo
+      VertexSelection
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,6 @@
+nukescripts.ensure\_frame\_range
+================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: ensure_frame_range

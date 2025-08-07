@@ -1,0 +1,6 @@
+nukescripts.trackerlinkingdialog.trackerlinkingdialogexpressiony
+================================================================
+
+.. currentmodule:: nukescripts.trackerlinkingdialog
+
+.. autofunction:: trackerlinkingdialogexpressiony

@@ -1,0 +1,6 @@
+nukescripts.get\_axis\_scaling\_knob
+====================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: get_axis_scaling_knob

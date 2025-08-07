@@ -1,0 +1,6 @@
+nukescripts.ViewerProcess.unregister\_viewers
+=============================================
+
+.. currentmodule:: nukescripts.ViewerProcess
+
+.. autofunction:: unregister_viewers

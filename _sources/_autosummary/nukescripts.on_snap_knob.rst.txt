@@ -1,0 +1,6 @@
+nukescripts.on\_snap\_knob
+==========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: on_snap_knob

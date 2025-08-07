@@ -1,0 +1,6 @@
+nuke.rotopaint.convertDirectoryToNuke7
+======================================
+
+.. currentmodule:: nuke.rotopaint
+
+.. autofunction:: convertDirectoryToNuke7

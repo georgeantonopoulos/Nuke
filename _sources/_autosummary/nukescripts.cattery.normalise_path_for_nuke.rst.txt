@@ -1,0 +1,6 @@
+nukescripts.cattery.normalise\_path\_for\_nuke
+==============================================
+
+.. currentmodule:: nukescripts.cattery
+
+.. autofunction:: normalise_path_for_nuke

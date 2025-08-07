@@ -1,0 +1,6 @@
+nuke.extractSelected
+====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: extractSelected

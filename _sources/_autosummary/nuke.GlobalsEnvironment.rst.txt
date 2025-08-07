@@ -1,0 +1,29 @@
+nuke.GlobalsEnvironment
+=======================
+
+.. currentmodule:: nuke
+
+.. autoclass:: GlobalsEnvironment
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~GlobalsEnvironment.get
+      ~GlobalsEnvironment.has_key
+      ~GlobalsEnvironment.items
+      ~GlobalsEnvironment.keys
+      ~GlobalsEnvironment.values
+   
+   
+
+   
+   
+   

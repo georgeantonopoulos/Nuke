@@ -1,0 +1,6 @@
+nukescripts.misc.copy\_knobs
+============================
+
+.. currentmodule:: nukescripts.misc
+
+.. autofunction:: copy_knobs

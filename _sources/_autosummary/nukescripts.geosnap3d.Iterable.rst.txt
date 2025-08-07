@@ -1,0 +1,24 @@
+nukescripts.geosnap3d.Iterable
+==============================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autoclass:: Iterable
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   

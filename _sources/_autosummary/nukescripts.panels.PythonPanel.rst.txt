@@ -1,0 +1,57 @@
+nukescripts.panels.PythonPanel
+==============================
+
+.. currentmodule:: nukescripts.panels
+
+.. autoclass:: PythonPanel
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~PythonPanel.accept
+      ~PythonPanel.add
+      ~PythonPanel.addCallback
+      ~PythonPanel.addKnob
+      ~PythonPanel.addToPane
+      ~PythonPanel.cancel
+      ~PythonPanel.close
+      ~PythonPanel.create
+      ~PythonPanel.destroy
+      ~PythonPanel.finishModalDialog
+      ~PythonPanel.height
+      ~PythonPanel.hide
+      ~PythonPanel.isEnabled
+      ~PythonPanel.isValid
+      ~PythonPanel.knobChanged
+      ~PythonPanel.knobChangedCallback
+      ~PythonPanel.knobs
+      ~PythonPanel.ok
+      ~PythonPanel.readKnobs
+      ~PythonPanel.reject
+      ~PythonPanel.removeCallback
+      ~PythonPanel.removeKnob
+      ~PythonPanel.setEnabled
+      ~PythonPanel.setMaximumSize
+      ~PythonPanel.setMinimumSize
+      ~PythonPanel.setTooltip
+      ~PythonPanel.setVisible
+      ~PythonPanel.show
+      ~PythonPanel.showModal
+      ~PythonPanel.showModalDialog
+      ~PythonPanel.tooltip
+      ~PythonPanel.width
+      ~PythonPanel.writeKnobs
+   
+   
+
+   
+   
+   

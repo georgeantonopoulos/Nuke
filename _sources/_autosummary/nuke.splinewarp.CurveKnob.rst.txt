@@ -1,0 +1,84 @@
+nuke.splinewarp.CurveKnob
+=========================
+
+.. currentmodule:: nuke.splinewarp
+
+.. autoclass:: CurveKnob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~CurveKnob.Class
+      ~CurveKnob.ClassID
+      ~CurveKnob.changed
+      ~CurveKnob.clearAnimated
+      ~CurveKnob.clearFlag
+      ~CurveKnob.critical
+      ~CurveKnob.debug
+      ~CurveKnob.enabled
+      ~CurveKnob.error
+      ~CurveKnob.fromScript
+      ~CurveKnob.fullyQualifiedName
+      ~CurveKnob.getAuthorMode
+      ~CurveKnob.getAuthorModes
+      ~CurveKnob.getDerivative
+      ~CurveKnob.getFlag
+      ~CurveKnob.getIntegral
+      ~CurveKnob.getKeyIndex
+      ~CurveKnob.getKeyList
+      ~CurveKnob.getKeyTime
+      ~CurveKnob.getNthDerivative
+      ~CurveKnob.getNumKeys
+      ~CurveKnob.getSelected
+      ~CurveKnob.getValue
+      ~CurveKnob.getValueAt
+      ~CurveKnob.hasExpression
+      ~CurveKnob.isAnimated
+      ~CurveKnob.isKey
+      ~CurveKnob.isKeyAt
+      ~CurveKnob.label
+      ~CurveKnob.makeWidget
+      ~CurveKnob.name
+      ~CurveKnob.node
+      ~CurveKnob.notDefault
+      ~CurveKnob.removeKey
+      ~CurveKnob.removeKeyAt
+      ~CurveKnob.setAnimated
+      ~CurveKnob.setAuthorMode
+      ~CurveKnob.setEnabled
+      ~CurveKnob.setExpression
+      ~CurveKnob.setFlag
+      ~CurveKnob.setLabel
+      ~CurveKnob.setName
+      ~CurveKnob.setTooltip
+      ~CurveKnob.setValue
+      ~CurveKnob.setValueAt
+      ~CurveKnob.setVisible
+      ~CurveKnob.toElement
+      ~CurveKnob.toScript
+      ~CurveKnob.toScriptPrefix
+      ~CurveKnob.tooltip
+      ~CurveKnob.value
+      ~CurveKnob.visible
+      ~CurveKnob.warning
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~CurveKnob.curveWidget
+      ~CurveKnob.rootLayer
+   
+   

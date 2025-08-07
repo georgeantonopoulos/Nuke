@@ -1,0 +1,48 @@
+nukescripts.toolsets
+====================
+
+.. automodule:: nukescripts.toolsets
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      addToolsetsPanel
+      checkForEmptyToolsetDirectories
+      createToolsetMenuItems
+      createToolsetsMenu
+      deleteToolset
+      populateToolsetsMenu
+      refreshToolsetsMenu
+      traversePluginPaths
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      CreateToolsetsPanel
+      PythonPanel
+   
+   
+
+   
+   
+   
+
+
+

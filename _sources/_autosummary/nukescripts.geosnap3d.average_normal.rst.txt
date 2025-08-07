@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.average\_normal
+=====================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: average_normal

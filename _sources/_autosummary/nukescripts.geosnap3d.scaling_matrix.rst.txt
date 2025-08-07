@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.scaling\_matrix
+=====================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: scaling_matrix

@@ -1,0 +1,77 @@
+nukescripts.renderdialog.FlipbookDialog
+=======================================
+
+.. currentmodule:: nukescripts.renderdialog
+
+.. autoclass:: FlipbookDialog
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~FlipbookDialog.accept
+      ~FlipbookDialog.add
+      ~FlipbookDialog.addCallback
+      ~FlipbookDialog.addKnob
+      ~FlipbookDialog.addToPane
+      ~FlipbookDialog.backgroundRenderAvailable
+      ~FlipbookDialog.cancel
+      ~FlipbookDialog.close
+      ~FlipbookDialog.create
+      ~FlipbookDialog.destroy
+      ~FlipbookDialog.extractContainerNodes
+      ~FlipbookDialog.finishModalDialog
+      ~FlipbookDialog.flipbookKnobs
+      ~FlipbookDialog.frameserverRenderAvailable
+      ~FlipbookDialog.getNodeSelection
+      ~FlipbookDialog.height
+      ~FlipbookDialog.hide
+      ~FlipbookDialog.isBackgrounded
+      ~FlipbookDialog.isEnabled
+      ~FlipbookDialog.isFrameserverEnabled
+      ~FlipbookDialog.isTimelineWrite
+      ~FlipbookDialog.isValid
+      ~FlipbookDialog.knobChanged
+      ~FlipbookDialog.knobChangedCallback
+      ~FlipbookDialog.knobs
+      ~FlipbookDialog.ok
+      ~FlipbookDialog.readKnobs
+      ~FlipbookDialog.reject
+      ~FlipbookDialog.removeCallback
+      ~FlipbookDialog.removeKnob
+      ~FlipbookDialog.renderContainsContainers
+      ~FlipbookDialog.renderToFrameServer
+      ~FlipbookDialog.run
+      ~FlipbookDialog.saveFileToRender
+      ~FlipbookDialog.setEnabled
+      ~FlipbookDialog.setMaximumSize
+      ~FlipbookDialog.setMinimumSize
+      ~FlipbookDialog.setTooltip
+      ~FlipbookDialog.setVisible
+      ~FlipbookDialog.show
+      ~FlipbookDialog.showModal
+      ~FlipbookDialog.showModalDialog
+      ~FlipbookDialog.tooltip
+      ~FlipbookDialog.width
+      ~FlipbookDialog.writeKnobs
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~FlipbookDialog.ShowWarning
+      ~FlipbookDialog.deprecatedWarningShown
+      ~FlipbookDialog.shouldShowBGRender
+   
+   

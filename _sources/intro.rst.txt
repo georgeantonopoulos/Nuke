@@ -1,0 +1,52 @@
+
+Introduction
+============
+
+Welcome to the Python developer's guide.
+
+This guide aims to make you familiar with using the Python API in NUKE and using NUKE as a Python module by giving you practical examples of the use of the API.  The API is also documented in depth in the NUKE Python Reference Guide.
+
+.. note::
+
+  Throughout this guide, we'll refer to NUKE. NUKE can be taken to mean either NUKE or NUKEX, since NUKEX is essentially the same package with options unlocked by different types of license.
+
+Info
+----
+
+Python Developer Guide. Copyright © 2014 The Foundry Visionmongers Ltd. All Rights Reserved. Use of this Developer Guide and the NUKE software is subject to an End User License Agreement (the "EULA"), the terms of which are accessible in the NUKE User Guide included in the NUKE product bundle. This Developer Guide and the NUKE software may be used or copied only in accordance with the terms of the EULA. This Developer Guide, the NUKE software and all intellectual property rights relating thereto are and shall remain the sole property of The Foundry Visionmongers Ltd. ("The Foundry") and/or The Foundry's licensors.
+
+The EULA can be read in the NUKE User Guide Appendices.
+
+The Foundry assumes no responsibility or liability for any errors or inaccuracies that may appear in this Developer Guide and this Developer Guide is subject to change without notice. The content of this Developer Guide is furnished for informational use only.
+
+Except as permitted by the EULA, no part of this Developer Guide may be reproduced, stored in a retrieval system or transmitted, in any form or by any means, electronic, mechanical, recording or otherwise, without the prior written permission of The Foundry. To the extent that the EULA authorizes the making of copies of this User Guide, such copies shall be reproduced with all copyright, trademark and other proprietary rights notices included herein. The EULA expressly prohibits any action that could adversely affect the property rights of The Foundry and/or The Foundry's licensors, including, but not limited to, the removal of the following (or any other copyright, trademark or other proprietary rights notice included herein):
+
+NUKE compositing software © 2014 The Foundry Visionmongers Ltd. All Rights Reserved.
+
+NUKE is a trademark of The Foundry Visionmongers Ltd.
+
+Digital Domain® is a registered trademark of Digital Domain, Inc.
+
+In addition to those names set forth on this page, the names of other actual companies and products mentioned in this User Guide (including, but not limited to, those set forth below) may be the trademarks or service marks, or registered trademarks or service marks, of their respective owners in the United States and/or other countries. No association with any company or product is intended or inferred by the mention of its name in this User Guide.
+
+Linux® is a registered trademark of Linus Torvalds.
+
+Windows® is the registered trademark of Microsoft Corporation.
+
+Mac, Mac OS X, Shake, Final Cut Pro and QuickTime are trademarks of Apple, Inc., registered in the U.S. and other countries.
+
+Adobe® and Photoshop ® are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries.
+
+Maya® is a registered trademark of Autodesk, Inc., in the USA and other countries.
+
+Houdini® is a registered trademark of Side Effects Software, Inc.
+
+Boujou is a trademark of 2d3 Ltd.
+
+3D-Equalizer is a trademark of Science.D.Visions.
+
+OpenGL® is a trademark or registered trademark of Silicon Graphics, Inc., in the United States and/or other countries worldwide.
+
+RenderMan® is a registered trademark of Pixar. CineonTM is a trademark of Eastman Kodak Company.
+
+Written by: Frank Reuter.

@@ -1,0 +1,39 @@
+nukescripts.toolbars.IntEnum
+============================
+
+.. currentmodule:: nukescripts.toolbars
+
+.. autoclass:: IntEnum
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~IntEnum.as_integer_ratio
+      ~IntEnum.bit_count
+      ~IntEnum.bit_length
+      ~IntEnum.conjugate
+      ~IntEnum.from_bytes
+      ~IntEnum.to_bytes
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~IntEnum.denominator
+      ~IntEnum.imag
+      ~IntEnum.numerator
+      ~IntEnum.real
+   
+   

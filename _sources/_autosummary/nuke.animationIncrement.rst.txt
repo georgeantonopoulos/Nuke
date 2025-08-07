@@ -1,0 +1,6 @@
+nuke.animationIncrement
+=======================
+
+.. currentmodule:: nuke
+
+.. autofunction:: animationIncrement

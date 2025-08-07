@@ -1,0 +1,147 @@
+nuke.LiveGroup
+==============
+
+.. currentmodule:: nuke
+
+.. autoclass:: LiveGroup
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~LiveGroup.Class
+      ~LiveGroup.addCallback
+      ~LiveGroup.addKnob
+      ~LiveGroup.allKnobs
+      ~LiveGroup.anyOverrides
+      ~LiveGroup.applyOverrides
+      ~LiveGroup.autoplace
+      ~LiveGroup.baseNode
+      ~LiveGroup.bbox
+      ~LiveGroup.begin
+      ~LiveGroup.canSetInput
+      ~LiveGroup.channels
+      ~LiveGroup.clearCallbacks
+      ~LiveGroup.clearCustomIcon
+      ~LiveGroup.cloneInstanceIndex
+      ~LiveGroup.cloneInstanceNode
+      ~LiveGroup.cloneInstances
+      ~LiveGroup.clones
+      ~LiveGroup.connectInput
+      ~LiveGroup.connectSelectedNodes
+      ~LiveGroup.deepSample
+      ~LiveGroup.deepSampleCount
+      ~LiveGroup.dependencies
+      ~LiveGroup.dependent
+      ~LiveGroup.end
+      ~LiveGroup.error
+      ~LiveGroup.executePythonCallback
+      ~LiveGroup.expand
+      ~LiveGroup.fileDependencies
+      ~LiveGroup.findNode
+      ~LiveGroup.firstFrame
+      ~LiveGroup.forceUpdateLocalization
+      ~LiveGroup.forceValidate
+      ~LiveGroup.format
+      ~LiveGroup.frameRange
+      ~LiveGroup.fullName
+      ~LiveGroup.getLink
+      ~LiveGroup.getNumKnobs
+      ~LiveGroup.getStage
+      ~LiveGroup.hasError
+      ~LiveGroup.height
+      ~LiveGroup.help
+      ~LiveGroup.helpUrl
+      ~LiveGroup.hideControlPanel
+      ~LiveGroup.input
+      ~LiveGroup.inputs
+      ~LiveGroup.isClone
+      ~LiveGroup.isCloneable
+      ~LiveGroup.isLinked
+      ~LiveGroup.isLocal
+      ~LiveGroup.isLocalizationOutdated
+      ~LiveGroup.isLocalized
+      ~LiveGroup.isSelected
+      ~LiveGroup.knob
+      ~LiveGroup.knobs
+      ~LiveGroup.lastFrame
+      ~LiveGroup.linkableKnobs
+      ~LiveGroup.localizationProgress
+      ~LiveGroup.lock
+      ~LiveGroup.locked
+      ~LiveGroup.makeEditable
+      ~LiveGroup.makeLocal
+      ~LiveGroup.maxInputs
+      ~LiveGroup.maxOutputs
+      ~LiveGroup.maximumInputs
+      ~LiveGroup.maximumOutputs
+      ~LiveGroup.metadata
+      ~LiveGroup.minInputs
+      ~LiveGroup.minimumInputs
+      ~LiveGroup.modified
+      ~LiveGroup.name
+      ~LiveGroup.node
+      ~LiveGroup.nodes
+      ~LiveGroup.numKnobs
+      ~LiveGroup.numNodes
+      ~LiveGroup.opHashes
+      ~LiveGroup.optionalInput
+      ~LiveGroup.output
+      ~LiveGroup.overrideKnob
+      ~LiveGroup.parent
+      ~LiveGroup.performanceInfo
+      ~LiveGroup.pixelAspect
+      ~LiveGroup.proxy
+      ~LiveGroup.publish
+      ~LiveGroup.published
+      ~LiveGroup.readKnobs
+      ~LiveGroup.redraw
+      ~LiveGroup.reload
+      ~LiveGroup.removeCallback
+      ~LiveGroup.removeKnob
+      ~LiveGroup.removeOverrideKnob
+      ~LiveGroup.resetKnobsToDefault
+      ~LiveGroup.revertOverrides
+      ~LiveGroup.rootNode
+      ~LiveGroup.run
+      ~LiveGroup.running
+      ~LiveGroup.sample
+      ~LiveGroup.screenHeight
+      ~LiveGroup.screenWidth
+      ~LiveGroup.selectOnly
+      ~LiveGroup.selectedNode
+      ~LiveGroup.selectedNodes
+      ~LiveGroup.setCustomIcon
+      ~LiveGroup.setInput
+      ~LiveGroup.setName
+      ~LiveGroup.setSelected
+      ~LiveGroup.setTab
+      ~LiveGroup.setXYpos
+      ~LiveGroup.setXpos
+      ~LiveGroup.setYpos
+      ~LiveGroup.showControlPanel
+      ~LiveGroup.showInfo
+      ~LiveGroup.shown
+      ~LiveGroup.splaySelectedNodes
+      ~LiveGroup.subgraphLocked
+      ~LiveGroup.treeHasError
+      ~LiveGroup.unlink
+      ~LiveGroup.unlock
+      ~LiveGroup.upstreamFrameRange
+      ~LiveGroup.width
+      ~LiveGroup.writeKnobs
+      ~LiveGroup.xpos
+      ~LiveGroup.ypos
+   
+   
+
+   
+   
+   

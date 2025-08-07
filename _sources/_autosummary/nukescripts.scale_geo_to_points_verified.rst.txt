@@ -1,0 +1,6 @@
+nukescripts.scale\_geo\_to\_points\_verified
+============================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: scale_geo_to_points_verified

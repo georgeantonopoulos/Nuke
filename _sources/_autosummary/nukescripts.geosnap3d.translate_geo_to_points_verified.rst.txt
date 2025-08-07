@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.translate\_geo\_to\_points\_verified
+==========================================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: translate_geo_to_points_verified

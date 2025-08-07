@@ -1,0 +1,6 @@
+nuke.execute
+============
+
+.. currentmodule:: nuke
+
+.. autofunction:: execute

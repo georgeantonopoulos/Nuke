@@ -1,0 +1,6 @@
+nuke.removeUpdateUI
+===================
+
+.. currentmodule:: nuke
+
+.. autofunction:: removeUpdateUI

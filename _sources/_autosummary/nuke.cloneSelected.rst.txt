@@ -1,0 +1,6 @@
+nuke.cloneSelected
+==================
+
+.. currentmodule:: nuke
+
+.. autofunction:: cloneSelected

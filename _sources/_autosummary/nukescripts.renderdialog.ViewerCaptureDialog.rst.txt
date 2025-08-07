@@ -1,0 +1,78 @@
+nukescripts.renderdialog.ViewerCaptureDialog
+============================================
+
+.. currentmodule:: nukescripts.renderdialog
+
+.. autoclass:: ViewerCaptureDialog
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~ViewerCaptureDialog.accept
+      ~ViewerCaptureDialog.add
+      ~ViewerCaptureDialog.addCallback
+      ~ViewerCaptureDialog.addKnob
+      ~ViewerCaptureDialog.addToPane
+      ~ViewerCaptureDialog.backgroundRenderAvailable
+      ~ViewerCaptureDialog.cancel
+      ~ViewerCaptureDialog.captureViewer
+      ~ViewerCaptureDialog.close
+      ~ViewerCaptureDialog.create
+      ~ViewerCaptureDialog.destroy
+      ~ViewerCaptureDialog.extractContainerNodes
+      ~ViewerCaptureDialog.finishModalDialog
+      ~ViewerCaptureDialog.flipbookKnobs
+      ~ViewerCaptureDialog.frameserverRenderAvailable
+      ~ViewerCaptureDialog.getNodeSelection
+      ~ViewerCaptureDialog.height
+      ~ViewerCaptureDialog.hide
+      ~ViewerCaptureDialog.isBackgrounded
+      ~ViewerCaptureDialog.isEnabled
+      ~ViewerCaptureDialog.isFrameserverEnabled
+      ~ViewerCaptureDialog.isTimelineWrite
+      ~ViewerCaptureDialog.isValid
+      ~ViewerCaptureDialog.knobChanged
+      ~ViewerCaptureDialog.knobChangedCallback
+      ~ViewerCaptureDialog.knobs
+      ~ViewerCaptureDialog.ok
+      ~ViewerCaptureDialog.readKnobs
+      ~ViewerCaptureDialog.reject
+      ~ViewerCaptureDialog.removeCallback
+      ~ViewerCaptureDialog.removeKnob
+      ~ViewerCaptureDialog.renderContainsContainers
+      ~ViewerCaptureDialog.renderToFrameServer
+      ~ViewerCaptureDialog.run
+      ~ViewerCaptureDialog.saveFileToRender
+      ~ViewerCaptureDialog.setEnabled
+      ~ViewerCaptureDialog.setMaximumSize
+      ~ViewerCaptureDialog.setMinimumSize
+      ~ViewerCaptureDialog.setTooltip
+      ~ViewerCaptureDialog.setVisible
+      ~ViewerCaptureDialog.show
+      ~ViewerCaptureDialog.showModal
+      ~ViewerCaptureDialog.showModalDialog
+      ~ViewerCaptureDialog.tooltip
+      ~ViewerCaptureDialog.width
+      ~ViewerCaptureDialog.writeKnobs
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ViewerCaptureDialog.ShowWarning
+      ~ViewerCaptureDialog.deprecatedWarningShown
+      ~ViewerCaptureDialog.shouldShowBGRender
+   
+   

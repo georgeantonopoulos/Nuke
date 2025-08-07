@@ -1,0 +1,6 @@
+nukescripts.cameratracker.cardClass
+===================================
+
+.. currentmodule:: nukescripts.cameratracker
+
+.. autofunction:: cardClass

@@ -1,0 +1,29 @@
+nuke.LinkableKnobInfo
+=====================
+
+.. currentmodule:: nuke
+
+.. autoclass:: LinkableKnobInfo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~LinkableKnobInfo.absolute
+      ~LinkableKnobInfo.displayName
+      ~LinkableKnobInfo.enabled
+      ~LinkableKnobInfo.indices
+      ~LinkableKnobInfo.knob
+   
+   
+
+   
+   
+   

@@ -1,0 +1,88 @@
+
+Custom Flipbooks
+================
+
+This chapter describes how to customise and extend NUKE's flipbook workflow.
+
+Using Tweak Software's RV as the Default Flipbook Application
+-------------------------------------------------------------
+::
+
+  # Copyright (c) 2010 The Foundry Visionmongers Ltd.  All Rights Reserved.
+  import nuke
+  import nukescripts
+  import nukescripts.flipbooking as flipbooking
+  import os
+
+  class RVFlipbook(flipbooking.FlipbookApplication):
+    """ This is an example implementation of how to deal with implementing a
+        flipbook application other than NUKE's Player for NUKE. This script
+        needs to be modified in several places before it can work, so please
+        read all of the notes marked with TODO and modify them where
+        necessary."""
+    def __init__(self):
+      # TODO: Please put your own path in here or add RV path discovery.
+      self._rvPath = "/Applications/RV64.app/Contents/MacOS/RV64"
+
+    def name(self):
+      return "RV"
+
+    def path(self):
+      return self._rvPath
+
+    def cacheDir(self):
+      return os.environ["NUKE_TEMP_DIR"]
+
+    def run(self, filename, frameRanges, views, options):
+      # TODO: You probably want more involved handling of frame ranges!
+      sequence_interval = str(frameRanges.minFrame())+"-"+str(frameRanges.maxFrame())
+      for frame in range(frameRanges.minFrame(), frameRanges.maxFrame()):
+        if frame not in frameRanges.toFrameList():
+          print("This example only supports complete frame ranges.")
+          return
+
+      os.path.normpath(filename)
+
+      args = []
+      if nuke.env['WIN32']:
+        args.append( "\"" + self.path() + "\"" )
+        filename = filename.replace("/", "\\")
+        filename = "\"" + filename + "\""
+      else:
+        args.append( self.path() )
+
+
+      roi = options.get("roi")
+      if roi and any(roi[i] for i in ('xywh')):
+        args.append("-c " + str(int(roi["x"])))
+        for i in ('ywh'):
+          args.append(str(int(roi[i])))
+
+      lut = options.get("lut", "")
+      if lut == "linear-sRGB":
+        args.append("-sRGB")
+      elif lut == "linear-rec709":
+        args.append('-rec709')
+
+      args.append(filename)
+      args.append(sequence_interval)
+
+      # print(args)
+      os.spawnv(os.P_NOWAITO, self.path(), args)
+
+    def capabilities(self):
+      return {
+        'proxyScale': False,
+        'crop': True,
+        'canPreLaunch': False,
+        'supportsArbitraryChannels': True,
+        'maximumViews' : 2,
+        # TODO: This list is compiled from running rv with the following:
+        # RV64 -formats | grep 'format "' | awk '{print $2}' | tr '[:space:]' ','; echo
+        # This may differ for your platform!
+        'fileTypes' : ["j2k","jpt","jp2","dpx","cin","cineon","jpeg","jpg","rla","rpf","yuv","exr","openexr","sxr","tif","tiff","sm","tex","tx","tdl","shd","targa","tga","tpic","rgbe","hdr","iff","png","z","zfile","sgi","bw","rgb","rgba","*mraysubfile*","movieproc","stdinfb","aiff","aif","aifc","wav","snd","au","mov","avi","mp4","m4v","dv"]
+
+      }
+
+  flipbooking.register( RVFlipbook() )
+  nukescripts.setFlipbookDefaultOption("flipbook", "RV")

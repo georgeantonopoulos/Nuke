@@ -1,0 +1,6 @@
+nukescripts.edit.node\_copypaste
+================================
+
+.. currentmodule:: nukescripts.edit
+
+.. autofunction:: node_copypaste

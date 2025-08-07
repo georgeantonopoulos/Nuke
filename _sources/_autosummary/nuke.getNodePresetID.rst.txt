@@ -1,0 +1,6 @@
+nuke.getNodePresetID
+====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: getNodePresetID

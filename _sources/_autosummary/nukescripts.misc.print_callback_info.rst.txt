@@ -1,0 +1,6 @@
+nukescripts.misc.print\_callback\_info
+======================================
+
+.. currentmodule:: nukescripts.misc
+
+.. autofunction:: print_callback_info

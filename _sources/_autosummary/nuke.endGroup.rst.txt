@@ -1,0 +1,6 @@
+nuke.endGroup
+=============
+
+.. currentmodule:: nuke
+
+.. autofunction:: endGroup

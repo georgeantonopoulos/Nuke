@@ -1,0 +1,35 @@
+nuke.MenuItem
+=============
+
+.. currentmodule:: nuke
+
+.. autoclass:: MenuItem
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~MenuItem.action
+      ~MenuItem.icon
+      ~MenuItem.invoke
+      ~MenuItem.name
+      ~MenuItem.script
+      ~MenuItem.setEnabled
+      ~MenuItem.setIcon
+      ~MenuItem.setScript
+      ~MenuItem.setShortcut
+      ~MenuItem.setVisible
+      ~MenuItem.shortcut
+   
+   
+
+   
+   
+   

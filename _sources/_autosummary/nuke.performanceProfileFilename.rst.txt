@@ -1,0 +1,6 @@
+nuke.performanceProfileFilename
+===============================
+
+.. currentmodule:: nuke
+
+.. autofunction:: performanceProfileFilename

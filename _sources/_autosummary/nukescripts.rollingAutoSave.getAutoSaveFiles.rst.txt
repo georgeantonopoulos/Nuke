@@ -1,0 +1,6 @@
+nukescripts.rollingAutoSave.getAutoSaveFiles
+============================================
+
+.. currentmodule:: nukescripts.rollingAutoSave
+
+.. autofunction:: getAutoSaveFiles

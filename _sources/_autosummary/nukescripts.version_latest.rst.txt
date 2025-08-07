@@ -1,0 +1,6 @@
+nukescripts.version\_latest
+===========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: version_latest

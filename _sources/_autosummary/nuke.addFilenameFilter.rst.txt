@@ -1,0 +1,6 @@
+nuke.addFilenameFilter
+======================
+
+.. currentmodule:: nuke
+
+.. autofunction:: addFilenameFilter

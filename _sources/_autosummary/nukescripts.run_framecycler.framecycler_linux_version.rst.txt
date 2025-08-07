@@ -1,0 +1,6 @@
+nukescripts.run\_framecycler.framecycler\_linux\_version
+========================================================
+
+.. currentmodule:: nukescripts.run_framecycler
+
+.. autofunction:: framecycler_linux_version

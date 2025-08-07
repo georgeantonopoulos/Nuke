@@ -1,0 +1,6 @@
+nukescripts.cameratracker.populateFilmBackPresets
+=================================================
+
+.. currentmodule:: nukescripts.cameratracker
+
+.. autofunction:: populateFilmBackPresets

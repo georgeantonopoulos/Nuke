@@ -1,0 +1,102 @@
+nukescripts.widgetgroup.QStyle
+==============================
+
+.. currentmodule:: nukescripts.widgetgroup
+
+.. autoclass:: QStyle
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~QStyle.alignedRect
+      ~QStyle.blockSignals
+      ~QStyle.childEvent
+      ~QStyle.children
+      ~QStyle.combinedLayoutSpacing
+      ~QStyle.connect
+      ~QStyle.connectNotify
+      ~QStyle.customEvent
+      ~QStyle.deleteLater
+      ~QStyle.disconnect
+      ~QStyle.disconnectNotify
+      ~QStyle.drawComplexControl
+      ~QStyle.drawControl
+      ~QStyle.drawItemPixmap
+      ~QStyle.drawItemText
+      ~QStyle.drawPrimitive
+      ~QStyle.dumpObjectInfo
+      ~QStyle.dumpObjectTree
+      ~QStyle.dynamicPropertyNames
+      ~QStyle.emit
+      ~QStyle.event
+      ~QStyle.eventFilter
+      ~QStyle.findChild
+      ~QStyle.findChildren
+      ~QStyle.generatedIconPixmap
+      ~QStyle.hitTestComplexControl
+      ~QStyle.inherits
+      ~QStyle.installEventFilter
+      ~QStyle.isQuickItemType
+      ~QStyle.isSignalConnected
+      ~QStyle.isWidgetType
+      ~QStyle.isWindowType
+      ~QStyle.itemPixmapRect
+      ~QStyle.itemTextRect
+      ~QStyle.killTimer
+      ~QStyle.layoutSpacing
+      ~QStyle.metaObject
+      ~QStyle.moveToThread
+      ~QStyle.name
+      ~QStyle.objectName
+      ~QStyle.parent
+      ~QStyle.pixelMetric
+      ~QStyle.polish
+      ~QStyle.property
+      ~QStyle.proxy
+      ~QStyle.receivers
+      ~QStyle.removeEventFilter
+      ~QStyle.sender
+      ~QStyle.senderSignalIndex
+      ~QStyle.setObjectName
+      ~QStyle.setParent
+      ~QStyle.setProperty
+      ~QStyle.signalsBlocked
+      ~QStyle.sizeFromContents
+      ~QStyle.sliderPositionFromValue
+      ~QStyle.sliderValueFromPosition
+      ~QStyle.standardIcon
+      ~QStyle.standardPalette
+      ~QStyle.standardPixmap
+      ~QStyle.startTimer
+      ~QStyle.styleHint
+      ~QStyle.subControlRect
+      ~QStyle.subElementRect
+      ~QStyle.thread
+      ~QStyle.timerEvent
+      ~QStyle.tr
+      ~QStyle.unpolish
+      ~QStyle.visualAlignment
+      ~QStyle.visualPos
+      ~QStyle.visualRect
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~QStyle.destroyed
+      ~QStyle.objectNameChanged
+      ~QStyle.staticMetaObject
+   
+   

@@ -1,0 +1,6 @@
+nuke.onCreate
+=============
+
+.. currentmodule:: nuke
+
+.. autofunction:: onCreate

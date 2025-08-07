@@ -1,0 +1,6 @@
+nuke.removeKnobChanged
+======================
+
+.. currentmodule:: nuke
+
+.. autofunction:: removeKnobChanged

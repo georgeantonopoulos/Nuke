@@ -1,0 +1,6 @@
+nuke.loadToolset
+================
+
+.. currentmodule:: nuke
+
+.. autofunction:: loadToolset

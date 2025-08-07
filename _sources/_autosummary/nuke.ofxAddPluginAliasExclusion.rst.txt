@@ -1,0 +1,6 @@
+nuke.ofxAddPluginAliasExclusion
+===============================
+
+.. currentmodule:: nuke
+
+.. autofunction:: ofxAddPluginAliasExclusion

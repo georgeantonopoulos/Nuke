@@ -1,0 +1,6 @@
+nuke.CancelledError
+===================
+
+.. currentmodule:: nuke
+
+.. autoexception:: CancelledError

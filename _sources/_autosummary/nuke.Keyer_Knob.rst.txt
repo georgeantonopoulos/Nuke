@@ -1,0 +1,105 @@
+nuke.Keyer\_Knob
+================
+
+.. currentmodule:: nuke
+
+.. autoclass:: Keyer_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Keyer_Knob.Class
+      ~Keyer_Knob.ClassID
+      ~Keyer_Knob.animation
+      ~Keyer_Knob.animations
+      ~Keyer_Knob.array
+      ~Keyer_Knob.arraySize
+      ~Keyer_Knob.clearAnimated
+      ~Keyer_Knob.clearFlag
+      ~Keyer_Knob.copyAnimation
+      ~Keyer_Knob.copyAnimations
+      ~Keyer_Knob.critical
+      ~Keyer_Knob.debug
+      ~Keyer_Knob.defaultValue
+      ~Keyer_Knob.deleteAnimation
+      ~Keyer_Knob.dimensions
+      ~Keyer_Knob.enabled
+      ~Keyer_Knob.error
+      ~Keyer_Knob.frame
+      ~Keyer_Knob.fromScript
+      ~Keyer_Knob.fullyQualifiedName
+      ~Keyer_Knob.getAuthorMode
+      ~Keyer_Knob.getAuthorModes
+      ~Keyer_Knob.getDerivative
+      ~Keyer_Knob.getFlag
+      ~Keyer_Knob.getIntegral
+      ~Keyer_Knob.getKeyIndex
+      ~Keyer_Knob.getKeyList
+      ~Keyer_Knob.getKeyTime
+      ~Keyer_Knob.getNthDerivative
+      ~Keyer_Knob.getNumKeys
+      ~Keyer_Knob.getValue
+      ~Keyer_Knob.getValueAt
+      ~Keyer_Knob.hasExpression
+      ~Keyer_Knob.height
+      ~Keyer_Knob.highSoft
+      ~Keyer_Knob.highTol
+      ~Keyer_Knob.isAnimated
+      ~Keyer_Knob.isKey
+      ~Keyer_Knob.isKeyAt
+      ~Keyer_Knob.label
+      ~Keyer_Knob.lowSoft
+      ~Keyer_Knob.lowTol
+      ~Keyer_Knob.makeWidget
+      ~Keyer_Knob.max
+      ~Keyer_Knob.maximum
+      ~Keyer_Knob.min
+      ~Keyer_Knob.minimum
+      ~Keyer_Knob.name
+      ~Keyer_Knob.names
+      ~Keyer_Knob.node
+      ~Keyer_Knob.notDefault
+      ~Keyer_Knob.removeKey
+      ~Keyer_Knob.removeKeyAt
+      ~Keyer_Knob.resize
+      ~Keyer_Knob.setAnimated
+      ~Keyer_Knob.setAuthorMode
+      ~Keyer_Knob.setDefaultValue
+      ~Keyer_Knob.setEnabled
+      ~Keyer_Knob.setExpression
+      ~Keyer_Knob.setFlag
+      ~Keyer_Knob.setKeyAt
+      ~Keyer_Knob.setLabel
+      ~Keyer_Knob.setName
+      ~Keyer_Knob.setRange
+      ~Keyer_Knob.setSingleValue
+      ~Keyer_Knob.setTooltip
+      ~Keyer_Knob.setValue
+      ~Keyer_Knob.setValueAt
+      ~Keyer_Knob.setVisible
+      ~Keyer_Knob.singleValue
+      ~Keyer_Knob.splitView
+      ~Keyer_Knob.toScript
+      ~Keyer_Knob.toScriptPrefix
+      ~Keyer_Knob.tooltip
+      ~Keyer_Knob.unsplitView
+      ~Keyer_Knob.value
+      ~Keyer_Knob.valueAt
+      ~Keyer_Knob.vect
+      ~Keyer_Knob.visible
+      ~Keyer_Knob.warning
+      ~Keyer_Knob.width
+   
+   
+
+   
+   
+   

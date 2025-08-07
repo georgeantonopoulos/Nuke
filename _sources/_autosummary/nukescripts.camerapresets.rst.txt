@@ -1,0 +1,42 @@
+nukescripts.camerapresets
+=========================
+
+.. automodule:: nukescripts.camerapresets
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      addPreset
+      getFilmBackSize
+      getLabels
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      CameraFilmBackPresets
+   
+   
+
+   
+   
+   
+
+
+

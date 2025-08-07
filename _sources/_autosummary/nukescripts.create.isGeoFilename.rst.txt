@@ -1,0 +1,6 @@
+nukescripts.create.isGeoFilename
+================================
+
+.. currentmodule:: nukescripts.create
+
+.. autofunction:: isGeoFilename

@@ -1,0 +1,6 @@
+nuke.cacheUsage
+===============
+
+.. currentmodule:: nuke
+
+.. autofunction:: cacheUsage

@@ -1,0 +1,109 @@
+nuke.SceneView\_Knob
+====================
+
+.. currentmodule:: nuke
+
+.. autoclass:: SceneView_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~SceneView_Knob.Class
+      ~SceneView_Knob.ClassID
+      ~SceneView_Knob.addItems
+      ~SceneView_Knob.animation
+      ~SceneView_Knob.animations
+      ~SceneView_Knob.array
+      ~SceneView_Knob.arraySize
+      ~SceneView_Knob.clearAnimated
+      ~SceneView_Knob.clearFlag
+      ~SceneView_Knob.copyAnimation
+      ~SceneView_Knob.copyAnimations
+      ~SceneView_Knob.critical
+      ~SceneView_Knob.debug
+      ~SceneView_Knob.defaultValue
+      ~SceneView_Knob.deleteAnimation
+      ~SceneView_Knob.dimensions
+      ~SceneView_Knob.enabled
+      ~SceneView_Knob.error
+      ~SceneView_Knob.frame
+      ~SceneView_Knob.fromScript
+      ~SceneView_Knob.fullyQualifiedName
+      ~SceneView_Knob.getAllItems
+      ~SceneView_Knob.getAuthorMode
+      ~SceneView_Knob.getAuthorModes
+      ~SceneView_Knob.getDerivative
+      ~SceneView_Knob.getFlag
+      ~SceneView_Knob.getHighlightedItem
+      ~SceneView_Knob.getImportedItems
+      ~SceneView_Knob.getIntegral
+      ~SceneView_Knob.getKeyIndex
+      ~SceneView_Knob.getKeyList
+      ~SceneView_Knob.getKeyTime
+      ~SceneView_Knob.getNthDerivative
+      ~SceneView_Knob.getNumKeys
+      ~SceneView_Knob.getSelectedItems
+      ~SceneView_Knob.getValue
+      ~SceneView_Knob.getValueAt
+      ~SceneView_Knob.hasExpression
+      ~SceneView_Knob.height
+      ~SceneView_Knob.isAnimated
+      ~SceneView_Knob.isKey
+      ~SceneView_Knob.isKeyAt
+      ~SceneView_Knob.label
+      ~SceneView_Knob.makeWidget
+      ~SceneView_Knob.max
+      ~SceneView_Knob.maximum
+      ~SceneView_Knob.min
+      ~SceneView_Knob.minimum
+      ~SceneView_Knob.name
+      ~SceneView_Knob.node
+      ~SceneView_Knob.notDefault
+      ~SceneView_Knob.removeItems
+      ~SceneView_Knob.removeKey
+      ~SceneView_Knob.removeKeyAt
+      ~SceneView_Knob.resize
+      ~SceneView_Knob.setAllItems
+      ~SceneView_Knob.setAnimated
+      ~SceneView_Knob.setAuthorMode
+      ~SceneView_Knob.setDefaultValue
+      ~SceneView_Knob.setEnabled
+      ~SceneView_Knob.setExpression
+      ~SceneView_Knob.setFlag
+      ~SceneView_Knob.setImportedItems
+      ~SceneView_Knob.setKeyAt
+      ~SceneView_Knob.setLabel
+      ~SceneView_Knob.setName
+      ~SceneView_Knob.setRange
+      ~SceneView_Knob.setSelectedItems
+      ~SceneView_Knob.setSingleValue
+      ~SceneView_Knob.setTooltip
+      ~SceneView_Knob.setValue
+      ~SceneView_Knob.setValueAt
+      ~SceneView_Knob.setVisible
+      ~SceneView_Knob.singleValue
+      ~SceneView_Knob.splitView
+      ~SceneView_Knob.toScript
+      ~SceneView_Knob.toScriptPrefix
+      ~SceneView_Knob.tooltip
+      ~SceneView_Knob.unsplitView
+      ~SceneView_Knob.value
+      ~SceneView_Knob.valueAt
+      ~SceneView_Knob.vect
+      ~SceneView_Knob.visible
+      ~SceneView_Knob.warning
+      ~SceneView_Knob.width
+   
+   
+
+   
+   
+   

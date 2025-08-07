@@ -1,0 +1,6 @@
+nukescripts.flipbooking.register
+================================
+
+.. currentmodule:: nukescripts.flipbooking
+
+.. autofunction:: register

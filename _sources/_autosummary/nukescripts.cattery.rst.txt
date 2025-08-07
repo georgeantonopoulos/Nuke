@@ -1,0 +1,46 @@
+nukescripts.cattery
+===================
+
+.. automodule:: nukescripts.cattery
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      create_menu
+      discover_packages
+      find_repositories
+      normalise_path_for_nuke
+      populate_menu
+      register_cats
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      CatInfo
+      PackageInfo
+   
+   
+
+   
+   
+   
+
+
+

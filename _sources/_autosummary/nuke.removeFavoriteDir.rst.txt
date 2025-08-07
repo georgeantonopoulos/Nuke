@@ -1,0 +1,6 @@
+nuke.removeFavoriteDir
+======================
+
+.. currentmodule:: nuke
+
+.. autofunction:: removeFavoriteDir

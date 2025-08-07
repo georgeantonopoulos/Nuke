@@ -1,0 +1,6 @@
+nuke.removeOnUserCreate
+=======================
+
+.. currentmodule:: nuke
+
+.. autofunction:: removeOnUserCreate

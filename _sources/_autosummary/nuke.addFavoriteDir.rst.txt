@@ -1,0 +1,6 @@
+nuke.addFavoriteDir
+===================
+
+.. currentmodule:: nuke
+
+.. autofunction:: addFavoriteDir

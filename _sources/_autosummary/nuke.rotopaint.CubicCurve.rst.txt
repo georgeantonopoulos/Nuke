@@ -1,0 +1,25 @@
+nuke.rotopaint.CubicCurve
+=========================
+
+.. currentmodule:: nuke.rotopaint
+
+.. autoclass:: CubicCurve
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~CubicCurve.getPoint
+   
+   
+
+   
+   
+   

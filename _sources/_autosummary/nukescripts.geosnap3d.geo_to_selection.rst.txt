@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.geo\_to\_selection
+========================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: geo_to_selection

@@ -1,0 +1,6 @@
+nukescripts.humanReadable
+=========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: humanReadable

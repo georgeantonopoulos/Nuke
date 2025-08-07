@@ -1,0 +1,6 @@
+nukescripts.projectPoints
+=========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: projectPoints

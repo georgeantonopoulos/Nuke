@@ -1,0 +1,114 @@
+nukescripts.widgetgroup.QPainter
+================================
+
+.. currentmodule:: nukescripts.widgetgroup
+
+.. autoclass:: QPainter
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~QPainter.background
+      ~QPainter.backgroundMode
+      ~QPainter.begin
+      ~QPainter.beginNativePainting
+      ~QPainter.boundingRect
+      ~QPainter.brush
+      ~QPainter.brushOrigin
+      ~QPainter.clipBoundingRect
+      ~QPainter.clipPath
+      ~QPainter.clipRegion
+      ~QPainter.combinedTransform
+      ~QPainter.compositionMode
+      ~QPainter.device
+      ~QPainter.deviceTransform
+      ~QPainter.drawArc
+      ~QPainter.drawChord
+      ~QPainter.drawConvexPolygon
+      ~QPainter.drawEllipse
+      ~QPainter.drawGlyphRun
+      ~QPainter.drawImage
+      ~QPainter.drawLine
+      ~QPainter.drawLines
+      ~QPainter.drawPath
+      ~QPainter.drawPicture
+      ~QPainter.drawPie
+      ~QPainter.drawPixmap
+      ~QPainter.drawPixmapFragments
+      ~QPainter.drawPoint
+      ~QPainter.drawPoints
+      ~QPainter.drawPointsNp
+      ~QPainter.drawPolygon
+      ~QPainter.drawPolyline
+      ~QPainter.drawRect
+      ~QPainter.drawRects
+      ~QPainter.drawRoundedRect
+      ~QPainter.drawStaticText
+      ~QPainter.drawText
+      ~QPainter.drawTextItem
+      ~QPainter.drawTiledPixmap
+      ~QPainter.end
+      ~QPainter.endNativePainting
+      ~QPainter.eraseRect
+      ~QPainter.fillPath
+      ~QPainter.fillRect
+      ~QPainter.font
+      ~QPainter.fontInfo
+      ~QPainter.fontMetrics
+      ~QPainter.hasClipping
+      ~QPainter.isActive
+      ~QPainter.layoutDirection
+      ~QPainter.opacity
+      ~QPainter.paintEngine
+      ~QPainter.pen
+      ~QPainter.renderHints
+      ~QPainter.resetTransform
+      ~QPainter.restore
+      ~QPainter.rotate
+      ~QPainter.save
+      ~QPainter.scale
+      ~QPainter.setBackground
+      ~QPainter.setBackgroundMode
+      ~QPainter.setBrush
+      ~QPainter.setBrushOrigin
+      ~QPainter.setClipPath
+      ~QPainter.setClipRect
+      ~QPainter.setClipRegion
+      ~QPainter.setClipping
+      ~QPainter.setCompositionMode
+      ~QPainter.setFont
+      ~QPainter.setLayoutDirection
+      ~QPainter.setOpacity
+      ~QPainter.setPen
+      ~QPainter.setRenderHint
+      ~QPainter.setRenderHints
+      ~QPainter.setTransform
+      ~QPainter.setViewTransformEnabled
+      ~QPainter.setViewport
+      ~QPainter.setWindow
+      ~QPainter.setWorldMatrixEnabled
+      ~QPainter.setWorldTransform
+      ~QPainter.shear
+      ~QPainter.strokePath
+      ~QPainter.testRenderHint
+      ~QPainter.transform
+      ~QPainter.translate
+      ~QPainter.viewTransformEnabled
+      ~QPainter.viewport
+      ~QPainter.window
+      ~QPainter.worldMatrixEnabled
+      ~QPainter.worldTransform
+   
+   
+
+   
+   
+   

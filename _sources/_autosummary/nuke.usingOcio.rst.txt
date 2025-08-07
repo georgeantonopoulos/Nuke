@@ -1,0 +1,6 @@
+nuke.usingOcio
+==============
+
+.. currentmodule:: nuke
+
+.. autofunction:: usingOcio

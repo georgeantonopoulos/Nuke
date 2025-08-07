@@ -1,0 +1,6 @@
+nuke.error
+==========
+
+.. currentmodule:: nuke
+
+.. autofunction:: error

@@ -1,0 +1,6 @@
+nuke.autoSaveRestoreFilter
+==========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: autoSaveRestoreFilter

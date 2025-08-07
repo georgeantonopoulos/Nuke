@@ -1,0 +1,6 @@
+nukescripts.setupPyOpenGL
+=========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: setupPyOpenGL

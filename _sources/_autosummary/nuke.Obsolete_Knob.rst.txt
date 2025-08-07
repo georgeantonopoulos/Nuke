@@ -1,0 +1,74 @@
+nuke.Obsolete\_Knob
+===================
+
+.. currentmodule:: nuke
+
+.. autoclass:: Obsolete_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Obsolete_Knob.Class
+      ~Obsolete_Knob.ClassID
+      ~Obsolete_Knob.clearAnimated
+      ~Obsolete_Knob.clearFlag
+      ~Obsolete_Knob.critical
+      ~Obsolete_Knob.debug
+      ~Obsolete_Knob.enabled
+      ~Obsolete_Knob.error
+      ~Obsolete_Knob.fromScript
+      ~Obsolete_Knob.fullyQualifiedName
+      ~Obsolete_Knob.getAuthorMode
+      ~Obsolete_Knob.getAuthorModes
+      ~Obsolete_Knob.getDerivative
+      ~Obsolete_Knob.getFlag
+      ~Obsolete_Knob.getIntegral
+      ~Obsolete_Knob.getKeyIndex
+      ~Obsolete_Knob.getKeyList
+      ~Obsolete_Knob.getKeyTime
+      ~Obsolete_Knob.getNthDerivative
+      ~Obsolete_Knob.getNumKeys
+      ~Obsolete_Knob.getValue
+      ~Obsolete_Knob.getValueAt
+      ~Obsolete_Knob.hasExpression
+      ~Obsolete_Knob.isAnimated
+      ~Obsolete_Knob.isKey
+      ~Obsolete_Knob.isKeyAt
+      ~Obsolete_Knob.label
+      ~Obsolete_Knob.makeWidget
+      ~Obsolete_Knob.name
+      ~Obsolete_Knob.node
+      ~Obsolete_Knob.notDefault
+      ~Obsolete_Knob.removeKey
+      ~Obsolete_Knob.removeKeyAt
+      ~Obsolete_Knob.setAnimated
+      ~Obsolete_Knob.setAuthorMode
+      ~Obsolete_Knob.setEnabled
+      ~Obsolete_Knob.setExpression
+      ~Obsolete_Knob.setFlag
+      ~Obsolete_Knob.setLabel
+      ~Obsolete_Knob.setName
+      ~Obsolete_Knob.setTooltip
+      ~Obsolete_Knob.setValue
+      ~Obsolete_Knob.setValueAt
+      ~Obsolete_Knob.setVisible
+      ~Obsolete_Knob.toScript
+      ~Obsolete_Knob.toScriptPrefix
+      ~Obsolete_Knob.tooltip
+      ~Obsolete_Knob.value
+      ~Obsolete_Knob.visible
+      ~Obsolete_Knob.warning
+   
+   
+
+   
+   
+   

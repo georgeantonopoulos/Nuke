@@ -1,0 +1,6 @@
+nukescripts.pivot\_to\_selection
+================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: pivot_to_selection

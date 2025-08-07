@@ -1,0 +1,6 @@
+nukescripts.copy\_stage
+=======================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: copy_stage

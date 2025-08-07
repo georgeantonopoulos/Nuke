@@ -1,0 +1,58 @@
+nukescripts.applymaterial.ObjectNameChooserDialog
+=================================================
+
+.. currentmodule:: nukescripts.applymaterial
+
+.. autoclass:: ObjectNameChooserDialog
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~ObjectNameChooserDialog.accept
+      ~ObjectNameChooserDialog.add
+      ~ObjectNameChooserDialog.addCallback
+      ~ObjectNameChooserDialog.addKnob
+      ~ObjectNameChooserDialog.addToPane
+      ~ObjectNameChooserDialog.cancel
+      ~ObjectNameChooserDialog.close
+      ~ObjectNameChooserDialog.create
+      ~ObjectNameChooserDialog.destroy
+      ~ObjectNameChooserDialog.finishModalDialog
+      ~ObjectNameChooserDialog.height
+      ~ObjectNameChooserDialog.hide
+      ~ObjectNameChooserDialog.isEnabled
+      ~ObjectNameChooserDialog.isValid
+      ~ObjectNameChooserDialog.knobChanged
+      ~ObjectNameChooserDialog.knobChangedCallback
+      ~ObjectNameChooserDialog.knobs
+      ~ObjectNameChooserDialog.ok
+      ~ObjectNameChooserDialog.readKnobs
+      ~ObjectNameChooserDialog.reject
+      ~ObjectNameChooserDialog.removeCallback
+      ~ObjectNameChooserDialog.removeKnob
+      ~ObjectNameChooserDialog.selectedName
+      ~ObjectNameChooserDialog.setEnabled
+      ~ObjectNameChooserDialog.setMaximumSize
+      ~ObjectNameChooserDialog.setMinimumSize
+      ~ObjectNameChooserDialog.setTooltip
+      ~ObjectNameChooserDialog.setVisible
+      ~ObjectNameChooserDialog.show
+      ~ObjectNameChooserDialog.showModal
+      ~ObjectNameChooserDialog.showModalDialog
+      ~ObjectNameChooserDialog.tooltip
+      ~ObjectNameChooserDialog.width
+      ~ObjectNameChooserDialog.writeKnobs
+   
+   
+
+   
+   
+   

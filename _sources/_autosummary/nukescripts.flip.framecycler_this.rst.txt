@@ -1,0 +1,6 @@
+nukescripts.flip.framecycler\_this
+==================================
+
+.. currentmodule:: nukescripts.flip
+
+.. autofunction:: framecycler_this

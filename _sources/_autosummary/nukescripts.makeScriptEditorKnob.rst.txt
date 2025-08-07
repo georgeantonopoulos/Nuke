@@ -1,0 +1,6 @@
+nukescripts.makeScriptEditorKnob
+================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: makeScriptEditorKnob

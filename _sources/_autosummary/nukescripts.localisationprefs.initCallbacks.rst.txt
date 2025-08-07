@@ -1,0 +1,6 @@
+nukescripts.localisationprefs.initCallbacks
+===========================================
+
+.. currentmodule:: nukescripts.localisationprefs
+
+.. autofunction:: initCallbacks

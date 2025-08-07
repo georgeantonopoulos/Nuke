@@ -1,0 +1,42 @@
+nukescripts.widgetgroup.QStyleOptionButton
+==========================================
+
+.. currentmodule:: nukescripts.widgetgroup
+
+.. autoclass:: QStyleOptionButton
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~QStyleOptionButton.initFrom
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~QStyleOptionButton.direction
+      ~QStyleOptionButton.features
+      ~QStyleOptionButton.fontMetrics
+      ~QStyleOptionButton.icon
+      ~QStyleOptionButton.iconSize
+      ~QStyleOptionButton.palette
+      ~QStyleOptionButton.rect
+      ~QStyleOptionButton.state
+      ~QStyleOptionButton.styleObject
+      ~QStyleOptionButton.text
+      ~QStyleOptionButton.type
+      ~QStyleOptionButton.version
+   
+   

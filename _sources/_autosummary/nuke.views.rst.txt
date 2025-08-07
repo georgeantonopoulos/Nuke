@@ -1,0 +1,6 @@
+nuke.views
+==========
+
+.. currentmodule:: nuke
+
+.. autofunction:: views

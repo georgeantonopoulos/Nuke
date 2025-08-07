@@ -1,0 +1,6 @@
+nukescripts.cameratracker.pointCloudClass
+=========================================
+
+.. currentmodule:: nukescripts.cameratracker
+
+.. autofunction:: pointCloudClass

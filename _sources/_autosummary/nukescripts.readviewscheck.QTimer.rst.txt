@@ -1,0 +1,86 @@
+nukescripts.readviewscheck.QTimer
+=================================
+
+.. currentmodule:: nukescripts.readviewscheck
+
+.. autoclass:: QTimer
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~QTimer.blockSignals
+      ~QTimer.childEvent
+      ~QTimer.children
+      ~QTimer.connect
+      ~QTimer.connectNotify
+      ~QTimer.customEvent
+      ~QTimer.deleteLater
+      ~QTimer.disconnect
+      ~QTimer.disconnectNotify
+      ~QTimer.dumpObjectInfo
+      ~QTimer.dumpObjectTree
+      ~QTimer.dynamicPropertyNames
+      ~QTimer.emit
+      ~QTimer.event
+      ~QTimer.eventFilter
+      ~QTimer.findChild
+      ~QTimer.findChildren
+      ~QTimer.inherits
+      ~QTimer.installEventFilter
+      ~QTimer.interval
+      ~QTimer.isActive
+      ~QTimer.isQuickItemType
+      ~QTimer.isSignalConnected
+      ~QTimer.isSingleShot
+      ~QTimer.isWidgetType
+      ~QTimer.isWindowType
+      ~QTimer.killTimer
+      ~QTimer.metaObject
+      ~QTimer.moveToThread
+      ~QTimer.objectName
+      ~QTimer.parent
+      ~QTimer.property
+      ~QTimer.receivers
+      ~QTimer.remainingTime
+      ~QTimer.removeEventFilter
+      ~QTimer.sender
+      ~QTimer.senderSignalIndex
+      ~QTimer.setInterval
+      ~QTimer.setObjectName
+      ~QTimer.setParent
+      ~QTimer.setProperty
+      ~QTimer.setSingleShot
+      ~QTimer.setTimerType
+      ~QTimer.signalsBlocked
+      ~QTimer.singleShot
+      ~QTimer.start
+      ~QTimer.startTimer
+      ~QTimer.stop
+      ~QTimer.thread
+      ~QTimer.timerEvent
+      ~QTimer.timerId
+      ~QTimer.timerType
+      ~QTimer.tr
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~QTimer.destroyed
+      ~QTimer.objectNameChanged
+      ~QTimer.staticMetaObject
+      ~QTimer.timeout
+   
+   

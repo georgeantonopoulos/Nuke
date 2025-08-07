@@ -1,0 +1,28 @@
+nukescripts.pyQtExamples.pyQtRender2.pyQtRenderDialog
+=====================================================
+
+.. currentmodule:: nukescripts.pyQtExamples.pyQtRender2
+
+.. autoclass:: pyQtRenderDialog
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~pyQtRenderDialog.addItem
+      ~pyQtRenderDialog.onCreateCallback
+      ~pyQtRenderDialog.render
+      ~pyQtRenderDialog.showUI
+   
+   
+
+   
+   
+   

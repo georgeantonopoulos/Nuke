@@ -1,0 +1,6 @@
+nuke.sample
+===========
+
+.. currentmodule:: nuke
+
+.. autofunction:: sample

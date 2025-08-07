@@ -1,0 +1,6 @@
+nukescripts.translateRotateScaleToPointsVerified
+================================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: translateRotateScaleToPointsVerified

@@ -1,0 +1,57 @@
+﻿nuke.localization
+=================
+
+.. automodule:: nuke.localization
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      addFileCallback
+      addReadCallback
+      checkForUpdates
+      clearUnusedFiles
+      findNodes
+      forceUpdateAll
+      forceUpdateOnDemand
+      forceUpdateSelectedNodes
+      isLocalizationPaused
+      localizationProgress
+      localizedPaths
+      mode
+      pauseLocalization
+      removeFileCallback
+      removeReadCallback
+      resumeLocalization
+      setMode
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      FileEvent
+      ReadStatus
+   
+   
+
+   
+   
+   
+
+
+

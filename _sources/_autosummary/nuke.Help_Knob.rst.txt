@@ -1,0 +1,74 @@
+nuke.Help\_Knob
+===============
+
+.. currentmodule:: nuke
+
+.. autoclass:: Help_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Help_Knob.Class
+      ~Help_Knob.ClassID
+      ~Help_Knob.clearAnimated
+      ~Help_Knob.clearFlag
+      ~Help_Knob.critical
+      ~Help_Knob.debug
+      ~Help_Knob.enabled
+      ~Help_Knob.error
+      ~Help_Knob.fromScript
+      ~Help_Knob.fullyQualifiedName
+      ~Help_Knob.getAuthorMode
+      ~Help_Knob.getAuthorModes
+      ~Help_Knob.getDerivative
+      ~Help_Knob.getFlag
+      ~Help_Knob.getIntegral
+      ~Help_Knob.getKeyIndex
+      ~Help_Knob.getKeyList
+      ~Help_Knob.getKeyTime
+      ~Help_Knob.getNthDerivative
+      ~Help_Knob.getNumKeys
+      ~Help_Knob.getValue
+      ~Help_Knob.getValueAt
+      ~Help_Knob.hasExpression
+      ~Help_Knob.isAnimated
+      ~Help_Knob.isKey
+      ~Help_Knob.isKeyAt
+      ~Help_Knob.label
+      ~Help_Knob.makeWidget
+      ~Help_Knob.name
+      ~Help_Knob.node
+      ~Help_Knob.notDefault
+      ~Help_Knob.removeKey
+      ~Help_Knob.removeKeyAt
+      ~Help_Knob.setAnimated
+      ~Help_Knob.setAuthorMode
+      ~Help_Knob.setEnabled
+      ~Help_Knob.setExpression
+      ~Help_Knob.setFlag
+      ~Help_Knob.setLabel
+      ~Help_Knob.setName
+      ~Help_Knob.setTooltip
+      ~Help_Knob.setValue
+      ~Help_Knob.setValueAt
+      ~Help_Knob.setVisible
+      ~Help_Knob.toScript
+      ~Help_Knob.toScriptPrefix
+      ~Help_Knob.tooltip
+      ~Help_Knob.value
+      ~Help_Knob.visible
+      ~Help_Knob.warning
+   
+   
+
+   
+   
+   

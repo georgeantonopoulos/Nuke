@@ -1,0 +1,6 @@
+nuke.runIn
+==========
+
+.. currentmodule:: nuke
+
+.. autofunction:: runIn

@@ -1,0 +1,6 @@
+nukescripts.nodepresets.buildUserPresetDeletePanel
+==================================================
+
+.. currentmodule:: nukescripts.nodepresets
+
+.. autofunction:: buildUserPresetDeletePanel

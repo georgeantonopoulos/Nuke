@@ -1,0 +1,6 @@
+nukescripts.create.create\_viewsplitjoin
+========================================
+
+.. currentmodule:: nukescripts.create
+
+.. autofunction:: create_viewsplitjoin

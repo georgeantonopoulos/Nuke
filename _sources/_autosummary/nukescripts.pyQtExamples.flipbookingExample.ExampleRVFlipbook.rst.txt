@@ -1,0 +1,33 @@
+nukescripts.pyQtExamples.flipbookingExample.ExampleRVFlipbook
+=============================================================
+
+.. currentmodule:: nukescripts.pyQtExamples.flipbookingExample
+
+.. autoclass:: ExampleRVFlipbook
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~ExampleRVFlipbook.cacheDir
+      ~ExampleRVFlipbook.capabilities
+      ~ExampleRVFlipbook.dialogKnobChanged
+      ~ExampleRVFlipbook.dialogKnobs
+      ~ExampleRVFlipbook.getExtraOptions
+      ~ExampleRVFlipbook.name
+      ~ExampleRVFlipbook.path
+      ~ExampleRVFlipbook.run
+      ~ExampleRVFlipbook.runFromNode
+   
+   
+
+   
+   
+   

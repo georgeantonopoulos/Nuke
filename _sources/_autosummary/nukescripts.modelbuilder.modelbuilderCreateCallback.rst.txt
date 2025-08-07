@@ -1,0 +1,6 @@
+nukescripts.modelbuilder.modelbuilderCreateCallback
+===================================================
+
+.. currentmodule:: nukescripts.modelbuilder
+
+.. autofunction:: modelbuilderCreateCallback

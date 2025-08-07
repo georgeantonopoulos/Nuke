@@ -1,0 +1,35 @@
+nuke.curveknob.Element
+======================
+
+.. currentmodule:: nuke.curveknob
+
+.. autoclass:: Element
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Element.clone
+      ~Element.getVisible
+      ~Element.serialise
+      ~Element.setVisible
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Element.locked
+      ~Element.name
+   
+   

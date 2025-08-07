@@ -1,0 +1,6 @@
+nuke.choice
+===========
+
+.. currentmodule:: nuke
+
+.. autofunction:: choice

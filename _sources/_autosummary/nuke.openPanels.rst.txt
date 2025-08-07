@@ -1,0 +1,6 @@
+nuke.openPanels
+===============
+
+.. currentmodule:: nuke
+
+.. autofunction:: openPanels

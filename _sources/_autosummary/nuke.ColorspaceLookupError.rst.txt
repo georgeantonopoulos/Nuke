@@ -1,0 +1,6 @@
+nuke.ColorspaceLookupError
+==========================
+
+.. currentmodule:: nuke
+
+.. autoexception:: ColorspaceLookupError

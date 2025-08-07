@@ -1,0 +1,88 @@
+nuke.splinewarp.SplineKnob
+==========================
+
+.. currentmodule:: nuke.splinewarp
+
+.. autoclass:: SplineKnob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~SplineKnob.Class
+      ~SplineKnob.ClassID
+      ~SplineKnob.changed
+      ~SplineKnob.clearAnimated
+      ~SplineKnob.clearFlag
+      ~SplineKnob.critical
+      ~SplineKnob.debug
+      ~SplineKnob.defaultJoin
+      ~SplineKnob.enabled
+      ~SplineKnob.error
+      ~SplineKnob.fromScript
+      ~SplineKnob.fullyQualifiedName
+      ~SplineKnob.getAB
+      ~SplineKnob.getAuthorMode
+      ~SplineKnob.getAuthorModes
+      ~SplineKnob.getCorrespondencePoints
+      ~SplineKnob.getDerivative
+      ~SplineKnob.getFlag
+      ~SplineKnob.getIntegral
+      ~SplineKnob.getKeyIndex
+      ~SplineKnob.getKeyList
+      ~SplineKnob.getKeyTime
+      ~SplineKnob.getNthDerivative
+      ~SplineKnob.getNumKeys
+      ~SplineKnob.getSelected
+      ~SplineKnob.getValue
+      ~SplineKnob.getValueAt
+      ~SplineKnob.hasExpression
+      ~SplineKnob.isAnimated
+      ~SplineKnob.isKey
+      ~SplineKnob.isKeyAt
+      ~SplineKnob.label
+      ~SplineKnob.makeWidget
+      ~SplineKnob.name
+      ~SplineKnob.node
+      ~SplineKnob.notDefault
+      ~SplineKnob.removeKey
+      ~SplineKnob.removeKeyAt
+      ~SplineKnob.setAB
+      ~SplineKnob.setAnimated
+      ~SplineKnob.setAuthorMode
+      ~SplineKnob.setEnabled
+      ~SplineKnob.setExpression
+      ~SplineKnob.setFlag
+      ~SplineKnob.setLabel
+      ~SplineKnob.setName
+      ~SplineKnob.setTooltip
+      ~SplineKnob.setValue
+      ~SplineKnob.setValueAt
+      ~SplineKnob.setVisible
+      ~SplineKnob.toElement
+      ~SplineKnob.toScript
+      ~SplineKnob.toScriptPrefix
+      ~SplineKnob.tooltip
+      ~SplineKnob.value
+      ~SplineKnob.visible
+      ~SplineKnob.warning
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~SplineKnob.curveWidget
+      ~SplineKnob.rootLayer
+   
+   

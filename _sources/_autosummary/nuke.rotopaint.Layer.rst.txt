@@ -1,0 +1,44 @@
+nuke.rotopaint.Layer
+====================
+
+.. currentmodule:: nuke.rotopaint
+
+.. autoclass:: Layer
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Layer.append
+      ~Layer.clone
+      ~Layer.getAttributes
+      ~Layer.getFlag
+      ~Layer.getTransform
+      ~Layer.getVisible
+      ~Layer.insert
+      ~Layer.remove
+      ~Layer.removeAll
+      ~Layer.serialise
+      ~Layer.setFlag
+      ~Layer.setTransform
+      ~Layer.setVisible
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Layer.locked
+      ~Layer.name
+   
+   

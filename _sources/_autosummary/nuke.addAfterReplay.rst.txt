@@ -1,0 +1,6 @@
+nuke.addAfterReplay
+===================
+
+.. currentmodule:: nuke
+
+.. autofunction:: addAfterReplay

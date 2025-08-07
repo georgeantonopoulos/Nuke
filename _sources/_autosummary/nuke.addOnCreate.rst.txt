@@ -1,0 +1,6 @@
+nuke.addOnCreate
+================
+
+.. currentmodule:: nuke
+
+.. autofunction:: addOnCreate

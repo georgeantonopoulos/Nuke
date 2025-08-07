@@ -1,0 +1,78 @@
+nuke.PythonKnob
+===============
+
+.. currentmodule:: nuke
+
+.. autoclass:: PythonKnob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~PythonKnob.Class
+      ~PythonKnob.ClassID
+      ~PythonKnob.clearAnimated
+      ~PythonKnob.clearFlag
+      ~PythonKnob.critical
+      ~PythonKnob.debug
+      ~PythonKnob.enabled
+      ~PythonKnob.error
+      ~PythonKnob.fromScript
+      ~PythonKnob.fullyQualifiedName
+      ~PythonKnob.getAuthorMode
+      ~PythonKnob.getAuthorModes
+      ~PythonKnob.getDerivative
+      ~PythonKnob.getFlag
+      ~PythonKnob.getIntegral
+      ~PythonKnob.getKeyIndex
+      ~PythonKnob.getKeyList
+      ~PythonKnob.getKeyTime
+      ~PythonKnob.getNthDerivative
+      ~PythonKnob.getNumKeys
+      ~PythonKnob.getText
+      ~PythonKnob.getValue
+      ~PythonKnob.getValueAt
+      ~PythonKnob.hasExpression
+      ~PythonKnob.isAnimated
+      ~PythonKnob.isKey
+      ~PythonKnob.isKeyAt
+      ~PythonKnob.label
+      ~PythonKnob.makeWidget
+      ~PythonKnob.name
+      ~PythonKnob.node
+      ~PythonKnob.notDefault
+      ~PythonKnob.removeKey
+      ~PythonKnob.removeKeyAt
+      ~PythonKnob.setAnimated
+      ~PythonKnob.setAuthorMode
+      ~PythonKnob.setEnabled
+      ~PythonKnob.setExpression
+      ~PythonKnob.setFlag
+      ~PythonKnob.setLabel
+      ~PythonKnob.setName
+      ~PythonKnob.setText
+      ~PythonKnob.setTooltip
+      ~PythonKnob.setValue
+      ~PythonKnob.setValueAt
+      ~PythonKnob.setVisible
+      ~PythonKnob.splitView
+      ~PythonKnob.toScript
+      ~PythonKnob.toScriptPrefix
+      ~PythonKnob.tooltip
+      ~PythonKnob.unsplitView
+      ~PythonKnob.value
+      ~PythonKnob.visible
+      ~PythonKnob.warning
+   
+   
+
+   
+   
+   

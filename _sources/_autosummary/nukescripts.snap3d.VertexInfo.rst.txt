@@ -1,0 +1,24 @@
+nukescripts.snap3d.VertexInfo
+=============================
+
+.. currentmodule:: nukescripts.snap3d
+
+.. autoclass:: VertexInfo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   

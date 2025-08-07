@@ -1,0 +1,6 @@
+nukescripts.readviewscheck.getViews
+===================================
+
+.. currentmodule:: nukescripts.readviewscheck
+
+.. autofunction:: getViews

@@ -1,0 +1,6 @@
+nukescripts.toolbars.parseUdimFile
+==================================
+
+.. currentmodule:: nukescripts.toolbars
+
+.. autofunction:: parseUdimFile

@@ -1,0 +1,28 @@
+nukescripts.scripteditorknob.BlinkscriptEditorWidgetKnob
+========================================================
+
+.. currentmodule:: nukescripts.scripteditorknob
+
+.. autoclass:: BlinkscriptEditorWidgetKnob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~BlinkscriptEditorWidgetKnob.clearErrors
+      ~BlinkscriptEditorWidgetKnob.makeUI
+      ~BlinkscriptEditorWidgetKnob.sendErrors
+      ~BlinkscriptEditorWidgetKnob.updateLibraryPaths
+   
+   
+
+   
+   
+   

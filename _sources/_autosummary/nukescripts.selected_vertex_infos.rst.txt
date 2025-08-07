@@ -1,0 +1,6 @@
+nukescripts.selected\_vertex\_infos
+===================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: selected_vertex_infos

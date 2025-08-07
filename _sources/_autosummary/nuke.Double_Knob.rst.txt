@@ -1,0 +1,100 @@
+nuke.Double\_Knob
+=================
+
+.. currentmodule:: nuke
+
+.. autoclass:: Double_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Double_Knob.Class
+      ~Double_Knob.ClassID
+      ~Double_Knob.animation
+      ~Double_Knob.animations
+      ~Double_Knob.array
+      ~Double_Knob.arraySize
+      ~Double_Knob.clearAnimated
+      ~Double_Knob.clearFlag
+      ~Double_Knob.copyAnimation
+      ~Double_Knob.copyAnimations
+      ~Double_Knob.critical
+      ~Double_Knob.debug
+      ~Double_Knob.defaultValue
+      ~Double_Knob.deleteAnimation
+      ~Double_Knob.dimensions
+      ~Double_Knob.enabled
+      ~Double_Knob.error
+      ~Double_Knob.frame
+      ~Double_Knob.fromScript
+      ~Double_Knob.fullyQualifiedName
+      ~Double_Knob.getAuthorMode
+      ~Double_Knob.getAuthorModes
+      ~Double_Knob.getDerivative
+      ~Double_Knob.getFlag
+      ~Double_Knob.getIntegral
+      ~Double_Knob.getKeyIndex
+      ~Double_Knob.getKeyList
+      ~Double_Knob.getKeyTime
+      ~Double_Knob.getNthDerivative
+      ~Double_Knob.getNumKeys
+      ~Double_Knob.getValue
+      ~Double_Knob.getValueAt
+      ~Double_Knob.hasExpression
+      ~Double_Knob.height
+      ~Double_Knob.isAnimated
+      ~Double_Knob.isKey
+      ~Double_Knob.isKeyAt
+      ~Double_Knob.label
+      ~Double_Knob.makeWidget
+      ~Double_Knob.max
+      ~Double_Knob.maximum
+      ~Double_Knob.min
+      ~Double_Knob.minimum
+      ~Double_Knob.name
+      ~Double_Knob.node
+      ~Double_Knob.notDefault
+      ~Double_Knob.removeKey
+      ~Double_Knob.removeKeyAt
+      ~Double_Knob.resize
+      ~Double_Knob.setAnimated
+      ~Double_Knob.setAuthorMode
+      ~Double_Knob.setDefaultValue
+      ~Double_Knob.setEnabled
+      ~Double_Knob.setExpression
+      ~Double_Knob.setFlag
+      ~Double_Knob.setKeyAt
+      ~Double_Knob.setLabel
+      ~Double_Knob.setName
+      ~Double_Knob.setRange
+      ~Double_Knob.setSingleValue
+      ~Double_Knob.setTooltip
+      ~Double_Knob.setValue
+      ~Double_Knob.setValueAt
+      ~Double_Knob.setVisible
+      ~Double_Knob.singleValue
+      ~Double_Knob.splitView
+      ~Double_Knob.toScript
+      ~Double_Knob.toScriptPrefix
+      ~Double_Knob.tooltip
+      ~Double_Knob.unsplitView
+      ~Double_Knob.value
+      ~Double_Knob.valueAt
+      ~Double_Knob.vect
+      ~Double_Knob.visible
+      ~Double_Knob.warning
+      ~Double_Knob.width
+   
+   
+
+   
+   
+   

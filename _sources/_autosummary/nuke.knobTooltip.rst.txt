@@ -1,0 +1,6 @@
+nuke.knobTooltip
+================
+
+.. currentmodule:: nuke
+
+.. autofunction:: knobTooltip

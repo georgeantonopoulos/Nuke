@@ -1,0 +1,84 @@
+nuke.ChannelMask\_Knob
+======================
+
+.. currentmodule:: nuke
+
+.. autoclass:: ChannelMask_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~ChannelMask_Knob.Class
+      ~ChannelMask_Knob.ClassID
+      ~ChannelMask_Knob.channelSelector
+      ~ChannelMask_Knob.checkMarks
+      ~ChannelMask_Knob.clearAnimated
+      ~ChannelMask_Knob.clearFlag
+      ~ChannelMask_Knob.critical
+      ~ChannelMask_Knob.debug
+      ~ChannelMask_Knob.depth
+      ~ChannelMask_Knob.enableChannel
+      ~ChannelMask_Knob.enabled
+      ~ChannelMask_Knob.error
+      ~ChannelMask_Knob.fromScript
+      ~ChannelMask_Knob.fullyQualifiedName
+      ~ChannelMask_Knob.getAuthorMode
+      ~ChannelMask_Knob.getAuthorModes
+      ~ChannelMask_Knob.getDerivative
+      ~ChannelMask_Knob.getFlag
+      ~ChannelMask_Knob.getIntegral
+      ~ChannelMask_Knob.getKeyIndex
+      ~ChannelMask_Knob.getKeyList
+      ~ChannelMask_Knob.getKeyTime
+      ~ChannelMask_Knob.getNthDerivative
+      ~ChannelMask_Knob.getNumKeys
+      ~ChannelMask_Knob.getValue
+      ~ChannelMask_Knob.getValueAt
+      ~ChannelMask_Knob.hasExpression
+      ~ChannelMask_Knob.inputKnob
+      ~ChannelMask_Knob.inputNumber
+      ~ChannelMask_Knob.isAnimated
+      ~ChannelMask_Knob.isChannelEnabled
+      ~ChannelMask_Knob.isKey
+      ~ChannelMask_Knob.isKeyAt
+      ~ChannelMask_Knob.label
+      ~ChannelMask_Knob.layerSelector
+      ~ChannelMask_Knob.makeWidget
+      ~ChannelMask_Knob.name
+      ~ChannelMask_Knob.node
+      ~ChannelMask_Knob.notDefault
+      ~ChannelMask_Knob.removeKey
+      ~ChannelMask_Knob.removeKeyAt
+      ~ChannelMask_Knob.setAnimated
+      ~ChannelMask_Knob.setAuthorMode
+      ~ChannelMask_Knob.setEnable
+      ~ChannelMask_Knob.setEnabled
+      ~ChannelMask_Knob.setExpression
+      ~ChannelMask_Knob.setFlag
+      ~ChannelMask_Knob.setInput
+      ~ChannelMask_Knob.setLabel
+      ~ChannelMask_Knob.setName
+      ~ChannelMask_Knob.setTooltip
+      ~ChannelMask_Knob.setValue
+      ~ChannelMask_Knob.setValueAt
+      ~ChannelMask_Knob.setVisible
+      ~ChannelMask_Knob.toScript
+      ~ChannelMask_Knob.toScriptPrefix
+      ~ChannelMask_Knob.tooltip
+      ~ChannelMask_Knob.value
+      ~ChannelMask_Knob.visible
+      ~ChannelMask_Knob.warning
+   
+   
+
+   
+   
+   

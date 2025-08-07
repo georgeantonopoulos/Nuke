@@ -1,0 +1,6 @@
+nukescripts.render\_panel
+=========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: render_panel

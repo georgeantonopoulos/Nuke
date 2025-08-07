@@ -1,0 +1,58 @@
+nukescripts.framerangepanel.FrameRangePanel
+===========================================
+
+.. currentmodule:: nukescripts.framerangepanel
+
+.. autoclass:: FrameRangePanel
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~FrameRangePanel.accept
+      ~FrameRangePanel.add
+      ~FrameRangePanel.addCallback
+      ~FrameRangePanel.addKnob
+      ~FrameRangePanel.addToPane
+      ~FrameRangePanel.cancel
+      ~FrameRangePanel.close
+      ~FrameRangePanel.create
+      ~FrameRangePanel.destroy
+      ~FrameRangePanel.finishModalDialog
+      ~FrameRangePanel.height
+      ~FrameRangePanel.hide
+      ~FrameRangePanel.isEnabled
+      ~FrameRangePanel.isValid
+      ~FrameRangePanel.knobChanged
+      ~FrameRangePanel.knobChangedCallback
+      ~FrameRangePanel.knobs
+      ~FrameRangePanel.ok
+      ~FrameRangePanel.readKnobs
+      ~FrameRangePanel.reject
+      ~FrameRangePanel.removeCallback
+      ~FrameRangePanel.removeKnob
+      ~FrameRangePanel.setEnabled
+      ~FrameRangePanel.setMaximumSize
+      ~FrameRangePanel.setMinimumSize
+      ~FrameRangePanel.setTooltip
+      ~FrameRangePanel.setVisible
+      ~FrameRangePanel.show
+      ~FrameRangePanel.showDialog
+      ~FrameRangePanel.showModal
+      ~FrameRangePanel.showModalDialog
+      ~FrameRangePanel.tooltip
+      ~FrameRangePanel.width
+      ~FrameRangePanel.writeKnobs
+   
+   
+
+   
+   
+   

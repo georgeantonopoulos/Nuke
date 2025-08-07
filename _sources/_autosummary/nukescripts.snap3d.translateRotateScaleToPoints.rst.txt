@@ -1,0 +1,6 @@
+nukescripts.snap3d.translateRotateScaleToPoints
+===============================================
+
+.. currentmodule:: nukescripts.snap3d
+
+.. autofunction:: translateRotateScaleToPoints

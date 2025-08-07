@@ -1,0 +1,29 @@
+nukescripts.fnFlipbookRenderer.SimpleFlipbook
+=============================================
+
+.. currentmodule:: nukescripts.fnFlipbookRenderer
+
+.. autoclass:: SimpleFlipbook
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~SimpleFlipbook.doFlipbook
+      ~SimpleFlipbook.getFlipbookOptions
+      ~SimpleFlipbook.getOptions
+      ~SimpleFlipbook.initializeFlipbookNode
+      ~SimpleFlipbook.runFlipbook
+   
+   
+
+   
+   
+   

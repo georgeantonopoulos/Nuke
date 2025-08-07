@@ -1,0 +1,6 @@
+nukescripts.openurl.start
+=========================
+
+.. currentmodule:: nukescripts.openurl
+
+.. autofunction:: start

@@ -1,0 +1,6 @@
+nukescripts.nodepresets.buildPresetFileList
+===========================================
+
+.. currentmodule:: nukescripts.nodepresets
+
+.. autofunction:: buildPresetFileList

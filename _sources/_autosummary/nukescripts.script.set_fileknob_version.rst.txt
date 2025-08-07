@@ -1,0 +1,6 @@
+nukescripts.script.set\_fileknob\_version
+=========================================
+
+.. currentmodule:: nukescripts.script
+
+.. autofunction:: set_fileknob_version

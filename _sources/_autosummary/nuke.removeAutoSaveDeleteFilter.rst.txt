@@ -1,0 +1,6 @@
+nuke.removeAutoSaveDeleteFilter
+===============================
+
+.. currentmodule:: nuke
+
+.. autofunction:: removeAutoSaveDeleteFilter

@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.rotate\_matrix\_xyz
+=========================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: rotate_matrix_xyz

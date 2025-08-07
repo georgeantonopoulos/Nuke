@@ -1,0 +1,6 @@
+nuke.autoplace\_snap\_all
+=========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: autoplace_snap_all

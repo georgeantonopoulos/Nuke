@@ -1,0 +1,6 @@
+nukescripts.frame.goto\_frame
+=============================
+
+.. currentmodule:: nukescripts.frame
+
+.. autofunction:: goto_frame

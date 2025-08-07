@@ -1,0 +1,6 @@
+nuke.dependencies
+=================
+
+.. currentmodule:: nuke
+
+.. autofunction:: dependencies

@@ -1,0 +1,6 @@
+nukescripts.nodepresets.buildPresetSavePanel
+============================================
+
+.. currentmodule:: nukescripts.nodepresets
+
+.. autofunction:: buildPresetSavePanel

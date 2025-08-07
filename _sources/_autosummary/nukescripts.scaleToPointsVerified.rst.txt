@@ -1,0 +1,6 @@
+nukescripts.scaleToPointsVerified
+=================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: scaleToPointsVerified

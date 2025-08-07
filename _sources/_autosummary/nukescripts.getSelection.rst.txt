@@ -1,0 +1,6 @@
+nukescripts.getSelection
+========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: getSelection

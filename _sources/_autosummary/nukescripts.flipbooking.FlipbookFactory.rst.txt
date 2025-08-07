@@ -1,0 +1,28 @@
+nukescripts.flipbooking.FlipbookFactory
+=======================================
+
+.. currentmodule:: nukescripts.flipbooking
+
+.. autoclass:: FlipbookFactory
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~FlipbookFactory.getApplication
+      ~FlipbookFactory.getNames
+      ~FlipbookFactory.isRegistered
+      ~FlipbookFactory.register
+   
+   
+
+   
+   
+   

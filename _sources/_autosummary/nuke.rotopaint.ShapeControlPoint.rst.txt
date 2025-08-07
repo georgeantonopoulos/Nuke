@@ -1,0 +1,35 @@
+nuke.rotopaint.ShapeControlPoint
+================================
+
+.. currentmodule:: nuke.rotopaint
+
+.. autoclass:: ShapeControlPoint
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ShapeControlPoint.center
+      ~ShapeControlPoint.featherCenter
+      ~ShapeControlPoint.featherLeftTangent
+      ~ShapeControlPoint.featherRightTangent
+      ~ShapeControlPoint.leftTangent
+      ~ShapeControlPoint.rightTangent
+   
+   

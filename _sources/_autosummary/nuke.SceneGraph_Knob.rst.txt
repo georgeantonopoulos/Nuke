@@ -1,0 +1,106 @@
+nuke.SceneGraph\_Knob
+=====================
+
+.. currentmodule:: nuke
+
+.. autoclass:: SceneGraph_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~SceneGraph_Knob.Class
+      ~SceneGraph_Knob.ClassID
+      ~SceneGraph_Knob.addItems
+      ~SceneGraph_Knob.animation
+      ~SceneGraph_Knob.animations
+      ~SceneGraph_Knob.array
+      ~SceneGraph_Knob.arraySize
+      ~SceneGraph_Knob.clearAnimated
+      ~SceneGraph_Knob.clearFlag
+      ~SceneGraph_Knob.copyAnimation
+      ~SceneGraph_Knob.copyAnimations
+      ~SceneGraph_Knob.critical
+      ~SceneGraph_Knob.debug
+      ~SceneGraph_Knob.defaultValue
+      ~SceneGraph_Knob.deleteAnimation
+      ~SceneGraph_Knob.dimensions
+      ~SceneGraph_Knob.enabled
+      ~SceneGraph_Knob.error
+      ~SceneGraph_Knob.frame
+      ~SceneGraph_Knob.fromScript
+      ~SceneGraph_Knob.fullyQualifiedName
+      ~SceneGraph_Knob.getAuthorMode
+      ~SceneGraph_Knob.getAuthorModes
+      ~SceneGraph_Knob.getDerivative
+      ~SceneGraph_Knob.getFlag
+      ~SceneGraph_Knob.getIntegral
+      ~SceneGraph_Knob.getItems
+      ~SceneGraph_Knob.getKeyIndex
+      ~SceneGraph_Knob.getKeyList
+      ~SceneGraph_Knob.getKeyTime
+      ~SceneGraph_Knob.getNthDerivative
+      ~SceneGraph_Knob.getNumKeys
+      ~SceneGraph_Knob.getSelectedItems
+      ~SceneGraph_Knob.getValue
+      ~SceneGraph_Knob.getValueAt
+      ~SceneGraph_Knob.hasExpression
+      ~SceneGraph_Knob.height
+      ~SceneGraph_Knob.isAnimated
+      ~SceneGraph_Knob.isKey
+      ~SceneGraph_Knob.isKeyAt
+      ~SceneGraph_Knob.label
+      ~SceneGraph_Knob.makeWidget
+      ~SceneGraph_Knob.max
+      ~SceneGraph_Knob.maximum
+      ~SceneGraph_Knob.min
+      ~SceneGraph_Knob.minimum
+      ~SceneGraph_Knob.name
+      ~SceneGraph_Knob.node
+      ~SceneGraph_Knob.notDefault
+      ~SceneGraph_Knob.removeItems
+      ~SceneGraph_Knob.removeKey
+      ~SceneGraph_Knob.removeKeyAt
+      ~SceneGraph_Knob.resize
+      ~SceneGraph_Knob.setAnimated
+      ~SceneGraph_Knob.setAuthorMode
+      ~SceneGraph_Knob.setDefaultValue
+      ~SceneGraph_Knob.setEnabled
+      ~SceneGraph_Knob.setExpression
+      ~SceneGraph_Knob.setFlag
+      ~SceneGraph_Knob.setItems
+      ~SceneGraph_Knob.setKeyAt
+      ~SceneGraph_Knob.setLabel
+      ~SceneGraph_Knob.setName
+      ~SceneGraph_Knob.setRange
+      ~SceneGraph_Knob.setSelectedItems
+      ~SceneGraph_Knob.setSingleValue
+      ~SceneGraph_Knob.setTooltip
+      ~SceneGraph_Knob.setValue
+      ~SceneGraph_Knob.setValueAt
+      ~SceneGraph_Knob.setVisible
+      ~SceneGraph_Knob.singleValue
+      ~SceneGraph_Knob.splitView
+      ~SceneGraph_Knob.toScript
+      ~SceneGraph_Knob.toScriptPrefix
+      ~SceneGraph_Knob.tooltip
+      ~SceneGraph_Knob.unsplitView
+      ~SceneGraph_Knob.value
+      ~SceneGraph_Knob.valueAt
+      ~SceneGraph_Knob.vect
+      ~SceneGraph_Knob.visible
+      ~SceneGraph_Knob.warning
+      ~SceneGraph_Knob.width
+   
+   
+
+   
+   
+   

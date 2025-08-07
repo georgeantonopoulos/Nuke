@@ -1,0 +1,100 @@
+nuke.IArray\_Knob
+=================
+
+.. currentmodule:: nuke
+
+.. autoclass:: IArray_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~IArray_Knob.Class
+      ~IArray_Knob.ClassID
+      ~IArray_Knob.animation
+      ~IArray_Knob.animations
+      ~IArray_Knob.array
+      ~IArray_Knob.arraySize
+      ~IArray_Knob.clearAnimated
+      ~IArray_Knob.clearFlag
+      ~IArray_Knob.copyAnimation
+      ~IArray_Knob.copyAnimations
+      ~IArray_Knob.critical
+      ~IArray_Knob.debug
+      ~IArray_Knob.defaultValue
+      ~IArray_Knob.deleteAnimation
+      ~IArray_Knob.dimensions
+      ~IArray_Knob.enabled
+      ~IArray_Knob.error
+      ~IArray_Knob.frame
+      ~IArray_Knob.fromScript
+      ~IArray_Knob.fullyQualifiedName
+      ~IArray_Knob.getAuthorMode
+      ~IArray_Knob.getAuthorModes
+      ~IArray_Knob.getDerivative
+      ~IArray_Knob.getFlag
+      ~IArray_Knob.getIntegral
+      ~IArray_Knob.getKeyIndex
+      ~IArray_Knob.getKeyList
+      ~IArray_Knob.getKeyTime
+      ~IArray_Knob.getNthDerivative
+      ~IArray_Knob.getNumKeys
+      ~IArray_Knob.getValue
+      ~IArray_Knob.getValueAt
+      ~IArray_Knob.hasExpression
+      ~IArray_Knob.height
+      ~IArray_Knob.isAnimated
+      ~IArray_Knob.isKey
+      ~IArray_Knob.isKeyAt
+      ~IArray_Knob.label
+      ~IArray_Knob.makeWidget
+      ~IArray_Knob.max
+      ~IArray_Knob.maximum
+      ~IArray_Knob.min
+      ~IArray_Knob.minimum
+      ~IArray_Knob.name
+      ~IArray_Knob.node
+      ~IArray_Knob.notDefault
+      ~IArray_Knob.removeKey
+      ~IArray_Knob.removeKeyAt
+      ~IArray_Knob.resize
+      ~IArray_Knob.setAnimated
+      ~IArray_Knob.setAuthorMode
+      ~IArray_Knob.setDefaultValue
+      ~IArray_Knob.setEnabled
+      ~IArray_Knob.setExpression
+      ~IArray_Knob.setFlag
+      ~IArray_Knob.setKeyAt
+      ~IArray_Knob.setLabel
+      ~IArray_Knob.setName
+      ~IArray_Knob.setRange
+      ~IArray_Knob.setSingleValue
+      ~IArray_Knob.setTooltip
+      ~IArray_Knob.setValue
+      ~IArray_Knob.setValueAt
+      ~IArray_Knob.setVisible
+      ~IArray_Knob.singleValue
+      ~IArray_Knob.splitView
+      ~IArray_Knob.toScript
+      ~IArray_Knob.toScriptPrefix
+      ~IArray_Knob.tooltip
+      ~IArray_Knob.unsplitView
+      ~IArray_Knob.value
+      ~IArray_Knob.valueAt
+      ~IArray_Knob.vect
+      ~IArray_Knob.visible
+      ~IArray_Knob.warning
+      ~IArray_Knob.width
+   
+   
+
+   
+   
+   

@@ -1,0 +1,6 @@
+nuke.localizationEnabled
+========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: localizationEnabled

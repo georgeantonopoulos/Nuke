@@ -1,0 +1,6 @@
+nukescripts.allNodesWithGeoSelectKnob
+=====================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: allNodesWithGeoSelectKnob

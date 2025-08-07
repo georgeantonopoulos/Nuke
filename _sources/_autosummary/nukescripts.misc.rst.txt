@@ -1,0 +1,39 @@
+nukescripts.misc
+================
+
+.. automodule:: nukescripts.misc
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      clear_selection_recursive
+      connect_selected_to_viewer
+      copy_knobs
+      cut_paste_file
+      declone
+      goofy_title
+      print_callback_info
+      showname
+      swapAB
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

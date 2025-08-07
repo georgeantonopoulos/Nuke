@@ -1,0 +1,6 @@
+nukescripts.translateRotateThisNodeToPoints
+===========================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: translateRotateThisNodeToPoints

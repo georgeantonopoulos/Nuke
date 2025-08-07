@@ -1,0 +1,6 @@
+nukescripts.nodepresets.getNukeUserFolder
+=========================================
+
+.. currentmodule:: nukescripts.nodepresets
+
+.. autofunction:: getNukeUserFolder

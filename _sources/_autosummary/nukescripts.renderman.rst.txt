@@ -1,0 +1,31 @@
+nukescripts.renderman
+=====================
+
+.. automodule:: nukescripts.renderman
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      filterRIB
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

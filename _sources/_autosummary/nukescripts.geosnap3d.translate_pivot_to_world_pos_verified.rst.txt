@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.translate\_pivot\_to\_world\_pos\_verified
+================================================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: translate_pivot_to_world_pos_verified

@@ -1,0 +1,6 @@
+nukescripts.translatePivotToPointsVerified
+==========================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: translatePivotToPointsVerified

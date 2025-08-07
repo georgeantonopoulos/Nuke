@@ -1,0 +1,6 @@
+nukescripts.degrees
+===================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: degrees

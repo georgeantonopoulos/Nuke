@@ -1,0 +1,6 @@
+nukescripts.get\_vertex\_selection
+==================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: get_vertex_selection

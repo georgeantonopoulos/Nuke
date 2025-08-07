@@ -1,0 +1,6 @@
+nukescripts.callSnapFunc
+========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: callSnapFunc

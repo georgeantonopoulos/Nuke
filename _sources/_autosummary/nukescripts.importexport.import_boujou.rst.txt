@@ -1,0 +1,6 @@
+nukescripts.importexport.import\_boujou
+=======================================
+
+.. currentmodule:: nukescripts.importexport
+
+.. autofunction:: import_boujou

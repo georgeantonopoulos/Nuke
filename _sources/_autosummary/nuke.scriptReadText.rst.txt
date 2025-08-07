@@ -1,0 +1,6 @@
+nuke.scriptReadText
+===================
+
+.. currentmodule:: nuke
+
+.. autofunction:: scriptReadText

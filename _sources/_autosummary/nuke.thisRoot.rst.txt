@@ -1,0 +1,6 @@
+nuke.thisRoot
+=============
+
+.. currentmodule:: nuke
+
+.. autofunction:: thisRoot

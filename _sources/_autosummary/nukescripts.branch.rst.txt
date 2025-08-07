@@ -1,0 +1,6 @@
+nukescripts.branch
+==================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: branch

@@ -1,0 +1,32 @@
+nukescripts.select
+==================
+
+.. automodule:: nukescripts.select
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      select_by_name
+      select_similar
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

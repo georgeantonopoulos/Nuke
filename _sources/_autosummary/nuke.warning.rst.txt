@@ -1,0 +1,6 @@
+nuke.warning
+============
+
+.. currentmodule:: nuke
+
+.. autofunction:: warning

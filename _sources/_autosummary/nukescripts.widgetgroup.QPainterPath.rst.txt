@@ -1,0 +1,69 @@
+nukescripts.widgetgroup.QPainterPath
+====================================
+
+.. currentmodule:: nukescripts.widgetgroup
+
+.. autoclass:: QPainterPath
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~QPainterPath.addEllipse
+      ~QPainterPath.addPath
+      ~QPainterPath.addPolygon
+      ~QPainterPath.addRect
+      ~QPainterPath.addRegion
+      ~QPainterPath.addRoundedRect
+      ~QPainterPath.addText
+      ~QPainterPath.angleAtPercent
+      ~QPainterPath.arcMoveTo
+      ~QPainterPath.arcTo
+      ~QPainterPath.boundingRect
+      ~QPainterPath.capacity
+      ~QPainterPath.clear
+      ~QPainterPath.closeSubpath
+      ~QPainterPath.connectPath
+      ~QPainterPath.contains
+      ~QPainterPath.controlPointRect
+      ~QPainterPath.cubicTo
+      ~QPainterPath.currentPosition
+      ~QPainterPath.elementAt
+      ~QPainterPath.elementCount
+      ~QPainterPath.fillRule
+      ~QPainterPath.intersected
+      ~QPainterPath.intersects
+      ~QPainterPath.isEmpty
+      ~QPainterPath.length
+      ~QPainterPath.lineTo
+      ~QPainterPath.moveTo
+      ~QPainterPath.percentAtLength
+      ~QPainterPath.pointAtPercent
+      ~QPainterPath.quadTo
+      ~QPainterPath.reserve
+      ~QPainterPath.setElementPositionAt
+      ~QPainterPath.setFillRule
+      ~QPainterPath.simplified
+      ~QPainterPath.slopeAtPercent
+      ~QPainterPath.subtracted
+      ~QPainterPath.swap
+      ~QPainterPath.toFillPolygon
+      ~QPainterPath.toFillPolygons
+      ~QPainterPath.toReversed
+      ~QPainterPath.toSubpathPolygons
+      ~QPainterPath.translate
+      ~QPainterPath.translated
+      ~QPainterPath.united
+   
+   
+
+   
+   
+   

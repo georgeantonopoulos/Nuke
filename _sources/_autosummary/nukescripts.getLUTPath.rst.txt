@@ -1,0 +1,6 @@
+nukescripts.getLUTPath
+======================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: getLUTPath

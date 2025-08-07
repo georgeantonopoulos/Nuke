@@ -1,0 +1,6 @@
+nuke.plugins
+============
+
+.. currentmodule:: nuke
+
+.. autofunction:: plugins

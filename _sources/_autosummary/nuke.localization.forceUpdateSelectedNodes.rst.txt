@@ -1,0 +1,6 @@
+nuke.localization.forceUpdateSelectedNodes
+==========================================
+
+.. currentmodule:: nuke.localization
+
+.. autofunction:: forceUpdateSelectedNodes

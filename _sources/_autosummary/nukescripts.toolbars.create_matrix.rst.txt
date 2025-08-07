@@ -1,0 +1,6 @@
+nukescripts.toolbars.create\_matrix
+===================================
+
+.. currentmodule:: nukescripts.toolbars
+
+.. autofunction:: create_matrix

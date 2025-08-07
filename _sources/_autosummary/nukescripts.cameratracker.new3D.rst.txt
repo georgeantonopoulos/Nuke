@@ -1,0 +1,6 @@
+nukescripts.cameratracker.new3D
+===============================
+
+.. currentmodule:: nukescripts.cameratracker
+
+.. autofunction:: new3D

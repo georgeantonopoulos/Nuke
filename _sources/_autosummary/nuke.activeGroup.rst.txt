@@ -1,0 +1,6 @@
+nuke.activeGroup
+================
+
+.. currentmodule:: nuke
+
+.. autofunction:: activeGroup

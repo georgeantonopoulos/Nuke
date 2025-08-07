@@ -1,0 +1,6 @@
+nukescripts.bookmarks.quickSave
+===============================
+
+.. currentmodule:: nukescripts.bookmarks
+
+.. autofunction:: quickSave

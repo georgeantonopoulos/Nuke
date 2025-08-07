@@ -1,0 +1,6 @@
+nukescripts.snap3d.anySelectedVertexInfo
+========================================
+
+.. currentmodule:: nukescripts.snap3d
+
+.. autofunction:: anySelectedVertexInfo

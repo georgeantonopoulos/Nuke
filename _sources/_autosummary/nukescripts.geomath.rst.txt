@@ -1,0 +1,38 @@
+nukescripts.geomath
+===================
+
+.. automodule:: nukescripts.geomath
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      get_prim_world_rotation_zxy
+      get_world_point_on_bbox
+      plane_rotation
+      rotate_matrix_xyz
+      rotate_matrix_zxy
+      scaling_matrix
+      translate_matrix
+      transpose_matrix3
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

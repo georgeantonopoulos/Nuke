@@ -1,0 +1,102 @@
+nuke.Eyedropper\_Knob
+=====================
+
+.. currentmodule:: nuke
+
+.. autoclass:: Eyedropper_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Eyedropper_Knob.Class
+      ~Eyedropper_Knob.ClassID
+      ~Eyedropper_Knob.animation
+      ~Eyedropper_Knob.animations
+      ~Eyedropper_Knob.array
+      ~Eyedropper_Knob.arraySize
+      ~Eyedropper_Knob.clearAnimated
+      ~Eyedropper_Knob.clearFlag
+      ~Eyedropper_Knob.copyAnimation
+      ~Eyedropper_Knob.copyAnimations
+      ~Eyedropper_Knob.critical
+      ~Eyedropper_Knob.debug
+      ~Eyedropper_Knob.defaultValue
+      ~Eyedropper_Knob.deleteAnimation
+      ~Eyedropper_Knob.dimensions
+      ~Eyedropper_Knob.enabled
+      ~Eyedropper_Knob.error
+      ~Eyedropper_Knob.frame
+      ~Eyedropper_Knob.fromScript
+      ~Eyedropper_Knob.fullyQualifiedName
+      ~Eyedropper_Knob.getAuthorMode
+      ~Eyedropper_Knob.getAuthorModes
+      ~Eyedropper_Knob.getDerivative
+      ~Eyedropper_Knob.getFlag
+      ~Eyedropper_Knob.getIntegral
+      ~Eyedropper_Knob.getKeyIndex
+      ~Eyedropper_Knob.getKeyList
+      ~Eyedropper_Knob.getKeyTime
+      ~Eyedropper_Knob.getNthDerivative
+      ~Eyedropper_Knob.getNumKeys
+      ~Eyedropper_Knob.getValue
+      ~Eyedropper_Knob.getValueAt
+      ~Eyedropper_Knob.hasExpression
+      ~Eyedropper_Knob.height
+      ~Eyedropper_Knob.inputNumber
+      ~Eyedropper_Knob.isAnimated
+      ~Eyedropper_Knob.isKey
+      ~Eyedropper_Knob.isKeyAt
+      ~Eyedropper_Knob.label
+      ~Eyedropper_Knob.makeWidget
+      ~Eyedropper_Knob.max
+      ~Eyedropper_Knob.maximum
+      ~Eyedropper_Knob.min
+      ~Eyedropper_Knob.minimum
+      ~Eyedropper_Knob.name
+      ~Eyedropper_Knob.names
+      ~Eyedropper_Knob.node
+      ~Eyedropper_Knob.notDefault
+      ~Eyedropper_Knob.removeKey
+      ~Eyedropper_Knob.removeKeyAt
+      ~Eyedropper_Knob.resize
+      ~Eyedropper_Knob.setAnimated
+      ~Eyedropper_Knob.setAuthorMode
+      ~Eyedropper_Knob.setDefaultValue
+      ~Eyedropper_Knob.setEnabled
+      ~Eyedropper_Knob.setExpression
+      ~Eyedropper_Knob.setFlag
+      ~Eyedropper_Knob.setKeyAt
+      ~Eyedropper_Knob.setLabel
+      ~Eyedropper_Knob.setName
+      ~Eyedropper_Knob.setRange
+      ~Eyedropper_Knob.setSingleValue
+      ~Eyedropper_Knob.setTooltip
+      ~Eyedropper_Knob.setValue
+      ~Eyedropper_Knob.setValueAt
+      ~Eyedropper_Knob.setVisible
+      ~Eyedropper_Knob.singleValue
+      ~Eyedropper_Knob.splitView
+      ~Eyedropper_Knob.toScript
+      ~Eyedropper_Knob.toScriptPrefix
+      ~Eyedropper_Knob.tooltip
+      ~Eyedropper_Knob.unsplitView
+      ~Eyedropper_Knob.value
+      ~Eyedropper_Knob.valueAt
+      ~Eyedropper_Knob.vect
+      ~Eyedropper_Knob.visible
+      ~Eyedropper_Knob.warning
+      ~Eyedropper_Knob.width
+   
+   
+
+   
+   
+   

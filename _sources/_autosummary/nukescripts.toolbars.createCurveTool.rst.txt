@@ -1,0 +1,6 @@
+nukescripts.toolbars.createCurveTool
+====================================
+
+.. currentmodule:: nukescripts.toolbars
+
+.. autofunction:: createCurveTool

@@ -1,0 +1,6 @@
+nukescripts.autobackdrop.nodeIsInside
+=====================================
+
+.. currentmodule:: nukescripts.autobackdrop
+
+.. autofunction:: nodeIsInside

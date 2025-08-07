@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.calc\_rotation\_vector
+============================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: calc_rotation_vector

@@ -1,0 +1,6 @@
+nukescripts.run\_framecycler.framecycler\_this
+==============================================
+
+.. currentmodule:: nukescripts.run_framecycler
+
+.. autofunction:: framecycler_this

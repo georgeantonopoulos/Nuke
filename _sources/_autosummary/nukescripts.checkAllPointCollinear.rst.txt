@@ -1,0 +1,6 @@
+nukescripts.checkAllPointCollinear
+==================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: checkAllPointCollinear

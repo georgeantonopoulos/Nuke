@@ -1,0 +1,6 @@
+nukescripts.createCamera
+========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: createCamera

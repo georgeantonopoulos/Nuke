@@ -1,0 +1,6 @@
+nukescripts.calc\_rotation\_vector
+==================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: calc_rotation_vector

@@ -1,0 +1,6 @@
+nukescripts.searchreplace.search\_replace
+=========================================
+
+.. currentmodule:: nukescripts.searchreplace
+
+.. autofunction:: search_replace

@@ -1,0 +1,6 @@
+nuke.addToolsetExcludePaths
+===========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: addToolsetExcludePaths

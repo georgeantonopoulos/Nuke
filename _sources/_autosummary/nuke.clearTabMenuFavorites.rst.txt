@@ -1,0 +1,6 @@
+nuke.clearTabMenuFavorites
+==========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: clearTabMenuFavorites

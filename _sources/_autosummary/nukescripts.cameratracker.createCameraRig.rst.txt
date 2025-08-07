@@ -1,0 +1,6 @@
+nukescripts.cameratracker.createCameraRig
+=========================================
+
+.. currentmodule:: nukescripts.cameratracker
+
+.. autofunction:: createCameraRig

@@ -1,0 +1,6 @@
+nukescripts.cattery.register\_cats
+==================================
+
+.. currentmodule:: nukescripts.cattery
+
+.. autofunction:: register_cats

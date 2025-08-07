@@ -1,0 +1,6 @@
+nukescripts.unrealreader.cameraClass
+====================================
+
+.. currentmodule:: nukescripts.unrealreader
+
+.. autofunction:: cameraClass

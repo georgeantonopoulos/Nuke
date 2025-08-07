@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.get\_stage\_from\_active\_viewer
+======================================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: get_stage_from_active_viewer

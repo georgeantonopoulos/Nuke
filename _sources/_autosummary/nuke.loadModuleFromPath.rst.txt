@@ -1,0 +1,6 @@
+nuke.loadModuleFromPath
+=======================
+
+.. currentmodule:: nuke
+
+.. autofunction:: loadModuleFromPath

@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.check\_all\_point\_collinear
+==================================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: check_all_point_collinear

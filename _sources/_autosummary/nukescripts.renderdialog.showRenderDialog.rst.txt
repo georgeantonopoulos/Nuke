@@ -1,0 +1,6 @@
+nukescripts.renderdialog.showRenderDialog
+=========================================
+
+.. currentmodule:: nukescripts.renderdialog
+
+.. autofunction:: showRenderDialog

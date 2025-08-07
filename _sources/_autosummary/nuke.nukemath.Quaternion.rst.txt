@@ -1,0 +1,42 @@
+nuke.nukemath.Quaternion
+========================
+
+.. currentmodule:: nuke.nukemath
+
+.. autoclass:: Quaternion
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Quaternion.addInverse
+      ~Quaternion.conjugate
+      ~Quaternion.length
+      ~Quaternion.lengthSquared
+      ~Quaternion.magnitude
+      ~Quaternion.matrix
+      ~Quaternion.multInverse
+      ~Quaternion.set
+      ~Quaternion.slerp
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Quaternion.s
+      ~Quaternion.vx
+      ~Quaternion.vy
+      ~Quaternion.vz
+   
+   

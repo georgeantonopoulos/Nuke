@@ -1,0 +1,6 @@
+nukescripts.select\_similar
+===========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: select_similar

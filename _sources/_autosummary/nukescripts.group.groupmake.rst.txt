@@ -1,0 +1,6 @@
+nukescripts.group.groupmake
+===========================
+
+.. currentmodule:: nukescripts.group
+
+.. autofunction:: groupmake

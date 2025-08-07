@@ -1,0 +1,6 @@
+nuke.nodePaste
+==============
+
+.. currentmodule:: nuke
+
+.. autofunction:: nodePaste

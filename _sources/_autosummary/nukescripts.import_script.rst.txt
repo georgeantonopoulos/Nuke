@@ -1,0 +1,6 @@
+nukescripts.import\_script
+==========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: import_script

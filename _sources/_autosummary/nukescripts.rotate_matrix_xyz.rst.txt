@@ -1,0 +1,6 @@
+nukescripts.rotate\_matrix\_xyz
+===============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: rotate_matrix_xyz

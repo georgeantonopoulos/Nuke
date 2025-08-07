@@ -1,0 +1,6 @@
+nukescripts.fuzzy\_vector3\_add
+===============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: fuzzy_vector3_add

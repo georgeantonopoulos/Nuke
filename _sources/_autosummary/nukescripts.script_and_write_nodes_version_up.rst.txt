@@ -1,0 +1,6 @@
+nukescripts.script\_and\_write\_nodes\_version\_up
+==================================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: script_and_write_nodes_version_up

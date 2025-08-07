@@ -1,0 +1,138 @@
+nuke.Precomp
+============
+
+.. currentmodule:: nuke
+
+.. autoclass:: Precomp
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Precomp.Class
+      ~Precomp.addCallback
+      ~Precomp.addKnob
+      ~Precomp.allKnobs
+      ~Precomp.autoplace
+      ~Precomp.baseNode
+      ~Precomp.bbox
+      ~Precomp.begin
+      ~Precomp.canSetInput
+      ~Precomp.channels
+      ~Precomp.clearCallbacks
+      ~Precomp.clearCustomIcon
+      ~Precomp.cloneInstanceIndex
+      ~Precomp.cloneInstanceNode
+      ~Precomp.cloneInstances
+      ~Precomp.clones
+      ~Precomp.connectInput
+      ~Precomp.connectSelectedNodes
+      ~Precomp.deepSample
+      ~Precomp.deepSampleCount
+      ~Precomp.dependencies
+      ~Precomp.dependent
+      ~Precomp.end
+      ~Precomp.error
+      ~Precomp.executePythonCallback
+      ~Precomp.expand
+      ~Precomp.fileDependencies
+      ~Precomp.findNode
+      ~Precomp.firstFrame
+      ~Precomp.forceUpdateLocalization
+      ~Precomp.forceValidate
+      ~Precomp.format
+      ~Precomp.frameRange
+      ~Precomp.fullName
+      ~Precomp.getLink
+      ~Precomp.getNumKnobs
+      ~Precomp.getStage
+      ~Precomp.hasError
+      ~Precomp.height
+      ~Precomp.help
+      ~Precomp.helpUrl
+      ~Precomp.hideControlPanel
+      ~Precomp.input
+      ~Precomp.inputs
+      ~Precomp.isClone
+      ~Precomp.isCloneable
+      ~Precomp.isLinked
+      ~Precomp.isLocalizationOutdated
+      ~Precomp.isLocalized
+      ~Precomp.isSelected
+      ~Precomp.knob
+      ~Precomp.knobs
+      ~Precomp.lastFrame
+      ~Precomp.linkableKnobs
+      ~Precomp.localizationProgress
+      ~Precomp.lock
+      ~Precomp.locked
+      ~Precomp.maxInputs
+      ~Precomp.maxOutputs
+      ~Precomp.maximumInputs
+      ~Precomp.maximumOutputs
+      ~Precomp.metadata
+      ~Precomp.minInputs
+      ~Precomp.minimumInputs
+      ~Precomp.name
+      ~Precomp.node
+      ~Precomp.nodes
+      ~Precomp.numKnobs
+      ~Precomp.numNodes
+      ~Precomp.opHashes
+      ~Precomp.optionalInput
+      ~Precomp.output
+      ~Precomp.overrideKnob
+      ~Precomp.parent
+      ~Precomp.performanceInfo
+      ~Precomp.pixelAspect
+      ~Precomp.proxy
+      ~Precomp.readKnobs
+      ~Precomp.redraw
+      ~Precomp.reload
+      ~Precomp.removeCallback
+      ~Precomp.removeKnob
+      ~Precomp.removeOverrideKnob
+      ~Precomp.resetKnobsToDefault
+      ~Precomp.rootNode
+      ~Precomp.run
+      ~Precomp.running
+      ~Precomp.sample
+      ~Precomp.screenHeight
+      ~Precomp.screenWidth
+      ~Precomp.selectOnly
+      ~Precomp.selectedNode
+      ~Precomp.selectedNodes
+      ~Precomp.setCustomIcon
+      ~Precomp.setInput
+      ~Precomp.setName
+      ~Precomp.setSelected
+      ~Precomp.setTab
+      ~Precomp.setXYpos
+      ~Precomp.setXpos
+      ~Precomp.setYpos
+      ~Precomp.showControlPanel
+      ~Precomp.showInfo
+      ~Precomp.shown
+      ~Precomp.splaySelectedNodes
+      ~Precomp.subgraphLocked
+      ~Precomp.treeHasError
+      ~Precomp.unlink
+      ~Precomp.unlock
+      ~Precomp.upstreamFrameRange
+      ~Precomp.width
+      ~Precomp.writeKnobs
+      ~Precomp.xpos
+      ~Precomp.ypos
+   
+   
+
+   
+   
+   

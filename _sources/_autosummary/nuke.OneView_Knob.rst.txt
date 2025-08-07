@@ -1,0 +1,105 @@
+nuke.OneView\_Knob
+==================
+
+.. currentmodule:: nuke
+
+.. autoclass:: OneView_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~OneView_Knob.Class
+      ~OneView_Knob.ClassID
+      ~OneView_Knob.animation
+      ~OneView_Knob.animations
+      ~OneView_Knob.array
+      ~OneView_Knob.arraySize
+      ~OneView_Knob.clearAnimated
+      ~OneView_Knob.clearFlag
+      ~OneView_Knob.copyAnimation
+      ~OneView_Knob.copyAnimations
+      ~OneView_Knob.critical
+      ~OneView_Knob.debug
+      ~OneView_Knob.defaultValue
+      ~OneView_Knob.deleteAnimation
+      ~OneView_Knob.dimensions
+      ~OneView_Knob.enabled
+      ~OneView_Knob.enumName
+      ~OneView_Knob.error
+      ~OneView_Knob.frame
+      ~OneView_Knob.fromScript
+      ~OneView_Knob.fullyQualifiedName
+      ~OneView_Knob.getAuthorMode
+      ~OneView_Knob.getAuthorModes
+      ~OneView_Knob.getDerivative
+      ~OneView_Knob.getDisplayStrFromID
+      ~OneView_Knob.getFlag
+      ~OneView_Knob.getIntegral
+      ~OneView_Knob.getKeyIndex
+      ~OneView_Knob.getKeyList
+      ~OneView_Knob.getKeyTime
+      ~OneView_Knob.getNthDerivative
+      ~OneView_Knob.getNumKeys
+      ~OneView_Knob.getValue
+      ~OneView_Knob.getValueAt
+      ~OneView_Knob.hasExpression
+      ~OneView_Knob.height
+      ~OneView_Knob.isAnimated
+      ~OneView_Knob.isKey
+      ~OneView_Knob.isKeyAt
+      ~OneView_Knob.label
+      ~OneView_Knob.makeWidget
+      ~OneView_Knob.max
+      ~OneView_Knob.maximum
+      ~OneView_Knob.min
+      ~OneView_Knob.minimum
+      ~OneView_Knob.name
+      ~OneView_Knob.node
+      ~OneView_Knob.notDefault
+      ~OneView_Knob.numValues
+      ~OneView_Knob.removeKey
+      ~OneView_Knob.removeKeyAt
+      ~OneView_Knob.resize
+      ~OneView_Knob.setAnimated
+      ~OneView_Knob.setAuthorMode
+      ~OneView_Knob.setDefaultValue
+      ~OneView_Knob.setEnabled
+      ~OneView_Knob.setExpression
+      ~OneView_Knob.setFlag
+      ~OneView_Knob.setKeyAt
+      ~OneView_Knob.setLabel
+      ~OneView_Knob.setName
+      ~OneView_Knob.setRange
+      ~OneView_Knob.setSingleValue
+      ~OneView_Knob.setTooltip
+      ~OneView_Knob.setValue
+      ~OneView_Knob.setValueAt
+      ~OneView_Knob.setValues
+      ~OneView_Knob.setVisible
+      ~OneView_Knob.singleValue
+      ~OneView_Knob.splitView
+      ~OneView_Knob.toScript
+      ~OneView_Knob.toScriptPrefix
+      ~OneView_Knob.tooltip
+      ~OneView_Knob.unsplitView
+      ~OneView_Knob.value
+      ~OneView_Knob.valueAt
+      ~OneView_Knob.values
+      ~OneView_Knob.vect
+      ~OneView_Knob.visible
+      ~OneView_Knob.warning
+      ~OneView_Knob.width
+   
+   
+
+   
+   
+   

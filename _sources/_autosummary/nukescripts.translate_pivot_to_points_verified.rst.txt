@@ -1,0 +1,6 @@
+nukescripts.translate\_pivot\_to\_points\_verified
+==================================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: translate_pivot_to_points_verified

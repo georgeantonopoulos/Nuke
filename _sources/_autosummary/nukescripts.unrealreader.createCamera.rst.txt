@@ -1,0 +1,6 @@
+nukescripts.unrealreader.createCamera
+=====================================
+
+.. currentmodule:: nukescripts.unrealreader
+
+.. autofunction:: createCamera

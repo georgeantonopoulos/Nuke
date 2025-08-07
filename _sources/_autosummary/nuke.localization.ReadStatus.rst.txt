@@ -1,0 +1,35 @@
+nuke.localization.ReadStatus
+============================
+
+.. currentmodule:: nuke.localization
+
+.. autoclass:: ReadStatus
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ReadStatus.LOCALIZATION_DISABLED
+      ~ReadStatus.LOCALIZED
+      ~ReadStatus.LOCALIZING
+      ~ReadStatus.NOT_LOCALIZED
+      ~ReadStatus.OUT_OF_DATE
+      ~ReadStatus.PARTIALLY_LOCALIZED
+   
+   

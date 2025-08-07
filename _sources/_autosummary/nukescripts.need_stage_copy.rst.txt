@@ -1,0 +1,6 @@
+nukescripts.need\_stage\_copy
+=============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: need_stage_copy

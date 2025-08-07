@@ -1,0 +1,47 @@
+nukescripts.precomp
+===================
+
+.. automodule:: nukescripts.precomp
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      execute_panel
+      findNextName
+      precomp_copyToGroup
+      precomp_open
+      precomp_render
+      precomp_selected
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      PrecompOptions
+      PrecompOptionsDialog
+      PythonPanel
+   
+   
+
+   
+   
+   
+
+
+

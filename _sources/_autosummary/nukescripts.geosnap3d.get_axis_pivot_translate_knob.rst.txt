@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.get\_axis\_pivot\_translate\_knob
+=======================================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: get_axis_pivot_translate_knob

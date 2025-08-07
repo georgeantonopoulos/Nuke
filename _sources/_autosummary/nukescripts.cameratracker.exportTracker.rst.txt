@@ -1,0 +1,6 @@
+nukescripts.cameratracker.exportTracker
+=======================================
+
+.. currentmodule:: nukescripts.cameratracker
+
+.. autofunction:: exportTracker

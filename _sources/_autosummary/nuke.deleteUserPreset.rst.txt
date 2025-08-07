@@ -1,0 +1,6 @@
+nuke.deleteUserPreset
+=====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: deleteUserPreset

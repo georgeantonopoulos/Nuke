@@ -1,0 +1,6 @@
+nuke.connectViewer
+==================
+
+.. currentmodule:: nuke
+
+.. autofunction:: connectViewer

@@ -1,0 +1,6 @@
+nuke.toggleViewers
+==================
+
+.. currentmodule:: nuke
+
+.. autofunction:: toggleViewers

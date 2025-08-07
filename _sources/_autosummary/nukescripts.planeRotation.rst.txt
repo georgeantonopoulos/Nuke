@@ -1,0 +1,6 @@
+nukescripts.planeRotation
+=========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: planeRotation

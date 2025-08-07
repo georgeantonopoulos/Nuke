@@ -1,0 +1,35 @@
+nuke.MenuBar
+============
+
+.. currentmodule:: nuke
+
+.. autoclass:: MenuBar
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~MenuBar.addAction
+      ~MenuBar.addCommand
+      ~MenuBar.addMenu
+      ~MenuBar.addSeparator
+      ~MenuBar.clearMenu
+      ~MenuBar.findItem
+      ~MenuBar.items
+      ~MenuBar.menu
+      ~MenuBar.name
+      ~MenuBar.removeItem
+      ~MenuBar.updateMenuItems
+   
+   
+
+   
+   
+   

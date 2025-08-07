@@ -1,0 +1,6 @@
+nuke.stripFrameRange
+====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: stripFrameRange

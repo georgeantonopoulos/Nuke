@@ -1,0 +1,6 @@
+nuke.thisNode
+=============
+
+.. currentmodule:: nuke
+
+.. autofunction:: thisNode

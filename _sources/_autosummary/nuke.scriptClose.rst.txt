@@ -1,0 +1,6 @@
+nuke.scriptClose
+================
+
+.. currentmodule:: nuke
+
+.. autofunction:: scriptClose

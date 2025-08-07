@@ -1,0 +1,6 @@
+nuke.hotkeys
+============
+
+.. currentmodule:: nuke
+
+.. autofunction:: hotkeys

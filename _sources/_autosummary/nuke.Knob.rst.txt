@@ -1,0 +1,74 @@
+nuke.Knob
+=========
+
+.. currentmodule:: nuke
+
+.. autoclass:: Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Knob.Class
+      ~Knob.ClassID
+      ~Knob.clearAnimated
+      ~Knob.clearFlag
+      ~Knob.critical
+      ~Knob.debug
+      ~Knob.enabled
+      ~Knob.error
+      ~Knob.fromScript
+      ~Knob.fullyQualifiedName
+      ~Knob.getAuthorMode
+      ~Knob.getAuthorModes
+      ~Knob.getDerivative
+      ~Knob.getFlag
+      ~Knob.getIntegral
+      ~Knob.getKeyIndex
+      ~Knob.getKeyList
+      ~Knob.getKeyTime
+      ~Knob.getNthDerivative
+      ~Knob.getNumKeys
+      ~Knob.getValue
+      ~Knob.getValueAt
+      ~Knob.hasExpression
+      ~Knob.isAnimated
+      ~Knob.isKey
+      ~Knob.isKeyAt
+      ~Knob.label
+      ~Knob.makeWidget
+      ~Knob.name
+      ~Knob.node
+      ~Knob.notDefault
+      ~Knob.removeKey
+      ~Knob.removeKeyAt
+      ~Knob.setAnimated
+      ~Knob.setAuthorMode
+      ~Knob.setEnabled
+      ~Knob.setExpression
+      ~Knob.setFlag
+      ~Knob.setLabel
+      ~Knob.setName
+      ~Knob.setTooltip
+      ~Knob.setValue
+      ~Knob.setValueAt
+      ~Knob.setVisible
+      ~Knob.toScript
+      ~Knob.toScriptPrefix
+      ~Knob.tooltip
+      ~Knob.value
+      ~Knob.visible
+      ~Knob.warning
+   
+   
+
+   
+   
+   

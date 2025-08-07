@@ -1,0 +1,38 @@
+nukescripts.modelbuilder
+========================
+
+.. automodule:: nukescripts.modelbuilder
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      autoBackdrop
+      bakeApplyTexture
+      bakeProjection
+      bakeSceneSelection
+      clearNodeSelection
+      copyCamera
+      modelbuilderCreateCallback
+      populateBakeMenu
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,6 @@
+nukescripts.average\_normal
+===========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: average_normal

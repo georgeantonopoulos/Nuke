@@ -1,0 +1,6 @@
+nukescripts.renderdialog.executeInMainThreadWithResult
+======================================================
+
+.. currentmodule:: nukescripts.renderdialog
+
+.. autofunction:: executeInMainThreadWithResult

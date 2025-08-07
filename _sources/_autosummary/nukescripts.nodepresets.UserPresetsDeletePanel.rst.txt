@@ -1,0 +1,58 @@
+nukescripts.nodepresets.UserPresetsDeletePanel
+==============================================
+
+.. currentmodule:: nukescripts.nodepresets
+
+.. autoclass:: UserPresetsDeletePanel
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~UserPresetsDeletePanel.accept
+      ~UserPresetsDeletePanel.add
+      ~UserPresetsDeletePanel.addCallback
+      ~UserPresetsDeletePanel.addKnob
+      ~UserPresetsDeletePanel.addToPane
+      ~UserPresetsDeletePanel.cancel
+      ~UserPresetsDeletePanel.close
+      ~UserPresetsDeletePanel.create
+      ~UserPresetsDeletePanel.deletePreset
+      ~UserPresetsDeletePanel.destroy
+      ~UserPresetsDeletePanel.finishModalDialog
+      ~UserPresetsDeletePanel.height
+      ~UserPresetsDeletePanel.hide
+      ~UserPresetsDeletePanel.isEnabled
+      ~UserPresetsDeletePanel.isValid
+      ~UserPresetsDeletePanel.knobChanged
+      ~UserPresetsDeletePanel.knobChangedCallback
+      ~UserPresetsDeletePanel.knobs
+      ~UserPresetsDeletePanel.ok
+      ~UserPresetsDeletePanel.readKnobs
+      ~UserPresetsDeletePanel.reject
+      ~UserPresetsDeletePanel.removeCallback
+      ~UserPresetsDeletePanel.removeKnob
+      ~UserPresetsDeletePanel.setEnabled
+      ~UserPresetsDeletePanel.setMaximumSize
+      ~UserPresetsDeletePanel.setMinimumSize
+      ~UserPresetsDeletePanel.setTooltip
+      ~UserPresetsDeletePanel.setVisible
+      ~UserPresetsDeletePanel.show
+      ~UserPresetsDeletePanel.showModal
+      ~UserPresetsDeletePanel.showModalDialog
+      ~UserPresetsDeletePanel.tooltip
+      ~UserPresetsDeletePanel.width
+      ~UserPresetsDeletePanel.writeKnobs
+   
+   
+
+   
+   
+   

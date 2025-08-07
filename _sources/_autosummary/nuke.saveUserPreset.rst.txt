@@ -1,0 +1,6 @@
+nuke.saveUserPreset
+===================
+
+.. currentmodule:: nuke
+
+.. autofunction:: saveUserPreset

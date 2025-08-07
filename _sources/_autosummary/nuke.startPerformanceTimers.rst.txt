@@ -1,0 +1,6 @@
+nuke.startPerformanceTimers
+===========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: startPerformanceTimers

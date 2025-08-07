@@ -1,0 +1,6 @@
+nukescripts.geomath.rotate\_matrix\_zxy
+=======================================
+
+.. currentmodule:: nukescripts.geomath
+
+.. autofunction:: rotate_matrix_zxy

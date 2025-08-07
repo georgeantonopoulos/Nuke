@@ -1,0 +1,6 @@
+nukescripts.toolbars.toolbar\_sticky\_note
+==========================================
+
+.. currentmodule:: nukescripts.toolbars
+
+.. autofunction:: toolbar_sticky_note

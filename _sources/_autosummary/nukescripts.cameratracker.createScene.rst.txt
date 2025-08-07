@@ -1,0 +1,6 @@
+nukescripts.cameratracker.createScene
+=====================================
+
+.. currentmodule:: nukescripts.cameratracker
+
+.. autofunction:: createScene

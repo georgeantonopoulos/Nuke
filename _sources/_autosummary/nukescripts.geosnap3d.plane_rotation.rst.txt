@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.plane\_rotation
+=====================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: plane_rotation

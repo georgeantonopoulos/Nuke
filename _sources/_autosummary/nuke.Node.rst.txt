@@ -1,0 +1,123 @@
+nuke.Node
+=========
+
+.. currentmodule:: nuke
+
+.. autoclass:: Node
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Node.Class
+      ~Node.addCallback
+      ~Node.addKnob
+      ~Node.allKnobs
+      ~Node.autoplace
+      ~Node.baseNode
+      ~Node.bbox
+      ~Node.canSetInput
+      ~Node.channels
+      ~Node.clearCallbacks
+      ~Node.clearCustomIcon
+      ~Node.cloneInstanceIndex
+      ~Node.cloneInstanceNode
+      ~Node.cloneInstances
+      ~Node.clones
+      ~Node.connectInput
+      ~Node.deepSample
+      ~Node.deepSampleCount
+      ~Node.dependencies
+      ~Node.dependent
+      ~Node.error
+      ~Node.executePythonCallback
+      ~Node.fileDependencies
+      ~Node.firstFrame
+      ~Node.forceUpdateLocalization
+      ~Node.forceValidate
+      ~Node.format
+      ~Node.frameRange
+      ~Node.fullName
+      ~Node.getLink
+      ~Node.getNumKnobs
+      ~Node.getStage
+      ~Node.hasError
+      ~Node.height
+      ~Node.help
+      ~Node.helpUrl
+      ~Node.hideControlPanel
+      ~Node.input
+      ~Node.inputs
+      ~Node.isClone
+      ~Node.isCloneable
+      ~Node.isLinked
+      ~Node.isLocalizationOutdated
+      ~Node.isLocalized
+      ~Node.isSelected
+      ~Node.knob
+      ~Node.knobs
+      ~Node.lastFrame
+      ~Node.linkableKnobs
+      ~Node.localizationProgress
+      ~Node.lock
+      ~Node.locked
+      ~Node.maxInputs
+      ~Node.maxOutputs
+      ~Node.maximumInputs
+      ~Node.maximumOutputs
+      ~Node.metadata
+      ~Node.minInputs
+      ~Node.minimumInputs
+      ~Node.name
+      ~Node.numKnobs
+      ~Node.opHashes
+      ~Node.optionalInput
+      ~Node.overrideKnob
+      ~Node.parent
+      ~Node.performanceInfo
+      ~Node.pixelAspect
+      ~Node.proxy
+      ~Node.readKnobs
+      ~Node.redraw
+      ~Node.removeCallback
+      ~Node.removeKnob
+      ~Node.removeOverrideKnob
+      ~Node.resetKnobsToDefault
+      ~Node.rootNode
+      ~Node.running
+      ~Node.sample
+      ~Node.screenHeight
+      ~Node.screenWidth
+      ~Node.selectOnly
+      ~Node.setCustomIcon
+      ~Node.setInput
+      ~Node.setName
+      ~Node.setSelected
+      ~Node.setTab
+      ~Node.setXYpos
+      ~Node.setXpos
+      ~Node.setYpos
+      ~Node.showControlPanel
+      ~Node.showInfo
+      ~Node.shown
+      ~Node.treeHasError
+      ~Node.unlink
+      ~Node.unlock
+      ~Node.upstreamFrameRange
+      ~Node.width
+      ~Node.writeKnobs
+      ~Node.xpos
+      ~Node.ypos
+   
+   
+
+   
+   
+   

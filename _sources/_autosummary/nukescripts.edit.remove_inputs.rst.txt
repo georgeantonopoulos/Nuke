@@ -1,0 +1,6 @@
+nukescripts.edit.remove\_inputs
+===============================
+
+.. currentmodule:: nukescripts.edit
+
+.. autofunction:: remove_inputs

@@ -1,0 +1,220 @@
+nukescripts.cache.QApplication
+==============================
+
+.. currentmodule:: nukescripts.cache
+
+.. autoclass:: QApplication
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~QApplication.aboutQt
+      ~QApplication.activeModalWidget
+      ~QApplication.activePopupWidget
+      ~QApplication.activeWindow
+      ~QApplication.addLibraryPath
+      ~QApplication.alert
+      ~QApplication.allWidgets
+      ~QApplication.allWindows
+      ~QApplication.applicationDirPath
+      ~QApplication.applicationDisplayName
+      ~QApplication.applicationFilePath
+      ~QApplication.applicationName
+      ~QApplication.applicationPid
+      ~QApplication.applicationState
+      ~QApplication.applicationVersion
+      ~QApplication.arguments
+      ~QApplication.autoSipEnabled
+      ~QApplication.beep
+      ~QApplication.blockSignals
+      ~QApplication.changeOverrideCursor
+      ~QApplication.childEvent
+      ~QApplication.children
+      ~QApplication.clipboard
+      ~QApplication.closeAllWindows
+      ~QApplication.closingDown
+      ~QApplication.connect
+      ~QApplication.connectNotify
+      ~QApplication.cursorFlashTime
+      ~QApplication.customEvent
+      ~QApplication.deleteLater
+      ~QApplication.desktopFileName
+      ~QApplication.desktopSettingsAware
+      ~QApplication.devicePixelRatio
+      ~QApplication.disconnect
+      ~QApplication.disconnectNotify
+      ~QApplication.doubleClickInterval
+      ~QApplication.dumpObjectInfo
+      ~QApplication.dumpObjectTree
+      ~QApplication.dynamicPropertyNames
+      ~QApplication.emit
+      ~QApplication.event
+      ~QApplication.eventDispatcher
+      ~QApplication.eventFilter
+      ~QApplication.exec
+      ~QApplication.exec_
+      ~QApplication.exit
+      ~QApplication.findChild
+      ~QApplication.findChildren
+      ~QApplication.focusObject
+      ~QApplication.focusWidget
+      ~QApplication.focusWindow
+      ~QApplication.font
+      ~QApplication.fontMetrics
+      ~QApplication.highDpiScaleFactorRoundingPolicy
+      ~QApplication.inherits
+      ~QApplication.inputMethod
+      ~QApplication.installEventFilter
+      ~QApplication.installNativeEventFilter
+      ~QApplication.installTranslator
+      ~QApplication.instance
+      ~QApplication.isEffectEnabled
+      ~QApplication.isLeftToRight
+      ~QApplication.isQuickItemType
+      ~QApplication.isQuitLockEnabled
+      ~QApplication.isRightToLeft
+      ~QApplication.isSavingSession
+      ~QApplication.isSessionRestored
+      ~QApplication.isSetuidAllowed
+      ~QApplication.isSignalConnected
+      ~QApplication.isWidgetType
+      ~QApplication.isWindowType
+      ~QApplication.keyboardInputInterval
+      ~QApplication.keyboardModifiers
+      ~QApplication.killTimer
+      ~QApplication.layoutDirection
+      ~QApplication.libraryPaths
+      ~QApplication.metaObject
+      ~QApplication.modalWindow
+      ~QApplication.mouseButtons
+      ~QApplication.moveToThread
+      ~QApplication.notify
+      ~QApplication.objectName
+      ~QApplication.organizationDomain
+      ~QApplication.organizationName
+      ~QApplication.overrideCursor
+      ~QApplication.palette
+      ~QApplication.parent
+      ~QApplication.platformFunction
+      ~QApplication.platformName
+      ~QApplication.postEvent
+      ~QApplication.primaryScreen
+      ~QApplication.processEvents
+      ~QApplication.property
+      ~QApplication.queryKeyboardModifiers
+      ~QApplication.quit
+      ~QApplication.quitOnLastWindowClosed
+      ~QApplication.receivers
+      ~QApplication.removeEventFilter
+      ~QApplication.removeLibraryPath
+      ~QApplication.removeNativeEventFilter
+      ~QApplication.removePostedEvents
+      ~QApplication.removeTranslator
+      ~QApplication.resolveInterface
+      ~QApplication.restoreOverrideCursor
+      ~QApplication.screenAt
+      ~QApplication.screens
+      ~QApplication.sendEvent
+      ~QApplication.sendPostedEvents
+      ~QApplication.sender
+      ~QApplication.senderSignalIndex
+      ~QApplication.sessionId
+      ~QApplication.sessionKey
+      ~QApplication.setActiveWindow
+      ~QApplication.setApplicationDisplayName
+      ~QApplication.setApplicationName
+      ~QApplication.setApplicationVersion
+      ~QApplication.setAttribute
+      ~QApplication.setAutoSipEnabled
+      ~QApplication.setBadgeNumber
+      ~QApplication.setCursorFlashTime
+      ~QApplication.setDesktopFileName
+      ~QApplication.setDesktopSettingsAware
+      ~QApplication.setDoubleClickInterval
+      ~QApplication.setEffectEnabled
+      ~QApplication.setEventDispatcher
+      ~QApplication.setFont
+      ~QApplication.setHighDpiScaleFactorRoundingPolicy
+      ~QApplication.setKeyboardInputInterval
+      ~QApplication.setLayoutDirection
+      ~QApplication.setLibraryPaths
+      ~QApplication.setObjectName
+      ~QApplication.setOrganizationDomain
+      ~QApplication.setOrganizationName
+      ~QApplication.setOverrideCursor
+      ~QApplication.setPalette
+      ~QApplication.setParent
+      ~QApplication.setProperty
+      ~QApplication.setQuitLockEnabled
+      ~QApplication.setQuitOnLastWindowClosed
+      ~QApplication.setSetuidAllowed
+      ~QApplication.setStartDragDistance
+      ~QApplication.setStartDragTime
+      ~QApplication.setStyle
+      ~QApplication.setStyleSheet
+      ~QApplication.setWheelScrollLines
+      ~QApplication.setWindowIcon
+      ~QApplication.shutdown
+      ~QApplication.signalsBlocked
+      ~QApplication.startDragDistance
+      ~QApplication.startDragTime
+      ~QApplication.startTimer
+      ~QApplication.startingUp
+      ~QApplication.style
+      ~QApplication.styleHints
+      ~QApplication.styleSheet
+      ~QApplication.sync
+      ~QApplication.testAttribute
+      ~QApplication.thread
+      ~QApplication.timerEvent
+      ~QApplication.topLevelAt
+      ~QApplication.topLevelWidgets
+      ~QApplication.topLevelWindows
+      ~QApplication.tr
+      ~QApplication.translate
+      ~QApplication.wheelScrollLines
+      ~QApplication.widgetAt
+      ~QApplication.windowIcon
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~QApplication.ApplicationFlags
+      ~QApplication.aboutToQuit
+      ~QApplication.applicationDisplayNameChanged
+      ~QApplication.applicationNameChanged
+      ~QApplication.applicationStateChanged
+      ~QApplication.applicationVersionChanged
+      ~QApplication.commitDataRequest
+      ~QApplication.destroyed
+      ~QApplication.focusChanged
+      ~QApplication.focusObjectChanged
+      ~QApplication.focusWindowChanged
+      ~QApplication.fontChanged
+      ~QApplication.fontDatabaseChanged
+      ~QApplication.lastWindowClosed
+      ~QApplication.layoutDirectionChanged
+      ~QApplication.objectNameChanged
+      ~QApplication.organizationDomainChanged
+      ~QApplication.organizationNameChanged
+      ~QApplication.paletteChanged
+      ~QApplication.primaryScreenChanged
+      ~QApplication.saveStateRequest
+      ~QApplication.screenAdded
+      ~QApplication.screenRemoved
+      ~QApplication.staticMetaObject
+   
+   

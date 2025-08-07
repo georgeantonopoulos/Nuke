@@ -1,0 +1,6 @@
+nuke.ofxRemovePluginAliasExclusion
+==================================
+
+.. currentmodule:: nuke
+
+.. autofunction:: ofxRemovePluginAliasExclusion

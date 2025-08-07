@@ -1,0 +1,6 @@
+nukescripts.cache\_particles\_panel
+===================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: cache_particles_panel

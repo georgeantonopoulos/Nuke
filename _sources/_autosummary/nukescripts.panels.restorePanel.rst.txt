@@ -1,0 +1,6 @@
+nukescripts.panels.restorePanel
+===============================
+
+.. currentmodule:: nukescripts.panels
+
+.. autofunction:: restorePanel

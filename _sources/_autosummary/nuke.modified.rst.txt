@@ -1,0 +1,6 @@
+nuke.modified
+=============
+
+.. currentmodule:: nuke
+
+.. autofunction:: modified

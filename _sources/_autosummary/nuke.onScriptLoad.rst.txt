@@ -1,0 +1,6 @@
+nuke.onScriptLoad
+=================
+
+.. currentmodule:: nuke
+
+.. autofunction:: onScriptLoad

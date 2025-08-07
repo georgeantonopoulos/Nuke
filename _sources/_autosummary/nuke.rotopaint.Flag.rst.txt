@@ -1,0 +1,26 @@
+nuke.rotopaint.Flag
+===================
+
+.. currentmodule:: nuke.rotopaint
+
+.. autoclass:: Flag
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Flag.getFlag
+      ~Flag.setFlag
+   
+   
+
+   
+   
+   

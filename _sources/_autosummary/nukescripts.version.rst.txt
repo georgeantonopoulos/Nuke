@@ -1,0 +1,35 @@
+nukescripts.version
+===================
+
+.. automodule:: nukescripts.version
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      version_down
+      version_get
+      version_latest
+      version_set
+      version_up
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

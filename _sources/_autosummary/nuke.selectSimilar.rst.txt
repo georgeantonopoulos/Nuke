@@ -1,0 +1,6 @@
+nuke.selectSimilar
+==================
+
+.. currentmodule:: nuke
+
+.. autofunction:: selectSimilar

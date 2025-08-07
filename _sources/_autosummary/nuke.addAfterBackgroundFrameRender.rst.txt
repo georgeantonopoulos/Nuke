@@ -1,0 +1,6 @@
+nuke.addAfterBackgroundFrameRender
+==================================
+
+.. currentmodule:: nuke
+
+.. autofunction:: addAfterBackgroundFrameRender

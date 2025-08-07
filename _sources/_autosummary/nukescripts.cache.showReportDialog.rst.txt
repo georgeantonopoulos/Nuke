@@ -1,0 +1,6 @@
+nukescripts.cache.showReportDialog
+==================================
+
+.. currentmodule:: nukescripts.cache
+
+.. autofunction:: showReportDialog

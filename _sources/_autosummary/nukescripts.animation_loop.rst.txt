@@ -1,0 +1,6 @@
+nukescripts.animation\_loop
+===========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: animation_loop

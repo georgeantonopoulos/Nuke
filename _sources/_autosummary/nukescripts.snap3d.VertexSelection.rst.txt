@@ -1,0 +1,31 @@
+nukescripts.snap3d.VertexSelection
+==================================
+
+.. currentmodule:: nukescripts.snap3d
+
+.. autoclass:: VertexSelection
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~VertexSelection.add
+      ~VertexSelection.indices
+      ~VertexSelection.inverseRotate
+      ~VertexSelection.points
+      ~VertexSelection.scale
+      ~VertexSelection.translate
+      ~VertexSelection.uniquePositionsSorted
+   
+   
+
+   
+   
+   

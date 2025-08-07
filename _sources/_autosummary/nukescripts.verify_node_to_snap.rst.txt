@@ -1,0 +1,6 @@
+nukescripts.verify\_node\_to\_snap
+==================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: verify_node_to_snap

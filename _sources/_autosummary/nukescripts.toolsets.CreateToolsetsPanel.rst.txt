@@ -1,0 +1,60 @@
+nukescripts.toolsets.CreateToolsetsPanel
+========================================
+
+.. currentmodule:: nukescripts.toolsets
+
+.. autoclass:: CreateToolsetsPanel
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~CreateToolsetsPanel.accept
+      ~CreateToolsetsPanel.add
+      ~CreateToolsetsPanel.addCallback
+      ~CreateToolsetsPanel.addKnob
+      ~CreateToolsetsPanel.addToPane
+      ~CreateToolsetsPanel.buildFolderList
+      ~CreateToolsetsPanel.cancel
+      ~CreateToolsetsPanel.close
+      ~CreateToolsetsPanel.create
+      ~CreateToolsetsPanel.createPreset
+      ~CreateToolsetsPanel.destroy
+      ~CreateToolsetsPanel.finishModalDialog
+      ~CreateToolsetsPanel.getPresetPath
+      ~CreateToolsetsPanel.height
+      ~CreateToolsetsPanel.hide
+      ~CreateToolsetsPanel.isEnabled
+      ~CreateToolsetsPanel.isValid
+      ~CreateToolsetsPanel.knobChanged
+      ~CreateToolsetsPanel.knobChangedCallback
+      ~CreateToolsetsPanel.knobs
+      ~CreateToolsetsPanel.ok
+      ~CreateToolsetsPanel.readKnobs
+      ~CreateToolsetsPanel.reject
+      ~CreateToolsetsPanel.removeCallback
+      ~CreateToolsetsPanel.removeKnob
+      ~CreateToolsetsPanel.setEnabled
+      ~CreateToolsetsPanel.setMaximumSize
+      ~CreateToolsetsPanel.setMinimumSize
+      ~CreateToolsetsPanel.setTooltip
+      ~CreateToolsetsPanel.setVisible
+      ~CreateToolsetsPanel.show
+      ~CreateToolsetsPanel.showModal
+      ~CreateToolsetsPanel.showModalDialog
+      ~CreateToolsetsPanel.tooltip
+      ~CreateToolsetsPanel.width
+      ~CreateToolsetsPanel.writeKnobs
+   
+   
+
+   
+   
+   

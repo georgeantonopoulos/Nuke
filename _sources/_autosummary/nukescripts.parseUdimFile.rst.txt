@@ -1,0 +1,6 @@
+nukescripts.parseUdimFile
+=========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: parseUdimFile

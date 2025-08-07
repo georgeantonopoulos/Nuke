@@ -1,0 +1,6 @@
+nukescripts.fnFlipbookRenderer.getFlipbookRenderer
+==================================================
+
+.. currentmodule:: nukescripts.fnFlipbookRenderer
+
+.. autofunction:: getFlipbookRenderer

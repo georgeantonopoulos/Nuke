@@ -1,0 +1,6 @@
+nukescripts.get\_axis\_pivot\_translate\_knob
+=============================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: get_axis_pivot_translate_knob

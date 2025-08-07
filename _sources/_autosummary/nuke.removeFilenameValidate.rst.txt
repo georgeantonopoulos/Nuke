@@ -1,0 +1,6 @@
+nuke.removeFilenameValidate
+===========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: removeFilenameValidate

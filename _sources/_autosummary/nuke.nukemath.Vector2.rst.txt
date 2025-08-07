@@ -1,0 +1,40 @@
+nuke.nukemath.Vector2
+=====================
+
+.. currentmodule:: nuke.nukemath
+
+.. autoclass:: Vector2
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Vector2.cross
+      ~Vector2.distanceBetween
+      ~Vector2.distanceSquared
+      ~Vector2.dot
+      ~Vector2.length
+      ~Vector2.lengthSquared
+      ~Vector2.negate
+      ~Vector2.normalize
+      ~Vector2.set
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Vector2.x
+      ~Vector2.y
+   
+   

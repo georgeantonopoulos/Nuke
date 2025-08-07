@@ -1,0 +1,6 @@
+nuke.numvalue
+=============
+
+.. currentmodule:: nuke
+
+.. autofunction:: numvalue

@@ -1,0 +1,6 @@
+nuke.getPaneFor
+===============
+
+.. currentmodule:: nuke
+
+.. autofunction:: getPaneFor

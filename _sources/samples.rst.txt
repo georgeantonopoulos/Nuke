@@ -1,0 +1,31 @@
+Sample Scripts
+==============
+Some sample Nuke python scripts.
+
+* `__init__.py <examples/__init__.py>`_
+* `assetManager.py <examples/assetManager.py>`_
+* `assetManagerMenu_renameAndPutInHomeDir.py <examples/assetManagerMenu_renameAndPutInHomeDir.py>`_
+* `autoComp.py <examples/autoComp.py>`_
+* `bakeDependentKnobs.py <examples/bakeDependentKnobs.py>`_
+* `getMinMax.py <examples/getMinMax.py>`_
+* `lut.py <examples/lut.py>`_
+* `metaRoto.py <examples/metaRoto.py>`_
+* `mirrorNodes.py <examples/mirrorNodes.py>`_
+* `nodesFromLayers.py <examples/nodesFromLayers.py>`_
+* `paintPoints.py <examples/paintPoints.py>`_
+* `paintTrajectory.py <examples/paintTrajectory.py>`_
+* `pathAnimation.nk <examples/pathAnimation.nk>`_
+* `PythonPanelAdjustScatterObjects.py <examples/PythonPanelAdjustScatterObjects.py>`_
+* `readMetadata.py <examples/readMetadata.py>`_
+* `rollingAutoSave.py <examples/rollingAutoSave.py>`_
+* `scatterObjects.py <examples/scatterObjects.py>`_
+* `setUpMultiView.py <examples/setUpMultiView.py>`_
+* `ShapeAndCVPanel.py <examples/ShapeAndCVPanel.py>`_
+* `ShapePanel.py <examples/ShapePanel.py>`_
+* `silhouetteExporter.py <examples/silhouetteExporter.py>`_
+* `stereoCam.py <examples/stereoCam.py>`_
+* `trackCV.py <examples/trackCV.py>`_
+* `trackShape.py <examples/trackShape.py>`_
+* `translateToPointsAnim.py <examples/translateToPointsAnim.py>`_
+* `translateToPointsExp.py <examples/translateToPointsExp.py>`_
+* `localization_panel.zip <examples/localization_panel.zip>`_

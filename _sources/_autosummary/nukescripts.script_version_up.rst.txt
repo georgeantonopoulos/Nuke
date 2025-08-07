@@ -1,0 +1,6 @@
+nukescripts.script\_version\_up
+===============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: script_version_up

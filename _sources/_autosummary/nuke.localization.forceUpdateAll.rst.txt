@@ -1,0 +1,6 @@
+nuke.localization.forceUpdateAll
+================================
+
+.. currentmodule:: nuke.localization
+
+.. autofunction:: forceUpdateAll

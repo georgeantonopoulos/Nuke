@@ -1,0 +1,6 @@
+nukescripts.hardwareinfo.ConvertMemSizeToKb
+===========================================
+
+.. currentmodule:: nukescripts.hardwareinfo
+
+.. autofunction:: ConvertMemSizeToKb

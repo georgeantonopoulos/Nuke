@@ -1,0 +1,6 @@
+nuke.deassetize
+===============
+
+.. currentmodule:: nuke
+
+.. autofunction:: deassetize

@@ -1,0 +1,6 @@
+nukescripts.hardwareinfo.RunCmdWithTimeout
+==========================================
+
+.. currentmodule:: nukescripts.hardwareinfo
+
+.. autofunction:: RunCmdWithTimeout

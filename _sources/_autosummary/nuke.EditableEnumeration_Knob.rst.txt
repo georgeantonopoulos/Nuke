@@ -1,0 +1,105 @@
+nuke.EditableEnumeration\_Knob
+==============================
+
+.. currentmodule:: nuke
+
+.. autoclass:: EditableEnumeration_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~EditableEnumeration_Knob.Class
+      ~EditableEnumeration_Knob.ClassID
+      ~EditableEnumeration_Knob.animation
+      ~EditableEnumeration_Knob.animations
+      ~EditableEnumeration_Knob.array
+      ~EditableEnumeration_Knob.arraySize
+      ~EditableEnumeration_Knob.clearAnimated
+      ~EditableEnumeration_Knob.clearFlag
+      ~EditableEnumeration_Knob.copyAnimation
+      ~EditableEnumeration_Knob.copyAnimations
+      ~EditableEnumeration_Knob.critical
+      ~EditableEnumeration_Knob.debug
+      ~EditableEnumeration_Knob.defaultValue
+      ~EditableEnumeration_Knob.deleteAnimation
+      ~EditableEnumeration_Knob.dimensions
+      ~EditableEnumeration_Knob.enabled
+      ~EditableEnumeration_Knob.enumName
+      ~EditableEnumeration_Knob.error
+      ~EditableEnumeration_Knob.frame
+      ~EditableEnumeration_Knob.fromScript
+      ~EditableEnumeration_Knob.fullyQualifiedName
+      ~EditableEnumeration_Knob.getAuthorMode
+      ~EditableEnumeration_Knob.getAuthorModes
+      ~EditableEnumeration_Knob.getDerivative
+      ~EditableEnumeration_Knob.getDisplayStrFromID
+      ~EditableEnumeration_Knob.getFlag
+      ~EditableEnumeration_Knob.getIntegral
+      ~EditableEnumeration_Knob.getKeyIndex
+      ~EditableEnumeration_Knob.getKeyList
+      ~EditableEnumeration_Knob.getKeyTime
+      ~EditableEnumeration_Knob.getNthDerivative
+      ~EditableEnumeration_Knob.getNumKeys
+      ~EditableEnumeration_Knob.getValue
+      ~EditableEnumeration_Knob.getValueAt
+      ~EditableEnumeration_Knob.hasExpression
+      ~EditableEnumeration_Knob.height
+      ~EditableEnumeration_Knob.isAnimated
+      ~EditableEnumeration_Knob.isKey
+      ~EditableEnumeration_Knob.isKeyAt
+      ~EditableEnumeration_Knob.label
+      ~EditableEnumeration_Knob.makeWidget
+      ~EditableEnumeration_Knob.max
+      ~EditableEnumeration_Knob.maximum
+      ~EditableEnumeration_Knob.min
+      ~EditableEnumeration_Knob.minimum
+      ~EditableEnumeration_Knob.name
+      ~EditableEnumeration_Knob.node
+      ~EditableEnumeration_Knob.notDefault
+      ~EditableEnumeration_Knob.numValues
+      ~EditableEnumeration_Knob.removeKey
+      ~EditableEnumeration_Knob.removeKeyAt
+      ~EditableEnumeration_Knob.resize
+      ~EditableEnumeration_Knob.setAnimated
+      ~EditableEnumeration_Knob.setAuthorMode
+      ~EditableEnumeration_Knob.setDefaultValue
+      ~EditableEnumeration_Knob.setEnabled
+      ~EditableEnumeration_Knob.setExpression
+      ~EditableEnumeration_Knob.setFlag
+      ~EditableEnumeration_Knob.setKeyAt
+      ~EditableEnumeration_Knob.setLabel
+      ~EditableEnumeration_Knob.setName
+      ~EditableEnumeration_Knob.setRange
+      ~EditableEnumeration_Knob.setSingleValue
+      ~EditableEnumeration_Knob.setTooltip
+      ~EditableEnumeration_Knob.setValue
+      ~EditableEnumeration_Knob.setValueAt
+      ~EditableEnumeration_Knob.setValues
+      ~EditableEnumeration_Knob.setVisible
+      ~EditableEnumeration_Knob.singleValue
+      ~EditableEnumeration_Knob.splitView
+      ~EditableEnumeration_Knob.toScript
+      ~EditableEnumeration_Knob.toScriptPrefix
+      ~EditableEnumeration_Knob.tooltip
+      ~EditableEnumeration_Knob.unsplitView
+      ~EditableEnumeration_Knob.value
+      ~EditableEnumeration_Knob.valueAt
+      ~EditableEnumeration_Knob.values
+      ~EditableEnumeration_Knob.vect
+      ~EditableEnumeration_Knob.visible
+      ~EditableEnumeration_Knob.warning
+      ~EditableEnumeration_Knob.width
+   
+   
+
+   
+   
+   

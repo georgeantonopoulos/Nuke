@@ -1,0 +1,58 @@
+nukescripts.nodepresets.PresetsLoadPanel
+========================================
+
+.. currentmodule:: nukescripts.nodepresets
+
+.. autoclass:: PresetsLoadPanel
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~PresetsLoadPanel.accept
+      ~PresetsLoadPanel.add
+      ~PresetsLoadPanel.addCallback
+      ~PresetsLoadPanel.addKnob
+      ~PresetsLoadPanel.addToPane
+      ~PresetsLoadPanel.cancel
+      ~PresetsLoadPanel.close
+      ~PresetsLoadPanel.create
+      ~PresetsLoadPanel.destroy
+      ~PresetsLoadPanel.finishModalDialog
+      ~PresetsLoadPanel.height
+      ~PresetsLoadPanel.hide
+      ~PresetsLoadPanel.isEnabled
+      ~PresetsLoadPanel.isValid
+      ~PresetsLoadPanel.knobChanged
+      ~PresetsLoadPanel.knobChangedCallback
+      ~PresetsLoadPanel.knobs
+      ~PresetsLoadPanel.loadPreset
+      ~PresetsLoadPanel.ok
+      ~PresetsLoadPanel.readKnobs
+      ~PresetsLoadPanel.reject
+      ~PresetsLoadPanel.removeCallback
+      ~PresetsLoadPanel.removeKnob
+      ~PresetsLoadPanel.setEnabled
+      ~PresetsLoadPanel.setMaximumSize
+      ~PresetsLoadPanel.setMinimumSize
+      ~PresetsLoadPanel.setTooltip
+      ~PresetsLoadPanel.setVisible
+      ~PresetsLoadPanel.show
+      ~PresetsLoadPanel.showModal
+      ~PresetsLoadPanel.showModalDialog
+      ~PresetsLoadPanel.tooltip
+      ~PresetsLoadPanel.width
+      ~PresetsLoadPanel.writeKnobs
+   
+   
+
+   
+   
+   

@@ -1,0 +1,50 @@
+nukescripts.Qt
+==============
+
+.. currentmodule:: nukescripts
+
+.. autoclass:: Qt
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Qt.beginPropertyUpdateGroup
+      ~Qt.bin
+      ~Qt.bom
+      ~Qt.center
+      ~Qt.dec
+      ~Qt.endPropertyUpdateGroup
+      ~Qt.endl
+      ~Qt.fixed
+      ~Qt.flush
+      ~Qt.forcepoint
+      ~Qt.forcesign
+      ~Qt.hex
+      ~Qt.left
+      ~Qt.lowercasebase
+      ~Qt.lowercasedigits
+      ~Qt.noforcepoint
+      ~Qt.noforcesign
+      ~Qt.noshowbase
+      ~Qt.oct
+      ~Qt.reset
+      ~Qt.right
+      ~Qt.scientific
+      ~Qt.showbase
+      ~Qt.uppercasebase
+      ~Qt.uppercasedigits
+      ~Qt.ws
+   
+   
+
+   
+   
+   

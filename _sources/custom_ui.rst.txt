@@ -1,0 +1,214 @@
+.. _customisingui-ref-label:
+
+Customizing the UI
+==================
+
+This chapter explains how to create your own hotkeys, menus, and menu items. This kind of code is typically placed in the :ref:`menupy-ref-label` file. Please refer to :ref:`installingplugins-ref-label` for information on how to install custom files.
+
+The menus currently available in NUKE are:
+
+* **Nuke** - the application menu on top of the interface.
+
+.. image:: images/ui_01.png
+
+* **Windows** - the **Windows** menu found in all content menus.
+
+.. image:: images/ui_02.png
+
+* **Nodes** - the toolbar (and the right-click menu in the Node Graph).
+
+.. image:: images/ui_03.png
+
+* **Properties** - right-click menus of properties panels.
+
+.. image:: images/ui_04.png
+
+* **Animation** - the pop-up menu on the Animation button of all properties panels, and the right-click menu of the Curve Editor.
+
+.. image:: images/ui_05.png
+
+* **Viewer** - the right-click menu of the Viewer.
+
+.. image:: images/ui_06.png
+
+* **Node Graph** - the right-click menu of the Node Graph.
+
+.. image:: images/ui_07.png
+
+* **Axis** - the menus on all Axis_Knobs.
+
+.. image:: images/ui_08.png
+
+
+Creating a Custom Menu
+----------------------
+
+To create a custom menu, use::
+
+	m = nuke.menu( 'Viewer' )
+	myMenu = m.addMenu( 'MyStuff' )
+
+You can assign an icon to the menu as well::
+
+	m = nuke.menu( 'Viewer' )
+	myMenu = m.addMenu( 'MyStuff', icon='ohu_icon.png' )
+
+.. image:: images/ui_15.png
+
+
+Creating a Custom Toolbar
+-------------------------
+
+To create a custom toolbar, use::
+
+	myToolbar = nuke.toolbar( 'My nodes' )
+
+.. image:: images/ui_16.png
+
+You can add custom items to the toolbar in the same way as to a menu (see below for details)::
+
+	myToolbar.addCommand( 'My Gizmo', lambda: nuke.createNode('NoOp') )
+
+If you don't specify a toolbar menu for the item, the item is added as a button on the toolbar:
+
+.. image:: images/ui_17.png
+
+Otherwise, the item is added as a menu (like in the default toolbar)::
+
+	myToolbar.addCommand( 'My Other Tools/tool A', lambda: nuke.createNode('NoOp') )
+	myToolbar.addCommand( 'My Other Tools/tool B', lambda: nuke.createNode('NoOp') )
+
+.. image:: images/ui_18.png
+
+To add an icon for the menu, create it explicitly before assigning menu items to it::
+
+	myMenu = myToolbar.addMenu( 'My Other Tools', icon='ohu_icon.png' )
+	myMenu.addCommand( 'tool A', lambda: nuke.createNode('NoOp') )
+	myMenu.addCommand( 'tool B', lambda: nuke.createNode('NoOp') )
+
+.. image:: images/ui_19.png
+
+
+Creating a Custom Menu Item
+---------------------------
+To add a custom entry to any of the above menus, use ``menu.addCommand()``::
+
+	nuke.menu( 'Nuke' ).addCommand( 'MyMenu/my tool 1', lambda: nuke.message('yay, it works') )
+
+.. note:: In the above example, we create a menu called *MyMenu* menu on the fly.
+
+.. image:: images/ui_10.png
+
+Instead of using **lambda** to create an anonymous function that isn't executed until the menu item is evoked, you could also wrap the desired command into a string::
+
+	nuke.menu( 'Nuke' ).addCommand( 'MyMenu/my tool 2', "nuke.message('yay, it works too')" )
+
+.. image:: images/ui_11.png
+
+You can also assign an icon to the menu item from NUKE's plug-in path::
+
+	nuke.menu( 'Nuke' ).addCommand( 'MyMenu/my tool 2', "nuke.message('yay, it works too')", icon='ohu_icon.png' )
+
+.. image:: images/ui_12.png
+
+To set the position of the item in the menu, use the **index** argument::
+
+	nuke.menu( 'Nuke' ).addCommand( 'MyMenu/my tool 1.5', "nuke.message('yay, it works too')", index=1 )
+
+.. image:: images/ui_13.png
+
+
+Find the menu by name (we didn't assign it to a variable at creation time), and add a separator before adding another menu item::
+
+	m = nuke.menu( 'Nuke' ).findItem( 'MyMenu' )
+	m.addSeparator()
+	nuke.menu( 'Nuke' ).addCommand( 'MyMenu/my tool 3', "nuke.message('yay, it works too')")
+
+.. image:: images/ui_20.png
+
+To find an existing menu item and run its function call, use::
+
+	m = nuke.menu( 'Nuke' ).findItem( 'Edit/Node/Filename/Show' )
+	m.invoke()
+
+To deactivate a menu item, use::
+
+	m = nuke.menu( 'Nuke' ).findItem( 'Render/Proxy Mode' )
+	m.setEnabled( False )
+
+.. image:: images/ui_14.png
+
+.. note:: If you deactivate a menu item, the hotkey assigned to it still continues to work.
+
+
+Assigning a Hotkey
+------------------
+To assign a hotkey to an existing menu item, you effectively replace the whole menu item.
+
+Let's assign a hotkey to the Axis2 node. This node lives in the **Nodes** menu (that is, the toolbar), inside the **3D** sub-menu. Its menu item is called *Axis*. ::
+
+	nuke.menu( 'Nodes' ).addCommand( '3D/Axis', lambda: nuke.createNode( 'Axis2' ), 'a')
+
+Pressing **a** on the keyboard now creates an Axis node.
+
+.. image:: images/ui_09.png
+
+You can also use modifier keys when assigning a hotkey.
+
+To use **Ctrl** (or **cmd** on Mac OS X) as the modifier, use:
+
+* **ctrl+** followed by the key, or
+* **^** followed by the key.
+
+For example::
+
+	nuke.menu( 'Nodes' ).addCommand( '3D/Axis', "nuke.createNode( 'Axis2' )", 'ctrl+a')
+
+::
+
+	nuke.menu( 'Nodes' ).addCommand( '3D/Axis', "nuke.createNode( 'Axis2' )", '^a')
+
+To use **alt** as the modifier, use:
+
+* **alt+** followed by the key, or
+* **#** followed by the key.
+
+For example::
+
+		nuke.menu( 'Nodes' ).addCommand( '3D/Axis', "nuke.createNode( 'Axis2' )", 'alt+a')
+
+::
+
+		nuke.menu( 'Nodes' ).addCommand( '3D/Axis', "nuke.createNode( 'Axis2' )", '#a')
+
+
+To use **shift** as the modifier, use:
+
+* **shift+** followed by the key, or
+* **+** followed by the key.
+
+For example::
+
+	nuke.menu( 'Nodes' ).addCommand( '3D/Axis', "nuke.createNode( 'Axis2' )", 'shift+a')
+
+::
+
+	nuke.menu( 'Nodes' ).addCommand( '3D/Axis', "nuke.createNode( 'Axis2' )", '+a')
+
+
+.. _knobdefaults-ref-label:
+
+Defining Knob Defaults
+----------------------
+
+To change the default values for knobs, use ``nuke.knobDefault()``::
+
+	nuke.knobDefault( 'Blur.size', '77' )
+
+The above line sets the **size** control of any subsequently created Blur nodes to **77** by default.
+
+When skipping the node class, the new default value is applied to all controls of the given name::
+
+	nuke.knobDefault( 'channels', 'rgba' )
+
+The above sets all **channels** controls to **rgba** on node creation.

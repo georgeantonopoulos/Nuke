@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.least\_significant\_axis
+==============================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: least_significant_axis

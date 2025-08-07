@@ -1,0 +1,6 @@
+nukescripts.renderdialog.showFlipbookDialogForSelected
+======================================================
+
+.. currentmodule:: nukescripts.renderdialog
+
+.. autofunction:: showFlipbookDialogForSelected

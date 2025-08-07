@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.get\_world\_point\_on\_bbox
+=================================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: get_world_point_on_bbox

@@ -1,0 +1,32 @@
+nuke.curvelib.CVec3
+===================
+
+.. currentmodule:: nuke.curvelib
+
+.. autoclass:: CVec3
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~CVec3.x
+      ~CVec3.y
+      ~CVec3.z
+   
+   

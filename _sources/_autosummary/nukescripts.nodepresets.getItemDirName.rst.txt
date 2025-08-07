@@ -1,0 +1,6 @@
+nukescripts.nodepresets.getItemDirName
+======================================
+
+.. currentmodule:: nukescripts.nodepresets
+
+.. autofunction:: getItemDirName

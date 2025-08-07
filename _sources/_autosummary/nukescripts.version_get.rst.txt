@@ -1,0 +1,6 @@
+nukescripts.version\_get
+========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: version_get

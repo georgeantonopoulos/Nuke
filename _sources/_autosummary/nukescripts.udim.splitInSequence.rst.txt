@@ -1,0 +1,6 @@
+nukescripts.udim.splitInSequence
+================================
+
+.. currentmodule:: nukescripts.udim
+
+.. autofunction:: splitInSequence

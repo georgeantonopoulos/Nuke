@@ -1,0 +1,6 @@
+nukescripts.getAxisKnobPrefix
+=============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: getAxisKnobPrefix

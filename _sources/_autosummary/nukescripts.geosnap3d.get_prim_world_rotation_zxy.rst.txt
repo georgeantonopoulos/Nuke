@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.get\_prim\_world\_rotation\_zxy
+=====================================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: get_prim_world_rotation_zxy

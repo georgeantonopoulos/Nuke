@@ -1,0 +1,6 @@
+nuke.selectPattern
+==================
+
+.. currentmodule:: nuke
+
+.. autofunction:: selectPattern

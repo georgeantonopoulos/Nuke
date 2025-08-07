@@ -1,0 +1,6 @@
+nukescripts.translateRotatePivotToPoints
+========================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: translateRotatePivotToPoints

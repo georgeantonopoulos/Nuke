@@ -1,0 +1,6 @@
+nuke.frame
+==========
+
+.. currentmodule:: nuke
+
+.. autofunction:: frame

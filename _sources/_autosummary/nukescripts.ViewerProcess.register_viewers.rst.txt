@@ -1,0 +1,6 @@
+nukescripts.ViewerProcess.register\_viewers
+===========================================
+
+.. currentmodule:: nukescripts.ViewerProcess
+
+.. autofunction:: register_viewers

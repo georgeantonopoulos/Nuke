@@ -1,0 +1,6 @@
+nuke.thisGroup
+==============
+
+.. currentmodule:: nuke
+
+.. autofunction:: thisGroup

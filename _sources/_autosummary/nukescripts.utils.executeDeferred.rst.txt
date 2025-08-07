@@ -1,0 +1,6 @@
+nukescripts.utils.executeDeferred
+=================================
+
+.. currentmodule:: nukescripts.utils
+
+.. autofunction:: executeDeferred

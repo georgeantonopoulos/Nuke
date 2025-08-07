@@ -1,0 +1,6 @@
+nukescripts.run\_framecycler.run\_app
+=====================================
+
+.. currentmodule:: nukescripts.run_framecycler
+
+.. autofunction:: run_app

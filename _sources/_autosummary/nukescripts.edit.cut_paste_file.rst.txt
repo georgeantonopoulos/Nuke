@@ -1,0 +1,6 @@
+nukescripts.edit.cut\_paste\_file
+=================================
+
+.. currentmodule:: nukescripts.edit
+
+.. autofunction:: cut_paste_file

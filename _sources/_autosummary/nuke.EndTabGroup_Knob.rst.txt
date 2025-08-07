@@ -1,0 +1,74 @@
+nuke.EndTabGroup\_Knob
+======================
+
+.. currentmodule:: nuke
+
+.. autoclass:: EndTabGroup_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~EndTabGroup_Knob.Class
+      ~EndTabGroup_Knob.ClassID
+      ~EndTabGroup_Knob.clearAnimated
+      ~EndTabGroup_Knob.clearFlag
+      ~EndTabGroup_Knob.critical
+      ~EndTabGroup_Knob.debug
+      ~EndTabGroup_Knob.enabled
+      ~EndTabGroup_Knob.error
+      ~EndTabGroup_Knob.fromScript
+      ~EndTabGroup_Knob.fullyQualifiedName
+      ~EndTabGroup_Knob.getAuthorMode
+      ~EndTabGroup_Knob.getAuthorModes
+      ~EndTabGroup_Knob.getDerivative
+      ~EndTabGroup_Knob.getFlag
+      ~EndTabGroup_Knob.getIntegral
+      ~EndTabGroup_Knob.getKeyIndex
+      ~EndTabGroup_Knob.getKeyList
+      ~EndTabGroup_Knob.getKeyTime
+      ~EndTabGroup_Knob.getNthDerivative
+      ~EndTabGroup_Knob.getNumKeys
+      ~EndTabGroup_Knob.getValue
+      ~EndTabGroup_Knob.getValueAt
+      ~EndTabGroup_Knob.hasExpression
+      ~EndTabGroup_Knob.isAnimated
+      ~EndTabGroup_Knob.isKey
+      ~EndTabGroup_Knob.isKeyAt
+      ~EndTabGroup_Knob.label
+      ~EndTabGroup_Knob.makeWidget
+      ~EndTabGroup_Knob.name
+      ~EndTabGroup_Knob.node
+      ~EndTabGroup_Knob.notDefault
+      ~EndTabGroup_Knob.removeKey
+      ~EndTabGroup_Knob.removeKeyAt
+      ~EndTabGroup_Knob.setAnimated
+      ~EndTabGroup_Knob.setAuthorMode
+      ~EndTabGroup_Knob.setEnabled
+      ~EndTabGroup_Knob.setExpression
+      ~EndTabGroup_Knob.setFlag
+      ~EndTabGroup_Knob.setLabel
+      ~EndTabGroup_Knob.setName
+      ~EndTabGroup_Knob.setTooltip
+      ~EndTabGroup_Knob.setValue
+      ~EndTabGroup_Knob.setValueAt
+      ~EndTabGroup_Knob.setVisible
+      ~EndTabGroup_Knob.toScript
+      ~EndTabGroup_Knob.toScriptPrefix
+      ~EndTabGroup_Knob.tooltip
+      ~EndTabGroup_Knob.value
+      ~EndTabGroup_Knob.visible
+      ~EndTabGroup_Knob.warning
+   
+   
+
+   
+   
+   

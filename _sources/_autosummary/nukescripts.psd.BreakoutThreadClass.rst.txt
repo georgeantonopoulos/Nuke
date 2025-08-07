@@ -1,0 +1,41 @@
+nukescripts.psd.BreakoutThreadClass
+===================================
+
+.. currentmodule:: nukescripts.psd
+
+.. autoclass:: BreakoutThreadClass
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~BreakoutThreadClass.getName
+      ~BreakoutThreadClass.isDaemon
+      ~BreakoutThreadClass.is_alive
+      ~BreakoutThreadClass.join
+      ~BreakoutThreadClass.run
+      ~BreakoutThreadClass.setDaemon
+      ~BreakoutThreadClass.setName
+      ~BreakoutThreadClass.start
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~BreakoutThreadClass.daemon
+      ~BreakoutThreadClass.ident
+      ~BreakoutThreadClass.name
+      ~BreakoutThreadClass.native_id
+   
+   

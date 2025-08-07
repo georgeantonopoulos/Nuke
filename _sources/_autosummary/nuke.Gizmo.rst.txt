@@ -1,0 +1,140 @@
+nuke.Gizmo
+==========
+
+.. currentmodule:: nuke
+
+.. autoclass:: Gizmo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Gizmo.Class
+      ~Gizmo.addCallback
+      ~Gizmo.addKnob
+      ~Gizmo.allKnobs
+      ~Gizmo.autoplace
+      ~Gizmo.baseNode
+      ~Gizmo.bbox
+      ~Gizmo.begin
+      ~Gizmo.canSetInput
+      ~Gizmo.channels
+      ~Gizmo.clearCallbacks
+      ~Gizmo.clearCustomIcon
+      ~Gizmo.cloneInstanceIndex
+      ~Gizmo.cloneInstanceNode
+      ~Gizmo.cloneInstances
+      ~Gizmo.clones
+      ~Gizmo.command
+      ~Gizmo.connectInput
+      ~Gizmo.connectSelectedNodes
+      ~Gizmo.deepSample
+      ~Gizmo.deepSampleCount
+      ~Gizmo.dependencies
+      ~Gizmo.dependent
+      ~Gizmo.end
+      ~Gizmo.error
+      ~Gizmo.executePythonCallback
+      ~Gizmo.expand
+      ~Gizmo.fileDependencies
+      ~Gizmo.filename
+      ~Gizmo.findNode
+      ~Gizmo.firstFrame
+      ~Gizmo.forceUpdateLocalization
+      ~Gizmo.forceValidate
+      ~Gizmo.format
+      ~Gizmo.frameRange
+      ~Gizmo.fullName
+      ~Gizmo.getLink
+      ~Gizmo.getNumKnobs
+      ~Gizmo.getStage
+      ~Gizmo.hasError
+      ~Gizmo.height
+      ~Gizmo.help
+      ~Gizmo.helpUrl
+      ~Gizmo.hideControlPanel
+      ~Gizmo.input
+      ~Gizmo.inputs
+      ~Gizmo.isClone
+      ~Gizmo.isCloneable
+      ~Gizmo.isLinked
+      ~Gizmo.isLocalizationOutdated
+      ~Gizmo.isLocalized
+      ~Gizmo.isSelected
+      ~Gizmo.knob
+      ~Gizmo.knobs
+      ~Gizmo.lastFrame
+      ~Gizmo.linkableKnobs
+      ~Gizmo.localizationProgress
+      ~Gizmo.lock
+      ~Gizmo.locked
+      ~Gizmo.makeGroup
+      ~Gizmo.maxInputs
+      ~Gizmo.maxOutputs
+      ~Gizmo.maximumInputs
+      ~Gizmo.maximumOutputs
+      ~Gizmo.metadata
+      ~Gizmo.minInputs
+      ~Gizmo.minimumInputs
+      ~Gizmo.name
+      ~Gizmo.node
+      ~Gizmo.nodes
+      ~Gizmo.numKnobs
+      ~Gizmo.numNodes
+      ~Gizmo.opHashes
+      ~Gizmo.optionalInput
+      ~Gizmo.output
+      ~Gizmo.overrideKnob
+      ~Gizmo.parent
+      ~Gizmo.performanceInfo
+      ~Gizmo.pixelAspect
+      ~Gizmo.proxy
+      ~Gizmo.readKnobs
+      ~Gizmo.redraw
+      ~Gizmo.removeCallback
+      ~Gizmo.removeKnob
+      ~Gizmo.removeOverrideKnob
+      ~Gizmo.resetKnobsToDefault
+      ~Gizmo.rootNode
+      ~Gizmo.run
+      ~Gizmo.running
+      ~Gizmo.sample
+      ~Gizmo.screenHeight
+      ~Gizmo.screenWidth
+      ~Gizmo.selectOnly
+      ~Gizmo.selectedNode
+      ~Gizmo.selectedNodes
+      ~Gizmo.setCustomIcon
+      ~Gizmo.setInput
+      ~Gizmo.setName
+      ~Gizmo.setSelected
+      ~Gizmo.setTab
+      ~Gizmo.setXYpos
+      ~Gizmo.setXpos
+      ~Gizmo.setYpos
+      ~Gizmo.showControlPanel
+      ~Gizmo.showInfo
+      ~Gizmo.shown
+      ~Gizmo.splaySelectedNodes
+      ~Gizmo.subgraphLocked
+      ~Gizmo.treeHasError
+      ~Gizmo.unlink
+      ~Gizmo.unlock
+      ~Gizmo.upstreamFrameRange
+      ~Gizmo.width
+      ~Gizmo.writeKnobs
+      ~Gizmo.xpos
+      ~Gizmo.ypos
+   
+   
+
+   
+   
+   

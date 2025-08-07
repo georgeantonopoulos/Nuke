@@ -1,0 +1,105 @@
+nuke.WH\_Knob
+=============
+
+.. currentmodule:: nuke
+
+.. autoclass:: WH_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~WH_Knob.Class
+      ~WH_Knob.ClassID
+      ~WH_Knob.animation
+      ~WH_Knob.animations
+      ~WH_Knob.array
+      ~WH_Knob.arraySize
+      ~WH_Knob.clearAnimated
+      ~WH_Knob.clearFlag
+      ~WH_Knob.copyAnimation
+      ~WH_Knob.copyAnimations
+      ~WH_Knob.critical
+      ~WH_Knob.debug
+      ~WH_Knob.defaultValue
+      ~WH_Knob.deleteAnimation
+      ~WH_Knob.dimensions
+      ~WH_Knob.enabled
+      ~WH_Knob.error
+      ~WH_Knob.frame
+      ~WH_Knob.fromScript
+      ~WH_Knob.fullyQualifiedName
+      ~WH_Knob.getAuthorMode
+      ~WH_Knob.getAuthorModes
+      ~WH_Knob.getDerivative
+      ~WH_Knob.getFlag
+      ~WH_Knob.getIntegral
+      ~WH_Knob.getKeyIndex
+      ~WH_Knob.getKeyList
+      ~WH_Knob.getKeyTime
+      ~WH_Knob.getNthDerivative
+      ~WH_Knob.getNumKeys
+      ~WH_Knob.getValue
+      ~WH_Knob.getValueAt
+      ~WH_Knob.hasExpression
+      ~WH_Knob.height
+      ~WH_Knob.isAnimated
+      ~WH_Knob.isKey
+      ~WH_Knob.isKeyAt
+      ~WH_Knob.label
+      ~WH_Knob.makeWidget
+      ~WH_Knob.max
+      ~WH_Knob.maximum
+      ~WH_Knob.min
+      ~WH_Knob.minimum
+      ~WH_Knob.name
+      ~WH_Knob.names
+      ~WH_Knob.node
+      ~WH_Knob.notDefault
+      ~WH_Knob.removeKey
+      ~WH_Knob.removeKeyAt
+      ~WH_Knob.resize
+      ~WH_Knob.setAnimated
+      ~WH_Knob.setAuthorMode
+      ~WH_Knob.setDefaultValue
+      ~WH_Knob.setEnabled
+      ~WH_Knob.setExpression
+      ~WH_Knob.setFlag
+      ~WH_Knob.setKeyAt
+      ~WH_Knob.setLabel
+      ~WH_Knob.setName
+      ~WH_Knob.setRange
+      ~WH_Knob.setSingleValue
+      ~WH_Knob.setTooltip
+      ~WH_Knob.setValue
+      ~WH_Knob.setValueAt
+      ~WH_Knob.setVisible
+      ~WH_Knob.singleValue
+      ~WH_Knob.splitView
+      ~WH_Knob.toScript
+      ~WH_Knob.toScriptPrefix
+      ~WH_Knob.tooltip
+      ~WH_Knob.unsplitView
+      ~WH_Knob.value
+      ~WH_Knob.valueAt
+      ~WH_Knob.vect
+      ~WH_Knob.visible
+      ~WH_Knob.warning
+      ~WH_Knob.width
+      ~WH_Knob.x
+      ~WH_Knob.x_at
+      ~WH_Knob.y
+      ~WH_Knob.y_at
+   
+   
+
+   
+   
+   

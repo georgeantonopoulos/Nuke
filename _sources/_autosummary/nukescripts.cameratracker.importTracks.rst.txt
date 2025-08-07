@@ -1,0 +1,6 @@
+nukescripts.cameratracker.importTracks
+======================================
+
+.. currentmodule:: nukescripts.cameratracker
+
+.. autofunction:: importTracks

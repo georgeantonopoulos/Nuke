@@ -1,0 +1,6 @@
+nukescripts.psd.doReaderBreakout
+================================
+
+.. currentmodule:: nukescripts.psd
+
+.. autofunction:: doReaderBreakout

@@ -1,0 +1,6 @@
+nukescripts.camerapresets.addPreset
+===================================
+
+.. currentmodule:: nukescripts.camerapresets
+
+.. autofunction:: addPreset

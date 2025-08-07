@@ -1,0 +1,6 @@
+nuke.createNode
+===============
+
+.. currentmodule:: nuke
+
+.. autofunction:: createNode

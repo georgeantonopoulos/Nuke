@@ -1,0 +1,84 @@
+nuke.BlinkEditorKnob
+====================
+
+.. currentmodule:: nuke
+
+.. autoclass:: BlinkEditorKnob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~BlinkEditorKnob.Class
+      ~BlinkEditorKnob.ClassID
+      ~BlinkEditorKnob.clearAnimated
+      ~BlinkEditorKnob.clearFlag
+      ~BlinkEditorKnob.command
+      ~BlinkEditorKnob.critical
+      ~BlinkEditorKnob.debug
+      ~BlinkEditorKnob.enabled
+      ~BlinkEditorKnob.error
+      ~BlinkEditorKnob.execute
+      ~BlinkEditorKnob.fromScript
+      ~BlinkEditorKnob.fullyQualifiedName
+      ~BlinkEditorKnob.getAuthorMode
+      ~BlinkEditorKnob.getAuthorModes
+      ~BlinkEditorKnob.getDerivative
+      ~BlinkEditorKnob.getFilename
+      ~BlinkEditorKnob.getFlag
+      ~BlinkEditorKnob.getIntegral
+      ~BlinkEditorKnob.getKeyIndex
+      ~BlinkEditorKnob.getKeyList
+      ~BlinkEditorKnob.getKeyTime
+      ~BlinkEditorKnob.getNthDerivative
+      ~BlinkEditorKnob.getNumKeys
+      ~BlinkEditorKnob.getObject
+      ~BlinkEditorKnob.getText
+      ~BlinkEditorKnob.getValue
+      ~BlinkEditorKnob.getValueAt
+      ~BlinkEditorKnob.hasExpression
+      ~BlinkEditorKnob.isAnimated
+      ~BlinkEditorKnob.isKey
+      ~BlinkEditorKnob.isKeyAt
+      ~BlinkEditorKnob.label
+      ~BlinkEditorKnob.makeWidget
+      ~BlinkEditorKnob.name
+      ~BlinkEditorKnob.node
+      ~BlinkEditorKnob.notDefault
+      ~BlinkEditorKnob.removeKey
+      ~BlinkEditorKnob.removeKeyAt
+      ~BlinkEditorKnob.setAnimated
+      ~BlinkEditorKnob.setAuthorMode
+      ~BlinkEditorKnob.setCommand
+      ~BlinkEditorKnob.setEnabled
+      ~BlinkEditorKnob.setExpression
+      ~BlinkEditorKnob.setFlag
+      ~BlinkEditorKnob.setLabel
+      ~BlinkEditorKnob.setName
+      ~BlinkEditorKnob.setNeedsRecompile
+      ~BlinkEditorKnob.setText
+      ~BlinkEditorKnob.setTooltip
+      ~BlinkEditorKnob.setValue
+      ~BlinkEditorKnob.setValueAt
+      ~BlinkEditorKnob.setVisible
+      ~BlinkEditorKnob.splitView
+      ~BlinkEditorKnob.toScript
+      ~BlinkEditorKnob.toScriptPrefix
+      ~BlinkEditorKnob.tooltip
+      ~BlinkEditorKnob.unsplitView
+      ~BlinkEditorKnob.value
+      ~BlinkEditorKnob.visible
+      ~BlinkEditorKnob.warning
+   
+   
+
+   
+   
+   

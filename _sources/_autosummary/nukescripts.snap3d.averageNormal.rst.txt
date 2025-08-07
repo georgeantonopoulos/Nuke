@@ -1,0 +1,6 @@
+nukescripts.snap3d.averageNormal
+================================
+
+.. currentmodule:: nukescripts.snap3d
+
+.. autofunction:: averageNormal

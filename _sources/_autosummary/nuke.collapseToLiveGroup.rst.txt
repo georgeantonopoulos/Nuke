@@ -1,0 +1,6 @@
+nuke.collapseToLiveGroup
+========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: collapseToLiveGroup

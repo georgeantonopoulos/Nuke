@@ -1,0 +1,6 @@
+nukescripts.modelbuilder.autoBackdrop
+=====================================
+
+.. currentmodule:: nukescripts.modelbuilder
+
+.. autofunction:: autoBackdrop

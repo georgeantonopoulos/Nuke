@@ -1,0 +1,6 @@
+nukescripts.load\_all\_plugins
+==============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: load_all_plugins

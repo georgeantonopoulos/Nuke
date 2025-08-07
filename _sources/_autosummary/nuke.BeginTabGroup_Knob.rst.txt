@@ -1,0 +1,74 @@
+nuke.BeginTabGroup\_Knob
+========================
+
+.. currentmodule:: nuke
+
+.. autoclass:: BeginTabGroup_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~BeginTabGroup_Knob.Class
+      ~BeginTabGroup_Knob.ClassID
+      ~BeginTabGroup_Knob.clearAnimated
+      ~BeginTabGroup_Knob.clearFlag
+      ~BeginTabGroup_Knob.critical
+      ~BeginTabGroup_Knob.debug
+      ~BeginTabGroup_Knob.enabled
+      ~BeginTabGroup_Knob.error
+      ~BeginTabGroup_Knob.fromScript
+      ~BeginTabGroup_Knob.fullyQualifiedName
+      ~BeginTabGroup_Knob.getAuthorMode
+      ~BeginTabGroup_Knob.getAuthorModes
+      ~BeginTabGroup_Knob.getDerivative
+      ~BeginTabGroup_Knob.getFlag
+      ~BeginTabGroup_Knob.getIntegral
+      ~BeginTabGroup_Knob.getKeyIndex
+      ~BeginTabGroup_Knob.getKeyList
+      ~BeginTabGroup_Knob.getKeyTime
+      ~BeginTabGroup_Knob.getNthDerivative
+      ~BeginTabGroup_Knob.getNumKeys
+      ~BeginTabGroup_Knob.getValue
+      ~BeginTabGroup_Knob.getValueAt
+      ~BeginTabGroup_Knob.hasExpression
+      ~BeginTabGroup_Knob.isAnimated
+      ~BeginTabGroup_Knob.isKey
+      ~BeginTabGroup_Knob.isKeyAt
+      ~BeginTabGroup_Knob.label
+      ~BeginTabGroup_Knob.makeWidget
+      ~BeginTabGroup_Knob.name
+      ~BeginTabGroup_Knob.node
+      ~BeginTabGroup_Knob.notDefault
+      ~BeginTabGroup_Knob.removeKey
+      ~BeginTabGroup_Knob.removeKeyAt
+      ~BeginTabGroup_Knob.setAnimated
+      ~BeginTabGroup_Knob.setAuthorMode
+      ~BeginTabGroup_Knob.setEnabled
+      ~BeginTabGroup_Knob.setExpression
+      ~BeginTabGroup_Knob.setFlag
+      ~BeginTabGroup_Knob.setLabel
+      ~BeginTabGroup_Knob.setName
+      ~BeginTabGroup_Knob.setTooltip
+      ~BeginTabGroup_Knob.setValue
+      ~BeginTabGroup_Knob.setValueAt
+      ~BeginTabGroup_Knob.setVisible
+      ~BeginTabGroup_Knob.toScript
+      ~BeginTabGroup_Knob.toScriptPrefix
+      ~BeginTabGroup_Knob.tooltip
+      ~BeginTabGroup_Knob.value
+      ~BeginTabGroup_Knob.visible
+      ~BeginTabGroup_Knob.warning
+   
+   
+
+   
+   
+   

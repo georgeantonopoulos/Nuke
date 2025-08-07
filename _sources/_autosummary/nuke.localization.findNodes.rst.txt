@@ -1,0 +1,6 @@
+nuke.localization.findNodes
+===========================
+
+.. currentmodule:: nuke.localization
+
+.. autofunction:: findNodes

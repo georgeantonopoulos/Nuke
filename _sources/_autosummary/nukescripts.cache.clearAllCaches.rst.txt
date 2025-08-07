@@ -1,0 +1,6 @@
+nukescripts.cache.clearAllCaches
+================================
+
+.. currentmodule:: nukescripts.cache
+
+.. autofunction:: clearAllCaches

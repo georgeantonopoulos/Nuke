@@ -1,0 +1,31 @@
+nukescripts.opengl
+==================
+
+.. automodule:: nukescripts.opengl
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      setupPyOpenGL
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

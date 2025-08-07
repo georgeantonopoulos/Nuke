@@ -1,0 +1,6 @@
+nukescripts.splitInSequence
+===========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: splitInSequence

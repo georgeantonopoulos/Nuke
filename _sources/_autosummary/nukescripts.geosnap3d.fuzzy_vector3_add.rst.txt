@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.fuzzy\_vector3\_add
+=========================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: fuzzy_vector3_add

@@ -1,0 +1,100 @@
+nuke.Unsigned\_Knob
+===================
+
+.. currentmodule:: nuke
+
+.. autoclass:: Unsigned_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Unsigned_Knob.Class
+      ~Unsigned_Knob.ClassID
+      ~Unsigned_Knob.animation
+      ~Unsigned_Knob.animations
+      ~Unsigned_Knob.array
+      ~Unsigned_Knob.arraySize
+      ~Unsigned_Knob.clearAnimated
+      ~Unsigned_Knob.clearFlag
+      ~Unsigned_Knob.copyAnimation
+      ~Unsigned_Knob.copyAnimations
+      ~Unsigned_Knob.critical
+      ~Unsigned_Knob.debug
+      ~Unsigned_Knob.defaultValue
+      ~Unsigned_Knob.deleteAnimation
+      ~Unsigned_Knob.dimensions
+      ~Unsigned_Knob.enabled
+      ~Unsigned_Knob.error
+      ~Unsigned_Knob.frame
+      ~Unsigned_Knob.fromScript
+      ~Unsigned_Knob.fullyQualifiedName
+      ~Unsigned_Knob.getAuthorMode
+      ~Unsigned_Knob.getAuthorModes
+      ~Unsigned_Knob.getDerivative
+      ~Unsigned_Knob.getFlag
+      ~Unsigned_Knob.getIntegral
+      ~Unsigned_Knob.getKeyIndex
+      ~Unsigned_Knob.getKeyList
+      ~Unsigned_Knob.getKeyTime
+      ~Unsigned_Knob.getNthDerivative
+      ~Unsigned_Knob.getNumKeys
+      ~Unsigned_Knob.getValue
+      ~Unsigned_Knob.getValueAt
+      ~Unsigned_Knob.hasExpression
+      ~Unsigned_Knob.height
+      ~Unsigned_Knob.isAnimated
+      ~Unsigned_Knob.isKey
+      ~Unsigned_Knob.isKeyAt
+      ~Unsigned_Knob.label
+      ~Unsigned_Knob.makeWidget
+      ~Unsigned_Knob.max
+      ~Unsigned_Knob.maximum
+      ~Unsigned_Knob.min
+      ~Unsigned_Knob.minimum
+      ~Unsigned_Knob.name
+      ~Unsigned_Knob.node
+      ~Unsigned_Knob.notDefault
+      ~Unsigned_Knob.removeKey
+      ~Unsigned_Knob.removeKeyAt
+      ~Unsigned_Knob.resize
+      ~Unsigned_Knob.setAnimated
+      ~Unsigned_Knob.setAuthorMode
+      ~Unsigned_Knob.setDefaultValue
+      ~Unsigned_Knob.setEnabled
+      ~Unsigned_Knob.setExpression
+      ~Unsigned_Knob.setFlag
+      ~Unsigned_Knob.setKeyAt
+      ~Unsigned_Knob.setLabel
+      ~Unsigned_Knob.setName
+      ~Unsigned_Knob.setRange
+      ~Unsigned_Knob.setSingleValue
+      ~Unsigned_Knob.setTooltip
+      ~Unsigned_Knob.setValue
+      ~Unsigned_Knob.setValueAt
+      ~Unsigned_Knob.setVisible
+      ~Unsigned_Knob.singleValue
+      ~Unsigned_Knob.splitView
+      ~Unsigned_Knob.toScript
+      ~Unsigned_Knob.toScriptPrefix
+      ~Unsigned_Knob.tooltip
+      ~Unsigned_Knob.unsplitView
+      ~Unsigned_Knob.value
+      ~Unsigned_Knob.valueAt
+      ~Unsigned_Knob.vect
+      ~Unsigned_Knob.visible
+      ~Unsigned_Knob.warning
+      ~Unsigned_Knob.width
+   
+   
+
+   
+   
+   

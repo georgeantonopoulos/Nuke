@@ -1,0 +1,90 @@
+nukescripts.udim.TableDelegate
+==============================
+
+.. currentmodule:: nukescripts.udim
+
+.. autoclass:: TableDelegate
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~TableDelegate.blockSignals
+      ~TableDelegate.childEvent
+      ~TableDelegate.children
+      ~TableDelegate.connect
+      ~TableDelegate.connectNotify
+      ~TableDelegate.createEditor
+      ~TableDelegate.customEvent
+      ~TableDelegate.deleteLater
+      ~TableDelegate.destroyEditor
+      ~TableDelegate.disconnect
+      ~TableDelegate.disconnectNotify
+      ~TableDelegate.displayText
+      ~TableDelegate.dumpObjectInfo
+      ~TableDelegate.dumpObjectTree
+      ~TableDelegate.dynamicPropertyNames
+      ~TableDelegate.editorEvent
+      ~TableDelegate.emit
+      ~TableDelegate.event
+      ~TableDelegate.eventFilter
+      ~TableDelegate.findChild
+      ~TableDelegate.findChildren
+      ~TableDelegate.helpEvent
+      ~TableDelegate.inherits
+      ~TableDelegate.initStyleOption
+      ~TableDelegate.installEventFilter
+      ~TableDelegate.isQuickItemType
+      ~TableDelegate.isSignalConnected
+      ~TableDelegate.isWidgetType
+      ~TableDelegate.isWindowType
+      ~TableDelegate.itemEditorFactory
+      ~TableDelegate.killTimer
+      ~TableDelegate.metaObject
+      ~TableDelegate.moveToThread
+      ~TableDelegate.objectName
+      ~TableDelegate.paint
+      ~TableDelegate.paintingRoles
+      ~TableDelegate.parent
+      ~TableDelegate.property
+      ~TableDelegate.receivers
+      ~TableDelegate.removeEventFilter
+      ~TableDelegate.sender
+      ~TableDelegate.senderSignalIndex
+      ~TableDelegate.setEditorData
+      ~TableDelegate.setItemEditorFactory
+      ~TableDelegate.setModelData
+      ~TableDelegate.setObjectName
+      ~TableDelegate.setParent
+      ~TableDelegate.setProperty
+      ~TableDelegate.signalsBlocked
+      ~TableDelegate.sizeHint
+      ~TableDelegate.startTimer
+      ~TableDelegate.thread
+      ~TableDelegate.timerEvent
+      ~TableDelegate.tr
+      ~TableDelegate.updateEditorGeometry
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~TableDelegate.closeEditor
+      ~TableDelegate.commitData
+      ~TableDelegate.destroyed
+      ~TableDelegate.objectNameChanged
+      ~TableDelegate.sizeHintChanged
+      ~TableDelegate.staticMetaObject
+   
+   

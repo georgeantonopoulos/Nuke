@@ -1,0 +1,6 @@
+nuke.addValidateFilename
+========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: addValidateFilename

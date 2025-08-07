@@ -1,0 +1,86 @@
+nukescripts.pythonhighlighter.PythonHighlighter
+===============================================
+
+.. currentmodule:: nukescripts.pythonhighlighter
+
+.. autoclass:: PythonHighlighter
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~PythonHighlighter.blockSignals
+      ~PythonHighlighter.childEvent
+      ~PythonHighlighter.children
+      ~PythonHighlighter.connect
+      ~PythonHighlighter.connectNotify
+      ~PythonHighlighter.currentBlock
+      ~PythonHighlighter.currentBlockState
+      ~PythonHighlighter.currentBlockUserData
+      ~PythonHighlighter.customEvent
+      ~PythonHighlighter.deleteLater
+      ~PythonHighlighter.disconnect
+      ~PythonHighlighter.disconnectNotify
+      ~PythonHighlighter.document
+      ~PythonHighlighter.dumpObjectInfo
+      ~PythonHighlighter.dumpObjectTree
+      ~PythonHighlighter.dynamicPropertyNames
+      ~PythonHighlighter.emit
+      ~PythonHighlighter.event
+      ~PythonHighlighter.eventFilter
+      ~PythonHighlighter.findChild
+      ~PythonHighlighter.findChildren
+      ~PythonHighlighter.format
+      ~PythonHighlighter.highlightBlock
+      ~PythonHighlighter.inherits
+      ~PythonHighlighter.installEventFilter
+      ~PythonHighlighter.isQuickItemType
+      ~PythonHighlighter.isSignalConnected
+      ~PythonHighlighter.isWidgetType
+      ~PythonHighlighter.isWindowType
+      ~PythonHighlighter.killTimer
+      ~PythonHighlighter.metaObject
+      ~PythonHighlighter.moveToThread
+      ~PythonHighlighter.objectName
+      ~PythonHighlighter.parent
+      ~PythonHighlighter.previousBlockState
+      ~PythonHighlighter.property
+      ~PythonHighlighter.receivers
+      ~PythonHighlighter.rehighlight
+      ~PythonHighlighter.rehighlightBlock
+      ~PythonHighlighter.removeEventFilter
+      ~PythonHighlighter.sender
+      ~PythonHighlighter.senderSignalIndex
+      ~PythonHighlighter.setCurrentBlockState
+      ~PythonHighlighter.setCurrentBlockUserData
+      ~PythonHighlighter.setDocument
+      ~PythonHighlighter.setFormat
+      ~PythonHighlighter.setObjectName
+      ~PythonHighlighter.setParent
+      ~PythonHighlighter.setProperty
+      ~PythonHighlighter.signalsBlocked
+      ~PythonHighlighter.startTimer
+      ~PythonHighlighter.thread
+      ~PythonHighlighter.timerEvent
+      ~PythonHighlighter.tr
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~PythonHighlighter.destroyed
+      ~PythonHighlighter.objectNameChanged
+      ~PythonHighlighter.staticMetaObject
+   
+   

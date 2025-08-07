@@ -1,0 +1,6 @@
+nukescripts.makeBlinkscriptEditorKnob
+=====================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: makeBlinkscriptEditorKnob

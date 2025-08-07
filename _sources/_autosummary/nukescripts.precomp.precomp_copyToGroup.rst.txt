@@ -1,0 +1,6 @@
+nukescripts.precomp.precomp\_copyToGroup
+========================================
+
+.. currentmodule:: nukescripts.precomp
+
+.. autofunction:: precomp_copyToGroup

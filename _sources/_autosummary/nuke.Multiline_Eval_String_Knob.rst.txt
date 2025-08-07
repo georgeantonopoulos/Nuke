@@ -1,0 +1,79 @@
+nuke.Multiline\_Eval\_String\_Knob
+==================================
+
+.. currentmodule:: nuke
+
+.. autoclass:: Multiline_Eval_String_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Multiline_Eval_String_Knob.Class
+      ~Multiline_Eval_String_Knob.ClassID
+      ~Multiline_Eval_String_Knob.clearAnimated
+      ~Multiline_Eval_String_Knob.clearFlag
+      ~Multiline_Eval_String_Knob.critical
+      ~Multiline_Eval_String_Knob.debug
+      ~Multiline_Eval_String_Knob.enabled
+      ~Multiline_Eval_String_Knob.error
+      ~Multiline_Eval_String_Knob.evaluate
+      ~Multiline_Eval_String_Knob.fromScript
+      ~Multiline_Eval_String_Knob.fullyQualifiedName
+      ~Multiline_Eval_String_Knob.getAuthorMode
+      ~Multiline_Eval_String_Knob.getAuthorModes
+      ~Multiline_Eval_String_Knob.getDerivative
+      ~Multiline_Eval_String_Knob.getFlag
+      ~Multiline_Eval_String_Knob.getIntegral
+      ~Multiline_Eval_String_Knob.getKeyIndex
+      ~Multiline_Eval_String_Knob.getKeyList
+      ~Multiline_Eval_String_Knob.getKeyTime
+      ~Multiline_Eval_String_Knob.getNthDerivative
+      ~Multiline_Eval_String_Knob.getNumKeys
+      ~Multiline_Eval_String_Knob.getText
+      ~Multiline_Eval_String_Knob.getValue
+      ~Multiline_Eval_String_Knob.getValueAt
+      ~Multiline_Eval_String_Knob.hasExpression
+      ~Multiline_Eval_String_Knob.isAnimated
+      ~Multiline_Eval_String_Knob.isKey
+      ~Multiline_Eval_String_Knob.isKeyAt
+      ~Multiline_Eval_String_Knob.label
+      ~Multiline_Eval_String_Knob.makeWidget
+      ~Multiline_Eval_String_Knob.name
+      ~Multiline_Eval_String_Knob.node
+      ~Multiline_Eval_String_Knob.notDefault
+      ~Multiline_Eval_String_Knob.removeKey
+      ~Multiline_Eval_String_Knob.removeKeyAt
+      ~Multiline_Eval_String_Knob.setAnimated
+      ~Multiline_Eval_String_Knob.setAuthorMode
+      ~Multiline_Eval_String_Knob.setEnabled
+      ~Multiline_Eval_String_Knob.setExpression
+      ~Multiline_Eval_String_Knob.setFlag
+      ~Multiline_Eval_String_Knob.setLabel
+      ~Multiline_Eval_String_Knob.setName
+      ~Multiline_Eval_String_Knob.setText
+      ~Multiline_Eval_String_Knob.setTooltip
+      ~Multiline_Eval_String_Knob.setValue
+      ~Multiline_Eval_String_Knob.setValueAt
+      ~Multiline_Eval_String_Knob.setVisible
+      ~Multiline_Eval_String_Knob.splitView
+      ~Multiline_Eval_String_Knob.toScript
+      ~Multiline_Eval_String_Knob.toScriptPrefix
+      ~Multiline_Eval_String_Knob.tooltip
+      ~Multiline_Eval_String_Knob.unsplitView
+      ~Multiline_Eval_String_Knob.value
+      ~Multiline_Eval_String_Knob.visible
+      ~Multiline_Eval_String_Knob.warning
+   
+   
+
+   
+   
+   

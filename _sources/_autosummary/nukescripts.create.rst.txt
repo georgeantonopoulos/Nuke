@@ -1,0 +1,38 @@
+nukescripts.create
+==================
+
+.. automodule:: nukescripts.create
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      createNodeLocal
+      create_curve
+      create_read
+      create_viewsplitjoin
+      isAudioFilename
+      isDeepFilename
+      isGeoFilename
+      isSceneBrowserFilename
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

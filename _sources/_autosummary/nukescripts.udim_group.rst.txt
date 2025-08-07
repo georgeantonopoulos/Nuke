@@ -1,0 +1,6 @@
+nukescripts.udim\_group
+=======================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: udim_group

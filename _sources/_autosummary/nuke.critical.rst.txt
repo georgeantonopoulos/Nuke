@@ -1,0 +1,6 @@
+nuke.critical
+=============
+
+.. currentmodule:: nuke
+
+.. autofunction:: critical

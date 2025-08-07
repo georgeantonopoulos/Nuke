@@ -1,0 +1,6 @@
+nukescripts.cameratracker.setKnobToPreset
+=========================================
+
+.. currentmodule:: nukescripts.cameratracker
+
+.. autofunction:: setKnobToPreset

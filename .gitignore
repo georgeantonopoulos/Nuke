@@ -3,3 +3,6 @@
 
 
 .cursorrules
+*.tgz
+.DS_Store
+.gitignore

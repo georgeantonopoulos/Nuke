@@ -1,0 +1,6 @@
+nuke.localization.localizationProgress
+======================================
+
+.. currentmodule:: nuke.localization
+
+.. autofunction:: localizationProgress

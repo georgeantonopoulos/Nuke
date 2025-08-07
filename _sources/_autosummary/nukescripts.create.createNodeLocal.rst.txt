@@ -1,0 +1,6 @@
+nukescripts.create.createNodeLocal
+==================================
+
+.. currentmodule:: nukescripts.create
+
+.. autofunction:: createNodeLocal

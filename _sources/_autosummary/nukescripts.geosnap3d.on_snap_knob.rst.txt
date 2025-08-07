@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.on\_snap\_knob
+====================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: on_snap_knob

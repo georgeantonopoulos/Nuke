@@ -1,0 +1,6 @@
+nukescripts.new3D
+=================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: new3D

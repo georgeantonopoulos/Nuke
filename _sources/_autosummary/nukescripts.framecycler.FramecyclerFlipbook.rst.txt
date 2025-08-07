@@ -1,0 +1,36 @@
+nukescripts.framecycler.FramecyclerFlipbook
+===========================================
+
+.. currentmodule:: nukescripts.framecycler
+
+.. autoclass:: FramecyclerFlipbook
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~FramecyclerFlipbook.cacheDir
+      ~FramecyclerFlipbook.capabilities
+      ~FramecyclerFlipbook.dialogKnobChanged
+      ~FramecyclerFlipbook.dialogKnobs
+      ~FramecyclerFlipbook.getExtraOptions
+      ~FramecyclerFlipbook.linux_version
+      ~FramecyclerFlipbook.name
+      ~FramecyclerFlipbook.path
+      ~FramecyclerFlipbook.run
+      ~FramecyclerFlipbook.runFromNode
+      ~FramecyclerFlipbook.run_app
+      ~FramecyclerFlipbook.sequence
+   
+   
+
+   
+   
+   

@@ -1,0 +1,6 @@
+nukescripts.unrealreader.createReadNode
+=======================================
+
+.. currentmodule:: nukescripts.unrealreader
+
+.. autofunction:: createReadNode

@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.get\_scale\_enabled
+=========================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: get_scale_enabled

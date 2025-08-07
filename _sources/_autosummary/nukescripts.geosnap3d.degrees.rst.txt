@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.degrees
+=============================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: degrees

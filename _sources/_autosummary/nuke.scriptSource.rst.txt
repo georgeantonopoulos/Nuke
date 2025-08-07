@@ -1,0 +1,6 @@
+nuke.scriptSource
+=================
+
+.. currentmodule:: nuke
+
+.. autofunction:: scriptSource

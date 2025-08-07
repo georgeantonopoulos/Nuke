@@ -1,0 +1,6 @@
+nuke.channels
+=============
+
+.. currentmodule:: nuke
+
+.. autofunction:: channels

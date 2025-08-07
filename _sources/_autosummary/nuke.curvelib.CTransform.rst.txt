@@ -1,0 +1,43 @@
+nuke.curvelib.CTransform
+========================
+
+.. currentmodule:: nuke.curvelib
+
+.. autoclass:: CTransform
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~CTransform.getInverseMatrix
+      ~CTransform.getMatrix
+      ~CTransform.getTransposeMatrix
+      ~CTransform.isDefault
+      ~CTransform.reset
+      ~CTransform.setIdentity
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~CTransform.name
+      ~CTransform.pivotPoint
+      ~CTransform.rotation
+      ~CTransform.rotationOrder
+      ~CTransform.scale
+      ~CTransform.skew
+      ~CTransform.transformOrder
+      ~CTransform.translation
+   
+   

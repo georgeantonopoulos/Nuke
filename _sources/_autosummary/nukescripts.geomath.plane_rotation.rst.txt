@@ -1,0 +1,6 @@
+nukescripts.geomath.plane\_rotation
+===================================
+
+.. currentmodule:: nukescripts.geomath
+
+.. autofunction:: plane_rotation

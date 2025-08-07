@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.selected\_vertex\_infos
+=============================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: selected_vertex_infos

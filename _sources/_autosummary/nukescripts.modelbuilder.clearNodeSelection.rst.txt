@@ -1,0 +1,6 @@
+nukescripts.modelbuilder.clearNodeSelection
+===========================================
+
+.. currentmodule:: nukescripts.modelbuilder
+
+.. autofunction:: clearNodeSelection

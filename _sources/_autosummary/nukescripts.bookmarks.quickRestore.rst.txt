@@ -1,0 +1,6 @@
+nukescripts.bookmarks.quickRestore
+==================================
+
+.. currentmodule:: nukescripts.bookmarks
+
+.. autofunction:: quickRestore

@@ -1,0 +1,6 @@
+nukescripts.radians
+===================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: radians

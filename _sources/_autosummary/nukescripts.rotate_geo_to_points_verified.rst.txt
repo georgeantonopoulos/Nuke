@@ -1,0 +1,6 @@
+nukescripts.rotate\_geo\_to\_points\_verified
+=============================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: rotate_geo_to_points_verified

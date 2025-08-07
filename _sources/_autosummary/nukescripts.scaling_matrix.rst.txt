@@ -1,0 +1,6 @@
+nukescripts.scaling\_matrix
+===========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: scaling_matrix

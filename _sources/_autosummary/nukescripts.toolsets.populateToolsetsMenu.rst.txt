@@ -1,0 +1,6 @@
+nukescripts.toolsets.populateToolsetsMenu
+=========================================
+
+.. currentmodule:: nukescripts.toolsets
+
+.. autofunction:: populateToolsetsMenu

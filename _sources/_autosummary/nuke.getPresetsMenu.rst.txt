@@ -1,0 +1,6 @@
+nuke.getPresetsMenu
+===================
+
+.. currentmodule:: nuke
+
+.. autofunction:: getPresetsMenu

@@ -1,0 +1,6 @@
+nukescripts.cameratracker.cameratrackerCreateCallback
+=====================================================
+
+.. currentmodule:: nukescripts.cameratracker
+
+.. autofunction:: cameratrackerCreateCallback

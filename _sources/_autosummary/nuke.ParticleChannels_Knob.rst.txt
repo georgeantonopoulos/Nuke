@@ -1,0 +1,74 @@
+nuke.ParticleChannels\_Knob
+===========================
+
+.. currentmodule:: nuke
+
+.. autoclass:: ParticleChannels_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~ParticleChannels_Knob.Class
+      ~ParticleChannels_Knob.ClassID
+      ~ParticleChannels_Knob.clearAnimated
+      ~ParticleChannels_Knob.clearFlag
+      ~ParticleChannels_Knob.critical
+      ~ParticleChannels_Knob.debug
+      ~ParticleChannels_Knob.enabled
+      ~ParticleChannels_Knob.error
+      ~ParticleChannels_Knob.fromScript
+      ~ParticleChannels_Knob.fullyQualifiedName
+      ~ParticleChannels_Knob.getAuthorMode
+      ~ParticleChannels_Knob.getAuthorModes
+      ~ParticleChannels_Knob.getDerivative
+      ~ParticleChannels_Knob.getFlag
+      ~ParticleChannels_Knob.getIntegral
+      ~ParticleChannels_Knob.getKeyIndex
+      ~ParticleChannels_Knob.getKeyList
+      ~ParticleChannels_Knob.getKeyTime
+      ~ParticleChannels_Knob.getNthDerivative
+      ~ParticleChannels_Knob.getNumKeys
+      ~ParticleChannels_Knob.getValue
+      ~ParticleChannels_Knob.getValueAt
+      ~ParticleChannels_Knob.hasExpression
+      ~ParticleChannels_Knob.isAnimated
+      ~ParticleChannels_Knob.isKey
+      ~ParticleChannels_Knob.isKeyAt
+      ~ParticleChannels_Knob.label
+      ~ParticleChannels_Knob.makeWidget
+      ~ParticleChannels_Knob.name
+      ~ParticleChannels_Knob.node
+      ~ParticleChannels_Knob.notDefault
+      ~ParticleChannels_Knob.removeKey
+      ~ParticleChannels_Knob.removeKeyAt
+      ~ParticleChannels_Knob.setAnimated
+      ~ParticleChannels_Knob.setAuthorMode
+      ~ParticleChannels_Knob.setEnabled
+      ~ParticleChannels_Knob.setExpression
+      ~ParticleChannels_Knob.setFlag
+      ~ParticleChannels_Knob.setLabel
+      ~ParticleChannels_Knob.setName
+      ~ParticleChannels_Knob.setTooltip
+      ~ParticleChannels_Knob.setValue
+      ~ParticleChannels_Knob.setValueAt
+      ~ParticleChannels_Knob.setVisible
+      ~ParticleChannels_Knob.toScript
+      ~ParticleChannels_Knob.toScriptPrefix
+      ~ParticleChannels_Knob.tooltip
+      ~ParticleChannels_Knob.value
+      ~ParticleChannels_Knob.visible
+      ~ParticleChannels_Knob.warning
+   
+   
+
+   
+   
+   

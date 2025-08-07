@@ -1,0 +1,6 @@
+nukescripts.udim.findNextName
+=============================
+
+.. currentmodule:: nukescripts.udim
+
+.. autofunction:: findNextName

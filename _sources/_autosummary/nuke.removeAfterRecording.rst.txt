@@ -1,0 +1,6 @@
+nuke.removeAfterRecording
+=========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: removeAfterRecording

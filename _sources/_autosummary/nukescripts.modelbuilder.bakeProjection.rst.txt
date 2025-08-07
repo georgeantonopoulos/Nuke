@@ -1,0 +1,6 @@
+nukescripts.modelbuilder.bakeProjection
+=======================================
+
+.. currentmodule:: nukescripts.modelbuilder
+
+.. autofunction:: bakeProjection

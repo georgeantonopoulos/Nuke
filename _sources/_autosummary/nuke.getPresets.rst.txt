@@ -1,0 +1,6 @@
+nuke.getPresets
+===============
+
+.. currentmodule:: nuke
+
+.. autofunction:: getPresets

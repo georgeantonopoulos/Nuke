@@ -1,0 +1,6 @@
+nuke.expandSelectedGroup
+========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: expandSelectedGroup

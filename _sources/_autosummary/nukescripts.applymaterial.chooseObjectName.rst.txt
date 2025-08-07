@@ -1,0 +1,6 @@
+nukescripts.applymaterial.chooseObjectName
+==========================================
+
+.. currentmodule:: nukescripts.applymaterial
+
+.. autofunction:: chooseObjectName

@@ -1,0 +1,111 @@
+nuke.BBox\_Knob
+===============
+
+.. currentmodule:: nuke
+
+.. autoclass:: BBox_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~BBox_Knob.Class
+      ~BBox_Knob.ClassID
+      ~BBox_Knob.animation
+      ~BBox_Knob.animations
+      ~BBox_Knob.array
+      ~BBox_Knob.arraySize
+      ~BBox_Knob.clearAnimated
+      ~BBox_Knob.clearFlag
+      ~BBox_Knob.copyAnimation
+      ~BBox_Knob.copyAnimations
+      ~BBox_Knob.critical
+      ~BBox_Knob.debug
+      ~BBox_Knob.defaultValue
+      ~BBox_Knob.deleteAnimation
+      ~BBox_Knob.dimensions
+      ~BBox_Knob.enabled
+      ~BBox_Knob.error
+      ~BBox_Knob.frame
+      ~BBox_Knob.fromDict
+      ~BBox_Knob.fromScript
+      ~BBox_Knob.fullyQualifiedName
+      ~BBox_Knob.getAuthorMode
+      ~BBox_Knob.getAuthorModes
+      ~BBox_Knob.getDerivative
+      ~BBox_Knob.getFlag
+      ~BBox_Knob.getIntegral
+      ~BBox_Knob.getKeyIndex
+      ~BBox_Knob.getKeyList
+      ~BBox_Knob.getKeyTime
+      ~BBox_Knob.getNthDerivative
+      ~BBox_Knob.getNumKeys
+      ~BBox_Knob.getValue
+      ~BBox_Knob.getValueAt
+      ~BBox_Knob.hasExpression
+      ~BBox_Knob.height
+      ~BBox_Knob.isAnimated
+      ~BBox_Knob.isKey
+      ~BBox_Knob.isKeyAt
+      ~BBox_Knob.label
+      ~BBox_Knob.makeWidget
+      ~BBox_Knob.max
+      ~BBox_Knob.maximum
+      ~BBox_Knob.min
+      ~BBox_Knob.minimum
+      ~BBox_Knob.name
+      ~BBox_Knob.names
+      ~BBox_Knob.node
+      ~BBox_Knob.notDefault
+      ~BBox_Knob.r
+      ~BBox_Knob.removeKey
+      ~BBox_Knob.removeKeyAt
+      ~BBox_Knob.resize
+      ~BBox_Knob.setAnimated
+      ~BBox_Knob.setAuthorMode
+      ~BBox_Knob.setDefaultValue
+      ~BBox_Knob.setEnabled
+      ~BBox_Knob.setExpression
+      ~BBox_Knob.setFlag
+      ~BBox_Knob.setKeyAt
+      ~BBox_Knob.setLabel
+      ~BBox_Knob.setName
+      ~BBox_Knob.setR
+      ~BBox_Knob.setRange
+      ~BBox_Knob.setSingleValue
+      ~BBox_Knob.setT
+      ~BBox_Knob.setTooltip
+      ~BBox_Knob.setValue
+      ~BBox_Knob.setValueAt
+      ~BBox_Knob.setVisible
+      ~BBox_Knob.setX
+      ~BBox_Knob.setY
+      ~BBox_Knob.singleValue
+      ~BBox_Knob.splitView
+      ~BBox_Knob.t
+      ~BBox_Knob.toDict
+      ~BBox_Knob.toScript
+      ~BBox_Knob.toScriptPrefix
+      ~BBox_Knob.tooltip
+      ~BBox_Knob.unsplitView
+      ~BBox_Knob.value
+      ~BBox_Knob.valueAt
+      ~BBox_Knob.vect
+      ~BBox_Knob.visible
+      ~BBox_Knob.warning
+      ~BBox_Knob.width
+      ~BBox_Knob.x
+      ~BBox_Knob.y
+   
+   
+
+   
+   
+   

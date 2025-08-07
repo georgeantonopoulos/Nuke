@@ -1,0 +1,100 @@
+nuke.Disable\_Knob
+==================
+
+.. currentmodule:: nuke
+
+.. autoclass:: Disable_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Disable_Knob.Class
+      ~Disable_Knob.ClassID
+      ~Disable_Knob.animation
+      ~Disable_Knob.animations
+      ~Disable_Knob.array
+      ~Disable_Knob.arraySize
+      ~Disable_Knob.clearAnimated
+      ~Disable_Knob.clearFlag
+      ~Disable_Knob.copyAnimation
+      ~Disable_Knob.copyAnimations
+      ~Disable_Knob.critical
+      ~Disable_Knob.debug
+      ~Disable_Knob.defaultValue
+      ~Disable_Knob.deleteAnimation
+      ~Disable_Knob.dimensions
+      ~Disable_Knob.enabled
+      ~Disable_Knob.error
+      ~Disable_Knob.frame
+      ~Disable_Knob.fromScript
+      ~Disable_Knob.fullyQualifiedName
+      ~Disable_Knob.getAuthorMode
+      ~Disable_Knob.getAuthorModes
+      ~Disable_Knob.getDerivative
+      ~Disable_Knob.getFlag
+      ~Disable_Knob.getIntegral
+      ~Disable_Knob.getKeyIndex
+      ~Disable_Knob.getKeyList
+      ~Disable_Knob.getKeyTime
+      ~Disable_Knob.getNthDerivative
+      ~Disable_Knob.getNumKeys
+      ~Disable_Knob.getValue
+      ~Disable_Knob.getValueAt
+      ~Disable_Knob.hasExpression
+      ~Disable_Knob.height
+      ~Disable_Knob.isAnimated
+      ~Disable_Knob.isKey
+      ~Disable_Knob.isKeyAt
+      ~Disable_Knob.label
+      ~Disable_Knob.makeWidget
+      ~Disable_Knob.max
+      ~Disable_Knob.maximum
+      ~Disable_Knob.min
+      ~Disable_Knob.minimum
+      ~Disable_Knob.name
+      ~Disable_Knob.node
+      ~Disable_Knob.notDefault
+      ~Disable_Knob.removeKey
+      ~Disable_Knob.removeKeyAt
+      ~Disable_Knob.resize
+      ~Disable_Knob.setAnimated
+      ~Disable_Knob.setAuthorMode
+      ~Disable_Knob.setDefaultValue
+      ~Disable_Knob.setEnabled
+      ~Disable_Knob.setExpression
+      ~Disable_Knob.setFlag
+      ~Disable_Knob.setKeyAt
+      ~Disable_Knob.setLabel
+      ~Disable_Knob.setName
+      ~Disable_Knob.setRange
+      ~Disable_Knob.setSingleValue
+      ~Disable_Knob.setTooltip
+      ~Disable_Knob.setValue
+      ~Disable_Knob.setValueAt
+      ~Disable_Knob.setVisible
+      ~Disable_Knob.singleValue
+      ~Disable_Knob.splitView
+      ~Disable_Knob.toScript
+      ~Disable_Knob.toScriptPrefix
+      ~Disable_Knob.tooltip
+      ~Disable_Knob.unsplitView
+      ~Disable_Knob.value
+      ~Disable_Knob.valueAt
+      ~Disable_Knob.vect
+      ~Disable_Knob.visible
+      ~Disable_Knob.warning
+      ~Disable_Knob.width
+   
+   
+
+   
+   
+   

@@ -1,0 +1,80 @@
+nuke.Axis\_Knob
+===============
+
+.. currentmodule:: nuke
+
+.. autoclass:: Axis_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Axis_Knob.Class
+      ~Axis_Knob.ClassID
+      ~Axis_Knob.clearAnimated
+      ~Axis_Knob.clearFlag
+      ~Axis_Knob.critical
+      ~Axis_Knob.debug
+      ~Axis_Knob.enabled
+      ~Axis_Knob.error
+      ~Axis_Knob.fromScript
+      ~Axis_Knob.fullyQualifiedName
+      ~Axis_Knob.getAuthorMode
+      ~Axis_Knob.getAuthorModes
+      ~Axis_Knob.getDerivative
+      ~Axis_Knob.getFlag
+      ~Axis_Knob.getIntegral
+      ~Axis_Knob.getKeyIndex
+      ~Axis_Knob.getKeyList
+      ~Axis_Knob.getKeyTime
+      ~Axis_Knob.getNthDerivative
+      ~Axis_Knob.getNumKeys
+      ~Axis_Knob.getValue
+      ~Axis_Knob.getValueAt
+      ~Axis_Knob.hasExpression
+      ~Axis_Knob.isAnimated
+      ~Axis_Knob.isKey
+      ~Axis_Knob.isKeyAt
+      ~Axis_Knob.label
+      ~Axis_Knob.makeWidget
+      ~Axis_Knob.name
+      ~Axis_Knob.node
+      ~Axis_Knob.notDefault
+      ~Axis_Knob.pivot
+      ~Axis_Knob.removeKey
+      ~Axis_Knob.removeKeyAt
+      ~Axis_Knob.rotate
+      ~Axis_Knob.scale
+      ~Axis_Knob.setAnimated
+      ~Axis_Knob.setAuthorMode
+      ~Axis_Knob.setEnabled
+      ~Axis_Knob.setExpression
+      ~Axis_Knob.setFlag
+      ~Axis_Knob.setLabel
+      ~Axis_Knob.setName
+      ~Axis_Knob.setTooltip
+      ~Axis_Knob.setValue
+      ~Axis_Knob.setValueAt
+      ~Axis_Knob.setVisible
+      ~Axis_Knob.skew
+      ~Axis_Knob.toScript
+      ~Axis_Knob.toScriptPrefix
+      ~Axis_Knob.tooltip
+      ~Axis_Knob.translate
+      ~Axis_Knob.uniformScale
+      ~Axis_Knob.value
+      ~Axis_Knob.visible
+      ~Axis_Knob.warning
+   
+   
+
+   
+   
+   

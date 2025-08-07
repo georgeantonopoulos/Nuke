@@ -1,0 +1,6 @@
+nukescripts.transformMatrix
+===========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: transformMatrix

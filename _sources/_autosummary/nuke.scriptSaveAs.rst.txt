@@ -1,0 +1,6 @@
+nuke.scriptSaveAs
+=================
+
+.. currentmodule:: nuke
+
+.. autofunction:: scriptSaveAs

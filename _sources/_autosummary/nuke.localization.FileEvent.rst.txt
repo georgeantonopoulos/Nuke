@@ -1,0 +1,34 @@
+nuke.localization.FileEvent
+===========================
+
+.. currentmodule:: nuke.localization
+
+.. autoclass:: FileEvent
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~FileEvent.CACHE_FULL
+      ~FileEvent.DISK_FULL
+      ~FileEvent.LOCALIZED
+      ~FileEvent.OUT_OF_DATE
+      ~FileEvent.REMOVED
+   
+   

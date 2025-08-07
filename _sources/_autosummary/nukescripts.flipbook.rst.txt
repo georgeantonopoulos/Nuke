@@ -1,0 +1,6 @@
+nukescripts.flipbook
+====================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: flipbook

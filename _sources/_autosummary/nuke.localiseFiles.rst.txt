@@ -1,0 +1,6 @@
+nuke.localiseFiles
+==================
+
+.. currentmodule:: nuke
+
+.. autofunction:: localiseFiles

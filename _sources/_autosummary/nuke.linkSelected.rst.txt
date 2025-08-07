@@ -1,0 +1,6 @@
+nuke.linkSelected
+=================
+
+.. currentmodule:: nuke
+
+.. autofunction:: linkSelected

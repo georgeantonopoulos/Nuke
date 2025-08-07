@@ -1,0 +1,6 @@
+nukescripts.script.findMaxVersionForFileName
+============================================
+
+.. currentmodule:: nukescripts.script
+
+.. autofunction:: findMaxVersionForFileName

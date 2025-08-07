@@ -1,0 +1,6 @@
+nukescripts.fuzzyIsZero
+=======================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: fuzzyIsZero

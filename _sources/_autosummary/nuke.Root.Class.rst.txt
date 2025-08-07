@@ -1,0 +1,150 @@
+nuke.Root
+=========
+
+.. currentmodule:: nuke
+
+.. autoclass:: Root
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Root.Class
+      ~Root.addCallback
+      ~Root.addKnob
+      ~Root.addView
+      ~Root.allKnobs
+      ~Root.autoplace
+      ~Root.baseNode
+      ~Root.bbox
+      ~Root.begin
+      ~Root.canSetInput
+      ~Root.channels
+      ~Root.clearCallbacks
+      ~Root.clearCustomIcon
+      ~Root.cloneInstanceIndex
+      ~Root.cloneInstanceNode
+      ~Root.cloneInstances
+      ~Root.clones
+      ~Root.connectInput
+      ~Root.connectSelectedNodes
+      ~Root.deepSample
+      ~Root.deepSampleCount
+      ~Root.deleteView
+      ~Root.dependencies
+      ~Root.dependent
+      ~Root.end
+      ~Root.error
+      ~Root.executePythonCallback
+      ~Root.expand
+      ~Root.fileDependencies
+      ~Root.findNode
+      ~Root.firstFrame
+      ~Root.forceUpdateLocalization
+      ~Root.forceValidate
+      ~Root.format
+      ~Root.fps
+      ~Root.frameRange
+      ~Root.fullName
+      ~Root.getLink
+      ~Root.getNumKnobs
+      ~Root.getOCIOColorspaceFamily
+      ~Root.getOCIOColorspaceFromViewTransform
+      ~Root.getStage
+      ~Root.hasError
+      ~Root.height
+      ~Root.help
+      ~Root.helpUrl
+      ~Root.hideControlPanel
+      ~Root.input
+      ~Root.inputs
+      ~Root.isClone
+      ~Root.isCloneable
+      ~Root.isLinked
+      ~Root.isLocalizationOutdated
+      ~Root.isLocalized
+      ~Root.isSelected
+      ~Root.knob
+      ~Root.knobs
+      ~Root.lastFrame
+      ~Root.layers
+      ~Root.linkableKnobs
+      ~Root.localizationProgress
+      ~Root.lock
+      ~Root.locked
+      ~Root.maxInputs
+      ~Root.maxOutputs
+      ~Root.maximumInputs
+      ~Root.maximumOutputs
+      ~Root.mergeFrameRange
+      ~Root.metadata
+      ~Root.minInputs
+      ~Root.minimumInputs
+      ~Root.modified
+      ~Root.name
+      ~Root.node
+      ~Root.nodes
+      ~Root.numKnobs
+      ~Root.numNodes
+      ~Root.opHashes
+      ~Root.optionalInput
+      ~Root.output
+      ~Root.overrideKnob
+      ~Root.parent
+      ~Root.performanceInfo
+      ~Root.pixelAspect
+      ~Root.proxy
+      ~Root.readKnobs
+      ~Root.realFps
+      ~Root.redraw
+      ~Root.removeCallback
+      ~Root.removeKnob
+      ~Root.removeOverrideKnob
+      ~Root.resetKnobsToDefault
+      ~Root.rootNode
+      ~Root.run
+      ~Root.running
+      ~Root.sample
+      ~Root.screenHeight
+      ~Root.screenWidth
+      ~Root.selectOnly
+      ~Root.selectedNode
+      ~Root.selectedNodes
+      ~Root.setCustomIcon
+      ~Root.setFrame
+      ~Root.setInput
+      ~Root.setModified
+      ~Root.setName
+      ~Root.setProxy
+      ~Root.setSelected
+      ~Root.setTab
+      ~Root.setView
+      ~Root.setXYpos
+      ~Root.setXpos
+      ~Root.setYpos
+      ~Root.showControlPanel
+      ~Root.showInfo
+      ~Root.shown
+      ~Root.splaySelectedNodes
+      ~Root.subgraphLocked
+      ~Root.treeHasError
+      ~Root.unlink
+      ~Root.unlock
+      ~Root.upstreamFrameRange
+      ~Root.width
+      ~Root.writeKnobs
+      ~Root.xpos
+      ~Root.ypos
+   
+   
+
+   
+   
+   

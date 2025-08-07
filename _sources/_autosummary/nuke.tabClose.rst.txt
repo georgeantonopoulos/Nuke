@@ -1,0 +1,6 @@
+nuke.tabClose
+=============
+
+.. currentmodule:: nuke
+
+.. autofunction:: tabClose

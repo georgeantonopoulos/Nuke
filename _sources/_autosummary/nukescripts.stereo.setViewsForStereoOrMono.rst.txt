@@ -1,0 +1,6 @@
+nukescripts.stereo.setViewsForStereoOrMono
+==========================================
+
+.. currentmodule:: nukescripts.stereo
+
+.. autofunction:: setViewsForStereoOrMono

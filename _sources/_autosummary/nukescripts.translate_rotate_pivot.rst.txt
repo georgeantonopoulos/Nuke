@@ -1,0 +1,6 @@
+nukescripts.translate\_rotate\_pivot
+====================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: translate_rotate_pivot

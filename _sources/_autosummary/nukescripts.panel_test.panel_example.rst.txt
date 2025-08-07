@@ -1,0 +1,6 @@
+nukescripts.panel\_test.panel\_example
+======================================
+
+.. currentmodule:: nukescripts.panel_test
+
+.. autofunction:: panel_example

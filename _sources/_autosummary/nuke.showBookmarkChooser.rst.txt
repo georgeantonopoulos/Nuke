@@ -1,0 +1,6 @@
+nuke.showBookmarkChooser
+========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: showBookmarkChooser

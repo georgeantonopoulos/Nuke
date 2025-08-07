@@ -1,0 +1,6 @@
+nuke.removeRenderProgress
+=========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: removeRenderProgress

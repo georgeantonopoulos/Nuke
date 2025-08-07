@@ -1,0 +1,6 @@
+nuke.saveEventGraphTimers
+=========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: saveEventGraphTimers

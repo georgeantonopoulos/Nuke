@@ -1,0 +1,6 @@
+nuke.autoplace\_all
+===================
+
+.. currentmodule:: nuke
+
+.. autofunction:: autoplace_all

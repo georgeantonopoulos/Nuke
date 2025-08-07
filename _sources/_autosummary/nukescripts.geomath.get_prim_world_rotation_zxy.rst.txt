@@ -1,0 +1,6 @@
+nukescripts.geomath.get\_prim\_world\_rotation\_zxy
+===================================================
+
+.. currentmodule:: nukescripts.geomath
+
+.. autofunction:: get_prim_world_rotation_zxy

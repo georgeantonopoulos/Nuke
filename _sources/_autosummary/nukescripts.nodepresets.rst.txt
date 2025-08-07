@@ -1,0 +1,59 @@
+nukescripts.nodepresets
+=======================
+
+.. automodule:: nukescripts.nodepresets
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      buildPresetDeletePanel
+      buildPresetFileList
+      buildPresetLoadPanel
+      buildPresetSavePanel
+      buildUserPresetDeletePanel
+      buildUserPresetLoadPanel
+      createNodePreset
+      createNodePresetsMenu
+      deleteNodePreset
+      deleteUserNodePreset
+      getItemDirName
+      getNukeUserFolder
+      populatePresetsMenu
+      processPresetFile
+      saveNodePresets
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      CreateNodePresetsPanel
+      PresetsDeletePanel
+      PresetsLoadPanel
+      PythonPanel
+      UserPresetsDeletePanel
+      UserPresetsLoadPanel
+   
+   
+
+   
+   
+   
+
+
+

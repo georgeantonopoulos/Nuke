@@ -1,0 +1,6 @@
+nuke.addBeforeRecording
+=======================
+
+.. currentmodule:: nuke
+
+.. autofunction:: addBeforeRecording

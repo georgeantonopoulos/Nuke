@@ -1,0 +1,6 @@
+nuke.addSequenceFileExtension
+=============================
+
+.. currentmodule:: nuke
+
+.. autofunction:: addSequenceFileExtension

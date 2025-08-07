@@ -1,0 +1,40 @@
+nukescripts.pyQtExamples.pyQtRender2
+====================================
+
+.. automodule:: nukescripts.pyQtExamples.pyQtRender2
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      initRenderDialog
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      pyQtRenderDialog
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,6 @@
+nuke.getPresetKnobValues
+========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: getPresetKnobValues

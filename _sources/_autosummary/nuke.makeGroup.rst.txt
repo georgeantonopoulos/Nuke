@@ -1,0 +1,6 @@
+nuke.makeGroup
+==============
+
+.. currentmodule:: nuke
+
+.. autofunction:: makeGroup

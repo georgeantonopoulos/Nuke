@@ -1,0 +1,6 @@
+nukescripts.translateRotatePivotSelectionToPoints
+=================================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: translateRotatePivotSelectionToPoints

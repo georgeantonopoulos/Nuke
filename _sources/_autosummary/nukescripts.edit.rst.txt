@@ -1,0 +1,35 @@
+nukescripts.edit
+================
+
+.. automodule:: nukescripts.edit
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      branch
+      cut_paste_file
+      extract
+      node_copypaste
+      remove_inputs
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

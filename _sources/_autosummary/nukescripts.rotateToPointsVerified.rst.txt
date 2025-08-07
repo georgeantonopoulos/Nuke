@@ -1,0 +1,6 @@
+nukescripts.rotateToPointsVerified
+==================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: rotateToPointsVerified

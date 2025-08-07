@@ -1,0 +1,6 @@
+nuke.addAfterRecording
+======================
+
+.. currentmodule:: nuke
+
+.. autofunction:: addAfterRecording

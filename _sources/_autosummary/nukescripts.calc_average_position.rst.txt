@@ -1,0 +1,6 @@
+nukescripts.calc\_average\_position
+===================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: calc_average_position

@@ -1,0 +1,6 @@
+nuke.defaultFontPathname
+========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: defaultFontPathname

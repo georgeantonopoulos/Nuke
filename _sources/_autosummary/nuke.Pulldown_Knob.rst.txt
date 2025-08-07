@@ -1,0 +1,107 @@
+nuke.Pulldown\_Knob
+===================
+
+.. currentmodule:: nuke
+
+.. autoclass:: Pulldown_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Pulldown_Knob.Class
+      ~Pulldown_Knob.ClassID
+      ~Pulldown_Knob.animation
+      ~Pulldown_Knob.animations
+      ~Pulldown_Knob.array
+      ~Pulldown_Knob.arraySize
+      ~Pulldown_Knob.clearAnimated
+      ~Pulldown_Knob.clearFlag
+      ~Pulldown_Knob.commands
+      ~Pulldown_Knob.copyAnimation
+      ~Pulldown_Knob.copyAnimations
+      ~Pulldown_Knob.critical
+      ~Pulldown_Knob.debug
+      ~Pulldown_Knob.defaultValue
+      ~Pulldown_Knob.deleteAnimation
+      ~Pulldown_Knob.dimensions
+      ~Pulldown_Knob.enabled
+      ~Pulldown_Knob.enumName
+      ~Pulldown_Knob.error
+      ~Pulldown_Knob.frame
+      ~Pulldown_Knob.fromScript
+      ~Pulldown_Knob.fullyQualifiedName
+      ~Pulldown_Knob.getAuthorMode
+      ~Pulldown_Knob.getAuthorModes
+      ~Pulldown_Knob.getDerivative
+      ~Pulldown_Knob.getDisplayStrFromID
+      ~Pulldown_Knob.getFlag
+      ~Pulldown_Knob.getIntegral
+      ~Pulldown_Knob.getKeyIndex
+      ~Pulldown_Knob.getKeyList
+      ~Pulldown_Knob.getKeyTime
+      ~Pulldown_Knob.getNthDerivative
+      ~Pulldown_Knob.getNumKeys
+      ~Pulldown_Knob.getValue
+      ~Pulldown_Knob.getValueAt
+      ~Pulldown_Knob.hasExpression
+      ~Pulldown_Knob.height
+      ~Pulldown_Knob.isAnimated
+      ~Pulldown_Knob.isKey
+      ~Pulldown_Knob.isKeyAt
+      ~Pulldown_Knob.itemName
+      ~Pulldown_Knob.label
+      ~Pulldown_Knob.makeWidget
+      ~Pulldown_Knob.max
+      ~Pulldown_Knob.maximum
+      ~Pulldown_Knob.min
+      ~Pulldown_Knob.minimum
+      ~Pulldown_Knob.name
+      ~Pulldown_Knob.node
+      ~Pulldown_Knob.notDefault
+      ~Pulldown_Knob.numValues
+      ~Pulldown_Knob.removeKey
+      ~Pulldown_Knob.removeKeyAt
+      ~Pulldown_Knob.resize
+      ~Pulldown_Knob.setAnimated
+      ~Pulldown_Knob.setAuthorMode
+      ~Pulldown_Knob.setDefaultValue
+      ~Pulldown_Knob.setEnabled
+      ~Pulldown_Knob.setExpression
+      ~Pulldown_Knob.setFlag
+      ~Pulldown_Knob.setKeyAt
+      ~Pulldown_Knob.setLabel
+      ~Pulldown_Knob.setName
+      ~Pulldown_Knob.setRange
+      ~Pulldown_Knob.setSingleValue
+      ~Pulldown_Knob.setTooltip
+      ~Pulldown_Knob.setValue
+      ~Pulldown_Knob.setValueAt
+      ~Pulldown_Knob.setValues
+      ~Pulldown_Knob.setVisible
+      ~Pulldown_Knob.singleValue
+      ~Pulldown_Knob.splitView
+      ~Pulldown_Knob.toScript
+      ~Pulldown_Knob.toScriptPrefix
+      ~Pulldown_Knob.tooltip
+      ~Pulldown_Knob.unsplitView
+      ~Pulldown_Knob.value
+      ~Pulldown_Knob.valueAt
+      ~Pulldown_Knob.values
+      ~Pulldown_Knob.vect
+      ~Pulldown_Knob.visible
+      ~Pulldown_Knob.warning
+      ~Pulldown_Knob.width
+   
+   
+
+   
+   
+   

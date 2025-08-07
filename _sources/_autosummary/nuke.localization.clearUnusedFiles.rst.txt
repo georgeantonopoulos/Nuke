@@ -1,0 +1,6 @@
+nuke.localization.clearUnusedFiles
+==================================
+
+.. currentmodule:: nuke.localization
+
+.. autofunction:: clearUnusedFiles

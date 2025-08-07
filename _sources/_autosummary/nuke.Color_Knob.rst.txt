@@ -1,0 +1,102 @@
+nuke.Color\_Knob
+================
+
+.. currentmodule:: nuke
+
+.. autoclass:: Color_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Color_Knob.Class
+      ~Color_Knob.ClassID
+      ~Color_Knob.animation
+      ~Color_Knob.animations
+      ~Color_Knob.array
+      ~Color_Knob.arraySize
+      ~Color_Knob.clearAnimated
+      ~Color_Knob.clearFlag
+      ~Color_Knob.copyAnimation
+      ~Color_Knob.copyAnimations
+      ~Color_Knob.critical
+      ~Color_Knob.debug
+      ~Color_Knob.defaultValue
+      ~Color_Knob.deleteAnimation
+      ~Color_Knob.dimensions
+      ~Color_Knob.enabled
+      ~Color_Knob.error
+      ~Color_Knob.frame
+      ~Color_Knob.fromScript
+      ~Color_Knob.fullyQualifiedName
+      ~Color_Knob.getAuthorMode
+      ~Color_Knob.getAuthorModes
+      ~Color_Knob.getDerivative
+      ~Color_Knob.getFlag
+      ~Color_Knob.getIntegral
+      ~Color_Knob.getKeyIndex
+      ~Color_Knob.getKeyList
+      ~Color_Knob.getKeyTime
+      ~Color_Knob.getNthDerivative
+      ~Color_Knob.getNumKeys
+      ~Color_Knob.getValue
+      ~Color_Knob.getValueAt
+      ~Color_Knob.hasExpression
+      ~Color_Knob.height
+      ~Color_Knob.inputNumber
+      ~Color_Knob.isAnimated
+      ~Color_Knob.isKey
+      ~Color_Knob.isKeyAt
+      ~Color_Knob.label
+      ~Color_Knob.makeWidget
+      ~Color_Knob.max
+      ~Color_Knob.maximum
+      ~Color_Knob.min
+      ~Color_Knob.minimum
+      ~Color_Knob.name
+      ~Color_Knob.names
+      ~Color_Knob.node
+      ~Color_Knob.notDefault
+      ~Color_Knob.removeKey
+      ~Color_Knob.removeKeyAt
+      ~Color_Knob.resize
+      ~Color_Knob.setAnimated
+      ~Color_Knob.setAuthorMode
+      ~Color_Knob.setDefaultValue
+      ~Color_Knob.setEnabled
+      ~Color_Knob.setExpression
+      ~Color_Knob.setFlag
+      ~Color_Knob.setKeyAt
+      ~Color_Knob.setLabel
+      ~Color_Knob.setName
+      ~Color_Knob.setRange
+      ~Color_Knob.setSingleValue
+      ~Color_Knob.setTooltip
+      ~Color_Knob.setValue
+      ~Color_Knob.setValueAt
+      ~Color_Knob.setVisible
+      ~Color_Knob.singleValue
+      ~Color_Knob.splitView
+      ~Color_Knob.toScript
+      ~Color_Knob.toScriptPrefix
+      ~Color_Knob.tooltip
+      ~Color_Knob.unsplitView
+      ~Color_Knob.value
+      ~Color_Knob.valueAt
+      ~Color_Knob.vect
+      ~Color_Knob.visible
+      ~Color_Knob.warning
+      ~Color_Knob.width
+   
+   
+
+   
+   
+   

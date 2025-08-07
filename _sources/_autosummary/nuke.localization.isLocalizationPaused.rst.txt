@@ -1,0 +1,6 @@
+nuke.localization.isLocalizationPaused
+======================================
+
+.. currentmodule:: nuke.localization
+
+.. autofunction:: isLocalizationPaused

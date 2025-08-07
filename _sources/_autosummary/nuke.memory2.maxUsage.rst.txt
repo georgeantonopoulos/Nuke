@@ -1,0 +1,6 @@
+nuke.memory2.maxUsage
+=====================
+
+.. currentmodule:: nuke.memory2
+
+.. autofunction:: maxUsage

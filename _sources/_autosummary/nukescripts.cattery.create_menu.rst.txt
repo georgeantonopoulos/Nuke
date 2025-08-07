@@ -1,0 +1,6 @@
+nukescripts.cattery.create\_menu
+================================
+
+.. currentmodule:: nukescripts.cattery
+
+.. autofunction:: create_menu

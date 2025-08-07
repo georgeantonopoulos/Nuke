@@ -1,0 +1,74 @@
+nuke.Tab\_Knob
+==============
+
+.. currentmodule:: nuke
+
+.. autoclass:: Tab_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Tab_Knob.Class
+      ~Tab_Knob.ClassID
+      ~Tab_Knob.clearAnimated
+      ~Tab_Knob.clearFlag
+      ~Tab_Knob.critical
+      ~Tab_Knob.debug
+      ~Tab_Knob.enabled
+      ~Tab_Knob.error
+      ~Tab_Knob.fromScript
+      ~Tab_Knob.fullyQualifiedName
+      ~Tab_Knob.getAuthorMode
+      ~Tab_Knob.getAuthorModes
+      ~Tab_Knob.getDerivative
+      ~Tab_Knob.getFlag
+      ~Tab_Knob.getIntegral
+      ~Tab_Knob.getKeyIndex
+      ~Tab_Knob.getKeyList
+      ~Tab_Knob.getKeyTime
+      ~Tab_Knob.getNthDerivative
+      ~Tab_Knob.getNumKeys
+      ~Tab_Knob.getValue
+      ~Tab_Knob.getValueAt
+      ~Tab_Knob.hasExpression
+      ~Tab_Knob.isAnimated
+      ~Tab_Knob.isKey
+      ~Tab_Knob.isKeyAt
+      ~Tab_Knob.label
+      ~Tab_Knob.makeWidget
+      ~Tab_Knob.name
+      ~Tab_Knob.node
+      ~Tab_Knob.notDefault
+      ~Tab_Knob.removeKey
+      ~Tab_Knob.removeKeyAt
+      ~Tab_Knob.setAnimated
+      ~Tab_Knob.setAuthorMode
+      ~Tab_Knob.setEnabled
+      ~Tab_Knob.setExpression
+      ~Tab_Knob.setFlag
+      ~Tab_Knob.setLabel
+      ~Tab_Knob.setName
+      ~Tab_Knob.setTooltip
+      ~Tab_Knob.setValue
+      ~Tab_Knob.setValueAt
+      ~Tab_Knob.setVisible
+      ~Tab_Knob.toScript
+      ~Tab_Knob.toScriptPrefix
+      ~Tab_Knob.tooltip
+      ~Tab_Knob.value
+      ~Tab_Knob.visible
+      ~Tab_Knob.warning
+   
+   
+
+   
+   
+   

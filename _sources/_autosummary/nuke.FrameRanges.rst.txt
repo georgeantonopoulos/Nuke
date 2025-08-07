@@ -1,0 +1,32 @@
+nuke.FrameRanges
+================
+
+.. currentmodule:: nuke
+
+.. autoclass:: FrameRanges
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~FrameRanges.add
+      ~FrameRanges.clear
+      ~FrameRanges.compact
+      ~FrameRanges.getRange
+      ~FrameRanges.maxFrame
+      ~FrameRanges.minFrame
+      ~FrameRanges.size
+      ~FrameRanges.toFrameList
+   
+   
+
+   
+   
+   

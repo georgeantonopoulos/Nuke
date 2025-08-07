@@ -1,0 +1,6 @@
+nuke.thisParent
+===============
+
+.. currentmodule:: nuke
+
+.. autofunction:: thisParent

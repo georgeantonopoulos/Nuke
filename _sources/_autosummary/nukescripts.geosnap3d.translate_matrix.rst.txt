@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.translate\_matrix
+=======================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: translate_matrix

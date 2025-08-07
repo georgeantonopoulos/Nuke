@@ -1,0 +1,6 @@
+nukescripts.flipbooking.registerLUTPath
+=======================================
+
+.. currentmodule:: nukescripts.flipbooking
+
+.. autofunction:: registerLUTPath

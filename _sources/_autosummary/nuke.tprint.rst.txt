@@ -1,0 +1,6 @@
+nuke.tprint
+===========
+
+.. currentmodule:: nuke
+
+.. autofunction:: tprint

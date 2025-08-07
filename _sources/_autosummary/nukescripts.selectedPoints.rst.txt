@@ -1,0 +1,6 @@
+nukescripts.selectedPoints
+==========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: selectedPoints

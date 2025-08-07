@@ -1,0 +1,6 @@
+nukescripts.autobackdrop.autoBackdrop
+=====================================
+
+.. currentmodule:: nukescripts.autobackdrop
+
+.. autofunction:: autoBackdrop

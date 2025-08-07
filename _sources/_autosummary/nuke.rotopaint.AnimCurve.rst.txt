@@ -1,0 +1,50 @@
+nuke.rotopaint.AnimCurve
+========================
+
+.. currentmodule:: nuke.rotopaint
+
+.. autoclass:: AnimCurve
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~AnimCurve.addKey
+      ~AnimCurve.evaluate
+      ~AnimCurve.evaluateY
+      ~AnimCurve.getFlag
+      ~AnimCurve.getKey
+      ~AnimCurve.getNumberOfKeys
+      ~AnimCurve.isDefault
+      ~AnimCurve.removeAllKeys
+      ~AnimCurve.removeKey
+      ~AnimCurve.reset
+      ~AnimCurve.setFlag
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~AnimCurve.constantValue
+      ~AnimCurve.curveTension
+      ~AnimCurve.curveType
+      ~AnimCurve.expressionString
+      ~AnimCurve.kDefaultConstantValue
+      ~AnimCurve.kDefaultCurveFlag
+      ~AnimCurve.kDefaultCurveTension
+      ~AnimCurve.kDefaultCurveType
+      ~AnimCurve.name
+      ~AnimCurve.useExpression
+   
+   

@@ -1,0 +1,6 @@
+nukescripts.flags.toggle
+========================
+
+.. currentmodule:: nukescripts.flags
+
+.. autofunction:: toggle

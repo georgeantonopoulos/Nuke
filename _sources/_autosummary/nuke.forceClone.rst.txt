@@ -1,0 +1,6 @@
+nuke.forceClone
+===============
+
+.. currentmodule:: nuke
+
+.. autofunction:: forceClone

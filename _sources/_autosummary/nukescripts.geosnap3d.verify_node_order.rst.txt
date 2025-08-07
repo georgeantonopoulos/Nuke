@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.verify\_node\_order
+=========================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: verify_node_order

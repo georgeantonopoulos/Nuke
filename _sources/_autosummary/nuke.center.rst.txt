@@ -1,0 +1,6 @@
+nuke.center
+===========
+
+.. currentmodule:: nuke
+
+.. autofunction:: center

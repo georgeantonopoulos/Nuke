@@ -1,0 +1,6 @@
+nukescripts.psd.breakoutLayers
+==============================
+
+.. currentmodule:: nukescripts.psd
+
+.. autofunction:: breakoutLayers

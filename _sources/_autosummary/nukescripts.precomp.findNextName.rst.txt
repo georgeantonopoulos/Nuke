@@ -1,0 +1,6 @@
+nukescripts.precomp.findNextName
+================================
+
+.. currentmodule:: nukescripts.precomp
+
+.. autofunction:: findNextName

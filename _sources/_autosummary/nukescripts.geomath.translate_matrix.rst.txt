@@ -1,0 +1,6 @@
+nukescripts.geomath.translate\_matrix
+=====================================
+
+.. currentmodule:: nukescripts.geomath
+
+.. autofunction:: translate_matrix

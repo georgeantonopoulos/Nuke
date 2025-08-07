@@ -1,0 +1,6 @@
+nukescripts.anySelectedPoint
+============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: anySelectedPoint

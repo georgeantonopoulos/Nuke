@@ -1,0 +1,80 @@
+nuke.Path\_Knob
+===============
+
+.. currentmodule:: nuke
+
+.. autoclass:: Path_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Path_Knob.Class
+      ~Path_Knob.ClassID
+      ~Path_Knob.clearAnimated
+      ~Path_Knob.clearFlag
+      ~Path_Knob.critical
+      ~Path_Knob.debug
+      ~Path_Knob.enabled
+      ~Path_Knob.error
+      ~Path_Knob.evaluate
+      ~Path_Knob.fromScript
+      ~Path_Knob.fullyQualifiedName
+      ~Path_Knob.getAuthorMode
+      ~Path_Knob.getAuthorModes
+      ~Path_Knob.getDerivative
+      ~Path_Knob.getFlag
+      ~Path_Knob.getIntegral
+      ~Path_Knob.getKeyIndex
+      ~Path_Knob.getKeyList
+      ~Path_Knob.getKeyTime
+      ~Path_Knob.getNthDerivative
+      ~Path_Knob.getNumKeys
+      ~Path_Knob.getText
+      ~Path_Knob.getValue
+      ~Path_Knob.getValueAt
+      ~Path_Knob.hasExpression
+      ~Path_Knob.isAnimated
+      ~Path_Knob.isKey
+      ~Path_Knob.isKeyAt
+      ~Path_Knob.label
+      ~Path_Knob.makeWidget
+      ~Path_Knob.name
+      ~Path_Knob.node
+      ~Path_Knob.notDefault
+      ~Path_Knob.removeKey
+      ~Path_Knob.removeKeyAt
+      ~Path_Knob.setAnimated
+      ~Path_Knob.setAuthorMode
+      ~Path_Knob.setEnabled
+      ~Path_Knob.setExpression
+      ~Path_Knob.setFlag
+      ~Path_Knob.setLabel
+      ~Path_Knob.setName
+      ~Path_Knob.setText
+      ~Path_Knob.setTooltip
+      ~Path_Knob.setValue
+      ~Path_Knob.setValueAt
+      ~Path_Knob.setVisible
+      ~Path_Knob.splitView
+      ~Path_Knob.stagePaths
+      ~Path_Knob.toScript
+      ~Path_Knob.toScriptPrefix
+      ~Path_Knob.tooltip
+      ~Path_Knob.unsplitView
+      ~Path_Knob.value
+      ~Path_Knob.visible
+      ~Path_Knob.warning
+   
+   
+
+   
+   
+   

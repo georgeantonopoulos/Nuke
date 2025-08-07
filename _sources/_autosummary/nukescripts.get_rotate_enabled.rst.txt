@@ -1,0 +1,6 @@
+nukescripts.get\_rotate\_enabled
+================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: get_rotate_enabled

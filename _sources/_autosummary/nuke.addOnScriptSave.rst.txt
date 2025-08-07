@@ -1,0 +1,6 @@
+nuke.addOnScriptSave
+====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: addOnScriptSave

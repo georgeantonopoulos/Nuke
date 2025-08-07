@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.get\_node\_transform\_matrix
+==================================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: get_node_transform_matrix

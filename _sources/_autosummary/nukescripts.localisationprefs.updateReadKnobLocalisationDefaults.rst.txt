@@ -1,0 +1,6 @@
+nukescripts.localisationprefs.updateReadKnobLocalisationDefaults
+================================================================
+
+.. currentmodule:: nukescripts.localisationprefs
+
+.. autofunction:: updateReadKnobLocalisationDefaults

@@ -1,0 +1,31 @@
+nukescripts.pyQtAppUtils.pyQtAppHelper
+======================================
+
+.. currentmodule:: nukescripts.pyQtAppUtils
+
+.. autoclass:: pyQtAppHelper
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~pyQtAppHelper.closeApplication
+      ~pyQtAppHelper.getApplication
+      ~pyQtAppHelper.initiate
+      ~pyQtAppHelper.run
+      ~pyQtAppHelper.start
+      ~pyQtAppHelper.stop
+      ~pyQtAppHelper.terminate
+   
+   
+
+   
+   
+   

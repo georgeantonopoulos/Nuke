@@ -1,0 +1,6 @@
+nukescripts.cattery.discover\_packages
+======================================
+
+.. currentmodule:: nukescripts.cattery
+
+.. autofunction:: discover_packages

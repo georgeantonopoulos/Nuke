@@ -1,0 +1,6 @@
+nukescripts.toolbars.create\_menu
+=================================
+
+.. currentmodule:: nukescripts.toolbars
+
+.. autofunction:: create_menu

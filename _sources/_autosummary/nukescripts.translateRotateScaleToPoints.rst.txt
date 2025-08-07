@@ -1,0 +1,6 @@
+nukescripts.translateRotateScaleToPoints
+========================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: translateRotateScaleToPoints

@@ -1,0 +1,6 @@
+nukescripts.script\_command
+===========================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: script_command

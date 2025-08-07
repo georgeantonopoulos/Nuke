@@ -1,0 +1,6 @@
+nuke.clearTabMenuWeighting
+==========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: clearTabMenuWeighting

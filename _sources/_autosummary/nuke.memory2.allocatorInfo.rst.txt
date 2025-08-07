@@ -1,0 +1,6 @@
+nuke.memory2.allocatorInfo
+==========================
+
+.. currentmodule:: nuke.memory2
+
+.. autofunction:: allocatorInfo

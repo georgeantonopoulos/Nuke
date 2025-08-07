@@ -1,0 +1,6 @@
+nuke.autoplace\_snap\_selected
+==============================
+
+.. currentmodule:: nuke
+
+.. autofunction:: autoplace_snap_selected

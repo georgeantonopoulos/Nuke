@@ -1,0 +1,6 @@
+nukescripts.renderdialog.setFlipbookDefaultOption
+=================================================
+
+.. currentmodule:: nukescripts.renderdialog
+
+.. autofunction:: setFlipbookDefaultOption

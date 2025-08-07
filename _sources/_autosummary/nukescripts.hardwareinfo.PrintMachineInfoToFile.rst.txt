@@ -1,0 +1,6 @@
+nukescripts.hardwareinfo.PrintMachineInfoToFile
+===============================================
+
+.. currentmodule:: nukescripts.hardwareinfo
+
+.. autofunction:: PrintMachineInfoToFile

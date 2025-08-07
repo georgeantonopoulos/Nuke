@@ -1,0 +1,6 @@
+nuke.toggleFullscreen
+=====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: toggleFullscreen

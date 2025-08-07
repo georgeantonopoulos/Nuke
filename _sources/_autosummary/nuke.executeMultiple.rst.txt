@@ -1,0 +1,6 @@
+nuke.executeMultiple
+====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: executeMultiple

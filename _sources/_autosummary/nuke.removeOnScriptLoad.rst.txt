@@ -1,0 +1,6 @@
+nuke.removeOnScriptLoad
+=======================
+
+.. currentmodule:: nuke
+
+.. autofunction:: removeOnScriptLoad

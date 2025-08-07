@@ -1,0 +1,32 @@
+nukescripts.pyQtExamples
+========================
+
+.. automodule:: nukescripts.pyQtExamples
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. autosummary::
+   :toctree:
+   :template: custom-module-template.rst
+   :recursive:
+
+   nukescripts.pyQtExamples.flipbookingExample
+   nukescripts.pyQtExamples.pyQtRender
+   nukescripts.pyQtExamples.pyQtRender2
+

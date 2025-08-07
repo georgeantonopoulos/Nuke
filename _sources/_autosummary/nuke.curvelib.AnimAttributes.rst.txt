@@ -1,0 +1,101 @@
+nuke.curvelib.AnimAttributes
+============================
+
+.. currentmodule:: nuke.curvelib
+
+.. autoclass:: AnimAttributes
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~AnimAttributes.add
+      ~AnimAttributes.addKey
+      ~AnimAttributes.getCurve
+      ~AnimAttributes.getKeyTime
+      ~AnimAttributes.getName
+      ~AnimAttributes.getNumberOfKeys
+      ~AnimAttributes.getValue
+      ~AnimAttributes.remove
+      ~AnimAttributes.removeAll
+      ~AnimAttributes.removeKey
+      ~AnimAttributes.removeKeys
+      ~AnimAttributes.reset
+      ~AnimAttributes.set
+      ~AnimAttributes.setCurve
+      ~AnimAttributes.setKey
+      ~AnimAttributes.setName
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~AnimAttributes.kAlphaAttribute
+      ~AnimAttributes.kAlphaOverlayAttribute
+      ~AnimAttributes.kBlendingModeAttribute
+      ~AnimAttributes.kBlueAttribute
+      ~AnimAttributes.kBlueOverlayAttribute
+      ~AnimAttributes.kBrushSizeAttribute
+      ~AnimAttributes.kBrushSpacingAttribute
+      ~AnimAttributes.kBrushTypeAttribute
+      ~AnimAttributes.kBuildUpAttribute
+      ~AnimAttributes.kDynamicHardnessAttribute
+      ~AnimAttributes.kDynamicSizeAttribute
+      ~AnimAttributes.kDynamicTransparencyAttribute
+      ~AnimAttributes.kEffectParameter1Attribute
+      ~AnimAttributes.kEffectParameter2Attribute
+      ~AnimAttributes.kEffectParameter3Attribute
+      ~AnimAttributes.kFeatherFallOffAttribute
+      ~AnimAttributes.kFeatherOnAttribute
+      ~AnimAttributes.kFeatherTypeAttribute
+      ~AnimAttributes.kFeatherXAttribute
+      ~AnimAttributes.kFeatherYAttribute
+      ~AnimAttributes.kGreenAttribute
+      ~AnimAttributes.kGreenOverlayAttribute
+      ~AnimAttributes.kHardnessAttribute
+      ~AnimAttributes.kInvertedAttribute
+      ~AnimAttributes.kLifeTimeMAttribute
+      ~AnimAttributes.kLifeTimeNAttribute
+      ~AnimAttributes.kLifeTimeTypeAttribute
+      ~AnimAttributes.kMotionBlurAttribute
+      ~AnimAttributes.kMotionBlurOnAttribute
+      ~AnimAttributes.kMotionBlurShutterAttribute
+      ~AnimAttributes.kMotionBlurShutterOffsetAttribute
+      ~AnimAttributes.kMotionBlurShutterOffsetTypeAttribute
+      ~AnimAttributes.kNumberOfViewsAttribute
+      ~AnimAttributes.kOpacityAttribute
+      ~AnimAttributes.kPlanarTrackLayerAttribute
+      ~AnimAttributes.kRedAttribute
+      ~AnimAttributes.kRedOverlayAttribute
+      ~AnimAttributes.kSourceAttribute
+      ~AnimAttributes.kSourcePivotPointXAttribute
+      ~AnimAttributes.kSourcePivotPointYAttribute
+      ~AnimAttributes.kSourceRotateAttribute
+      ~AnimAttributes.kSourceScaleXAttribute
+      ~AnimAttributes.kSourceScaleYAttribute
+      ~AnimAttributes.kSourceSkewOrderAttribute
+      ~AnimAttributes.kSourceSkewXAttribute
+      ~AnimAttributes.kSourceSkewYAttribute
+      ~AnimAttributes.kSourceTimeOffsetAttribute
+      ~AnimAttributes.kSourceTimeOffsetTypeAttribute
+      ~AnimAttributes.kSourceTranslateRoundAttribute
+      ~AnimAttributes.kSourceTranslateXAttribute
+      ~AnimAttributes.kSourceTranslateYAttribute
+      ~AnimAttributes.kTensionAttribute
+      ~AnimAttributes.kViewAttribute
+      ~AnimAttributes.kVisibleAttribute
+      ~AnimAttributes.kWriteOnEndAttribute
+      ~AnimAttributes.kWriteOnStartAttribute
+   
+   

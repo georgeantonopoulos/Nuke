@@ -1,0 +1,6 @@
+nuke.addBeforeFrameRender
+=========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: addBeforeFrameRender

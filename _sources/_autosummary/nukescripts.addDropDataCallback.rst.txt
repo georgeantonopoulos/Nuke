@@ -1,0 +1,6 @@
+nukescripts.addDropDataCallback
+===============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: addDropDataCallback

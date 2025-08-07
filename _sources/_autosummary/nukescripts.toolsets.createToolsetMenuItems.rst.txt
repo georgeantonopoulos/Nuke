@@ -1,0 +1,6 @@
+nukescripts.toolsets.createToolsetMenuItems
+===========================================
+
+.. currentmodule:: nukescripts.toolsets
+
+.. autofunction:: createToolsetMenuItems

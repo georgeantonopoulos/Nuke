@@ -1,0 +1,74 @@
+nuke.Transform2d\_Knob
+======================
+
+.. currentmodule:: nuke
+
+.. autoclass:: Transform2d_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Transform2d_Knob.Class
+      ~Transform2d_Knob.ClassID
+      ~Transform2d_Knob.clearAnimated
+      ~Transform2d_Knob.clearFlag
+      ~Transform2d_Knob.critical
+      ~Transform2d_Knob.debug
+      ~Transform2d_Knob.enabled
+      ~Transform2d_Knob.error
+      ~Transform2d_Knob.fromScript
+      ~Transform2d_Knob.fullyQualifiedName
+      ~Transform2d_Knob.getAuthorMode
+      ~Transform2d_Knob.getAuthorModes
+      ~Transform2d_Knob.getDerivative
+      ~Transform2d_Knob.getFlag
+      ~Transform2d_Knob.getIntegral
+      ~Transform2d_Knob.getKeyIndex
+      ~Transform2d_Knob.getKeyList
+      ~Transform2d_Knob.getKeyTime
+      ~Transform2d_Knob.getNthDerivative
+      ~Transform2d_Knob.getNumKeys
+      ~Transform2d_Knob.getValue
+      ~Transform2d_Knob.getValueAt
+      ~Transform2d_Knob.hasExpression
+      ~Transform2d_Knob.isAnimated
+      ~Transform2d_Knob.isKey
+      ~Transform2d_Knob.isKeyAt
+      ~Transform2d_Knob.label
+      ~Transform2d_Knob.makeWidget
+      ~Transform2d_Knob.name
+      ~Transform2d_Knob.node
+      ~Transform2d_Knob.notDefault
+      ~Transform2d_Knob.removeKey
+      ~Transform2d_Knob.removeKeyAt
+      ~Transform2d_Knob.setAnimated
+      ~Transform2d_Knob.setAuthorMode
+      ~Transform2d_Knob.setEnabled
+      ~Transform2d_Knob.setExpression
+      ~Transform2d_Knob.setFlag
+      ~Transform2d_Knob.setLabel
+      ~Transform2d_Knob.setName
+      ~Transform2d_Knob.setTooltip
+      ~Transform2d_Knob.setValue
+      ~Transform2d_Knob.setValueAt
+      ~Transform2d_Knob.setVisible
+      ~Transform2d_Knob.toScript
+      ~Transform2d_Knob.toScriptPrefix
+      ~Transform2d_Knob.tooltip
+      ~Transform2d_Knob.value
+      ~Transform2d_Knob.visible
+      ~Transform2d_Knob.warning
+   
+   
+
+   
+   
+   

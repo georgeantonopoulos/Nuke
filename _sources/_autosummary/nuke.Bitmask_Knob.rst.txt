@@ -1,0 +1,105 @@
+nuke.Bitmask\_Knob
+==================
+
+.. currentmodule:: nuke
+
+.. autoclass:: Bitmask_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Bitmask_Knob.Class
+      ~Bitmask_Knob.ClassID
+      ~Bitmask_Knob.animation
+      ~Bitmask_Knob.animations
+      ~Bitmask_Knob.array
+      ~Bitmask_Knob.arraySize
+      ~Bitmask_Knob.clearAnimated
+      ~Bitmask_Knob.clearFlag
+      ~Bitmask_Knob.copyAnimation
+      ~Bitmask_Knob.copyAnimations
+      ~Bitmask_Knob.critical
+      ~Bitmask_Knob.debug
+      ~Bitmask_Knob.defaultValue
+      ~Bitmask_Knob.deleteAnimation
+      ~Bitmask_Knob.dimensions
+      ~Bitmask_Knob.enabled
+      ~Bitmask_Knob.enumName
+      ~Bitmask_Knob.error
+      ~Bitmask_Knob.frame
+      ~Bitmask_Knob.fromScript
+      ~Bitmask_Knob.fullyQualifiedName
+      ~Bitmask_Knob.getAuthorMode
+      ~Bitmask_Knob.getAuthorModes
+      ~Bitmask_Knob.getDerivative
+      ~Bitmask_Knob.getDisplayStrFromID
+      ~Bitmask_Knob.getFlag
+      ~Bitmask_Knob.getIntegral
+      ~Bitmask_Knob.getKeyIndex
+      ~Bitmask_Knob.getKeyList
+      ~Bitmask_Knob.getKeyTime
+      ~Bitmask_Knob.getNthDerivative
+      ~Bitmask_Knob.getNumKeys
+      ~Bitmask_Knob.getValue
+      ~Bitmask_Knob.getValueAt
+      ~Bitmask_Knob.hasExpression
+      ~Bitmask_Knob.height
+      ~Bitmask_Knob.isAnimated
+      ~Bitmask_Knob.isKey
+      ~Bitmask_Knob.isKeyAt
+      ~Bitmask_Knob.label
+      ~Bitmask_Knob.makeWidget
+      ~Bitmask_Knob.max
+      ~Bitmask_Knob.maximum
+      ~Bitmask_Knob.min
+      ~Bitmask_Knob.minimum
+      ~Bitmask_Knob.name
+      ~Bitmask_Knob.node
+      ~Bitmask_Knob.notDefault
+      ~Bitmask_Knob.numValues
+      ~Bitmask_Knob.removeKey
+      ~Bitmask_Knob.removeKeyAt
+      ~Bitmask_Knob.resize
+      ~Bitmask_Knob.setAnimated
+      ~Bitmask_Knob.setAuthorMode
+      ~Bitmask_Knob.setDefaultValue
+      ~Bitmask_Knob.setEnabled
+      ~Bitmask_Knob.setExpression
+      ~Bitmask_Knob.setFlag
+      ~Bitmask_Knob.setKeyAt
+      ~Bitmask_Knob.setLabel
+      ~Bitmask_Knob.setName
+      ~Bitmask_Knob.setRange
+      ~Bitmask_Knob.setSingleValue
+      ~Bitmask_Knob.setTooltip
+      ~Bitmask_Knob.setValue
+      ~Bitmask_Knob.setValueAt
+      ~Bitmask_Knob.setValues
+      ~Bitmask_Knob.setVisible
+      ~Bitmask_Knob.singleValue
+      ~Bitmask_Knob.splitView
+      ~Bitmask_Knob.toScript
+      ~Bitmask_Knob.toScriptPrefix
+      ~Bitmask_Knob.tooltip
+      ~Bitmask_Knob.unsplitView
+      ~Bitmask_Knob.value
+      ~Bitmask_Knob.valueAt
+      ~Bitmask_Knob.values
+      ~Bitmask_Knob.vect
+      ~Bitmask_Knob.visible
+      ~Bitmask_Knob.warning
+      ~Bitmask_Knob.width
+   
+   
+
+   
+   
+   

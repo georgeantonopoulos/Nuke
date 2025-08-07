@@ -1,0 +1,6 @@
+nukescripts.plugin\_menu.update\_plugin\_menu
+=============================================
+
+.. currentmodule:: nukescripts.plugin_menu
+
+.. autofunction:: update_plugin_menu

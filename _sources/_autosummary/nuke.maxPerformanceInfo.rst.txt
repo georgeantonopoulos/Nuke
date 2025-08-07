@@ -1,0 +1,6 @@
+nuke.maxPerformanceInfo
+=======================
+
+.. currentmodule:: nuke
+
+.. autofunction:: maxPerformanceInfo

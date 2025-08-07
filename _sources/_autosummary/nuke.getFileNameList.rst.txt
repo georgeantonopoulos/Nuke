@@ -1,0 +1,6 @@
+nuke.getFileNameList
+====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: getFileNameList

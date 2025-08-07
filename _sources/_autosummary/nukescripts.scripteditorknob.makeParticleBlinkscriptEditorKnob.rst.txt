@@ -1,0 +1,6 @@
+nukescripts.scripteditorknob.makeParticleBlinkscriptEditorKnob
+==============================================================
+
+.. currentmodule:: nukescripts.scripteditorknob
+
+.. autofunction:: makeParticleBlinkscriptEditorKnob

@@ -1,0 +1,59 @@
+﻿nuke.splinewarp
+===============
+
+.. automodule:: nuke.splinewarp
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      AnimAttributes
+      AnimCTransform
+      AnimControlPoint
+      AnimCurve
+      AnimCurveKey
+      AnimCurveViews
+      BaseCurve
+      CMatrix4
+      CTransform
+      CVec2
+      CVec3
+      CVec4
+      ControlPoint
+      CubicCurve
+      CurveKnob
+      CurveType
+      Element
+      ExtrapolationType
+      Flag
+      FlagType
+      InterpolationType
+      Layer
+      RotationOrder
+      Shape
+      ShapeControlPoint
+      SplineKnob
+      Stroke
+      TransformOrder
+   
+   
+
+   
+   
+   
+
+
+

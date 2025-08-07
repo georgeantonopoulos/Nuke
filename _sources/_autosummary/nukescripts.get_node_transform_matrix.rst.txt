@@ -1,0 +1,6 @@
+nukescripts.get\_node\_transform\_matrix
+========================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: get_node_transform_matrix

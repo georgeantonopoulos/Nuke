@@ -1,0 +1,6 @@
+nukescripts.cameratracker.createPointCloud
+==========================================
+
+.. currentmodule:: nukescripts.cameratracker
+
+.. autofunction:: createPointCloud

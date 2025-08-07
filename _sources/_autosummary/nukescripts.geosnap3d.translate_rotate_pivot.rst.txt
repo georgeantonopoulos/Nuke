@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.translate\_rotate\_pivot
+==============================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: translate_rotate_pivot

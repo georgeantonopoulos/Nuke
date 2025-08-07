@@ -1,0 +1,6 @@
+nuke.knobDefault
+================
+
+.. currentmodule:: nuke
+
+.. autofunction:: knobDefault

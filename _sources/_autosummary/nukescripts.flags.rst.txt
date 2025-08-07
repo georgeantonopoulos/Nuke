@@ -1,0 +1,32 @@
+nukescripts.flags
+=================
+
+.. automodule:: nukescripts.flags
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      get_fully_qualified_name
+      toggle
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

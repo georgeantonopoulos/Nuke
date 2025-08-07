@@ -1,0 +1,6 @@
+nuke.localization.checkForUpdates
+=================================
+
+.. currentmodule:: nuke.localization
+
+.. autofunction:: checkForUpdates

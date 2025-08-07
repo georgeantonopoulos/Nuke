@@ -1,0 +1,6 @@
+nukescripts.translateThisNodeToPoints
+=====================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: translateThisNodeToPoints

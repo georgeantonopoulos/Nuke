@@ -1,0 +1,6 @@
+nuke.getNodeClassName
+=====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: getNodeClassName

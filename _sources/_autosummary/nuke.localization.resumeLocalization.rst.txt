@@ -1,0 +1,6 @@
+nuke.localization.resumeLocalization
+====================================
+
+.. currentmodule:: nuke.localization
+
+.. autofunction:: resumeLocalization

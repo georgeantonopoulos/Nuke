@@ -1,0 +1,61 @@
+Welcome to NUKE Python Developer's Guide
+========================================
+
+Contents:
+
+.. toctree::
+   :maxdepth: 3
+
+   intro
+   startup
+   basics
+   nuke_as_python_module
+   animation
+   command_line
+   callbacks
+   stereo
+   3D
+   rotopaint
+   image_data
+   custom_panels
+   custom_ui
+   flipbook
+   metadata
+   channels
+   dag
+   formats
+   math
+   asset
+   openassetio
+   gsv
+   threading
+   render_farm
+   performance
+   installing_plugins
+   samples
+
+
+.. autosummary::
+   :toctree: _autosummary
+   :caption: API Reference
+   :template: custom-module-template.rst
+   :recursive:
+
+
+   nuke
+   nuke.curveknob
+   nuke.curvelib
+   nuke.gsv
+   nuke.localization
+   nuke.memory2
+   nuke.nukemath
+   nuke.rotopaint
+   nuke.splinewarp
+   nukescripts
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

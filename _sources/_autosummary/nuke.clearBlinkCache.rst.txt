@@ -1,0 +1,6 @@
+nuke.clearBlinkCache
+====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: clearBlinkCache

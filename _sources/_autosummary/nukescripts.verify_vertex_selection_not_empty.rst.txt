@@ -1,0 +1,6 @@
+nukescripts.verify\_vertex\_selection\_not\_empty
+=================================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: verify_vertex_selection_not_empty

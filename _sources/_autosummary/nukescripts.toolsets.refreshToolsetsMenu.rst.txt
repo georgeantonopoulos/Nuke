@@ -1,0 +1,6 @@
+nukescripts.toolsets.refreshToolsetsMenu
+========================================
+
+.. currentmodule:: nukescripts.toolsets
+
+.. autofunction:: refreshToolsetsMenu

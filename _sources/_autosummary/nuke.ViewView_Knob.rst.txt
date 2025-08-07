@@ -1,0 +1,74 @@
+nuke.ViewView\_Knob
+===================
+
+.. currentmodule:: nuke
+
+.. autoclass:: ViewView_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~ViewView_Knob.Class
+      ~ViewView_Knob.ClassID
+      ~ViewView_Knob.clearAnimated
+      ~ViewView_Knob.clearFlag
+      ~ViewView_Knob.critical
+      ~ViewView_Knob.debug
+      ~ViewView_Knob.enabled
+      ~ViewView_Knob.error
+      ~ViewView_Knob.fromScript
+      ~ViewView_Knob.fullyQualifiedName
+      ~ViewView_Knob.getAuthorMode
+      ~ViewView_Knob.getAuthorModes
+      ~ViewView_Knob.getDerivative
+      ~ViewView_Knob.getFlag
+      ~ViewView_Knob.getIntegral
+      ~ViewView_Knob.getKeyIndex
+      ~ViewView_Knob.getKeyList
+      ~ViewView_Knob.getKeyTime
+      ~ViewView_Knob.getNthDerivative
+      ~ViewView_Knob.getNumKeys
+      ~ViewView_Knob.getValue
+      ~ViewView_Knob.getValueAt
+      ~ViewView_Knob.hasExpression
+      ~ViewView_Knob.isAnimated
+      ~ViewView_Knob.isKey
+      ~ViewView_Knob.isKeyAt
+      ~ViewView_Knob.label
+      ~ViewView_Knob.makeWidget
+      ~ViewView_Knob.name
+      ~ViewView_Knob.node
+      ~ViewView_Knob.notDefault
+      ~ViewView_Knob.removeKey
+      ~ViewView_Knob.removeKeyAt
+      ~ViewView_Knob.setAnimated
+      ~ViewView_Knob.setAuthorMode
+      ~ViewView_Knob.setEnabled
+      ~ViewView_Knob.setExpression
+      ~ViewView_Knob.setFlag
+      ~ViewView_Knob.setLabel
+      ~ViewView_Knob.setName
+      ~ViewView_Knob.setTooltip
+      ~ViewView_Knob.setValue
+      ~ViewView_Knob.setValueAt
+      ~ViewView_Knob.setVisible
+      ~ViewView_Knob.toScript
+      ~ViewView_Knob.toScriptPrefix
+      ~ViewView_Knob.tooltip
+      ~ViewView_Knob.value
+      ~ViewView_Knob.visible
+      ~ViewView_Knob.warning
+   
+   
+
+   
+   
+   

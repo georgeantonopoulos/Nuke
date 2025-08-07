@@ -1,0 +1,100 @@
+nuke.ColorChip\_Knob
+====================
+
+.. currentmodule:: nuke
+
+.. autoclass:: ColorChip_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~ColorChip_Knob.Class
+      ~ColorChip_Knob.ClassID
+      ~ColorChip_Knob.animation
+      ~ColorChip_Knob.animations
+      ~ColorChip_Knob.array
+      ~ColorChip_Knob.arraySize
+      ~ColorChip_Knob.clearAnimated
+      ~ColorChip_Knob.clearFlag
+      ~ColorChip_Knob.copyAnimation
+      ~ColorChip_Knob.copyAnimations
+      ~ColorChip_Knob.critical
+      ~ColorChip_Knob.debug
+      ~ColorChip_Knob.defaultValue
+      ~ColorChip_Knob.deleteAnimation
+      ~ColorChip_Knob.dimensions
+      ~ColorChip_Knob.enabled
+      ~ColorChip_Knob.error
+      ~ColorChip_Knob.frame
+      ~ColorChip_Knob.fromScript
+      ~ColorChip_Knob.fullyQualifiedName
+      ~ColorChip_Knob.getAuthorMode
+      ~ColorChip_Knob.getAuthorModes
+      ~ColorChip_Knob.getDerivative
+      ~ColorChip_Knob.getFlag
+      ~ColorChip_Knob.getIntegral
+      ~ColorChip_Knob.getKeyIndex
+      ~ColorChip_Knob.getKeyList
+      ~ColorChip_Knob.getKeyTime
+      ~ColorChip_Knob.getNthDerivative
+      ~ColorChip_Knob.getNumKeys
+      ~ColorChip_Knob.getValue
+      ~ColorChip_Knob.getValueAt
+      ~ColorChip_Knob.hasExpression
+      ~ColorChip_Knob.height
+      ~ColorChip_Knob.isAnimated
+      ~ColorChip_Knob.isKey
+      ~ColorChip_Knob.isKeyAt
+      ~ColorChip_Knob.label
+      ~ColorChip_Knob.makeWidget
+      ~ColorChip_Knob.max
+      ~ColorChip_Knob.maximum
+      ~ColorChip_Knob.min
+      ~ColorChip_Knob.minimum
+      ~ColorChip_Knob.name
+      ~ColorChip_Knob.node
+      ~ColorChip_Knob.notDefault
+      ~ColorChip_Knob.removeKey
+      ~ColorChip_Knob.removeKeyAt
+      ~ColorChip_Knob.resize
+      ~ColorChip_Knob.setAnimated
+      ~ColorChip_Knob.setAuthorMode
+      ~ColorChip_Knob.setDefaultValue
+      ~ColorChip_Knob.setEnabled
+      ~ColorChip_Knob.setExpression
+      ~ColorChip_Knob.setFlag
+      ~ColorChip_Knob.setKeyAt
+      ~ColorChip_Knob.setLabel
+      ~ColorChip_Knob.setName
+      ~ColorChip_Knob.setRange
+      ~ColorChip_Knob.setSingleValue
+      ~ColorChip_Knob.setTooltip
+      ~ColorChip_Knob.setValue
+      ~ColorChip_Knob.setValueAt
+      ~ColorChip_Knob.setVisible
+      ~ColorChip_Knob.singleValue
+      ~ColorChip_Knob.splitView
+      ~ColorChip_Knob.toScript
+      ~ColorChip_Knob.toScriptPrefix
+      ~ColorChip_Knob.tooltip
+      ~ColorChip_Knob.unsplitView
+      ~ColorChip_Knob.value
+      ~ColorChip_Knob.valueAt
+      ~ColorChip_Knob.vect
+      ~ColorChip_Knob.visible
+      ~ColorChip_Knob.warning
+      ~ColorChip_Knob.width
+   
+   
+
+   
+   
+   

@@ -1,0 +1,39 @@
+﻿nuke.memory2
+============
+
+.. automodule:: nuke.memory2
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      allocatorInfo
+      clearUsage
+      info
+      maxUsage
+      setMaxUsage
+      setUsage
+      totalRAM
+      totalVM
+      usage
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,6 @@
+nukescripts.run\_framecycler.framecycler\_stereo\_available
+===========================================================
+
+.. currentmodule:: nukescripts.run_framecycler
+
+.. autofunction:: framecycler_stereo_available

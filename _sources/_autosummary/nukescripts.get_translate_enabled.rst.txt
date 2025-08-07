@@ -1,0 +1,6 @@
+nukescripts.get\_translate\_enabled
+===================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: get_translate_enabled

@@ -1,0 +1,26 @@
+nukescripts.clientserver.client
+===============================
+
+.. currentmodule:: nukescripts.clientserver
+
+.. autoclass:: client
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~client.close
+      ~client.send
+   
+   
+
+   
+   
+   

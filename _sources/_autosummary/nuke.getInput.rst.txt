@@ -1,0 +1,6 @@
+nuke.getInput
+=============
+
+.. currentmodule:: nuke
+
+.. autofunction:: getInput

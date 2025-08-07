@@ -1,0 +1,6 @@
+nuke.addOnUserCreate
+====================
+
+.. currentmodule:: nuke
+
+.. autofunction:: addOnUserCreate

@@ -1,0 +1,6 @@
+nukescripts.anySelectedVertexInfo
+=================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: anySelectedVertexInfo

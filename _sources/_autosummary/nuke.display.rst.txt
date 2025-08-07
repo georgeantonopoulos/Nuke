@@ -1,0 +1,6 @@
+nuke.display
+============
+
+.. currentmodule:: nuke
+
+.. autofunction:: display

@@ -1,0 +1,137 @@
+nuke.Group
+==========
+
+.. currentmodule:: nuke
+
+.. autoclass:: Group
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Group.Class
+      ~Group.addCallback
+      ~Group.addKnob
+      ~Group.allKnobs
+      ~Group.autoplace
+      ~Group.baseNode
+      ~Group.bbox
+      ~Group.begin
+      ~Group.canSetInput
+      ~Group.channels
+      ~Group.clearCallbacks
+      ~Group.clearCustomIcon
+      ~Group.cloneInstanceIndex
+      ~Group.cloneInstanceNode
+      ~Group.cloneInstances
+      ~Group.clones
+      ~Group.connectInput
+      ~Group.connectSelectedNodes
+      ~Group.deepSample
+      ~Group.deepSampleCount
+      ~Group.dependencies
+      ~Group.dependent
+      ~Group.end
+      ~Group.error
+      ~Group.executePythonCallback
+      ~Group.expand
+      ~Group.fileDependencies
+      ~Group.findNode
+      ~Group.firstFrame
+      ~Group.forceUpdateLocalization
+      ~Group.forceValidate
+      ~Group.format
+      ~Group.frameRange
+      ~Group.fullName
+      ~Group.getLink
+      ~Group.getNumKnobs
+      ~Group.getStage
+      ~Group.hasError
+      ~Group.height
+      ~Group.help
+      ~Group.helpUrl
+      ~Group.hideControlPanel
+      ~Group.input
+      ~Group.inputs
+      ~Group.isClone
+      ~Group.isCloneable
+      ~Group.isLinked
+      ~Group.isLocalizationOutdated
+      ~Group.isLocalized
+      ~Group.isSelected
+      ~Group.knob
+      ~Group.knobs
+      ~Group.lastFrame
+      ~Group.linkableKnobs
+      ~Group.localizationProgress
+      ~Group.lock
+      ~Group.locked
+      ~Group.maxInputs
+      ~Group.maxOutputs
+      ~Group.maximumInputs
+      ~Group.maximumOutputs
+      ~Group.metadata
+      ~Group.minInputs
+      ~Group.minimumInputs
+      ~Group.name
+      ~Group.node
+      ~Group.nodes
+      ~Group.numKnobs
+      ~Group.numNodes
+      ~Group.opHashes
+      ~Group.optionalInput
+      ~Group.output
+      ~Group.overrideKnob
+      ~Group.parent
+      ~Group.performanceInfo
+      ~Group.pixelAspect
+      ~Group.proxy
+      ~Group.readKnobs
+      ~Group.redraw
+      ~Group.removeCallback
+      ~Group.removeKnob
+      ~Group.removeOverrideKnob
+      ~Group.resetKnobsToDefault
+      ~Group.rootNode
+      ~Group.run
+      ~Group.running
+      ~Group.sample
+      ~Group.screenHeight
+      ~Group.screenWidth
+      ~Group.selectOnly
+      ~Group.selectedNode
+      ~Group.selectedNodes
+      ~Group.setCustomIcon
+      ~Group.setInput
+      ~Group.setName
+      ~Group.setSelected
+      ~Group.setTab
+      ~Group.setXYpos
+      ~Group.setXpos
+      ~Group.setYpos
+      ~Group.showControlPanel
+      ~Group.showInfo
+      ~Group.shown
+      ~Group.splaySelectedNodes
+      ~Group.subgraphLocked
+      ~Group.treeHasError
+      ~Group.unlink
+      ~Group.unlock
+      ~Group.upstreamFrameRange
+      ~Group.width
+      ~Group.writeKnobs
+      ~Group.xpos
+      ~Group.ypos
+   
+   
+
+   
+   
+   

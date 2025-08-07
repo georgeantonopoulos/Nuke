@@ -1,0 +1,125 @@
+nuke.BackdropNode
+=================
+
+.. currentmodule:: nuke
+
+.. autoclass:: BackdropNode
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~BackdropNode.Class
+      ~BackdropNode.addCallback
+      ~BackdropNode.addKnob
+      ~BackdropNode.allKnobs
+      ~BackdropNode.autoplace
+      ~BackdropNode.baseNode
+      ~BackdropNode.bbox
+      ~BackdropNode.canSetInput
+      ~BackdropNode.channels
+      ~BackdropNode.clearCallbacks
+      ~BackdropNode.clearCustomIcon
+      ~BackdropNode.cloneInstanceIndex
+      ~BackdropNode.cloneInstanceNode
+      ~BackdropNode.cloneInstances
+      ~BackdropNode.clones
+      ~BackdropNode.connectInput
+      ~BackdropNode.deepSample
+      ~BackdropNode.deepSampleCount
+      ~BackdropNode.dependencies
+      ~BackdropNode.dependent
+      ~BackdropNode.error
+      ~BackdropNode.executePythonCallback
+      ~BackdropNode.fileDependencies
+      ~BackdropNode.firstFrame
+      ~BackdropNode.forceUpdateLocalization
+      ~BackdropNode.forceValidate
+      ~BackdropNode.format
+      ~BackdropNode.frameRange
+      ~BackdropNode.fullName
+      ~BackdropNode.getLink
+      ~BackdropNode.getNodes
+      ~BackdropNode.getNumKnobs
+      ~BackdropNode.getStage
+      ~BackdropNode.hasError
+      ~BackdropNode.height
+      ~BackdropNode.help
+      ~BackdropNode.helpUrl
+      ~BackdropNode.hideControlPanel
+      ~BackdropNode.input
+      ~BackdropNode.inputs
+      ~BackdropNode.isClone
+      ~BackdropNode.isCloneable
+      ~BackdropNode.isLinked
+      ~BackdropNode.isLocalizationOutdated
+      ~BackdropNode.isLocalized
+      ~BackdropNode.isSelected
+      ~BackdropNode.knob
+      ~BackdropNode.knobs
+      ~BackdropNode.lastFrame
+      ~BackdropNode.linkableKnobs
+      ~BackdropNode.localizationProgress
+      ~BackdropNode.lock
+      ~BackdropNode.locked
+      ~BackdropNode.maxInputs
+      ~BackdropNode.maxOutputs
+      ~BackdropNode.maximumInputs
+      ~BackdropNode.maximumOutputs
+      ~BackdropNode.metadata
+      ~BackdropNode.minInputs
+      ~BackdropNode.minimumInputs
+      ~BackdropNode.name
+      ~BackdropNode.numKnobs
+      ~BackdropNode.opHashes
+      ~BackdropNode.optionalInput
+      ~BackdropNode.overrideKnob
+      ~BackdropNode.parent
+      ~BackdropNode.performanceInfo
+      ~BackdropNode.pixelAspect
+      ~BackdropNode.proxy
+      ~BackdropNode.readKnobs
+      ~BackdropNode.redraw
+      ~BackdropNode.removeCallback
+      ~BackdropNode.removeKnob
+      ~BackdropNode.removeOverrideKnob
+      ~BackdropNode.resetKnobsToDefault
+      ~BackdropNode.rootNode
+      ~BackdropNode.running
+      ~BackdropNode.sample
+      ~BackdropNode.screenHeight
+      ~BackdropNode.screenWidth
+      ~BackdropNode.selectNodes
+      ~BackdropNode.selectOnly
+      ~BackdropNode.setCustomIcon
+      ~BackdropNode.setInput
+      ~BackdropNode.setName
+      ~BackdropNode.setSelected
+      ~BackdropNode.setTab
+      ~BackdropNode.setXYpos
+      ~BackdropNode.setXpos
+      ~BackdropNode.setYpos
+      ~BackdropNode.showControlPanel
+      ~BackdropNode.showInfo
+      ~BackdropNode.shown
+      ~BackdropNode.treeHasError
+      ~BackdropNode.unlink
+      ~BackdropNode.unlock
+      ~BackdropNode.upstreamFrameRange
+      ~BackdropNode.width
+      ~BackdropNode.writeKnobs
+      ~BackdropNode.xpos
+      ~BackdropNode.ypos
+   
+   
+
+   
+   
+   

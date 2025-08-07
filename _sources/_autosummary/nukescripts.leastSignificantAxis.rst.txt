@@ -1,0 +1,6 @@
+nukescripts.leastSignificantAxis
+================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: leastSignificantAxis

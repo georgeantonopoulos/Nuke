@@ -1,0 +1,6 @@
+nuke.nodeAtPath
+===============
+
+.. currentmodule:: nuke
+
+.. autofunction:: nodeAtPath

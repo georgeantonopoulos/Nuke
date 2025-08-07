@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.scale\_geo\_to\_points\_verified
+======================================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: scale_geo_to_points_verified

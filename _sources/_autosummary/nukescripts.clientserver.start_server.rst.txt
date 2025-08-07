@@ -1,0 +1,6 @@
+nukescripts.clientserver.start\_server
+======================================
+
+.. currentmodule:: nukescripts.clientserver
+
+.. autofunction:: start_server

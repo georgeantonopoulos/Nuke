@@ -1,0 +1,103 @@
+nuke.XY\_Knob
+=============
+
+.. currentmodule:: nuke
+
+.. autoclass:: XY_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~XY_Knob.Class
+      ~XY_Knob.ClassID
+      ~XY_Knob.animation
+      ~XY_Knob.animations
+      ~XY_Knob.array
+      ~XY_Knob.arraySize
+      ~XY_Knob.clearAnimated
+      ~XY_Knob.clearFlag
+      ~XY_Knob.copyAnimation
+      ~XY_Knob.copyAnimations
+      ~XY_Knob.critical
+      ~XY_Knob.debug
+      ~XY_Knob.defaultValue
+      ~XY_Knob.deleteAnimation
+      ~XY_Knob.dimensions
+      ~XY_Knob.enabled
+      ~XY_Knob.error
+      ~XY_Knob.frame
+      ~XY_Knob.fromScript
+      ~XY_Knob.fullyQualifiedName
+      ~XY_Knob.getAuthorMode
+      ~XY_Knob.getAuthorModes
+      ~XY_Knob.getDerivative
+      ~XY_Knob.getFlag
+      ~XY_Knob.getIntegral
+      ~XY_Knob.getKeyIndex
+      ~XY_Knob.getKeyList
+      ~XY_Knob.getKeyTime
+      ~XY_Knob.getNthDerivative
+      ~XY_Knob.getNumKeys
+      ~XY_Knob.getValue
+      ~XY_Knob.getValueAt
+      ~XY_Knob.hasExpression
+      ~XY_Knob.height
+      ~XY_Knob.isAnimated
+      ~XY_Knob.isKey
+      ~XY_Knob.isKeyAt
+      ~XY_Knob.label
+      ~XY_Knob.makeWidget
+      ~XY_Knob.max
+      ~XY_Knob.maximum
+      ~XY_Knob.min
+      ~XY_Knob.minimum
+      ~XY_Knob.name
+      ~XY_Knob.names
+      ~XY_Knob.node
+      ~XY_Knob.notDefault
+      ~XY_Knob.removeKey
+      ~XY_Knob.removeKeyAt
+      ~XY_Knob.resize
+      ~XY_Knob.setAnimated
+      ~XY_Knob.setAuthorMode
+      ~XY_Knob.setDefaultValue
+      ~XY_Knob.setEnabled
+      ~XY_Knob.setExpression
+      ~XY_Knob.setFlag
+      ~XY_Knob.setKeyAt
+      ~XY_Knob.setLabel
+      ~XY_Knob.setName
+      ~XY_Knob.setRange
+      ~XY_Knob.setSingleValue
+      ~XY_Knob.setTooltip
+      ~XY_Knob.setValue
+      ~XY_Knob.setValueAt
+      ~XY_Knob.setVisible
+      ~XY_Knob.singleValue
+      ~XY_Knob.splitView
+      ~XY_Knob.toScript
+      ~XY_Knob.toScriptPrefix
+      ~XY_Knob.tooltip
+      ~XY_Knob.unsplitView
+      ~XY_Knob.value
+      ~XY_Knob.valueAt
+      ~XY_Knob.vect
+      ~XY_Knob.visible
+      ~XY_Knob.warning
+      ~XY_Knob.width
+      ~XY_Knob.x
+      ~XY_Knob.y
+   
+   
+
+   
+   
+   

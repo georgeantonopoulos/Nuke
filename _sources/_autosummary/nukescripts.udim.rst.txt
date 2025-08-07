@@ -1,0 +1,51 @@
+nukescripts.udim
+================
+
+.. automodule:: nukescripts.udim
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      allign_nodes
+      checkUdimValue
+      findNextName
+      parseUdimFile
+      splitInSequence
+      udimStr
+      udim_group
+      udim_import
+      uv2udim
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      TableDelegate
+      UDIMErrorDialog
+      UDIMFile
+      UDIMOptionsDialog
+   
+   
+
+   
+   
+   
+
+
+

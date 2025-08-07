@@ -1,0 +1,84 @@
+nuke.Channel\_Knob
+==================
+
+.. currentmodule:: nuke
+
+.. autoclass:: Channel_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Channel_Knob.Class
+      ~Channel_Knob.ClassID
+      ~Channel_Knob.channelSelector
+      ~Channel_Knob.checkMarks
+      ~Channel_Knob.clearAnimated
+      ~Channel_Knob.clearFlag
+      ~Channel_Knob.critical
+      ~Channel_Knob.debug
+      ~Channel_Knob.depth
+      ~Channel_Knob.enableChannel
+      ~Channel_Knob.enabled
+      ~Channel_Knob.error
+      ~Channel_Knob.fromScript
+      ~Channel_Knob.fullyQualifiedName
+      ~Channel_Knob.getAuthorMode
+      ~Channel_Knob.getAuthorModes
+      ~Channel_Knob.getDerivative
+      ~Channel_Knob.getFlag
+      ~Channel_Knob.getIntegral
+      ~Channel_Knob.getKeyIndex
+      ~Channel_Knob.getKeyList
+      ~Channel_Knob.getKeyTime
+      ~Channel_Knob.getNthDerivative
+      ~Channel_Knob.getNumKeys
+      ~Channel_Knob.getValue
+      ~Channel_Knob.getValueAt
+      ~Channel_Knob.hasExpression
+      ~Channel_Knob.inputKnob
+      ~Channel_Knob.inputNumber
+      ~Channel_Knob.isAnimated
+      ~Channel_Knob.isChannelEnabled
+      ~Channel_Knob.isKey
+      ~Channel_Knob.isKeyAt
+      ~Channel_Knob.label
+      ~Channel_Knob.layerSelector
+      ~Channel_Knob.makeWidget
+      ~Channel_Knob.name
+      ~Channel_Knob.node
+      ~Channel_Knob.notDefault
+      ~Channel_Knob.removeKey
+      ~Channel_Knob.removeKeyAt
+      ~Channel_Knob.setAnimated
+      ~Channel_Knob.setAuthorMode
+      ~Channel_Knob.setEnable
+      ~Channel_Knob.setEnabled
+      ~Channel_Knob.setExpression
+      ~Channel_Knob.setFlag
+      ~Channel_Knob.setInput
+      ~Channel_Knob.setLabel
+      ~Channel_Knob.setName
+      ~Channel_Knob.setTooltip
+      ~Channel_Knob.setValue
+      ~Channel_Knob.setValueAt
+      ~Channel_Knob.setVisible
+      ~Channel_Knob.toScript
+      ~Channel_Knob.toScriptPrefix
+      ~Channel_Knob.tooltip
+      ~Channel_Knob.value
+      ~Channel_Knob.visible
+      ~Channel_Knob.warning
+   
+   
+
+   
+   
+   

@@ -1,0 +1,70 @@
+﻿nuke.rotopaint
+==============
+
+.. automodule:: nuke.rotopaint
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      convertDirectoryToNuke6
+      convertDirectoryToNuke7
+      convertToNuke6
+      convertToNuke7
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      AnimAttributes
+      AnimCTransform
+      AnimControlPoint
+      AnimCurve
+      AnimCurveKey
+      AnimCurveViews
+      BaseCurve
+      CMatrix4
+      CTransform
+      CVec2
+      CVec3
+      CVec4
+      ControlPoint
+      CubicCurve
+      CurveKnob
+      CurveType
+      Element
+      ExtrapolationType
+      Flag
+      FlagType
+      Hash
+      InterpolationType
+      Layer
+      RotationOrder
+      Shape
+      ShapeControlPoint
+      Stroke
+      TransformOrder
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,6 @@
+nuke.removeFilenameFilter
+=========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: removeFilenameFilter

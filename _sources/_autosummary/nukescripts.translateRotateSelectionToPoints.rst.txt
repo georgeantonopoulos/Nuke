@@ -1,0 +1,6 @@
+nukescripts.translateRotateSelectionToPoints
+============================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: translateRotateSelectionToPoints

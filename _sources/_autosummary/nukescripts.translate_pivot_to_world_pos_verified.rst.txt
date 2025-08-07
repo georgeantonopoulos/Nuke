@@ -1,0 +1,6 @@
+nukescripts.translate\_pivot\_to\_world\_pos\_verified
+======================================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: translate_pivot_to_world_pos_verified

@@ -1,0 +1,6 @@
+nukescripts.create.create\_read
+===============================
+
+.. currentmodule:: nukescripts.create
+
+.. autofunction:: create_read

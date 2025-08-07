@@ -1,0 +1,6 @@
+nuke.addUpdateUI
+================
+
+.. currentmodule:: nuke
+
+.. autofunction:: addUpdateUI

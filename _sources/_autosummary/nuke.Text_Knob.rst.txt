@@ -1,0 +1,74 @@
+nuke.Text\_Knob
+===============
+
+.. currentmodule:: nuke
+
+.. autoclass:: Text_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Text_Knob.Class
+      ~Text_Knob.ClassID
+      ~Text_Knob.clearAnimated
+      ~Text_Knob.clearFlag
+      ~Text_Knob.critical
+      ~Text_Knob.debug
+      ~Text_Knob.enabled
+      ~Text_Knob.error
+      ~Text_Knob.fromScript
+      ~Text_Knob.fullyQualifiedName
+      ~Text_Knob.getAuthorMode
+      ~Text_Knob.getAuthorModes
+      ~Text_Knob.getDerivative
+      ~Text_Knob.getFlag
+      ~Text_Knob.getIntegral
+      ~Text_Knob.getKeyIndex
+      ~Text_Knob.getKeyList
+      ~Text_Knob.getKeyTime
+      ~Text_Knob.getNthDerivative
+      ~Text_Knob.getNumKeys
+      ~Text_Knob.getValue
+      ~Text_Knob.getValueAt
+      ~Text_Knob.hasExpression
+      ~Text_Knob.isAnimated
+      ~Text_Knob.isKey
+      ~Text_Knob.isKeyAt
+      ~Text_Knob.label
+      ~Text_Knob.makeWidget
+      ~Text_Knob.name
+      ~Text_Knob.node
+      ~Text_Knob.notDefault
+      ~Text_Knob.removeKey
+      ~Text_Knob.removeKeyAt
+      ~Text_Knob.setAnimated
+      ~Text_Knob.setAuthorMode
+      ~Text_Knob.setEnabled
+      ~Text_Knob.setExpression
+      ~Text_Knob.setFlag
+      ~Text_Knob.setLabel
+      ~Text_Knob.setName
+      ~Text_Knob.setTooltip
+      ~Text_Knob.setValue
+      ~Text_Knob.setValueAt
+      ~Text_Knob.setVisible
+      ~Text_Knob.toScript
+      ~Text_Knob.toScriptPrefix
+      ~Text_Knob.tooltip
+      ~Text_Knob.value
+      ~Text_Knob.visible
+      ~Text_Knob.warning
+   
+   
+
+   
+   
+   

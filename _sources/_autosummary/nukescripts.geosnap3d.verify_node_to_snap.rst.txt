@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.verify\_node\_to\_snap
+============================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: verify_node_to_snap

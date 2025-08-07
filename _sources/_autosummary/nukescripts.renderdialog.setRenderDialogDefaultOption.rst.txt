@@ -1,0 +1,6 @@
+nukescripts.renderdialog.setRenderDialogDefaultOption
+=====================================================
+
+.. currentmodule:: nukescripts.renderdialog
+
+.. autofunction:: setRenderDialogDefaultOption

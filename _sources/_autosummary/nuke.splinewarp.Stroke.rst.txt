@@ -1,0 +1,43 @@
+nuke.splinewarp.Stroke
+======================
+
+.. currentmodule:: nuke.splinewarp
+
+.. autoclass:: Stroke
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~Stroke.append
+      ~Stroke.clone
+      ~Stroke.evaluate
+      ~Stroke.getAttributes
+      ~Stroke.getFlag
+      ~Stroke.getTransform
+      ~Stroke.getVisible
+      ~Stroke.insert
+      ~Stroke.remove
+      ~Stroke.serialise
+      ~Stroke.setFlag
+      ~Stroke.setVisible
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Stroke.locked
+      ~Stroke.name
+   
+   

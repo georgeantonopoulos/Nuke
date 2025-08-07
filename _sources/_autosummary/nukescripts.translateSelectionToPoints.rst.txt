@@ -1,0 +1,6 @@
+nukescripts.translateSelectionToPoints
+======================================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: translateSelectionToPoints

@@ -1,0 +1,6 @@
+nuke.showInfo
+=============
+
+.. currentmodule:: nuke
+
+.. autofunction:: showInfo

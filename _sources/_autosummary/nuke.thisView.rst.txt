@@ -1,0 +1,6 @@
+nuke.thisView
+=============
+
+.. currentmodule:: nuke
+
+.. autofunction:: thisView

@@ -1,0 +1,6 @@
+nukescripts.register
+====================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: register

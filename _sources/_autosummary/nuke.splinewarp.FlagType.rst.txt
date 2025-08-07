@@ -1,0 +1,45 @@
+nuke.splinewarp.FlagType
+========================
+
+.. currentmodule:: nuke.splinewarp
+
+.. autoclass:: FlagType
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~FlagType.eActiveFlag
+      ~FlagType.eBreakFlag
+      ~FlagType.eKeySelectedFlag
+      ~FlagType.eLeftTangentSelectedFlag
+      ~FlagType.eLockedFlag
+      ~FlagType.eMaxFlag
+      ~FlagType.eNukeAnimCurveEvalFlag
+      ~FlagType.eOpenFlag
+      ~FlagType.ePressureInZFlag
+      ~FlagType.eRelativeTangentFlag
+      ~FlagType.eRenderableFlag
+      ~FlagType.eRightTangentSelectedFlag
+      ~FlagType.eSelectedFlag
+      ~FlagType.eTangentLengthLockFlag
+      ~FlagType.eUndefineFlag
+      ~FlagType.eVisibleFlag
+   
+   

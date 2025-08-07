@@ -1,0 +1,6 @@
+nuke.memory2.usage
+==================
+
+.. currentmodule:: nuke.memory2
+
+.. autofunction:: usage

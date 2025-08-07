@@ -1,0 +1,81 @@
+nuke.PyScript\_Knob
+===================
+
+.. currentmodule:: nuke
+
+.. autoclass:: PyScript_Knob
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~PyScript_Knob.Class
+      ~PyScript_Knob.ClassID
+      ~PyScript_Knob.clearAnimated
+      ~PyScript_Knob.clearFlag
+      ~PyScript_Knob.command
+      ~PyScript_Knob.critical
+      ~PyScript_Knob.debug
+      ~PyScript_Knob.enabled
+      ~PyScript_Knob.error
+      ~PyScript_Knob.execute
+      ~PyScript_Knob.fromScript
+      ~PyScript_Knob.fullyQualifiedName
+      ~PyScript_Knob.getAuthorMode
+      ~PyScript_Knob.getAuthorModes
+      ~PyScript_Knob.getDerivative
+      ~PyScript_Knob.getFlag
+      ~PyScript_Knob.getIntegral
+      ~PyScript_Knob.getKeyIndex
+      ~PyScript_Knob.getKeyList
+      ~PyScript_Knob.getKeyTime
+      ~PyScript_Knob.getNthDerivative
+      ~PyScript_Knob.getNumKeys
+      ~PyScript_Knob.getText
+      ~PyScript_Knob.getValue
+      ~PyScript_Knob.getValueAt
+      ~PyScript_Knob.hasExpression
+      ~PyScript_Knob.isAnimated
+      ~PyScript_Knob.isKey
+      ~PyScript_Knob.isKeyAt
+      ~PyScript_Knob.label
+      ~PyScript_Knob.makeWidget
+      ~PyScript_Knob.name
+      ~PyScript_Knob.node
+      ~PyScript_Knob.notDefault
+      ~PyScript_Knob.removeKey
+      ~PyScript_Knob.removeKeyAt
+      ~PyScript_Knob.setAnimated
+      ~PyScript_Knob.setAuthorMode
+      ~PyScript_Knob.setCommand
+      ~PyScript_Knob.setEnabled
+      ~PyScript_Knob.setExpression
+      ~PyScript_Knob.setFlag
+      ~PyScript_Knob.setLabel
+      ~PyScript_Knob.setName
+      ~PyScript_Knob.setText
+      ~PyScript_Knob.setTooltip
+      ~PyScript_Knob.setValue
+      ~PyScript_Knob.setValueAt
+      ~PyScript_Knob.setVisible
+      ~PyScript_Knob.splitView
+      ~PyScript_Knob.toScript
+      ~PyScript_Knob.toScriptPrefix
+      ~PyScript_Knob.tooltip
+      ~PyScript_Knob.unsplitView
+      ~PyScript_Knob.value
+      ~PyScript_Knob.visible
+      ~PyScript_Knob.warning
+   
+   
+
+   
+   
+   

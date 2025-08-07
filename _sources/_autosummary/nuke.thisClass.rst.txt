@@ -1,0 +1,6 @@
+nuke.thisClass
+==============
+
+.. currentmodule:: nuke
+
+.. autofunction:: thisClass

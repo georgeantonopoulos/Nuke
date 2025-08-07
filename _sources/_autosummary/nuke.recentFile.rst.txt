@@ -1,0 +1,6 @@
+nuke.recentFile
+===============
+
+.. currentmodule:: nuke
+
+.. autofunction:: recentFile

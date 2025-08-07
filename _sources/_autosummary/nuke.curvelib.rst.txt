@@ -1,0 +1,53 @@
+﻿nuke.curvelib
+=============
+
+.. automodule:: nuke.curvelib
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      AnimAttributes
+      AnimCTransform
+      AnimControlPoint
+      AnimCurve
+      AnimCurveKey
+      AnimCurveViews
+      BaseCurve
+      CMatrix4
+      CTransform
+      CVec2
+      CVec3
+      CVec4
+      ControlPoint
+      CorrespondencePoints
+      CubicCurve
+      CurveType
+      ExtrapolationType
+      Flag
+      FlagType
+      InterpolationType
+      RotationOrder
+      TransformOrder
+   
+   
+
+   
+   
+   
+
+
+

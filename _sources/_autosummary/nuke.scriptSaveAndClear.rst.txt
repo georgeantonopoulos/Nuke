@@ -1,0 +1,6 @@
+nuke.scriptSaveAndClear
+=======================
+
+.. currentmodule:: nuke
+
+.. autofunction:: scriptSaveAndClear

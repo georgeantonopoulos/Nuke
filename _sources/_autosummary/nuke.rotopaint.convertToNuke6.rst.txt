@@ -1,0 +1,6 @@
+nuke.rotopaint.convertToNuke6
+=============================
+
+.. currentmodule:: nuke.rotopaint
+
+.. autofunction:: convertToNuke6

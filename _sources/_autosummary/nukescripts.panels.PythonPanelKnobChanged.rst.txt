@@ -1,0 +1,6 @@
+nukescripts.panels.PythonPanelKnobChanged
+=========================================
+
+.. currentmodule:: nukescripts.panels
+
+.. autofunction:: PythonPanelKnobChanged

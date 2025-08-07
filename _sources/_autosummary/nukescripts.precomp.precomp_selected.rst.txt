@@ -1,0 +1,6 @@
+nukescripts.precomp.precomp\_selected
+=====================================
+
+.. currentmodule:: nukescripts.precomp
+
+.. autofunction:: precomp_selected

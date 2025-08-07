@@ -1,0 +1,6 @@
+nukescripts.nodepresets.populatePresetsMenu
+===========================================
+
+.. currentmodule:: nukescripts.nodepresets
+
+.. autofunction:: populatePresetsMenu

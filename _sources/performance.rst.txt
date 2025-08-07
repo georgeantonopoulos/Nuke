@@ -1,0 +1,133 @@
+.. _performance-profiling-ref-label:
+
+Performance Profiling
+=====================
+
+Using Performance Timers
+************************
+
+When performance timing is enabled in Nuke, it is possible to access profiling information for individual nodes via Python. This will tell you how much of the processing time has been spent within each node. It can help you to debug slow-running scripts, and to find out where the worst bottlenecks lie.
+
+Note that enabling performance timing will tend to slow down Nuke's processing, due to the extra overhead of starting and stopping the timers frequently and the need to synchronize the working threads more often. So in general Nuke will run more slowly with performance timing enabled, but it should still give you an accurate picture of where the processing time is being spent in your script.
+
+To enable performance timing, either run Nuke from the command line with the "-P" option, or use the Python call::
+
+    nuke.startPerformanceTimers()
+
+to start the performance timers.
+
+You can also call::
+
+    nuke.usingPerformanceTimers()
+
+to check whether or not performance timing has been enabled.
+
+To turn off the performance timers, you can call::
+
+    nuke.stopPerformanceTimers()
+
+or, to reset all timers to zero, use::
+
+    nuke.resetPerformanceTimers().
+
+
+
+A Note on Nuke's Architecture
+*****************************
+When a node in Nuke is asked to render something, there are four main stages to its processing:
+
+  * **store**    - the first thing the node does is store the values the user has selected on its knobs.
+  * **validate** - this is where the node tells Nuke about the output it produces, for example which channels it can produce and what size the output will be.
+  * **request**  - this is where the node works out what data it will need from its inputs in order to produce its output (for example channels needed, region required).
+  * **engine**   - this is where the node does most of its work, and actually generates its output. This will usually be where most of the processing time is spent!
+
+For more information about processing in Nuke, see the `NDK Dev Guide <https://learn.foundry.com/nuke/80/ndkdevguide/>`_.
+
+Obtaining Performance Timings via Python
+****************************************
+
+Nuke's performance timers collect information on each of these four stages of processing, which can be accessed using Python. In addition, when performance timing is active, timing information will be displayed in the node graph. Also, the nodes themselves will be colored according to the proportion of the total processing time that was spent in each one, from green (fast nodes) through to red (slow nodes).
+
+The function **nuke.Node.performanceInfo()** will print the timing information for a particular node. For example, the following code snippet can be used to print timing information for each node currently in the tree (including nodes which are inside Groups)::
+
+    for n in nuke.allNodes(recurseGroups = True):
+      print n.fullName()
+      print n.performanceInfo()
+
+The output from this will look similar to the following output, for a simple tree consisting of *Checkerboard -> Blur -> Defocus -> Viewer*::
+
+  Defocus1
+  {'callCount': 10228, 'timeTakenWall': 28524348, 'timeTakenCPU': 624512794}
+  Blur1
+  {'callCount': 9607, 'timeTakenWall': 9906815, 'timeTakenCPU': 151406143}
+  Viewer1
+  {'callCount': 0, 'timeTakenWall': 0, 'timeTakenCPU': 0}
+  CheckerBoard1
+  {'callCount': 34396, 'timeTakenWall': 3923322, 'timeTakenCPU': 29982254}
+
+As you can see from the above, **nuke.Node.performanceInfo()** returns a dictionary containing the following performance statistics:
+
+  * **callCount** tells you the number of times this part of the processing has been called.
+  * **timeTakenWall** is the time taken as it would be measured by a clock on the wall, i.e. the actual time a user would have to wait for the processing to complete. This time is measured in microseconds.
+  * **timeTakenCPU**:
+
+    * On Linux, this is the time the CPU spent executing the processing code, and again is measured in microseconds. It is an aggregate over all CPU threads so, for example, for the multi-threaded **engine** processing this will typically be much larger than the wall time. If the average CPU time per thread (**timeTakenCPU** divided by the number of threads used) is much shorter than the wall time, this suggests that the CPU threads have spent a lot of time not executing code - for example, waiting on locks - and could indicate a performance problem.
+    * On Mac and Windows, the CPU time is not currently available; on Mac, this value will be the similar to the wall time.
+
+The timings above were obtained on a Linux machine, running Nuke with 24 threads. If we look again at the timings for the two most expensive nodes, the *Blur* and the *Defocus*::
+
+  Defocus1
+  {'callCount': 10228, 'timeTakenWall': 28524348, 'timeTakenCPU': 624512794}
+  Blur1
+  {'callCount': 9607, 'timeTakenWall': 9906815, 'timeTakenCPU': 151406143}
+
+we can see that while the Blur node's CPU time is fairly close to being 24 times as long as its wall time, the Defocus node's CPU time is only two-thirds as long as we might expect. This shows us that the engine threads are all being kept busy by the Blur node, while in the Defocus node they are spending a considerable amount of their time waiting in this script... and we have identified a possible target for performance improvements in a future release of Nuke!
+
+Other Performance Statistics
+****************************
+
+By default, **nuke.Node.performanceInfo()** will give you the timings for the **engine** part of the processing, which is usually the most expensive. You can request a performance profile for a different part of the processing by passing in one of the following arguments::
+
+  nuke.PROFILE_STORE
+  nuke.PROFILE_VALIDATE
+  nuke.PROFILE_REQUEST
+  nuke.PROFILE_ENGINE
+
+For example, to obtain all the timings for the Defocus node in the tree above, you could use::
+
+  n = nuke.toNode("Defocus1")
+  print "Defocus1"
+  print "Store"
+  print n.performanceInfo(nuke.PROFILE_STORE)
+  print "Validate"
+  print n.performanceInfo(nuke.PROFILE_VALIDATE)
+  print "Request"
+  print n.performanceInfo(nuke.PROFILE_REQUEST)
+  print "Engine"
+  print n.performanceInfo(nuke.PROFILE_ENGINE)
+
+to obtain::
+
+  # Result: Defocus1
+  Store
+  {'callCount': 108, 'timeTakenWall': 6571, 'timeTakenCPU': 6563}
+  Validate
+  {'callCount': 53, 'timeTakenWall': 1451, 'timeTakenCPU': 1445}
+  Request
+  {'callCount': 108, 'timeTakenWall': 1017, 'timeTakenCPU': 1009}
+  Engine
+  {'callCount': 10228, 'timeTakenWall': 28524348, 'timeTakenCPU': 624512794}
+
+As expected, we can see that for the Defocus, most of the time is spent in the **engine** processing, while **store**, **validate** and **request** are all relatively fast. If this wasn't the case, or if the **callCount** showed that **store**, **validate** or **request** were being called a large number of times, this could indicate a problem that might be affecting performance.
+
+Note that some nodes will have valid reasons for spending longer in the **store**, **validate** or **request** phases than our Defocus example. For instance, readers are likely to spend longer in **validate**, as they will need to open files; this will be particularly slow if those files are on a network. The ScanlineRender node is another example that has a lot to do in **validate**, while the **store** stage will be slow for a RotoPaint, which needs to bake curves. Nodes with slow expressions on their knobs can also spend a long time evaluating these during the **store** phase.
+
+
+Writing Performance Information to an XML File
+**********************************************
+
+Finally, note that the above performance information will automatically be written to an XML file when Nuke is run with **"-Pf <filename>"**, along with some information about your system. In this mode, performance timers will be started before a render and the timings output to the requested file in XML format once the render is complete. When Nuke is run in this mode, calling::
+
+  nuke.performanceProfileFilename()
+
+will return the full path to the XML profile file.

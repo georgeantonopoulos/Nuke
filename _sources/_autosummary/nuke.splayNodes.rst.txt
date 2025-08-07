@@ -1,0 +1,6 @@
+nuke.splayNodes
+===============
+
+.. currentmodule:: nuke
+
+.. autofunction:: splayNodes

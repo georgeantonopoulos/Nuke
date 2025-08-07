@@ -1,0 +1,6 @@
+nuke.knobChanged
+================
+
+.. currentmodule:: nuke
+
+.. autofunction:: knobChanged

@@ -1,0 +1,6 @@
+nuke.stopPerformanceTimers
+==========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: stopPerformanceTimers

@@ -1,0 +1,45 @@
+nukescripts.panels
+==================
+
+.. automodule:: nukescripts.panels
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      PythonPanelKnobChanged
+      registerPanel
+      registerWidgetAsPanel
+      restorePanel
+      unregisterPanel
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      PythonPanel
+      WidgetKnob
+   
+   
+
+   
+   
+   
+
+
+

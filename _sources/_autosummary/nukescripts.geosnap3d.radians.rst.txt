@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.radians
+=============================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: radians

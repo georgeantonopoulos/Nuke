@@ -1,0 +1,6 @@
+nukescripts.snap3d.planeRotation
+================================
+
+.. currentmodule:: nukescripts.snap3d
+
+.. autofunction:: planeRotation

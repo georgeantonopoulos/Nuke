@@ -1,0 +1,6 @@
+nukescripts.start
+=================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: start

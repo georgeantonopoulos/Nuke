@@ -1,0 +1,37 @@
+﻿nuke.nukemath
+=============
+
+.. automodule:: nuke.nukemath
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
+   
+      Matrix3
+      Matrix4
+      Quaternion
+      Vector2
+      Vector3
+      Vector4
+   
+   
+
+   
+   
+   
+
+
+

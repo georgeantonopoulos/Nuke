@@ -1,0 +1,6 @@
+nukescripts.geomath.scaling\_matrix
+===================================
+
+.. currentmodule:: nukescripts.geomath
+
+.. autofunction:: scaling_matrix

@@ -1,0 +1,6 @@
+nuke.addView
+============
+
+.. currentmodule:: nuke
+
+.. autofunction:: addView

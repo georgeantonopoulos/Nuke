@@ -1,0 +1,6 @@
+nukescripts.swapAB
+==================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: swapAB

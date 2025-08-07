@@ -1,0 +1,6 @@
+nuke.removeBeforeReplay
+=======================
+
+.. currentmodule:: nuke
+
+.. autofunction:: removeBeforeReplay

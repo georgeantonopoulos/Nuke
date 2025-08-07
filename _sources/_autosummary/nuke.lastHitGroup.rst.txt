@@ -1,0 +1,6 @@
+nuke.lastHitGroup
+=================
+
+.. currentmodule:: nuke
+
+.. autofunction:: lastHitGroup

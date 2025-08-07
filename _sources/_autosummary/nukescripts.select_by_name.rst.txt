@@ -1,0 +1,6 @@
+nukescripts.select\_by\_name
+============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: select_by_name

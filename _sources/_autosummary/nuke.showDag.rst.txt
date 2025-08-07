@@ -1,0 +1,6 @@
+nuke.showDag
+============
+
+.. currentmodule:: nuke
+
+.. autofunction:: showDag

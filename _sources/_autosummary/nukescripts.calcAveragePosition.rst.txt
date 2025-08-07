@@ -1,0 +1,6 @@
+nukescripts.calcAveragePosition
+===============================
+
+.. currentmodule:: nukescripts
+
+.. autofunction:: calcAveragePosition

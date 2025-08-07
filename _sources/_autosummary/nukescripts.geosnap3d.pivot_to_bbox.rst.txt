@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.pivot\_to\_bbox
+=====================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: pivot_to_bbox

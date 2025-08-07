@@ -1,0 +1,6 @@
+nukescripts.toolbars.setup\_toolbars
+====================================
+
+.. currentmodule:: nukescripts.toolbars
+
+.. autofunction:: setup_toolbars

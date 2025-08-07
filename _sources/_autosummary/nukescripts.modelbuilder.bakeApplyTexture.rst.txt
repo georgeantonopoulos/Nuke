@@ -1,0 +1,6 @@
+nukescripts.modelbuilder.bakeApplyTexture
+=========================================
+
+.. currentmodule:: nukescripts.modelbuilder
+
+.. autofunction:: bakeApplyTexture

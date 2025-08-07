@@ -1,0 +1,6 @@
+nukescripts.snap3d.translateRotateSelectionToPoints
+===================================================
+
+.. currentmodule:: nukescripts.snap3d
+
+.. autofunction:: translateRotateSelectionToPoints

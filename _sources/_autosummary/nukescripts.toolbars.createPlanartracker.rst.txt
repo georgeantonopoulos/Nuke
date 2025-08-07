@@ -1,0 +1,6 @@
+nukescripts.toolbars.createPlanartracker
+========================================
+
+.. currentmodule:: nukescripts.toolbars
+
+.. autofunction:: createPlanartracker

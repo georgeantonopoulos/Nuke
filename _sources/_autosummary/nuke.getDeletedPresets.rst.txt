@@ -1,0 +1,6 @@
+nuke.getDeletedPresets
+======================
+
+.. currentmodule:: nuke
+
+.. autofunction:: getDeletedPresets

@@ -1,0 +1,6 @@
+nukescripts.cache.humanReadable
+===============================
+
+.. currentmodule:: nukescripts.cache
+
+.. autofunction:: humanReadable

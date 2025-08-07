@@ -1,0 +1,6 @@
+nukescripts.utils.executeInMainThread
+=====================================
+
+.. currentmodule:: nukescripts.utils
+
+.. autofunction:: executeInMainThread

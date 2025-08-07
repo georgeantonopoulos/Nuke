@@ -1,0 +1,6 @@
+nukescripts.geosnap3d.need\_stage\_copy
+=======================================
+
+.. currentmodule:: nukescripts.geosnap3d
+
+.. autofunction:: need_stage_copy

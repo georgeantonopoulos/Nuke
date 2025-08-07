@@ -1,0 +1,6 @@
+nukescripts.renderdialog.bboxToTopLeft
+======================================
+
+.. currentmodule:: nukescripts.renderdialog
+
+.. autofunction:: bboxToTopLeft

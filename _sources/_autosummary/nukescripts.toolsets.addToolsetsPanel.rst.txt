@@ -1,0 +1,6 @@
+nukescripts.toolsets.addToolsetsPanel
+=====================================
+
+.. currentmodule:: nukescripts.toolsets
+
+.. autofunction:: addToolsetsPanel

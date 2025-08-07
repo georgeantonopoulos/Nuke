@@ -1,0 +1,6 @@
+nukescripts.ViewerProcess.getDefaultOCIOConfig
+==============================================
+
+.. currentmodule:: nukescripts.ViewerProcess
+
+.. autofunction:: getDefaultOCIOConfig

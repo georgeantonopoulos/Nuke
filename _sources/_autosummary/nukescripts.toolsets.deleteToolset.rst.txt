@@ -1,0 +1,6 @@
+nukescripts.toolsets.deleteToolset
+==================================
+
+.. currentmodule:: nukescripts.toolsets
+
+.. autofunction:: deleteToolset

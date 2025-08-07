@@ -1,0 +1,6 @@
+nuke.duplicateSelectedNodes
+===========================
+
+.. currentmodule:: nuke
+
+.. autofunction:: duplicateSelectedNodes

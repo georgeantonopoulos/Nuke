@@ -1,0 +1,33 @@
+nukescripts.FlipbookApplication
+===============================
+
+.. currentmodule:: nukescripts
+
+.. autoclass:: FlipbookApplication
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~FlipbookApplication.cacheDir
+      ~FlipbookApplication.capabilities
+      ~FlipbookApplication.dialogKnobChanged
+      ~FlipbookApplication.dialogKnobs
+      ~FlipbookApplication.getExtraOptions
+      ~FlipbookApplication.name
+      ~FlipbookApplication.path
+      ~FlipbookApplication.run
+      ~FlipbookApplication.runFromNode
+   
+   
+
+   
+   
+   

@@ -1,0 +1,6 @@
+nukescripts.modelbuilder.bakeSceneSelection
+===========================================
+
+.. currentmodule:: nukescripts.modelbuilder
+
+.. autofunction:: bakeSceneSelection

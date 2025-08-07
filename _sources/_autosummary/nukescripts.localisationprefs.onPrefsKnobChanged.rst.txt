@@ -1,0 +1,6 @@
+nukescripts.localisationprefs.onPrefsKnobChanged
+================================================
+
+.. currentmodule:: nukescripts.localisationprefs
+
+.. autofunction:: onPrefsKnobChanged

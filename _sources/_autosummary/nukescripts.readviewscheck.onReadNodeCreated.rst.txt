@@ -1,0 +1,6 @@
+nukescripts.readviewscheck.onReadNodeCreated
+============================================
+
+.. currentmodule:: nukescripts.readviewscheck
+
+.. autofunction:: onReadNodeCreated
