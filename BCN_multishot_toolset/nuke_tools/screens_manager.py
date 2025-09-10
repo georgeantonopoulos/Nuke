@@ -13,11 +13,17 @@ from typing import List, Optional, Sequence
 
 try:
     import nuke  # type: ignore
-    from PySide2 import QtCore, QtWidgets  # type: ignore
 except Exception:  # pragma: no cover
     nuke = None  # type: ignore
-    QtCore = None  # type: ignore
-    QtWidgets = None  # type: ignore
+
+try:  # Try PySide6 first (Nuke 14+ can ship PySide6)
+    from PySide6 import QtCore, QtWidgets  # type: ignore
+except Exception:  # pragma: no cover
+    try:
+        from PySide2 import QtCore, QtWidgets  # type: ignore
+    except Exception:
+        QtCore = None  # type: ignore
+        QtWidgets = None  # type: ignore
 
 from . import gsv_utils
 

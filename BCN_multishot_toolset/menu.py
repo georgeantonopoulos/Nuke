@@ -1,19 +1,13 @@
 """Register BCN multishot Screens Manager panel in Nuke.
 
-This module wires up a dockable Qt panel using `nukescripts.panels.registerWidgetAsPanel`.
-It assumes Nuke 16 with Qt available in the environment.
+This module wires up a dockable Qt panel using
+`nukescripts.panels.registerWidgetAsPanel`.
 """
 
 from typing import Optional
 
-try:
-    import nuke  # type: ignore
-    import nukescripts  # type: ignore
-    from PySide2 import QtWidgets  # type: ignore
-except Exception:  # pragma: no cover - allows import outside Nuke
-    nuke = None  # type: ignore
-    nukescripts = None  # type: ignore
-    QtWidgets = None  # type: ignore
+import nuke  # type: ignore
+import nukescripts  # type: ignore
 
 
 def _panel_widget_class_name() -> str:
@@ -25,36 +19,37 @@ def _panel_widget_class_name() -> str:
 def register_screens_manager_panel() -> Optional[object]:
     """Register the Screens Manager as a dockable panel.
 
-    Returns the PythonPanel object when running inside Nuke; otherwise None.
+    Returns the PythonPanel object in GUI mode; otherwise None.
     """
 
-    if nuke is None or nukescripts is None:
+    try:
+        panel = nukescripts.panels.registerWidgetAsPanel(
+            _panel_widget_class_name(),
+            "Screens Manager",
+            "uk.co.bcn.multishot.screens_manager",
+            False,
+        )
+        return panel
+    except Exception:
         return None
 
-    panel = nukescripts.panels.registerWidgetAsPanel(
-        _panel_widget_class_name(),
-        "Screens Manager",
-        "uk.co.bcn.multishot.screens_manager",
-        True,
-    )
-    return panel
+
+def add_menu_entries() -> None:
+    """Add an entry under the Nuke menu to open the panel."""
+
+    try:
+        menubar = nuke.menu("Nuke")
+        tools = menubar.addMenu("BCN Multishot", index=450)
+        tools.addCommand(
+            "Open Screens Manager",
+            "import nukescripts; pn = nukescripts.panels.registerWidgetAsPanel('BCN_multishot_toolset.nuke_tools.screens_manager.ScreensManagerPanel','Screens Manager','uk.co.bcn.multishot.screens_manager', True); pn.addToPane(nuke.getPaneFor('Properties.1'))",
+        )
+    except Exception:
+        pass
 
 
-def add_to_pane() -> None:
-    """Add the panel to Nuke's Properties pane if available."""
-
-    if nuke is None:
-        return
-    pane = nuke.getPaneFor("Properties.1")
-    reg = register_screens_manager_panel()
-    if hasattr(reg, "addToPane"):
-        reg.addToPane(pane)
-
-
-# Auto-register when menu.py is imported by Nuke
-try:  # pragma: no cover
-    register_screens_manager_panel()
-except Exception:
-    pass
+# Register so it appears under the Pane menu; do not auto-create
+register_screens_manager_panel()
+add_menu_entries()
 
 
