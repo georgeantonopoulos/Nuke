@@ -17,11 +17,17 @@
 - Variable Groups: contextual scoping and overriding across the DAG
   - Create nodes: `nuke.nodes.VariableGroup(name='…')` or `nuke.collapseToVariableGroup()`
   - Paths extend with group names: `variable_group...variable_set.variable_name`
-- Callbacks for renders and UI glue: `nuke.addBeforeRender()`, `nuke.addAfterRender()`, `nuke.addKnobChanged()`
+- Callbacks for renders and variable changes: `nuke.addBeforeRender()`, `nuke.addAfterRender()`, `nuke.callbacks.onGsvSetChanged()`
 - Panels/UI: `nukescripts.PythonPanel`, `nukescripts.panels.registerWidgetAsPanel`, or simple `nuke.Panel`
 - Project settings: `nuke.root()['format']`, `['fps']`, `['first_frame']`, `['last_frame']`, `nuke.addFormat()`
 
 References: See Nuke 16 Python docs (notably: `gsv.html`, `_autosummary/nuke.Gsv_Knob.html`, `_autosummary/nuke.collapseToVariableGroup.html`, `callbacks.html`, `custom_panels.html`, `_autosummary/nukescripts.panels.registerWidgetAsPanel.html`).
+
+Additional references:
+- Multishot variables (Graph Scope Variables): https://learn.foundry.com/nuke/content/comp_environment/multishot/multishot_variables.html
+- Using VariableSwitch: https://learn.foundry.com/nuke/content/comp_environment/multishot/using_variableswitch.html
+- Using Link nodes: https://learn.foundry.com/nuke/content/comp_environment/multishot/using_link_nodes.html
+- Local docs: see `Nuke16_docs/_sources/gsv.rst.txt` (sections “The Gsv_Knob” and VariableGroups pathing)
 
 ## Architecture
 
@@ -35,12 +41,12 @@ References: See Nuke 16 Python docs (notably: `gsv.html`, `_autosummary/nuke.Gsv
   - Inheritance/overrides: Parent groups can hold shared defaults; child screen groups override only what differs.
 
 - Preview “Variable Switch”
-  - Provide an optional helper Group “ScreenSwitch” that contains a `Switch` node. Its `which` value is driven by `__default__.screen` → index mapping.
-  - Keep it stateless: update `which` via a small `nuke.addKnobChanged()` or by a Python expression on `which` if acceptable.
+  - Prefer a `VariableSwitch` node driven by the `__default__.screen` GSV to control which input is active without custom callbacks.
+  - Fallback: provide a helper Group “ScreenSwitch” with a plain `Switch` whose `which` is driven by a short expression that references the GSV. Avoid generic `knobChanged` callbacks for this.
 
 - Per‑Screen Node Overrides
   - Store override values in GSVs, keyed under the current variable scope, instead of duplicating nodes.
-  - Knobs that should vary by screen read from GSV using a small Python expression, or are updated via a `knobChanged` callback when `__default__.screen` changes.
+  - Knobs that should vary by screen should preferably read from GSV using a short expression. Where node mirroring is needed, use Link nodes and override only the differing knobs per screen.
 
 - Render Context Enforcement
   - Global `nuke.addBeforeRender()` callback inspects `nuke.thisNode()` (Write). If a custom `assigned_screen` knob exists, it resolves that screen, sets Root selector `__default__.screen`, and pushes any project settings (format/fps/range) from the target screen group. Restore on `nuke.addAfterRender()`.
@@ -94,8 +100,9 @@ Note: All GSV values are strings; knobs typically accept string inputs and parse
 - Options
   - Expression‑driven: set a knob expression to fetch from GSV for the current variable context.
     - Example expression (Python): `python {nuke.root()['gsv'].getGsvValue('screen_Moxy.__default__.my_knob')}`
-    - For automatic context: reference the nearest group’s `gsv` when feasible, or update via callbacks when `screen` changes.
-  - Callback‑driven: on `KnobChanged` of Root `__default__.screen` update selected knobs with the GSV values for that screen.
+    - For automatic context: reference the nearest group’s `gsv` when feasible.
+  - Link‑node‑driven: for repeated structures, use Link nodes to mirror a source node and override only per‑screen differences (reduces or eliminates the need for callbacks).
+  - GSV‑change callback (last resort): if an imperative push is absolutely required, respond to GSV changes with `nuke.callbacks.onGsvSetChanged()` when `__default__.screen` changes.
 
 - Helper Tooling
   - “Add Per‑Screen Override” command: for the selected node and chosen knobs, create `Overrides.<node>.<knob>` GSV entries inside each screen’s VariableGroup and either:
@@ -105,7 +112,7 @@ Note: All GSV values are strings; knobs typically accept string inputs and parse
 - API Touchpoints
   - Read/write override values: `group['gsv'].setGsvValue('Overrides.Node.knob', '…')`
   - Inject expressions: `node[kn].setExpression("python {…getGsvValue('Overrides.Node.knob')} ")`
-  - Update on change: `nuke.addKnobChanged(handler, nodeClass='Root')` and check for changes to Root `gsv`/screen
+  - Update on change (only if required): use `nuke.callbacks.onGsvSetChanged()` to react to changes in `__default__.screen` rather than a generic `addKnobChanged`.
 
 - Practical Guidance
   - Prefer expressions for deterministic dependency and less global state
@@ -133,11 +140,15 @@ Note: All GSV values are strings; knobs typically accept string inputs and parse
 ## DAG Wiring Patterns
 
 - Preview ScreenSwitch
-  - Single Group with `Switch` to route to the chosen screen for interactive viewing; not required for farm renders.
+  - Prefer `VariableSwitch` to route to the chosen screen based on the `__default__.screen` GSV; not required for farm renders.
+  - If `VariableSwitch` is not appropriate, a Group with a plain `Switch` is acceptable but should be driven by an expression, not a callback.
 
 - Per‑Screen Subgraphs
   - Keep screen‑specific nodes under their respective `VariableGroup`s when you truly need “different nodes per screen”
   - Shared nodes upstream can still reference per‑screen GSVs for configurable behavior
+
+- Link Nodes
+  - Use Link nodes to mirror shared nodes across screens while maintaining a single source of truth; override only the necessary knobs in each context. This often replaces callback‑based synchronization.
 
 ## Edge Cases & Safeguards
 
@@ -181,6 +192,7 @@ Note: All GSV values are strings; knobs typically accept string inputs and parse
 - GSV pathing: use dot‑separated paths; with VariableGroups the path is `group_hierarchy.set.var`. When addressing via a group’s own `['gsv']`, paths are relative to that group.
 - Lists: make `__default__.screen` a `List` data type with `setListOptions()` so the Variables panel shows a proper dropdown.
 - Callbacks: prefer `addBeforeRender`/`addAfterRender` over per‑node `beforeRender` strings to centralize logic and avoid duplication.
+ - GSV change handling: prefer `nuke.callbacks.onGsvSetChanged()` over generic `addKnobChanged` when reacting to variable changes; minimize callbacks overall by leveraging `VariableSwitch` and Link nodes first.
 - Expressions: Python expressions in knobs are supported; use sparingly for performance and keep them short.
 
 ---
