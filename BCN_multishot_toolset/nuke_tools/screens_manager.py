@@ -44,7 +44,7 @@ class ScreensManagerPanel(QtWidgets.QWidget):  # type: ignore[misc]
         self._load_from_gsv()
 
     def _build_ui(self) -> None:
-        layout = QtWidgets.QVBoxLayout(self)
+        layout = QtWidgets.QVBoxLayout()
 
         # Screens input
         self.screens_edit = QtWidgets.QLineEdit(self)
@@ -70,6 +70,7 @@ class ScreensManagerPanel(QtWidgets.QWidget):  # type: ignore[misc]
         layout.addLayout(default_row)
         layout.addLayout(btn_row)
         layout.addStretch(1)
+        self.setLayout(layout)
 
         # Wire signals
         self.apply_btn.clicked.connect(self._on_apply)
