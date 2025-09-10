@@ -1,55 +1,45 @@
-"""Register BCN multishot Screens Manager panel in Nuke.
+"""BCN Multishot menu bootstrap.
 
-This module wires up a dockable Qt panel using
-`nukescripts.panels.registerWidgetAsPanel`.
+Minimal, Deadline-style: add plugin paths, then in GUI add a Pane command
+and a callable that docks the panel.
 """
 
 from typing import Optional
 
 import nuke  # type: ignore
 import nukescripts  # type: ignore
+from nukescripts import panels  # type: ignore
 
 
-def _panel_widget_class_name() -> str:
-    """Return the fully qualified widget class name string for registration."""
+nuke.pluginAddPath('./nuke_tools')
 
-    return "BCN_multishot_toolset.nuke_tools.screens_manager.ScreensManagerPanel"
+# Tools on NUKE_PATH
+from screens_manager import ScreensManagerPanel  # type: ignore
 
 
-def register_screens_manager_panel() -> Optional[object]:
-    """Register the Screens Manager as a dockable panel.
-
-    Returns the PythonPanel object in GUI mode; otherwise None.
-    """
+def add_screens_manager_panel() -> Optional[object]:
+    """Create and dock the Screens Manager panel next to Properties."""
 
     try:
-        panel = nukescripts.panels.registerWidgetAsPanel(
-            _panel_widget_class_name(),
-            "Screens Manager",
-            "uk.co.bcn.multishot.screens_manager",
-            False,
-        )
-        return panel
+        pane = nuke.getPaneFor('Properties.1')
+        return panels.registerWidgetAsPanel('ScreensManagerPanel', 'Screens Manager', 'uk.co.bcn.multishot.screens_manager', True).addToPane(pane) if pane else panels.registerWidgetAsPanel('ScreensManagerPanel', 'Screens Manager', 'uk.co.bcn.multishot.screens_manager', True)
     except Exception:
         return None
 
 
-def add_menu_entries() -> None:
-    """Add an entry under the Nuke menu to open the panel."""
-
-    try:
-        menubar = nuke.menu("Nuke")
-        tools = menubar.addMenu("BCN Multishot", index=450)
-        tools.addCommand(
-            "Open Screens Manager",
-            "import nukescripts; pn = nukescripts.panels.registerWidgetAsPanel('BCN_multishot_toolset.nuke_tools.screens_manager.ScreensManagerPanel','Screens Manager','uk.co.bcn.multishot.screens_manager', True); pn.addToPane(nuke.getPaneFor('Properties.1'))",
+# GUI-only wiring
+try:
+    if nuke.env['gui']:
+        # Pane menu entry
+        nuke.menu('Pane').addCommand('Screens Manager', add_screens_manager_panel)
+        # Enable layout save/restore
+        nukescripts.registerPanel('uk.co.bcn.multishot.screens_manager', add_screens_manager_panel)
+        # Optional: Nuke menu shortcut
+        nuke.menu('Nuke').addCommand(
+            'BCN Multishot/Screens Manager',
+            add_screens_manager_panel,
         )
-    except Exception:
-        pass
-
-
-# Register so it appears under the Pane menu; do not auto-create
-register_screens_manager_panel()
-add_menu_entries()
+except Exception:
+    pass
 
 

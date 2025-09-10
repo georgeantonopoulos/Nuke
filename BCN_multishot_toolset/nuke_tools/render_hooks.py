@@ -15,7 +15,7 @@ try:
 except Exception:  # pragma: no cover
     nuke = None  # type: ignore
 
-from . import gsv_utils
+import gsv_utils
 
 
 @dataclass
