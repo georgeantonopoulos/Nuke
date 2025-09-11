@@ -33,6 +33,7 @@ def ensure_list_datatype(path: str) -> None:
     if gsv is None:
         return
     try:
+        # Use fully qualified paths that include the set, e.g. "__default__.screen"
         gsv.setDataType(path, nuke.gsv.DataType.List)  # type: ignore[attr-defined]
     except Exception:
         pass
@@ -97,7 +98,8 @@ def ensure_screen_list(screens: Sequence[str], default_screen: Optional[str] = N
 
     ensure_list_datatype("__default__.screen")
     set_list_options("__default__.screen", screens)
-    if default_screen is None and screens:
+    # Guard: if provided default is not among options, fall back to first option
+    if (not default_screen or (default_screen not in screens)) and screens:
         default_screen = screens[0]
     if default_screen:
         set_value("__default__.screen", default_screen)

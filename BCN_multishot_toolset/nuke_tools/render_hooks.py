@@ -126,10 +126,82 @@ def install_render_callbacks() -> None:
         pass
 
 
+def get_screen_options() -> list:
+    """Return the current list of screen names from `__default__.screen` options.
+
+    Returns an empty list if unavailable.
+    """
+
+    try:
+        return gsv_utils.get_list_options("__default__.screen")
+    except Exception:
+        return []
+
+
+def add_assigned_screen_knob(node: Optional[object] = None) -> None:
+    """Add an `assigned_screen` Pulldown knob to a Write node.
+
+    If `node` is None, operate on the currently selected node. The knob's
+    choices are populated from the root `__default__.screen` options, and the
+    default value is set to the current root selection if present.
+    """
+
+    if nuke is None:
+        return
+    try:
+        nd = node or nuke.selectedNode()
+    except Exception:
+        return
+
+    try:
+        if nd.Class() != "Write":
+            return
+    except Exception:
+        return
+
+    # If knob already exists, refresh its menu if possible
+    try:
+        if "assigned_screen" in nd.knobs():
+            screens = get_screen_options()
+            if screens:
+                menu_str = " ".join(screens)
+                try:
+                    nd["assigned_screen"].setValues(screens)  # for Enum_Knob
+                except Exception:
+                    try:
+                        nd["assigned_screen"].setValue(menu_str)
+                    except Exception:
+                        pass
+            return
+    except Exception:
+        pass
+
+    # Create new pulldown
+    screens = get_screen_options()
+    menu_str = " ".join(screens) if screens else ""
+    try:
+        if menu_str:
+            knob = nuke.Pulldown_Knob("assigned_screen", "Assigned Screen", menu_str)
+        else:
+            knob = nuke.String_Knob("assigned_screen", "Assigned Screen", "")
+        nd.addKnob(knob)
+        # Set default to current root selection
+        current = gsv_utils.get_value("__default__.screen")
+        if current:
+            try:
+                knob.setValue(current)
+            except Exception:
+                pass
+    except Exception:
+        pass
+
+
 __all__ = [
     "install_render_callbacks",
     "before_render_handler",
     "after_render_handler",
+    "add_assigned_screen_knob",
+    "get_screen_options",
 ]
 
 
