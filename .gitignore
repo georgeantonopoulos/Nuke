@@ -6,3 +6,4 @@
 *.tgz
 .DS_Store
 .gitignore
+copy_bcn_multishot_toolset.sh
