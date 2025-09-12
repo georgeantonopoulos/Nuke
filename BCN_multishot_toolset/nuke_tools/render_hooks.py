@@ -35,7 +35,7 @@ def _capture_root_context() -> _RootContext:
         return _RootContext(None, None, None, None, None)
     root = nuke.root()
     return _RootContext(
-        screen=gsv_utils.get_value("__default__.screen"),
+        screen=gsv_utils.get_value("__default__.screens"),
         format_name=str(root["format"].value()) if "format" in root.knobs() else None,
         fps=float(root["fps"].value()) if "fps" in root.knobs() else None,
         first=int(root["first_frame"].value()) if "first_frame" in root.knobs() else None,
@@ -48,7 +48,7 @@ def _restore_root_context(ctx: Optional[_RootContext]) -> None:
         return
     root = nuke.root()
     if ctx.screen:
-        gsv_utils.set_value("__default__.screen", ctx.screen)
+        gsv_utils.set_value("__default__.screens", ctx.screen)
     if ctx.format_name:
         try:
             root["format"].setValue(ctx.format_name)
@@ -102,7 +102,7 @@ def before_render_handler() -> None:
         screen = None
 
     if screen:
-        gsv_utils.set_value("__default__.screen", screen)
+        gsv_utils.set_value("__default__.screens", screen)
         _apply_screen_project_settings(screen)
 
 
@@ -127,13 +127,13 @@ def install_render_callbacks() -> None:
 
 
 def get_screen_options() -> list:
-    """Return the current list of screen names from `__default__.screen` options.
+    """Return the current list of screen names from `__default__.screens` options.
 
     Returns an empty list if unavailable.
     """
 
     try:
-        return gsv_utils.get_list_options("__default__.screen")
+        return gsv_utils.get_list_options("__default__.screens")
     except Exception:
         return []
 
@@ -186,7 +186,7 @@ def add_assigned_screen_knob(node: Optional[object] = None) -> None:
             knob = nuke.String_Knob("assigned_screen", "Assigned Screen", "")
         nd.addKnob(knob)
         # Set default to current root selection
-        current = gsv_utils.get_value("__default__.screen")
+        current = gsv_utils.get_value("__default__.screens")
         if current:
             try:
                 knob.setValue(current)

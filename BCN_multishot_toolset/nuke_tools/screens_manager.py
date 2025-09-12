@@ -1,8 +1,9 @@
 """Screens Manager panel for Nuke 16 multishot workflows.
 
 Provides a minimal dockable Qt panel to:
-- maintain `__default__.screen` list options
-- create per-screen VariableGroups
+- maintain `__default__.screens` list options
+- ensure per-screen Variable Sets exist at root
+- create per-screen VariableGroups (optional scopes)
 - optionally create a `VariableSwitch` preview node
 
 This keeps to expressions/VariableSwitch/Link nodes and avoids generic
@@ -62,6 +63,7 @@ else:
             self.setWindowTitle("Screens Manager")
             self._build_ui()
             self._load_from_gsv()
+            self._install_gsv_callback()
             
         def _build_ui(self) -> None:
             """Build and wire the minimal Qt UI."""
@@ -97,21 +99,62 @@ else:
             self.apply_btn.clicked.connect(self._on_apply)
             self.groups_btn.clicked.connect(self._on_groups)
             self.switch_btn.clicked.connect(self._on_switch)
+            # Change root selector immediately when user picks a value
+            self.default_combo.currentTextChanged.connect(self._on_default_changed)
 
         def _load_from_gsv(self) -> None:
-            """Populate UI from the current `__default__.screen` options."""
-            options = gsv_utils.get_list_options("__default__.screen")
+            """Populate UI from the current `__default__.screens` options."""
+            options = gsv_utils.get_list_options("__default__.screens")
             self._set_combo_items(self.default_combo, options)
+            # Set combo to current selection without emitting change
+            current = gsv_utils.get_value("__default__.screens")
+            if current:
+                try:
+                    self.default_combo.blockSignals(True)
+                    idx = self.default_combo.findText(current)
+                    if idx >= 0:
+                        self.default_combo.setCurrentIndex(idx)
+                finally:
+                    self.default_combo.blockSignals(False)
             if options:
                 self.screens_edit.setText(
                     ",".join(options)
                 )
 
+        def _install_gsv_callback(self) -> None:
+            """Install a GSV change callback to keep UI synced with globals.
+
+            Uses `nuke.callbacks.onGsvSetChanged` when available. The handler is
+            resilient to signature differences across Nuke versions and simply
+            reloads the combobox/text from the root GSV when any change occurs.
+            """
+
+            if nuke is None:
+                return
+            try:
+                cb_mod = getattr(nuke, "callbacks", None)
+                if cb_mod and hasattr(cb_mod, "onGsvSetChanged"):
+                    # Register once per widget instance
+                    def _handler(*_args, **_kwargs):  # noqa: D401
+                        try:
+                            self._load_from_gsv()
+                        except Exception:
+                            pass
+
+                    cb_mod.onGsvSetChanged(_handler)
+            except Exception:
+                # Best-effort; UI will still work via direct combobox edits
+                pass
+
         def _set_combo_items(self, combo: QtWidgets.QComboBox, items: Sequence[str]) -> None:
-            """Replace all items in a combobox."""
-            combo.clear()
-            for item in items:
-                combo.addItem(item)
+            """Replace all items in a combobox (signals blocked during update)."""
+            try:
+                combo.blockSignals(True)
+                combo.clear()
+                for item in items:
+                    combo.addItem(item)
+            finally:
+                combo.blockSignals(False)
 
         def _parse_screens(self) -> List[str]:
             """Parse and de-duplicate comma-separated screen names from the edit."""
@@ -136,6 +179,15 @@ else:
                 return
             default = self.default_combo.currentText() or screens[0]
             gsv_utils.ensure_screen_list(screens, default)
+            # Also ensure each screen has a Set at the root for %Set.Var usage
+            gsv_utils.ensure_screen_sets(screens)
+            # Proactively ensure a VariableGroup per screen so artists see a
+            # dedicated scope folder after adding new screens.
+            try:
+                for name in screens:
+                    gsv_utils.create_variable_group(f"screen_{name}")
+            except Exception:
+                pass
             self._load_from_gsv()
 
         def _on_groups(self) -> None:
@@ -144,14 +196,93 @@ else:
                 gsv_utils.create_variable_group(f"screen_{name}")
 
         def _on_switch(self) -> None:
-            """Create a `VariableSwitch` node named `ScreenSwitch` if possible."""
+            """Create a `VariableSwitch` named `ScreenSwitch` and auto-wire Dots.
+
+            - Reads screens from `__default__.screens` list options.
+            - Creates/positions a Dot for each screen and connects it to the
+              corresponding input index on the VariableSwitch.
+            - Populates the VariableSwitch `variable` to "screens" and fills
+              its input patterns with the screen names (best-effort across
+              potential knob layouts).
+            """
             if nuke is None:
                 return
+
+            screens: List[str] = gsv_utils.get_list_options("__default__.screens")
+            if not screens:
+                screens = self._parse_screens()
+            if not screens:
+                return
+
             try:
-                node = nuke.createNode("VariableSwitch")
-                node.setName("ScreenSwitch")
-                # The VariableSwitch configuration is usually done via its patterns.
-                # We keep this minimal and let users wire inputs and patterns.
+                # Reuse existing ScreenSwitch if present
+                switch = nuke.toNode("ScreenSwitch")
+                if not switch:
+                    switch = nuke.createNode("VariableSwitch")
+                    switch.setName("ScreenSwitch")
+                # Place it at a reasonable position
+                try:
+                    sx = int(switch["xpos"].value())
+                    sy = int(switch["ypos"].value())
+                except Exception:
+                    sx, sy = 0, 0
+
+                # Set the variable knob when available
+                try:
+                    if "variable" in switch.knobs():
+                        switch["variable"].setValue("__default__.screens")
+                except Exception:
+                    pass
+
+                # Build or reuse Dot nodes and wire them
+                dot_nodes = []
+                spacing_y = 60
+                for idx, name in enumerate(screens):
+                    dot_name = f"Dot_{name}"
+                    dot = nuke.toNode(dot_name)
+                    if not dot:
+                        dot = nuke.nodes.Dot()
+                        dot.setName(dot_name)
+                    # Position dots to the left of the switch, stacked
+                    try:
+                        dot["xpos"].setValue(sx - 150)
+                        dot["ypos"].setValue(sy + idx * spacing_y)
+                        # Helpful label so artists see which input is which
+                        if "label" in dot.knobs():
+                            dot["label"].setValue(name)
+                    except Exception:
+                        pass
+                    dot_nodes.append(dot)
+                    try:
+                        switch.setInput(idx, dot)
+                    except Exception:
+                        pass
+
+                # Populate the VariableSwitch patterns with screen names
+                # Attempt common representations used by Nuke knobs
+                for idx, name in enumerate(screens):
+                    try:
+                        # Array-style knob
+                        switch["patterns"].setValueAt(name, idx)
+                        continue
+                    except Exception:
+                        pass
+                    try:
+                        # Per-input text fields labelled i0, i1, ...
+                        key = f"i{idx}"
+                        if key in switch.knobs():
+                            switch[key].setValue(name)
+                    except Exception:
+                        pass
+            except Exception:
+                pass
+
+        def _on_default_changed(self, text: str) -> None:
+            """Update the global selector `__default__.screens` to match combobox."""
+            if not text:
+                return
+            try:
+                gsv_utils.set_value("__default__.screens", text)
             except Exception:
                 pass
 
