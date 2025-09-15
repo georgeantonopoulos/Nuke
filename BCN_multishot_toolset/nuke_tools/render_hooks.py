@@ -196,11 +196,88 @@ def add_assigned_screen_knob(node: Optional[object] = None) -> None:
         pass
 
 
+def add_screen_option_knob(node: Optional[object] = None) -> None:
+    """Add a `screen_option` pulldown to a selected Write and wire expressions.
+
+    - Creates or refreshes an `Enumeration_Knob`/`Pulldown_Knob` named
+      `screen_option` populated from `__default__.screens` list options.
+    - Sets the node `label` to the TCL expression `[value screen_option]`.
+    - Inserts a Python expression into the `beforeRender` knob that updates the
+      Root GSV `__default__.screens` to the selected value before rendering.
+    """
+
+    if nuke is None:
+        return
+    try:
+        nd = node or nuke.selectedNode()
+    except Exception:
+        return
+
+    try:
+        if nd.Class() != "Write":
+            return
+    except Exception:
+        return
+
+    # Build or refresh the pulldown values
+    screens = get_screen_options()
+    menu_str = " ".join(screens) if screens else ""
+
+    try:
+        if "screen_option" in nd.knobs():
+            # Refresh values when possible
+            try:
+                nd["screen_option"].setValues(screens)
+            except Exception:
+                try:
+                    nd["screen_option"].setValue(menu_str)
+                except Exception:
+                    pass
+        else:
+            if screens:
+                try:
+                    knob = nuke.Enumeration_Knob("screen_option", "Screen Option", screens)
+                except Exception:
+                    knob = nuke.Pulldown_Knob("screen_option", "Screen Option", menu_str)
+            else:
+                knob = nuke.String_Knob("screen_option", "Screen Option", "")
+            nd.addKnob(knob)
+            # Default selection from root if available
+            current = gsv_utils.get_value("__default__.screens")
+            if current:
+                try:
+                    knob.setValue(current)
+                except Exception:
+                    pass
+    except Exception:
+        pass
+
+    # Update node label to show the chosen option
+    try:
+        nd["label"].setValue("[value screen_option]")
+    except Exception:
+        pass
+
+    # Inject beforeRender Python to set the GSV to the chosen screen
+    try:
+        py_stmt = (
+            "python nuke.root()['gsv'].setGsvValue('__default__.screens', "
+            "nuke.thisNode()['screen_option'].value())"
+        )
+        existing = nd["beforeRender"].value() if "beforeRender" in nd.knobs() else ""
+        if py_stmt not in existing:
+            new_val = (existing + "\n" + py_stmt).strip() if existing else py_stmt
+            nd["beforeRender"].setValue(new_val)
+    except Exception:
+        pass
+
+
 __all__ = [
     "install_render_callbacks",
     "before_render_handler",
     "after_render_handler",
     "add_assigned_screen_knob",
+    "add_screen_option_knob",
     "get_screen_options",
 ]
 

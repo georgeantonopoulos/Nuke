@@ -15,7 +15,7 @@ nuke.pluginAddPath('./nuke_tools')
 
 # Tools on NUKE_PATH
 from screens_manager import ScreensManagerPanel  # type: ignore
-from render_hooks import install_render_callbacks, add_assigned_screen_knob  # type: ignore
+from render_hooks import install_render_callbacks, add_screen_option_knob  # type: ignore
 
 
 def add_screens_manager_panel() -> Optional[object]:
@@ -42,8 +42,8 @@ try:
         )
         # Write helpers
         nuke.menu('Nuke').addCommand(
-            'BCN Multishot/Add Assigned Screen to Write',
-            add_assigned_screen_knob,
+            'BCN Multishot/Add Screen Option to Write',
+            add_screen_option_knob,
         )
         # Install render callbacks
         install_render_callbacks()
