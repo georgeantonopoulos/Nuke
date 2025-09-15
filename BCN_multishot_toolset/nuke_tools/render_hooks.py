@@ -209,14 +209,17 @@ def add_screen_option_knob(node: Optional[object] = None) -> None:
     if nuke is None:
         return
     try:
-        nd = node or nuke.selectedNode()
+        nd = nuke.selectedNode()
     except Exception:
+        nuke.message("No selected node")
         return
 
     try:
         if nd.Class() != "Write":
+            nuke.message("The selected node is not a Write node or does not contain one.")
             return
-    except Exception:
+    except Exception as e:
+        print(f"Error: {e}")
         return
 
     # Build or refresh the pulldown values
