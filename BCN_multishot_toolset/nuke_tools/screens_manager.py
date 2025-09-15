@@ -63,9 +63,14 @@ else:
           - Buttons to apply/update, build VariableGroups, and create VariableSwitch
         """
 
+        # Singleton-style handle so other modules can poke the UI when needed
+        instance: Optional["ScreensManagerPanel"] = None
+
         def __init__(self, parent=None) -> None:  # noqa: D401
             super().__init__(parent)
             self.setWindowTitle("Screens Manager")
+            self.setObjectName("ScreensManagerPanel")
+            ScreensManagerPanel.instance = self
             self._build_ui()
             self._load_from_gsv()
             self._install_gsv_callback()
@@ -94,6 +99,7 @@ else:
 
             # Default selector
             self.default_combo = QtWidgets.QComboBox(self)
+            self.default_combo.setObjectName("sm_default_screen")
             self.default_combo.setToolTip("Pick the default/current screen (writes also use this unless assigned).")
             form.addRow("Default screen:", self.default_combo)
 
@@ -124,6 +130,36 @@ else:
             self.switch_btn.clicked.connect(self._on_switch)
             # Change root selector immediately when user picks a value
             self.default_combo.currentTextChanged.connect(self._on_default_changed)
+
+        def set_default_screen(self, name: str, allow_add: bool = True, emit_signal: bool = True) -> None:
+            """Programmatically set the Default screen combobox.
+
+            If the provided name does not exist and `allow_add` is True, it will
+            be appended to the combo items. When `emit_signal` is True the
+            combobox's signals are left enabled so downstream handlers (which
+            sync the GSV) will execute.
+            """
+            combo = self.default_combo
+            if combo is None:
+                return
+            # Find current index
+            idx = combo.findText(name, QtCore.Qt.MatchFixedString) if name else -1
+            if idx < 0 and allow_add and name:
+                try:
+                    combo.addItem(name)
+                    idx = combo.findText(name, QtCore.Qt.MatchFixedString)
+                except Exception:
+                    pass
+            try:
+                if not emit_signal:
+                    combo.blockSignals(True)
+                if idx >= 0:
+                    combo.setCurrentIndex(idx)
+                elif name:
+                    combo.setCurrentText(name)
+            finally:
+                if not emit_signal:
+                    combo.blockSignals(False)
 
         def _install_logo_pixmap(self) -> None:
             """Load and set the banner logo pixmap if available.
@@ -348,6 +384,39 @@ else:
                 pass
 
 
-__all__ = ["ScreensManagerPanel"]
+def set_default_screen_via_ui(name: str) -> bool:
+    """Best-effort update of the panel's Default Screen combobox.
+
+    Returns True when the UI was updated, False if the UI wasn't found.
+    """
+    if QtWidgets is None:
+        return False
+    try:
+        # If we have a live instance, use its API
+        inst = getattr(ScreensManagerPanel, "instance", None)
+        if inst is not None:
+            inst.set_default_screen(name)
+            return True
+    except Exception:
+        pass
+    # Fallback: locate the widget by objectName
+    try:
+        app = QtWidgets.QApplication.instance()
+        if app is None:
+            return False
+        combo = app.findChild(QtWidgets.QComboBox, "sm_default_screen")
+        if combo is None:
+            return False
+        idx = combo.findText(name, QtCore.Qt.MatchFixedString)
+        if idx < 0 and name:
+            combo.addItem(name)
+            idx = combo.findText(name, QtCore.Qt.MatchFixedString)
+        combo.setCurrentIndex(max(0, idx))
+        return True
+    except Exception:
+        return False
+
+
+__all__ = ["ScreensManagerPanel", "set_default_screen_via_ui"]
 
 

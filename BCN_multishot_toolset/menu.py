@@ -15,7 +15,7 @@ nuke.pluginAddPath('./nuke_tools')
 
 # Tools on NUKE_PATH
 from screens_manager import ScreensManagerPanel  # type: ignore
-from render_hooks import install_render_callbacks, add_screen_option_knob  # type: ignore
+from render_hooks import add_screen_option_knob  # type: ignore
 
 
 def add_screens_manager_panel() -> Optional[object]:
@@ -45,8 +45,7 @@ try:
             'BCN Multishot/Add Screen Option to Write',
             add_screen_option_knob,
         )
-        # Install render callbacks
-        install_render_callbacks()
+        # No global callbacks needed; beforeRender is injected on the Write node
 except Exception:
     pass
 
