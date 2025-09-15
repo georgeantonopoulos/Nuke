@@ -11,6 +11,7 @@ callbacks; when a callback is required, prefer `nuke.callbacks.onGsvSetChanged`.
 """
 
 from typing import List, Optional, Sequence
+import os
 
 try:
     import nuke  # type: ignore
@@ -21,17 +22,21 @@ except Exception:  # pragma: no cover
 try:  # PySide6 (module subpackage style)
     import PySide6.QtCore as QtCore  # type: ignore
     import PySide6.QtWidgets as QtWidgets  # type: ignore
+    import PySide6.QtGui as QtGui  # type: ignore
 except Exception:  # pragma: no cover
     try:  # PySide6 (from package style)
         from PySide6 import QtCore as QtCore  # type: ignore
         from PySide6 import QtWidgets as QtWidgets  # type: ignore
+        from PySide6 import QtGui as QtGui  # type: ignore
     except Exception:
         try:  # PySide2 fallback
             import PySide2.QtCore as QtCore  # type: ignore
             import PySide2.QtWidgets as QtWidgets  # type: ignore
+            import PySide2.QtGui as QtGui  # type: ignore
         except Exception:
             QtCore = None  # type: ignore
             QtWidgets = None  # type: ignore
+            QtGui = None  # type: ignore
 
 import gsv_utils
 
@@ -69,28 +74,46 @@ else:
             """Build and wire the minimal Qt UI."""
             layout = QtWidgets.QVBoxLayout()
 
+            # Optional top banner logo (best-effort; ignore errors quietly)
+            self.logo_label = QtWidgets.QLabel(self)
+            self.logo_label.setAlignment(QtCore.Qt.AlignCenter)
+            self.logo_label.setObjectName("switchManagerLogo")
+            self.logo_label.setMinimumHeight(72)
+            self.logo_label.setMaximumHeight(128)
+            self._install_logo_pixmap()
+            layout.addWidget(self.logo_label)
+
+            # Fields area – use a simple form layout for better alignment
+            form = QtWidgets.QFormLayout()
+
             # Screens input
             self.screens_edit = QtWidgets.QLineEdit(self)
             self.screens_edit.setPlaceholderText("Comma-separated screen names, e.g. Moxy,Godzilla,NYD400")
+            self.screens_edit.setToolTip("Enter a list of screen names. Duplicates will be removed.")
+            form.addRow("Screens:", self.screens_edit)
 
             # Default selector
-            default_row = QtWidgets.QHBoxLayout()
-            default_label = QtWidgets.QLabel("Default screen:", self)
             self.default_combo = QtWidgets.QComboBox(self)
-            default_row.addWidget(default_label)
-            default_row.addWidget(self.default_combo, 1)
+            self.default_combo.setToolTip("Pick the default/current screen (writes also use this unless assigned).")
+            form.addRow("Default screen:", self.default_combo)
 
             # Buttons
             btn_row = QtWidgets.QHBoxLayout()
             self.apply_btn = QtWidgets.QPushButton("Apply to GSV", self)
             self.groups_btn = QtWidgets.QPushButton("Ensure VariableGroups", self)
             self.switch_btn = QtWidgets.QPushButton("Create VariableSwitch", self)
-            btn_row.addWidget(self.apply_btn)
+            self.apply_btn.setToolTip("Create/update the global screens list and default value. Also ensures screen sets.")
+            self.groups_btn.setToolTip("Create a VariableGroup per screen (screen_<name>) if missing.")
+            self.switch_btn.setToolTip("Create a VariableSwitch named 'ScreenSwitch' and inputs for every screen.")
+
+            # Primary action emphasized on the left; secondary actions grouped to the right
+            btn_row.addWidget(self.apply_btn, 2)
+            btn_row.addStretch(1)
             btn_row.addWidget(self.groups_btn)
             btn_row.addWidget(self.switch_btn)
+            self.apply_btn.setDefault(True)
 
-            layout.addWidget(self.screens_edit)
-            layout.addLayout(default_row)
+            layout.addLayout(form)
             layout.addLayout(btn_row)
             layout.addStretch(1)
             self.setLayout(layout)
@@ -101,6 +124,44 @@ else:
             self.switch_btn.clicked.connect(self._on_switch)
             # Change root selector immediately when user picks a value
             self.default_combo.currentTextChanged.connect(self._on_default_changed)
+
+        def _install_logo_pixmap(self) -> None:
+            """Load and set the banner logo pixmap if available.
+
+            The image is expected at project root as `switch_manager_logo.png`.
+            This is a best-effort enhancement; failures are silently ignored.
+            """
+            if QtGui is None:
+                return
+            try:
+                # Resolve to repo root where the PNG lives
+                this_dir = os.path.dirname(os.path.abspath(__file__))
+                root_dir = os.path.dirname(this_dir)
+                logo_path = os.path.join(root_dir, "switch_manager_logo.png")
+                if not os.path.exists(logo_path):
+                    return
+                self._logo_pixmap = QtGui.QPixmap(logo_path)
+                if not self._logo_pixmap.isNull():
+                    scaled = self._logo_pixmap.scaledToHeight(
+                        96, QtCore.Qt.SmoothTransformation
+                    )
+                    self.logo_label.setPixmap(scaled)
+            except Exception:
+                # Non-fatal; simply omit the logo
+                pass
+
+        def resizeEvent(self, event):  # type: ignore[override]
+            """Keep the logo nicely scaled on resize."""
+            try:
+                if QtGui is not None and hasattr(self, "_logo_pixmap") and not self._logo_pixmap.isNull():
+                    max_height = max(72, min(128, int(self.height() * 0.18)))
+                    scaled = self._logo_pixmap.scaledToHeight(
+                        max_height, QtCore.Qt.SmoothTransformation
+                    )
+                    self.logo_label.setPixmap(scaled)
+            except Exception:
+                pass
+            super().resizeEvent(event)
 
         def _load_from_gsv(self) -> None:
             """Populate UI from the current `__default__.screens` options."""
