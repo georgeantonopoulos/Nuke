@@ -335,7 +335,7 @@ def add_screen_option_knob(node: Optional[object] = None) -> None:
     # Inject beforeRender Python to set the GSV to the chosen screen
     try:
         py_stmt = (
-            "python nuke.root()['gsv'].setGsvValue('__default__.screens', "
+            "nuke.root()['gsv'].setGsvValue('__default__.screens', "
             "nuke.thisNode()['screen_option'].value())"
         )
         existing = nd["beforeRender"].value() if "beforeRender" in nd.knobs() else ""
