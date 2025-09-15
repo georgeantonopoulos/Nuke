@@ -71,6 +71,34 @@ def _restore_root_context(ctx: Optional[_RootContext]) -> None:
             pass
 
 
+def _set_root_screen(screen_name: str) -> None:
+    """Safely set the root `__default__.screens` value on the main thread.
+
+    Some render callbacks execute off the UI thread. Updating the GSV via the
+    main thread avoids timing issues where upstream nodes (e.g. VariableSwitch)
+    evaluate before the variable change is visible.
+    """
+
+    if nuke is None or not screen_name:
+        return
+
+    def _do_set() -> None:
+        try:
+            gsv_utils.set_value("__default__.screens", screen_name)
+        except Exception:
+            pass
+
+    try:
+        # Execute on main thread when possible
+        exec_in_main = getattr(nuke, "executeInMainThreadWithResult", None)
+        if callable(exec_in_main):
+            exec_in_main(_do_set)
+        else:
+            _do_set()
+    except Exception:
+        _do_set()
+
+
 def _apply_screen_project_settings(screen_name: str) -> None:
     """Stub: apply per-screen project settings (format/range) if encoded in GSVs.
 
@@ -83,7 +111,10 @@ def _apply_screen_project_settings(screen_name: str) -> None:
 
 
 def before_render_handler() -> None:
-    """Before-render: set Root screen to Write's assigned_screen if present."""
+    """Before-render: set Root screen to the Write's chosen screen.
+
+    Prefers the `screen_option` knob, falls back to `assigned_screen`.
+    """
 
     global _PREV
     if nuke is None:
@@ -95,15 +126,50 @@ def before_render_handler() -> None:
 
     _PREV = _capture_root_context()
 
-    try:
-        screen = node["assigned_screen"].value()
-        screen = str(screen).strip()
-    except Exception:
-        screen = None
+    screen = None
+    # Prefer new knob, then legacy
+    for key in ("screen_option", "assigned_screen"):
+        try:
+            if key in node.knobs():
+                val = str(node[key].value()).strip()
+                if val:
+                    screen = val
+                    break
+        except Exception:
+            pass
 
     if screen:
-        gsv_utils.set_value("__default__.screens", screen)
+        _set_root_screen(screen)
         _apply_screen_project_settings(screen)
+
+
+def before_frame_render_handler() -> None:
+    """Per-frame safety: re-assert the root screen before each frame render.
+
+    This guards against any lazy evaluation that might have captured stale
+    values before the global before-render ran.
+    """
+
+    if nuke is None:
+        return
+    try:
+        node = nuke.thisNode()
+    except Exception:
+        return
+
+    screen = None
+    for key in ("screen_option", "assigned_screen"):
+        try:
+            if key in node.knobs():
+                val = str(node[key].value()).strip()
+                if val:
+                    screen = val
+                    break
+        except Exception:
+            pass
+
+    if screen:
+        _set_root_screen(screen)
 
 
 def after_render_handler() -> None:
@@ -121,6 +187,11 @@ def install_render_callbacks() -> None:
         return
     try:
         nuke.addBeforeRender(before_render_handler)
+        # Per-frame safety re-assertion (Nuke 16 supports beforeFrameRender)
+        try:
+            nuke.addBeforeFrameRender(before_frame_render_handler)
+        except Exception:
+            pass
         nuke.addAfterRender(after_render_handler)
     except Exception:
         pass
