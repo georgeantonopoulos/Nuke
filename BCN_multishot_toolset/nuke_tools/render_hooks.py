@@ -161,9 +161,22 @@ def _before_render_callback(**kwargs: object) -> None:
     try:
         gsv_utils.set_value("__default__.screens", screen)
         _log(f"Set __default__.screens to '{screen}'")
+        try:
+            refreshed = gsv_utils.get_value("__default__.screens")
+            _log(f"Verified __default__.screens now '{refreshed}'")
+        except Exception:
+            pass
     except Exception:
         _log("Failed to set __default__.screens before render")
         return
+
+    # Force any expression-driven nodes to re-evaluate before render kicks off.
+    try:
+        if hasattr(nuke, "updateUI"):
+            nuke.updateUI()
+            _log("Called nuke.updateUI() after switching screen")
+    except Exception:
+        _log("nuke.updateUI() failed during beforeRender; continuing")
 
     if set_default_screen_via_ui is not None:
         try:
@@ -189,6 +202,11 @@ def _after_render_callback(**kwargs: object) -> None:
     try:
         gsv_utils.set_value("__default__.screens", previous)
         _log("Restored __default__.screens after render")
+        try:
+            refreshed = gsv_utils.get_value("__default__.screens")
+            _log(f"Verified restoration; __default__.screens now '{refreshed}'")
+        except Exception:
+            pass
     except Exception:
         _log("Failed to restore __default__.screens after render")
         pass
