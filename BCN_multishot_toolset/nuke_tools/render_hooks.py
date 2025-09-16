@@ -1,14 +1,17 @@
 """Write node helpers for the Screens workflow.
 
-The prior approach injected a per-node `beforeRender` snippet that attempted to
-update the root `__default__.screens` GSV just before rendering. Nuke resolves
-Graph Scope Variables before executing a Write node's `beforeRender`, so the
-update landed too late and renders used stale values. This module now installs
-central callbacks that adjust the GSV at the correct stage, keeping the screen
-assignment in sync for both local renders and render-farm jobs.
+Simplified design: we do not use global before/after render callbacks. Instead
+we register a single `knobChanged` handler for `Write` nodes and detect when the
+"Render" button is executed. When triggered, we run the same pre-render logic
+that previously lived in `_before_render_callback` to set
+`__default__.screens` from the node's `screen_option` before the render begins.
+
+Note: `knobChanged` primarily fires when the Properties panel is open; behavior
+in headless scripts depends on how the render is initiated. This module focuses
+on running pre-render enforcement when the "Render" knob is activated.
 """
 
-from typing import List, Optional
+from typing import Optional, Iterable
 
 try:
     import nuke  # type: ignore
@@ -23,9 +26,10 @@ except Exception:  # pragma: no cover
     set_default_screen_via_ui = None  # type: ignore
 
 
-_callbacks_registered = False
-_screen_stack: List[Optional[str]] = []
 _LOG_PREFIX = "[BCN Screens]"
+_wrappers_installed = False
+_original_execute = None  # type: ignore[assignment]
+_original_executeMultiple = None  # type: ignore[assignment]
 
 
 def _log(message: str) -> None:
@@ -64,54 +68,6 @@ def get_screen_options() -> list:
         return []
 
 
-def _resolve_target_node(node: Optional[object] = None, nodes: Optional[object] = None) -> Optional[object]:
-    """Return the render-driving Write node if possible."""
-
-    if node is not None:
-        if isinstance(node, str) and nuke is not None:
-            try:
-                converted = nuke.toNode(node)
-                if converted is not None:
-                    _log(f"Resolved node name '{node}' to {_describe_node(converted)}")
-                else:
-                    _log(f"Node name '{node}' could not be resolved")
-                return converted
-            except Exception:
-                _log(f"Exception while resolving node name '{node}'")
-                return None
-        return node
-
-    if isinstance(nodes, (list, tuple)):
-        for candidate in nodes:
-            if candidate is None:
-                continue
-            try:
-                if getattr(candidate, "Class", lambda: "")() == "Write":
-                    _log(f"Resolved render node from nodes list: {_describe_node(candidate)}")
-                    return candidate
-            except Exception:
-                continue
-
-        # Fall back to first entry even if not a Write; better than nothing.
-        try:
-            first = nodes[0]  # type: ignore[index]
-            _log(f"Using first render candidate without class match: {_describe_node(first)}")
-            return first
-        except Exception:
-            pass
-
-    if nuke is None:
-        return None
-
-    try:
-        node_from_this = nuke.thisNode()
-        if node_from_this is not None:
-            _log(f"Resolved render node via nuke.thisNode(): {_describe_node(node_from_this)}")
-        return node_from_this
-    except Exception:
-        return None
-
-
 def _get_assigned_screen(node: Optional[object]) -> Optional[str]:
     """Fetch the screen assignment stored on `node` if the knob exists."""
 
@@ -137,22 +93,20 @@ def _get_assigned_screen(node: Optional[object]) -> Optional[str]:
     return resolved
 
 
-def _before_render_callback(**kwargs: object) -> None:
-    """Apply the node's assigned screen before frame evaluation starts."""
+def _run_pre_render_from_node(node: Optional[object]) -> None:
+    """Run pre-render logic for a Write node by setting `__default__.screens`.
+
+    Reads `screen_option` from the provided node, writes it into the global
+    selector, and nudges the UI so expressions re-evaluate. This mirrors the
+    previous `_before_render_callback` behavior without relying on global
+    render callbacks.
+    """
 
     if nuke is None:
         return
 
-    node_kwarg = kwargs.get("node") if isinstance(kwargs, dict) else None
-    nodes_kwarg = kwargs.get("nodes") if isinstance(kwargs, dict) else None
-    node = _resolve_target_node(node=node_kwarg, nodes=nodes_kwarg)
-    _log(f"BeforeRender fired for node {_describe_node(node)}")
+    _log(f"Pre-render logic invoked for node {_describe_node(node)}")
     screen = _get_assigned_screen(node)
-
-    # Push current value so we can restore after render completes.
-    current = gsv_utils.get_value("__default__.screens")
-    _screen_stack.append(current)
-    _log(f"Stored previous screen '{current}' (stack depth={len(_screen_stack)})")
 
     if not screen:
         _log("No screen_option value; leaving current screen")
@@ -170,13 +124,12 @@ def _before_render_callback(**kwargs: object) -> None:
         _log("Failed to set __default__.screens before render")
         return
 
-    # Force any expression-driven nodes to re-evaluate before render kicks off.
     try:
         if hasattr(nuke, "updateUI"):
             nuke.updateUI()
             _log("Called nuke.updateUI() after switching screen")
     except Exception:
-        _log("nuke.updateUI() failed during beforeRender; continuing")
+        _log("nuke.updateUI() failed during pre-render; continuing")
 
     if set_default_screen_via_ui is not None:
         try:
@@ -187,90 +140,139 @@ def _before_render_callback(**kwargs: object) -> None:
             pass
 
 
-def _after_render_callback(**kwargs: object) -> None:
-    """Restore the previously selected screen once the render finishes."""
+def _on_knob_changed() -> None:
+    """KnobChanged handler: when Write's Render knob is pressed, enforce screen.
 
-    if not _screen_stack:
-        _log("AfterRender fired with empty stack; nothing to restore")
-        return
+    This detects the `render` knob on a `Write` node and runs pre-render logic
+    so the `__default__.screens` GSV reflects the node's `screen_option`.
+    """
 
-    previous = _screen_stack.pop()
-    _log(f"AfterRender restoring previous screen '{previous}' (remaining depth={len(_screen_stack)})")
-    if previous is None:
+    if nuke is None:
         return
 
     try:
-        gsv_utils.set_value("__default__.screens", previous)
-        _log("Restored __default__.screens after render")
+        n = nuke.thisNode()
+        k = nuke.thisKnob()
+    except Exception:
+        return
+
+    try:
+        if not n or n.Class() != "Write" or not k or not hasattr(k, "name"):
+            return
+        if k.name().lower() != "render":
+            return
+    except Exception:
+        return
+
+    _run_pre_render_from_node(n)
+
+
+def _install_execute_wrappers() -> None:
+    """Install wrappers for `nuke.execute` and `nuke.executeMultiple` safely.
+
+    The wrappers call `_run_pre_render_from_node` for Write nodes that have a
+    `screen_option` knob before delegating to the original execute functions.
+    This ensures headless/programmatic renders also receive the correct screen
+    context prior to evaluation.
+    """
+
+    global _wrappers_installed, _original_execute, _original_executeMultiple
+
+    if nuke is None:
+        _log("Nuke module unavailable; cannot install execute wrappers")
+        return
+    if _wrappers_installed:
+        return
+
+    # Wrap nuke.execute
+    try:
+        if hasattr(nuke, "execute") and _original_execute is None:  # type: ignore[attr-defined]
+            _original_execute = nuke.execute  # type: ignore[attr-defined]
+
+            def _wrapped_execute(node, start, end, incr=1, *args, **kwargs):  # type: ignore[no-redef]
+                try:
+                    target = node
+                    try:
+                        if isinstance(node, str):
+                            target = nuke.toNode(node)  # type: ignore[attr-defined]
+                    except Exception:
+                        pass
+                    if target is not None:
+                        try:
+                            if getattr(target, "Class", lambda: "")() == "Write" and "screen_option" in target.knobs():
+                                _run_pre_render_from_node(target)
+                        except Exception:
+                            pass
+                except Exception:
+                    pass
+                return _original_execute(node, start, end, incr, *args, **kwargs)  # type: ignore[misc]
+
+            nuke.execute = _wrapped_execute  # type: ignore[attr-defined]
+            _log("Wrapped nuke.execute for pre-render enforcement")
+    except Exception:
+        _log("Failed to wrap nuke.execute")
+
+    # Wrap nuke.executeMultiple
+    try:
+        if hasattr(nuke, "executeMultiple") and _original_executeMultiple is None:  # type: ignore[attr-defined]
+            _original_executeMultiple = nuke.executeMultiple  # type: ignore[attr-defined]
+
+            def _wrapped_executeMultiple(nodes, start, end, incr=1, *args, **kwargs):  # type: ignore[no-redef]
+                try:
+                    candidates = nodes
+                    try:
+                        # Normalize to iterable
+                        if isinstance(nodes, (str, bytes)):
+                            candidates = [nodes]
+                        elif not isinstance(nodes, Iterable):
+                            candidates = [nodes]
+                    except Exception:
+                        candidates = [nodes]
+
+                    for item in list(candidates):  # make a shallow copy for safety
+                        try:
+                            target = item
+                            if isinstance(item, str):
+                                try:
+                                    target = nuke.toNode(item)  # type: ignore[attr-defined]
+                                except Exception:
+                                    target = None
+                            if target is not None and getattr(target, "Class", lambda: "")() == "Write":
+                                try:
+                                    if "screen_option" in target.knobs():
+                                        _run_pre_render_from_node(target)
+                                except Exception:
+                                    pass
+                        except Exception:
+                            pass
+                except Exception:
+                    pass
+                return _original_executeMultiple(nodes, start, end, incr, *args, **kwargs)  # type: ignore[misc]
+
+            nuke.executeMultiple = _wrapped_executeMultiple  # type: ignore[attr-defined]
+            _log("Wrapped nuke.executeMultiple for pre-render enforcement")
+    except Exception:
+        _log("Failed to wrap nuke.executeMultiple")
+
+    _wrappers_installed = True
+
+
+def _install_knobchanged() -> None:
+    """Register the `knobChanged` handler for Write nodes once per session."""
+
+    if nuke is None:
+        _log("Nuke module unavailable; cannot install knobChanged handler")
+        return
+
+    try:
         try:
-            refreshed = gsv_utils.get_value("__default__.screens")
-            _log(f"Verified restoration; __default__.screens now '{refreshed}'")
+            nuke.removeKnobChanged(_on_knob_changed)  # type: ignore[attr-defined]
         except Exception:
             pass
+        nuke.addKnobChanged(_on_knob_changed, nodeClass="Write")  # type: ignore[attr-defined]
+        _log("Registered knobChanged handler for Write nodes")
     except Exception:
-        _log("Failed to restore __default__.screens after render")
-        pass
-
-
-def _ensure_render_callbacks() -> None:
-    """Register global before/after render callbacks once per session."""
-
-    global _callbacks_registered
-
-    if _callbacks_registered:
-        _log("Render callbacks already installed; skipping")
-        return
-    if nuke is None:
-        _log("Nuke module unavailable; cannot install render callbacks")
-        return
-
-    try:
-        callbacks = getattr(nuke, "callbacks", None)
-        used_callbacks_module = False
-
-        if callbacks:
-            try:
-                if hasattr(callbacks, "removeBeforeRender"):
-                    callbacks.removeBeforeRender(_before_render_callback)
-            except Exception:
-                pass
-            try:
-                if hasattr(callbacks, "removeAfterRender"):
-                    callbacks.removeAfterRender(_after_render_callback)
-            except Exception:
-                pass
-            try:
-                if hasattr(callbacks, "addBeforeRender"):
-                    callbacks.addBeforeRender(_before_render_callback, nodeClass="Write")
-                    used_callbacks_module = True
-                    _log("Registered beforeRender via nuke.callbacks (Write)")
-            except Exception:
-                pass
-            try:
-                if hasattr(callbacks, "addAfterRender"):
-                    callbacks.addAfterRender(_after_render_callback, nodeClass="Write")
-                    used_callbacks_module = True
-                    _log("Registered afterRender via nuke.callbacks (Write)")
-            except Exception:
-                pass
-
-        if not used_callbacks_module:
-            # Legacy API fallbacks
-            try:
-                nuke.removeBeforeRender(_before_render_callback)  # type: ignore[attr-defined]
-            except Exception:
-                pass
-            try:
-                nuke.removeAfterRender(_after_render_callback)  # type: ignore[attr-defined]
-            except Exception:
-                pass
-            nuke.addBeforeRender(_before_render_callback)  # type: ignore[attr-defined]
-            nuke.addAfterRender(_after_render_callback)  # type: ignore[attr-defined]
-            _log("Registered render callbacks via legacy addBefore/AfterRender")
-        _callbacks_registered = True
-        _log("Render callbacks installed")
-    except Exception:
-        _log("Failed to install render callbacks")
+        _log("Failed to register knobChanged handler")
         pass
 
 
@@ -279,8 +281,6 @@ def add_screen_option_knob(node: Optional[object] = None) -> None:
 
     if nuke is None:
         return
-
-    _ensure_render_callbacks()
 
     try:
         nd = node or nuke.selectedNode()
@@ -335,10 +335,15 @@ def add_screen_option_knob(node: Optional[object] = None) -> None:
 
 
 def install_render_callbacks() -> None:
-    """Public entry point for init.py and other bootstrap hooks."""
+    """Public entry point retained for backward compatibility.
 
-    _log("install_render_callbacks invoked")
-    _ensure_render_callbacks()
+    Registers the `knobChanged` handler so pre-render logic runs when the Write
+    node's Render knob is executed.
+    """
+
+    _log("install_render_callbacks invoked (registering knobChanged + execute wrappers)")
+    _install_knobchanged()
+    _install_execute_wrappers()
 
 
 __all__ = [
