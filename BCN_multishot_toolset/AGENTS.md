@@ -7,6 +7,35 @@
 - Pre‑Render Hooks: On Write nodes (and Writes inside Groups), assign a target screen and, before rendering, enforce that all global variables and switches match that screen.
 - Constraint: Leverage Nuke 16’s multi‑shot/Graph Scope Variables (GSV) and VariableGroup APIs; avoid reinventing behavior that the API provides.
 
+## Current Implementation Snapshot (2025‑09‑16)
+
+- Root selector variable is `__default__.screens` (plural) of type List, not `__default__.screen`.
+- Screens Manager panel manages the `__default__.screens` options and default, ensures per‑screen GSV Sets at root, and can optionally create a `VariableGroup` per screen and a `VariableSwitch` preview node.
+- Write node integration is done per node: a `screen_option` pulldown is added to the Write, its label mirrors the selection, and the node’s `beforeRender` knob is injected with a Python statement intended to update the root GSV just before rendering:
+
+```101:108:nuke_tools/render_hooks.py
+        py_stmt = (
+                "nuke.root()['gsv'].setGsvValue('__default__.screens', "
+                "nuke.thisNode()['screen_option'].value());nuke.updateUI()"
+        )
+        existing = nd["beforeRender"].value() if "beforeRender" in nd.knobs() else ""
+        if py_stmt not in existing:
+            new_val = (existing + "\n" + py_stmt).strip() if existing else py_stmt
+            nd["beforeRender"].setValue(new_val)
+```
+
+- No global `nuke.addBeforeRender`/`nuke.addAfterRender` callbacks are currently registered; the menu wires a helper that adds the per‑Write pulldown and script:
+
+```44:49:menu.py
+        nuke.menu('Nuke').addCommand(
+            'BCN Multishot/Add Screen Option to Write',
+            add_screen_option_knob,
+        )
+        # No global callbacks needed; beforeRender is injected on the Write node
+```
+
+- Known limitation: The injected per‑node `beforeRender` Python script currently fails to update the `__default__.screens` GSV in time; renders proceed with a stale selection, yielding inaccurate results.
+
 ## Key Nuke 16 APIs To Use
 
 - Graph Scope Variables (GSV): root knob `nuke.root()['gsv']` is a `nuke.Gsv_Knob`.
@@ -32,16 +61,17 @@ Additional references:
 ## Architecture
 
 - Root‑Level Selector
-  - `__default__.screen`: A List‑type GSV on the Root `Gsv_Knob` with options = screen names. It appears in the Variables panel, providing a canonical “current screen” selector.
+  - `__default__.screens`: A List‑type GSV on the Root `Gsv_Knob` with options = screen names. It appears in the Variables panel, providing a canonical current‑screen selector.
   - Optional global toggles (favorites): add common switches (e.g., `__default__.use_ocio`, `__default__.render_quality`) and mark as favorites for quick access.
 
 - VariableGroups per Screen
   - For each screen name, create a `VariableGroup` named e.g. `screen_Moxy`, `screen_Godzilla`, etc.
   - Within each screen group’s `Gsv_Knob`, store screen‑specific defaults in `__default__` (format/size/fps/range/paths) and any per‑screen override buckets (e.g., `Overrides` set).
   - Inheritance/overrides: Parent groups can hold shared defaults; child screen groups override only what differs.
+  - Current code also ensures a root‑level GSV Set per screen (e.g. `Moxy`, `Godzilla`) for easy `%Set.Var` references in string knobs.
 
 - Preview “Variable Switch”
-  - Prefer a `VariableSwitch` node driven by the `__default__.screen` GSV to control which input is active without custom callbacks.
+  - Prefer a `VariableSwitch` node driven by the `__default__.screens` GSV to control which input is active without custom callbacks.
   - Fallback: provide a helper Group “ScreenSwitch” with a plain `Switch` whose `which` is driven by a short expression that references the GSV. Avoid generic `knobChanged` callbacks for this.
 
 - Per‑Screen Node Overrides
@@ -49,18 +79,20 @@ Additional references:
   - Knobs that should vary by screen should preferably read from GSV using a short expression. Where node mirroring is needed, use Link nodes and override only the differing knobs per screen.
 
 - Render Context Enforcement
-  - Global `nuke.addBeforeRender()` callback inspects `nuke.thisNode()` (Write). If a custom `assigned_screen` knob exists, it resolves that screen, sets Root selector `__default__.screen`, and pushes any project settings (format/fps/range) from the target screen group. Restore on `nuke.addAfterRender()`.
+  - Planned: a centralized `nuke.addBeforeRender()`/`nuke.addAfterRender()` would set `__default__.screens` and push project settings from the target screen prior to rendering.
+  - Current code: per‑Write node `beforeRender` script attempts to set `__default__.screens` from the node’s `screen_option` knob. This currently fails to update the GSV in time, causing inaccurate results.
 
 ## Data Model (GSV layout)
 
 - Root `Gsv_Knob` (`nuke.root()['gsv']`)
-  - `__default__.screen` (List): current screen name; options reflect all screens
+  - `__default__.screens` (List): current screen name; options reflect all screens
   - `Screens` set (optional index/metadata): `Screens.names_csv`, others if helpful
 - Per screen VariableGroup: e.g. `screen_Moxy`
   - `__default__.format_name` (String), `width`, `height`, `pixel_aspect` (String/Integer)
   - `__default__.fps`, `frame_start`, `frame_end`
   - `__default__.write_root` (root path for outputs)
   - `Overrides` set for general overrides, e.g. `Overrides.<node>.<knob>`
+  - Additionally, a root Set per screen (e.g. `Moxy`, `Godzilla`) for `%Set.Var` access.
 
 Note: All GSV values are strings; knobs typically accept string inputs and parse types as needed.
 
@@ -73,7 +105,7 @@ Note: All GSV values are strings; knobs typically accept string inputs and parse
   - Create/update an optional “ScreenSwitch” preview Group hooked to the DAG
 
 - Backed by official APIs
-  - Create/maintain Root list: `setDataType('__default__.screen', nuke.gsv.DataType.List)`, `setListOptions('__default__.screen', screens)`
+  - Create/maintain Root list: `setDataType('__default__.screens', nuke.gsv.DataType.List)`, `setListOptions('__default__.screens', screens)`
   - Create/maintain VariableGroups: `nuke.nodes.VariableGroup(name=...)`; write values with the group’s own `['gsv']`
   - Persist favorites: `setFavorite(path, True)` for commonly tweaked vars
 
@@ -82,15 +114,15 @@ Note: All GSV values are strings; knobs typically accept string inputs and parse
   - Actions:
     - Parse input list → normalize unique screen names
     - Ensure a VariableGroup per screen; add/update per‑screen GSVs
-    - Update Root `__default__.screen` list options and default
+    - Update Root `__default__.screens` list options and default
     - Optionally emit a “ScreenSwitch” group: map `screen` → `Switch.which`
 
 - Minimal Code Sketch
   - Root list setup:
     - `gsv = nuke.root()['gsv']`
-    - `gsv.setDataType('__default__.screen', nuke.gsv.DataType.List)`
-    - `gsv.setListOptions('__default__.screen', ['Moxy','Godzilla','NYD400'])`
-    - `gsv.setGsvValue('__default__.screen', 'Moxy')`
+    - `gsv.setDataType('__default__.screens', nuke.gsv.DataType.List)`
+    - `gsv.setListOptions('__default__.screens', ['Moxy','Godzilla','NYD400'])`
+    - `gsv.setGsvValue('__default__.screens', 'Moxy')`
   - Per screen group creation:
     - `grp = nuke.nodes.VariableGroup(name='screen_Moxy')`
     - `grp['gsv'].setGsvValue('__default__.format_name', 'moxy_fmt')` …
@@ -99,7 +131,7 @@ Note: All GSV values are strings; knobs typically accept string inputs and parse
 
 - Options
   - Expression‑driven: set a knob expression to fetch from GSV for the current variable context.
-    - Example expression (Python): `python {nuke.root()['gsv'].getGsvValue('screen_Moxy.__default__.my_knob')}`
+    - Example expression (Python): `python {g=nuke.root()['gsv']; s=g.getGsvValue('__default__.screens'); g.getGsvValue(s + '.my_knob')}`
     - For automatic context: reference the nearest group’s `gsv` when feasible.
   - Link‑node‑driven: for repeated structures, use Link nodes to mirror a source node and override only per‑screen differences (reduces or eliminates the need for callbacks).
   - GSV‑change callback (last resort): if an imperative push is absolutely required, respond to GSV changes with `nuke.callbacks.onGsvSetChanged()` when `__default__.screen` changes.
@@ -111,7 +143,7 @@ Note: All GSV values are strings; knobs typically accept string inputs and parse
 
 - API Touchpoints
   - Read/write override values: `group['gsv'].setGsvValue('Overrides.Node.knob', '…')`
-  - Inject expressions: `node[kn].setExpression("python {…getGsvValue('Overrides.Node.knob')} ")`
+  - Inject expressions: `node[kn].setExpression("python {…getGsvValue('Overrides.Node.knob')}")`
   - Update on change (only if required): use `nuke.callbacks.onGsvSetChanged()` to react to changes in `__default__.screen` rather than a generic `addKnobChanged`.
 
 - Practical Guidance
@@ -121,26 +153,22 @@ Note: All GSV values are strings; knobs typically accept string inputs and parse
 ## Feature 3 — Pre‑Render Hook for Screen Assignment
 
 - Behavior
-  - Each Write node (or a Group containing Writes) can have a `assigned_screen` Pulldown knob populated from the Root selector’s list options.
-  - Global `nuke.addBeforeRender()` callback:
-    - Resolve `nuke.thisNode()`; read `assigned_screen` (fallback to current Root `__default__.screen`)
-    - Set Root `__default__.screen` to the assigned value (so any preview switch and expressions align)
-    - Apply project settings from the corresponding screen group’s `Gsv_Knob` (format/fps/first/last)
-  - `nuke.addAfterRender()` restores previous Root values to keep the UI state consistent
+  - Current: Each Write node can have a `screen_option` pulldown populated from `__default__.screens`. The node’s `beforeRender` knob tries to set the Root `__default__.screens` to the selected value before rendering. This is proving unreliable: the GSV update does not take effect early enough, causing inaccurate results.
+  - Planned: Move to centralized `nuke.addBeforeRender()`/`nuke.addAfterRender()` that reads an assignment knob (e.g., `assigned_screen`) and enforces `__default__.screens` + project settings before render, restoring afterward.
 
 - Implementation Sketch
-  - Assignment knob: `nuke.Pulldown_Knob('assigned_screen', 'Assigned Screen', 'Moxy Godzilla NYD400')`
-  - Populate choices: `gsv.getListOptions('__default__.screen')`
-  - Before render:
+  - Assignment knob (planned): `nuke.Pulldown_Knob('assigned_screen', 'Assigned Screen', 'Moxy Godzilla NYD400')`
+  - Populate choices: `gsv.getListOptions('__default__.screens')`
+  - Before render (planned central handler):
     - Capture prev context (root format/fps/range and current screen)
-    - Lookup screen group, pull its GSVs via `group['gsv'].getGsvValue('__default__.format_name')`, etc.
+    - Lookup screen group or set, pull its GSVs via `group['gsv'].getGsvValue('__default__.format_name')` or `%Set.Var` patterns
     - `nuke.addFormat()` missing formats; set root knobs accordingly
   - After render: restore captured values
 
 ## DAG Wiring Patterns
 
 - Preview ScreenSwitch
-  - Prefer `VariableSwitch` to route to the chosen screen based on the `__default__.screen` GSV; not required for farm renders.
+  - Prefer `VariableSwitch` to route to the chosen screen based on the `__default__.screens` GSV; not required for farm renders.
   - If `VariableSwitch` is not appropriate, a Group with a plain `Switch` is acceptable but should be driven by an expression, not a callback.
 
 - Per‑Screen Subgraphs
