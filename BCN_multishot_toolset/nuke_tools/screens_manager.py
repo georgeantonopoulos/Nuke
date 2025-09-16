@@ -312,60 +312,54 @@ else:
                 return
 
             try:
-                # Reuse existing ScreenSwitch if present
-                switch = nuke.toNode("ScreenSwitch")
-                if not switch:
-                    switch = nuke.createNode("VariableSwitch")
-                    switch.setName("ScreenSwitch")
-                # Place it at a reasonable position
-                try:
-                    sx = int(switch["xpos"].value())
-                    sy = int(switch["ypos"].value())
-                except Exception:
-                    sx, sy = 0, 0
+                switch = nuke.nodes.VariableSwitch()
+                switch_name = nuke.uniqueName("ScreenSwitch")
+                switch.setName(switch_name)
 
-                # Set the variable knob when available
                 try:
                     if "variable" in switch.knobs():
                         switch["variable"].setValue("__default__.screens")
                 except Exception:
                     pass
 
-                # Build or reuse Dot nodes and wire them
-                dot_nodes = []
+                try:
+                    sx = int(switch["xpos"].value())
+                    sy = int(switch["ypos"].value())
+                except Exception:
+                    sx, sy = 0, 0
+
                 spacing_y = 60
                 for idx, name in enumerate(screens):
-                    dot_name = f"Dot_{name}"
-                    dot = nuke.toNode(dot_name)
-                    if not dot:
+                    try:
                         dot = nuke.nodes.Dot()
+                    except Exception:
+                        dot = None
+                    if dot is None:
+                        continue
+                    try:
+                        dot_name = nuke.uniqueName(f"{switch_name}_{name}_Dot")
                         dot.setName(dot_name)
-                    # Position dots to the left of the switch, stacked
+                    except Exception:
+                        pass
                     try:
                         dot["xpos"].setValue(sx - 150)
                         dot["ypos"].setValue(sy + idx * spacing_y)
-                        # Helpful label so artists see which input is which
                         if "label" in dot.knobs():
                             dot["label"].setValue(name)
                     except Exception:
                         pass
-                    dot_nodes.append(dot)
                     try:
                         switch.setInput(idx, dot)
                     except Exception:
                         pass
 
-                # Populate the VariableSwitch patterns with screen names
-                # Attempt common representations used by Nuke knobs
                 for idx, name in enumerate(screens):
                     try:
-                        # Array-style knob
                         switch["patterns"].setValueAt(name, idx)
                         continue
                     except Exception:
                         pass
                     try:
-                        # Per-input text fields labelled i0, i1, ...
                         key = f"i{idx}"
                         if key in switch.knobs():
                             switch[key].setValue(name)
@@ -418,5 +412,4 @@ def set_default_screen_via_ui(name: str) -> bool:
 
 
 __all__ = ["ScreensManagerPanel", "set_default_screen_via_ui"]
-
 

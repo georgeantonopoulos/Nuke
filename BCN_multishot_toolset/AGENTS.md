@@ -4,37 +4,15 @@
 
 - Screens Panel: Add/edit a list of “screens” (e.g., `Moxy, Godzilla, NYD400`) and create the variables + a preview switch to fluidly toggle between them.
 - Per‑Screen Overrides: Let artists set overrides on any node/knob, specific to each screen.
-- Pre‑Render Hooks: On Write nodes (and Writes inside Groups), assign a target screen and, before rendering, enforce that all global variables and switches match that screen.
-- Constraint: Leverage Nuke 16’s multi‑shot/Graph Scope Variables (GSV) and VariableGroup APIs; avoid reinventing behavior that the API provides.
+- Write Integration: Provide a one-click way to wrap a Write node inside a VariableGroup so artists can choose the active screen using Nuke’s native multi-shot UI.
+- Constraint: Leverage Nuke 16’s multi-shot/Graph Scope Variables (GSV) and VariableGroup APIs; avoid reinventing behavior that the API provides.
 
 ## Current Implementation Snapshot (2025‑09‑16)
 
 - Root selector variable is `__default__.screens` (plural) of type List, not `__default__.screen`.
-- Screens Manager panel manages the `__default__.screens` options and default, ensures per‑screen GSV Sets at root, and can optionally create a `VariableGroup` per screen and a `VariableSwitch` preview node.
-- Write node integration is done per node: a `screen_option` pulldown is added to the Write, its label mirrors the selection, and the node’s `beforeRender` knob is injected with a Python statement intended to update the root GSV just before rendering:
-
-```101:108:nuke_tools/render_hooks.py
-        py_stmt = (
-                "nuke.root()['gsv'].setGsvValue('__default__.screens', "
-                "nuke.thisNode()['screen_option'].value());nuke.updateUI()"
-        )
-        existing = nd["beforeRender"].value() if "beforeRender" in nd.knobs() else ""
-        if py_stmt not in existing:
-            new_val = (existing + "\n" + py_stmt).strip() if existing else py_stmt
-            nd["beforeRender"].setValue(new_val)
-```
-
-- No global `nuke.addBeforeRender`/`nuke.addAfterRender` callbacks are currently registered; the menu wires a helper that adds the per‑Write pulldown and script:
-
-```44:49:menu.py
-        nuke.menu('Nuke').addCommand(
-            'BCN Multishot/Add Screen Option to Write',
-            add_screen_option_knob,
-        )
-        # No global callbacks needed; beforeRender is injected on the Write node
-```
-
-- Known limitation: The injected per‑node `beforeRender` Python script currently fails to update the `__default__.screens` GSV in time; renders proceed with a stale selection, yielding inaccurate results.
+- Screens Manager panel manages the `__default__.screens` options and default, ensures per-screen GSV Sets at root, and can optionally create a `VariableGroup` per screen and a `VariableSwitch` preview node.
+- Write integration is now handled by wrapping a selected Write node (or a publishable Group) inside a `VariableGroup` via `render_hooks.encapsulate_write_with_variable_group()`. The helper automatically exposes every relevant knob on the VariableGroup interface using `Link_Knob`s, sets the wrapper label to the simple expression `[value gsv]`, and keeps the internal node named for clarity, so artists can switch screens directly on the VariableGroup without any injected scripts or callbacks.
+- Menu wiring provides a “Wrap Node in Variable Group” command under `BCN Multishot`, keeping the workflow accessible to artists who are new to multi-shot setups.
 
 ## Key Nuke 16 APIs To Use
 
@@ -46,7 +24,7 @@
 - Variable Groups: contextual scoping and overriding across the DAG
   - Create nodes: `nuke.nodes.VariableGroup(name='…')` or `nuke.collapseToVariableGroup()`
   - Paths extend with group names: `variable_group...variable_set.variable_name`
-- Callbacks for renders and variable changes: `nuke.addBeforeRender()`, `nuke.addAfterRender()`, `nuke.callbacks.onGsvSetChanged()`
+- VariableGroup helpers: `nuke.collapseToVariableGroup()`, `Link_Knob.makeLink()`, and the VariableGroup node UI for selecting variables
 - Panels/UI: `nukescripts.PythonPanel`, `nukescripts.panels.registerWidgetAsPanel`, or simple `nuke.Panel`
 - Project settings: `nuke.root()['format']`, `['fps']`, `['first_frame']`, `['last_frame']`, `nuke.addFormat()`
 
@@ -80,7 +58,7 @@ Additional references:
 
 - Render Context Enforcement
   - Planned: a centralized `nuke.addBeforeRender()`/`nuke.addAfterRender()` would set `__default__.screens` and push project settings from the target screen prior to rendering.
-  - Current code: per‑Write node `beforeRender` script attempts to set `__default__.screens` from the node’s `screen_option` knob. This currently fails to update the GSV in time, causing inaccurate results.
+  - Current code: Write nodes are wrapped inside VariableGroups so the screen selector lives on the wrapper and drives evaluation without additional scripting.
 
 ## Data Model (GSV layout)
 
@@ -150,24 +128,23 @@ Note: All GSV values are strings; knobs typically accept string inputs and parse
   - Prefer expressions for deterministic dependency and less global state
   - Use consistent naming for override paths; avoid spaces in node names or sanitize keys
 
-## Feature 3 — Pre‑Render Hook for Screen Assignment
+## Feature 3 — Write VariableGroup Wrapper
 
 - Behavior
-  - Current: Each Write node can have a `screen_option` pulldown populated from `__default__.screens`. The node’s `beforeRender` knob tries to set the Root `__default__.screens` to the selected value before rendering. This is proving unreliable: the GSV update does not take effect early enough, causing inaccurate results.
-  - Planned: Move to centralized `nuke.addBeforeRender()`/`nuke.addAfterRender()` that reads an assignment knob (e.g., `assigned_screen`) and enforces `__default__.screens` + project settings before render, restoring afterward.
+  - Artists select a Write node or a publish-ready Group (one that exposes a `publish_instance` knob) and trigger “Wrap Node in Variable Group” from the BCN Multishot menu.
+  - The tool collapses the selection into a `VariableGroup`, renames the wrapper, links every exposed knob to the group UI with `Link_Knob`s, and sets the label to `[value gsv]` so the active screen is visible using Nuke's own evaluation. Tabs from the original node are preserved.
+  - Because VariableGroup nodes already expose the variable selector UI, artists can pick the active screen directly on the wrapper node. No extra callbacks or render-time scripts are required.
 
-- Implementation Sketch
-  - Assignment knob (planned): `nuke.Pulldown_Knob('assigned_screen', 'Assigned Screen', 'Moxy Godzilla NYD400')`
-  - Populate choices: `gsv.getListOptions('__default__.screens')`
-  - Before render (planned central handler):
-    - Capture prev context (root format/fps/range and current screen)
-    - Lookup screen group or set, pull its GSVs via `group['gsv'].getGsvValue('__default__.format_name')` or `%Set.Var` patterns
-    - `nuke.addFormat()` missing formats; set root knobs accordingly
-  - After render: restore captured values
+  - Use `nuke.collapseToVariableGroup()` on the selected node, wrapping it in a VariableGroup within a single undo step.
+  - Locate the internal node (Write preferred, otherwise a node carrying `publish_instance`) and iterate over its knobs.
+  - For each `Tab_Knob`, add a matching tab to the VariableGroup; for other knobs, create a `Link_Knob` pointing back to the internal node knob.
+  - Skip housekeeping knobs already provided by the VariableGroup (`name`, `xpos`, etc.) to avoid duplicates on the interface.
+  - Set the wrapper's label to the lightweight TCL expression `[value gsv]` so the active scope is visible, and open the VariableGroup’s properties so artists immediately see the familiar UI alongside the Variable selector.
 
 ## DAG Wiring Patterns
 
 - Preview ScreenSwitch
+  - The panel's "Create VariableSwitch" button now instantiates a fresh `VariableSwitch` plus dedicated Dots each time it is pressed; artists can spawn multiple preview switches without reusing prior nodes.
   - Prefer `VariableSwitch` to route to the chosen screen based on the `__default__.screens` GSV; not required for farm renders.
   - If `VariableSwitch` is not appropriate, a Group with a plain `Switch` is acceptable but should be driven by an expression, not a callback.
 
@@ -190,7 +167,7 @@ Note: All GSV values are strings; knobs typically accept string inputs and parse
 - `nuke_tools/screens_manager.py` — Qt panel to manage screens, formats, fps, ranges, “build switch”, and bulk edit
 - `nuke_tools/gsv_utils.py` — Thin wrapper over `Gsv_Knob` for typed gets/sets and common paths
 - `nuke_tools/overrides.py` — Commands to bind knobs to GSV overrides and manage expressions
-- `nuke_tools/render_hooks.py` — `addBeforeRender`/`addAfterRender` handlers + utilities
+- `nuke_tools/render_hooks.py` — VariableGroup wrapper helper for Write nodes
 - `menu.py` — Menu items and `registerWidgetAsPanel` integration
 
 ## Milestones
@@ -199,7 +176,7 @@ Note: All GSV values are strings; knobs typically accept string inputs and parse
 2) Screens Manager panel: add/edit/remove + list options wiring
 3) Preview ScreenSwitch helper group
 4) Overrides tooling for selected nodes/knobs
-5) Pre‑render hooks (assignment + context enforcement + restore)
+5) Write VariableGroup wrapper + knob exposure polish
 6) Polish + edge cases + docstrings and brief README
 
 ## Validation Plan
@@ -208,8 +185,8 @@ Note: All GSV values are strings; knobs typically accept string inputs and parse
   - Root `__default__.screen` exists, list options match panel
   - Screen groups exist and contain expected GSVs
   - ScreenSwitch “which” changes when root `screen` changes
-  - Overrides: changing `screen` updates visible knob values (expression or handler)
-  - Pre‑render: assign different screens to two Writes; each render picks the correct format/range and output path
+- Overrides: changing `screen` updates visible knob values (expression or handler)
+  - Write wrappers: wrap a Write and confirm the VariableGroup exposes all knobs and switches screens correctly
 
 - Non‑Goals (initial):
   - Farm integrations beyond calling `execute()`; we’ll expose hooks to integrate later
@@ -219,11 +196,9 @@ Note: All GSV values are strings; knobs typically accept string inputs and parse
 
 - GSV pathing: use dot‑separated paths; with VariableGroups the path is `group_hierarchy.set.var`. When addressing via a group’s own `['gsv']`, paths are relative to that group.
 - Lists: make `__default__.screen` a `List` data type with `setListOptions()` so the Variables panel shows a proper dropdown.
-- Callbacks: prefer `addBeforeRender`/`addAfterRender` over per‑node `beforeRender` strings to centralize logic and avoid duplication.
- - GSV change handling: prefer `nuke.callbacks.onGsvSetChanged()` over generic `addKnobChanged` when reacting to variable changes; minimize callbacks overall by leveraging `VariableSwitch` and Link nodes first.
+- Variable selection: lean on VariableGroup UI for switching; avoid bespoke callbacks where built-in nodes already handle scope changes.
 - Expressions: Python expressions in knobs are supported; use sparingly for performance and keep them short.
 
 ---
 
 This document is the plan for building the requested tools on top of Nuke 16’s GSV/VariableGroup multi‑shot APIs, minimizing custom logic while providing a friendly UI and reliable render‑time behavior.
-

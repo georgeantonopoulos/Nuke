@@ -15,7 +15,7 @@ nuke.pluginAddPath('./nuke_tools')
 
 # Tools on NUKE_PATH
 from screens_manager import ScreensManagerPanel  # type: ignore
-from render_hooks import add_screen_option_knob  # type: ignore
+from render_hooks import encapsulate_write_with_variable_group  # type: ignore
 
 
 def add_screens_manager_panel() -> Optional[object]:
@@ -42,11 +42,8 @@ try:
         )
         # Write helpers
         nuke.menu('Nuke').addCommand(
-            'BCN Multishot/Add Screen Option to Write',
-            add_screen_option_knob,
+            'BCN Multishot/Wrap Node in Variable Group',
+            encapsulate_write_with_variable_group,
         )
-        # No global callbacks needed; beforeRender is injected on the Write node
 except Exception:
     pass
-
-

@@ -1,39 +1,47 @@
-"""Write node helpers for the Screens workflow.
+"""Helpers to wrap Write nodes into VariableGroups for per-screen workflows.
 
-Simplified design: we do not use global before/after render callbacks. Instead
-we register a single `knobChanged` handler for `Write` nodes and detect when the
-"Render" button is executed. When triggered, we run the same pre-render logic
-that previously lived in `_before_render_callback` to set
-`__default__.screens` from the node's `screen_option` before the render begins.
-
-Note: `knobChanged` primarily fires when the Properties panel is open; behavior
-in headless scripts depends on how the render is initiated. This module focuses
-on running pre-render enforcement when the "Render" knob is activated.
+This module now focuses on a single operation: take a selected Write node,
+encapsulate it inside a `VariableGroup`, and expose all of the Write's knobs on
+the group's interface. Artists can then switch screen variables directly on the
+VariableGroup node using Nuke's native multi-shot UI without any custom
+callbacks or scripts.
 """
 
-from typing import Optional, Iterable
+from typing import Iterable, List, Optional
 
 try:
     import nuke  # type: ignore
-except Exception:  # pragma: no cover
+except Exception:  # pragma: no cover - keep import-safe when Nuke is absent
     nuke = None  # type: ignore
-
-import gsv_utils
-
-try:
-    from screens_manager import set_default_screen_via_ui  # type: ignore
-except Exception:  # pragma: no cover
-    set_default_screen_via_ui = None  # type: ignore
 
 
 _LOG_PREFIX = "[BCN Screens]"
-_wrappers_installed = False
-_original_execute = None  # type: ignore[assignment]
-_original_executeMultiple = None  # type: ignore[assignment]
+
+# Knobs that should not be promoted because the VariableGroup already provides
+# its own versions or they are positional/housekeeping values.
+_RESERVED_KNOBS = {
+    "name",
+    "label",
+    "xpos",
+    "ypos",
+    "selected",
+    "hide_input",
+    "note_font",
+    "note_font_size",
+    "note_font_color",
+    "tile_color",
+    "gl_color",
+    "cached",
+    "knobChanged",
+    "help",
+    "onCreate",
+    "onDestroy",
+    "node_class",
+}
 
 
 def _log(message: str) -> None:
-    """Centralised `print` helper so the log output stays consistent."""
+    """Lightweight logger for Script Editor visibility."""
 
     try:
         print(f"{_LOG_PREFIX} {message}")
@@ -41,8 +49,8 @@ def _log(message: str) -> None:
         pass
 
 
-def _describe_node(node: Optional[object]) -> str:
-    """Return a useful string for logging the current node context."""
+def _describe(node: Optional[object]) -> str:
+    """Generate a readable description for logging purposes."""
 
     if node is None:
         return "<none>"
@@ -59,295 +67,261 @@ def _describe_node(node: Optional[object]) -> str:
     return str(node)
 
 
-def get_screen_options() -> list:
-    """Return the current list of screen names from `__default__.screens` options."""
+def _iter_write_knobs(write_node: object) -> Iterable[tuple[str, object]]:
+    """Yield knobs from the internal Write node in display order."""
 
     try:
-        return gsv_utils.get_list_options("__default__.screens")
+        knobs = getattr(write_node, "knobs")()
     except Exception:
         return []
+    # Preserve the original ordering by iterating over values()
+    return list(knobs.items())
 
 
-def _get_assigned_screen(node: Optional[object]) -> Optional[str]:
-    """Fetch the screen assignment stored on `node` if the knob exists."""
-
-    if node is None:
-        return None
-    try:
-        if "screen_option" not in node.knobs():
-            return None
-        knob = node["screen_option"]
-    except Exception:
-        return None
-
-    try:
-        value = knob.value()
-    except Exception:
-        _log(f"Failed to read screen_option knob on {_describe_node(node)}")
-        return None
-
-    if isinstance(value, str):
-        value = value.strip()
-    resolved = value or None
-    _log(f"screen_option on {_describe_node(node)} resolved to '{resolved}'")
-    return resolved
-
-
-def _run_pre_render_from_node(node: Optional[object]) -> None:
-    """Run pre-render logic for a Write node by setting `__default__.screens`.
-
-    Reads `screen_option` from the provided node, writes it into the global
-    selector, and nudges the UI so expressions re-evaluate. This mirrors the
-    previous `_before_render_callback` behavior without relying on global
-    render callbacks.
-    """
-
-    if nuke is None:
+def _add_tab(group: object, name: str, label: str) -> None:
+    if name in group.knobs():
         return
-
-    _log(f"Pre-render logic invoked for node {_describe_node(node)}")
-    screen = _get_assigned_screen(node)
-
-    if not screen:
-        _log("No screen_option value; leaving current screen")
-        return
-
     try:
-        gsv_utils.set_value("__default__.screens", screen)
-        _log(f"Set __default__.screens to '{screen}'")
+        tab = nuke.Tab_Knob(name, label)  # type: ignore[attr-defined]
+        group.addKnob(tab)
+    except Exception:
+        pass
+
+
+def _add_link_knob(
+    group: object,
+    write_node: object,
+    name: str,
+    label: str,
+    tooltip: Optional[str],
+) -> bool:
+    if name in _RESERVED_KNOBS:
+        return False
+    if name in group.knobs():
+        return False
+    try:
+        link = nuke.Link_Knob(name, label)  # type: ignore[attr-defined]
+        link.makeLink(write_node, name)
+        if tooltip:
+            try:
+                link.setTooltip(tooltip)
+            except Exception:
+                pass
+        group.addKnob(link)
+        return True
+    except Exception:
+        _log(f"Failed to promote knob '{name}' from {_describe(write_node)}")
+    return False
+
+
+def _promote_write_knobs(group: object, write_node: object) -> None:
+    """Expose Write node knobs on the VariableGroup interface."""
+
+    added = 0
+    for name, knob in _iter_write_knobs(write_node):
         try:
-            refreshed = gsv_utils.get_value("__default__.screens")
-            _log(f"Verified __default__.screens now '{refreshed}'")
+            klass = knob.Class()
         except Exception:
-            pass
-    except Exception:
-        _log("Failed to set __default__.screens before render")
-        return
+            klass = ""
+
+        label_attr = getattr(knob, "label", None)
+        if callable(label_attr):
+            try:
+                label = label_attr()
+            except Exception:
+                label = name
+        elif label_attr:
+            label = str(label_attr)
+        else:
+            label = name
+
+        tooltip_attr = getattr(knob, "tooltip", None)
+        if callable(tooltip_attr):
+            try:
+                tooltip = tooltip_attr()
+            except Exception:
+                tooltip = None
+        else:
+            tooltip = tooltip_attr
+
+        if klass == "Tab_Knob":
+            _add_tab(group, name, label)
+            continue
+
+        if _add_link_knob(group, write_node, name, label, tooltip):
+            added += 1
+
+    _log(f"Promoted {added} knobs from {_describe(write_node)} to {_describe(group)}")
+
+
+def _find_internal_node(
+    group: object,
+    original_name: str,
+    prefer_publish_instance: bool = False,
+) -> Optional[object]:
+    """Return the node inside the VariableGroup to promote knobs from."""
+
+    nodes: List[object] = []
 
     try:
-        if hasattr(nuke, "updateUI"):
-            nuke.updateUI()
-            _log("Called nuke.updateUI() after switching screen")
+        with group:
+            try:
+                named = nuke.toNode(original_name)
+            except Exception:
+                named = None
+            if named is not None:
+                return named
+            nodes = list(nuke.allNodes(recurse=False))  # type: ignore[attr-defined]
     except Exception:
-        _log("nuke.updateUI() failed during pre-render; continuing")
+        nodes = []
 
-    if set_default_screen_via_ui is not None:
+    if prefer_publish_instance:
+        for node in nodes:
+            try:
+                if "publish_instance" in node.knobs():
+                    return node
+            except Exception:
+                continue
+
+    for node in nodes:
         try:
-            set_default_screen_via_ui(screen)
-            _log("Updated Screens Manager UI selection")
+            if node.Class() == "Write":
+                return node
         except Exception:
-            _log("Screens Manager UI update failed; continuing")
-            pass
+            continue
+
+    return nodes[0] if nodes else None
 
 
-def _on_knob_changed() -> None:
-    """KnobChanged handler: when Write's Render knob is pressed, enforce screen.
-
-    This detects the `render` knob on a `Write` node and runs pre-render logic
-    so the `__default__.screens` GSV reflects the node's `screen_option`.
-    """
-
-    if nuke is None:
-        return
+def _collapse_into_variable_group(node: object) -> Optional[object]:
+    """Collapse the given node into a new VariableGroup."""
 
     try:
-        n = nuke.thisNode()
-        k = nuke.thisKnob()
+        previous_selection = list(nuke.selectedNodes())  # type: ignore[attr-defined]
     except Exception:
-        return
+        previous_selection = []
 
     try:
-        if not n or n.Class() != "Write" or not k or not hasattr(k, "name"):
-            return
-        if k.name().lower() != "render":
-            return
-    except Exception:
-        return
-
-    _run_pre_render_from_node(n)
-
-
-def _install_execute_wrappers() -> None:
-    """Install wrappers for `nuke.execute` and `nuke.executeMultiple` safely.
-
-    The wrappers call `_run_pre_render_from_node` for Write nodes that have a
-    `screen_option` knob before delegating to the original execute functions.
-    This ensures headless/programmatic renders also receive the correct screen
-    context prior to evaluation.
-    """
-
-    global _wrappers_installed, _original_execute, _original_executeMultiple
-
-    if nuke is None:
-        _log("Nuke module unavailable; cannot install execute wrappers")
-        return
-    if _wrappers_installed:
-        return
-
-    # Wrap nuke.execute
-    try:
-        if hasattr(nuke, "execute") and _original_execute is None:  # type: ignore[attr-defined]
-            _original_execute = nuke.execute  # type: ignore[attr-defined]
-
-            def _wrapped_execute(node, start, end, incr=1, *args, **kwargs):  # type: ignore[no-redef]
-                try:
-                    target = node
+        for other in previous_selection:
+            try:
+                other.setSelected(False)
+            except Exception:
+                pass
+        node.setSelected(True)
+        vg = nuke.collapseToVariableGroup()  # type: ignore[attr-defined]
+    except Exception as exc:
+        _log(f"Failed to collapse node {_describe(node)} into VariableGroup: {exc}")
+        vg = None
+    finally:
+        # Restore previous selection, preferring the new VariableGroup if successful.
+        try:
+            if vg is not None:
+                vg.setSelected(True)
+            else:
+                for other in previous_selection:
                     try:
-                        if isinstance(node, str):
-                            target = nuke.toNode(node)  # type: ignore[attr-defined]
+                        other.setSelected(True)
                     except Exception:
                         pass
-                    if target is not None:
-                        try:
-                            if getattr(target, "Class", lambda: "")() == "Write" and "screen_option" in target.knobs():
-                                _run_pre_render_from_node(target)
-                        except Exception:
-                            pass
-                except Exception:
-                    pass
-                return _original_execute(node, start, end, incr, *args, **kwargs)  # type: ignore[misc]
-
-            nuke.execute = _wrapped_execute  # type: ignore[attr-defined]
-            _log("Wrapped nuke.execute for pre-render enforcement")
-    except Exception:
-        _log("Failed to wrap nuke.execute")
-
-    # Wrap nuke.executeMultiple
-    try:
-        if hasattr(nuke, "executeMultiple") and _original_executeMultiple is None:  # type: ignore[attr-defined]
-            _original_executeMultiple = nuke.executeMultiple  # type: ignore[attr-defined]
-
-            def _wrapped_executeMultiple(nodes, start, end, incr=1, *args, **kwargs):  # type: ignore[no-redef]
-                try:
-                    candidates = nodes
-                    try:
-                        # Normalize to iterable
-                        if isinstance(nodes, (str, bytes)):
-                            candidates = [nodes]
-                        elif not isinstance(nodes, Iterable):
-                            candidates = [nodes]
-                    except Exception:
-                        candidates = [nodes]
-
-                    for item in list(candidates):  # make a shallow copy for safety
-                        try:
-                            target = item
-                            if isinstance(item, str):
-                                try:
-                                    target = nuke.toNode(item)  # type: ignore[attr-defined]
-                                except Exception:
-                                    target = None
-                            if target is not None and getattr(target, "Class", lambda: "")() == "Write":
-                                try:
-                                    if "screen_option" in target.knobs():
-                                        _run_pre_render_from_node(target)
-                                except Exception:
-                                    pass
-                        except Exception:
-                            pass
-                except Exception:
-                    pass
-                return _original_executeMultiple(nodes, start, end, incr, *args, **kwargs)  # type: ignore[misc]
-
-            nuke.executeMultiple = _wrapped_executeMultiple  # type: ignore[attr-defined]
-            _log("Wrapped nuke.executeMultiple for pre-render enforcement")
-    except Exception:
-        _log("Failed to wrap nuke.executeMultiple")
-
-    _wrappers_installed = True
-
-
-def _install_knobchanged() -> None:
-    """Register the `knobChanged` handler for Write nodes once per session."""
-
-    if nuke is None:
-        _log("Nuke module unavailable; cannot install knobChanged handler")
-        return
-
-    try:
-        try:
-            nuke.removeKnobChanged(_on_knob_changed)  # type: ignore[attr-defined]
         except Exception:
             pass
-        nuke.addKnobChanged(_on_knob_changed, nodeClass="Write")  # type: ignore[attr-defined]
-        _log("Registered knobChanged handler for Write nodes")
-    except Exception:
-        _log("Failed to register knobChanged handler")
-        pass
+
+    return vg
 
 
-def add_screen_option_knob(node: Optional[object] = None) -> None:
-    """Add a `screen_option` pulldown to a selected Write and wire expressions."""
+def encapsulate_write_with_variable_group(node: Optional[object] = None) -> Optional[object]:
+    """Wrap a Write or publishable Group node in a VariableGroup and expose knobs."""
 
     if nuke is None:
-        return
+        _log("Nuke module not available; cannot create VariableGroup")
+        return None
+
+    target = node
+    if target is None:
+        try:
+            target = nuke.selectedNode()  # type: ignore[attr-defined]
+        except Exception:
+            nuke.message("Select a Write node first")
+            return None
+
+    prefer_publish = False
 
     try:
-        nd = node or nuke.selectedNode()
-        _log(f"add_screen_option_knob targeting node {_describe_node(nd)}")
+        node_class = target.Class()
     except Exception:
-        nuke.message("No selected node")
-        return
+        nuke.message("Unable to determine node class")
+        return None
 
     try:
-        if nd.Class() != "Write":
-            nuke.message("The selected node is not a Write node or does not contain one.")
-            _log(f"add_screen_option_knob aborted; node {_describe_node(nd)} is not a Write")
-            return
-    except Exception as exc:
-        print(f"Error: {exc}")
-        return
+        has_publish_knob = "publish_instance" in target.knobs()
+    except Exception:
+        has_publish_knob = False
 
-    screens = get_screen_options()
-    menu_str = " ".join(screens) if screens else ""
+    if node_class != "Write" and not (node_class == "Group" and has_publish_knob):
+        nuke.message("Select a Write node or a Group with a publish_instance knob")
+        _log(f"Cannot encapsulate node {_describe(target)} (class {node_class})")
+        return None
+
+    if node_class == "Group" and has_publish_knob:
+        prefer_publish = True
+
+    undo = getattr(nuke, "Undo", None)
+    if undo is not None:
+        try:
+            undo.begin("Encapsulate Write in VariableGroup")
+        except Exception:
+            undo = None
 
     try:
-        if "screen_option" in nd.knobs():
+        group = _collapse_into_variable_group(target)
+        if group is None:
+            return None
+
+        original_name = getattr(target, "name", lambda: "Write")()
+        try:
+            group.setName(f"{original_name}_VG")
+        except Exception:
+            pass
+
+        promote_target = _find_internal_node(
+            group,
+            original_name,
+            prefer_publish_instance=prefer_publish,
+        )
+        if promote_target is None:
+            nuke.message("The VariableGroup does not contain the expected node")
+            _log(f"No internal node found inside {_describe(group)}")
+            return group
+
+        # Ensure the internal node keeps its original name for clarity.
+        try:
+            promote_target.setName(original_name)
+        except Exception:
+            pass
+
+        _promote_write_knobs(group, promote_target)
+
+        # Show the active variable scope directly on the wrapper label.
+        try:
+            label_knob = group["label"]
+            label_knob.setValue("[value gsv]")
+        except Exception:
+            pass
+
+        try:
+            group.showControlPanel()
+        except Exception:
+            pass
+
+        return group
+    finally:
+        if undo is not None:
             try:
-                nd["screen_option"].setValues(screens)
+                undo.end()
             except Exception:
-                try:
-                    nd["screen_option"].setValue(menu_str)
-                except Exception:
-                    pass
-        else:
-            if screens:
-                try:
-                    knob = nuke.Enumeration_Knob("screen_option", "Screen Option", screens)
-                except Exception:
-                    knob = nuke.Pulldown_Knob("screen_option", "Screen Option", menu_str)
-            else:
-                knob = nuke.String_Knob("screen_option", "Screen Option", "")
-            nd.addKnob(knob)
-            current = gsv_utils.get_value("__default__.screens")
-            if current:
-                try:
-                    knob.setValue(current)
-                except Exception:
-                    pass
-    except Exception:
-        pass
-
-    try:
-        nd["label"].setValue("[value screen_option]")
-    except Exception:
-        pass
-
-
-def install_render_callbacks() -> None:
-    """Public entry point retained for backward compatibility.
-
-    Registers the `knobChanged` handler so pre-render logic runs when the Write
-    node's Render knob is executed.
-    """
-
-    _log("install_render_callbacks invoked (registering knobChanged + execute wrappers)")
-    _install_knobchanged()
-    _install_execute_wrappers()
+                pass
 
 
 __all__ = [
-    "add_screen_option_knob",
-    "get_screen_options",
-    "install_render_callbacks",
+    "encapsulate_write_with_variable_group",
 ]
