@@ -135,6 +135,15 @@ def _promote_write_knobs(group: object, write_node: object) -> None:
         else:
             label = name
 
+        tile_color_attr = getattr(knob, "tileColor", None)
+        if callable(tile_color_attr):
+            try:
+                tile_color = tile_color_attr()
+            except Exception:
+                tile_color = None
+        else:
+            tile_color = tile_color_attr
+
         tooltip_attr = getattr(knob, "tooltip", None)
         if callable(tooltip_attr):
             try:
@@ -148,7 +157,7 @@ def _promote_write_knobs(group: object, write_node: object) -> None:
             _add_tab(group, name, label)
             continue
 
-        if _add_link_knob(group, write_node, name, label, tooltip):
+        if _add_link_knob(group, write_node, name, label, tooltip, tile_color):
             added += 1
 
     _log(f"Promoted {added} knobs from {_describe(write_node)} to {_describe(group)}")
@@ -305,6 +314,12 @@ def encapsulate_write_with_variable_group(node: Optional[object] = None) -> Opti
         try:
             label_knob = group["label"]
             label_knob.setValue("[value gsv]")
+        except Exception:
+            pass
+        
+        try:
+            tile_color_knob = group["tile_color"]
+            tile_color_knob.setValue(4290838783)
         except Exception:
             pass
 
