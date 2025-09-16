@@ -99,7 +99,8 @@ def add_screen_option_knob(node: Optional[object] = None) -> None:
     # Inject beforeRender to drive the Screens Manager UI (fallback to GSV)
     try:
         py_stmt = (
-            "_v=nuke.thisNode()['screen_option'].value();m=__import__('sys').modules.get('screens_manager');(getattr(m,'set_default_screen_via_ui')(_v) if m else None);nuke.root()['gsv'].setGsvValue('__default__.screens',_v)"
+                "nuke.root()['gsv'].setGsvValue('__default__.screens', "
+                "nuke.thisNode()['screen_option'].value());nuke.updateUI()"
         )
         existing = nd["beforeRender"].value() if "beforeRender" in nd.knobs() else ""
         if py_stmt not in existing:

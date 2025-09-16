@@ -173,7 +173,7 @@ else:
                 # Resolve to repo root where the PNG lives
                 this_dir = os.path.dirname(os.path.abspath(__file__))
                 root_dir = os.path.dirname(this_dir)
-                logo_path = os.path.join(root_dir, "switch_manager_logo.png")
+                logo_path = os.path.join(root_dir, "switch_manager_logo_blackpng")
                 if not os.path.exists(logo_path):
                     return
                 self._logo_pixmap = QtGui.QPixmap(logo_path)
