@@ -3,15 +3,19 @@
 This module provides a concise, strategy-based promoter that:
 - Collapses a selected Write (or publishable Group) into a VariableGroup
 - Exposes a minimal, editable knob whitelist on the wrapper's UI
-- Adds a small management tab with a CSV editor and a Refresh button
+- Adds a small management tab with checkbox toggles and a Refresh button
 
 Dynamic syncing and tab introspection have been removed to reduce complexity.
 Artists can adjust the whitelist in the wrapper and click Refresh to re-expose
 knobs as desired.
 """
+import re
+
 import nuke
 from dataclasses import dataclass
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Sequence
+
+from . import gsv_utils
 
 
 # Knobs that should not be promoted because the VariableGroup already provides
@@ -49,6 +53,18 @@ _DEFAULT_WRITE_KNOBS: List[str] = [
     "use_limit",
     "create_directories",
 ]
+
+_BCN_MANAGEMENT_TAB = "bcn_wrapper"
+_BCN_MANAGEMENT_LABEL = "BCN Wrapper"
+_WHITELIST_TOGGLE_PREFIX = "bcn_whitelist__"
+_SCREEN_SELECTOR_KNOB = "bcn_screen_selector"
+_SCREEN_SELECTOR_CALLBACK_SNIPPET = (
+    "import nuke\n"
+    "if knob and knob.name() == \"{}\":\n"
+    "    import BCN_multishot_toolset.nuke_tools.render_hooks as rh\n"
+    "    rh._on_screen_selector_changed(nuke.thisNode(), knob.value())\n"
+).format(_SCREEN_SELECTOR_KNOB)
+_TOGGLE_TOOLTIP_PATTERN = re.compile(r"Expose the '([^']+)' knob")
 
 
 def _sanitize_knob_scripts(node: object) -> None:
@@ -103,13 +119,51 @@ def _sanitize_group_knob_scripts(group: object) -> None:
         pass
 
 
-def _ensure_tab(group: object, name: str, label: str) -> None:
+def _ensure_tab(group: object, name: str, label: str):
     """Ensure a `Tab_Knob` with the given name exists on the group."""
 
-    if name in group.knobs():
-        return
+    knobs = getattr(group, "knobs")()
+    if name in knobs:
+        return knobs[name]
     tab = nuke.Tab_Knob(name, label)  # type: ignore[attr-defined]
     group.addKnob(tab)
+    return tab
+
+
+def _activate_tab(group: object, name: str) -> bool:
+    """Attempt to make `name` the active tab for subsequent knob additions."""
+
+    set_tab = getattr(group, "setTab", None)
+    if not callable(set_tab):
+        return False
+    try:
+        set_tab(name)
+        return True
+    except TypeError:
+        pass
+    except Exception:
+        return False
+
+    knobs = getattr(group, "knobs")()
+    target = knobs.get(name)
+    if target is not None:
+        try:
+            set_tab(target)
+            return True
+        except Exception:
+            pass
+    try:
+        ordered = list(knobs.values())
+        for idx, knob in enumerate(ordered):
+            try:
+                if knob.Class() == "Tab_Knob" and knob.name() == name:
+                    set_tab(idx)
+                    return True
+            except Exception:
+                continue
+    except Exception:
+        pass
+    return False
 
 
 def _add_link_knob(group: object, src_node: object, name: str, label: Optional[str]) -> bool:
@@ -154,39 +208,215 @@ def _add_link_knob(group: object, src_node: object, name: str, label: Optional[s
     return True
 
 
-def _ensure_management_tab(group: object, default_csv: str) -> None:
-    """Add the BCN management tab with whitelist editor and Refresh button.
+def _toggle_knob_name(knob_name: str) -> str:
+    """Return a stable Boolean knob name for a write knob entry."""
 
-    Knobs added:
-    - Tab_Knob('bcn_wrapper', 'BCN Wrapper')
-    - Text_Knob('bcn_label', 'Write knob whitelist (CSV)')
-    - String_Knob('bcn_knob_whitelist', '')
-    - PyScript_Knob('bcn_refresh', 'Refresh Links')
-    """
+    safe = re.sub(r"[^0-9A-Za-z_]+", "_", knob_name.strip()) or "item"
+    return f"{_WHITELIST_TOGGLE_PREFIX}{safe}"
 
-    _ensure_tab(group, "bcn_wrapper", "BCN Wrapper")
-    knobs = group.knobs()
+
+def _label_for_write_knob(write_node: object, knob_name: str) -> str:
+    """Derive a user-facing label for a write knob checkbox."""
+
+    try:
+        knob = write_node[knob_name]
+        if hasattr(knob, "label"):
+            label = knob.label()
+            if label:
+                return label
+    except Exception:
+        pass
+    pretty = knob_name.replace("_", " ").strip()
+    return pretty.title() if pretty else knob_name
+
+
+def _whitelist_tooltip(knob_name: str) -> str:
+    """Tooltip text carrying the original knob name (used for lookups)."""
+
+    return f"Expose the '{knob_name}' knob on this wrapper"
+
+
+def _original_name_from_toggle(toggle_name: str, toggle: object) -> str:
+    """Recover the original write knob name from a toggle knob."""
+
+    tooltip = ""
+    try:
+        if hasattr(toggle, "tooltip"):
+            tooltip = toggle.tooltip() or ""
+    except Exception:
+        tooltip = ""
+    match = _TOGGLE_TOOLTIP_PATTERN.search(tooltip)
+    if match:
+        return match.group(1)
+    # Fallback: strip the prefix and normalize underscores back to spaces
+    raw = toggle_name[len(_WHITELIST_TOGGLE_PREFIX):]
+    return raw.replace("__", "_")
+
+
+def _ensure_management_tab(group: object, knob_order: Sequence[str], write_node: object) -> None:
+    """Add/update the BCN wrapper tab with checkbox whitelist and refresh button."""
+
+    _ensure_tab(group, _BCN_MANAGEMENT_TAB, _BCN_MANAGEMENT_LABEL)
+    _activate_tab(group, _BCN_MANAGEMENT_TAB)
+
+    knobs = getattr(group, "knobs")()
+
+    csv_selected: Optional[set] = None
+    legacy_name = "bcn_knob_whitelist"
+    if legacy_name in knobs:
+        try:
+            raw = knobs[legacy_name].value()
+            if isinstance(raw, str) and raw.strip():
+                csv_selected = {s.strip() for s in raw.split(",") if s.strip()}
+        except Exception:
+            csv_selected = None
+        try:
+            group.removeKnob(knobs[legacy_name])
+        except Exception:
+            pass
+        knobs.pop(legacy_name, None)
+
     if "bcn_label" not in knobs:
-        group.addKnob(nuke.Text_Knob("bcn_label", "Write knob whitelist (CSV)"))  # type: ignore[attr-defined]
-    if "bcn_knob_whitelist" not in knobs:
-        s = nuke.String_Knob("bcn_knob_whitelist", "")  # type: ignore[attr-defined]
-        s.setTooltip("Comma-separated knob names to expose on the wrapper's Write tab")
-        s.setValue(default_csv)
-        group.addKnob(s)
+        label = nuke.Text_Knob("bcn_label", "Write knob whitelist")  # type: ignore[attr-defined]
+        label.setTooltip("Toggle which internal Write knobs should be exposed on the wrapper's Write tab.")
+        group.addKnob(label)
+
+    keep_names = set()
+    for knob_name in knob_order:
+        toggle_name = _toggle_knob_name(knob_name)
+        keep_names.add(toggle_name)
+        label = _label_for_write_knob(write_node, knob_name)
+        existing = knobs.get(toggle_name)
+        if existing is None:
+            toggle = nuke.Boolean_Knob(toggle_name, label)  # type: ignore[attr-defined]
+            toggle.setTooltip(_whitelist_tooltip(knob_name))
+            if csv_selected is not None:
+                toggle.setValue(knob_name in csv_selected)
+            else:
+                toggle.setValue(True)
+            group.addKnob(toggle)
+            knobs[toggle_name] = toggle
+        else:
+            try:
+                existing.setLabel(label)
+                existing.setTooltip(_whitelist_tooltip(knob_name))
+                if csv_selected is not None:
+                    existing.setValue(knob_name in csv_selected)
+                existing.setVisible(True)
+            except Exception:
+                pass
+
+    # Hide any stale toggles that are no longer applicable
+    for name, knob in list(knobs.items()):
+        if name.startswith(_WHITELIST_TOGGLE_PREFIX) and name not in keep_names:
+            try:
+                knob.setVisible(False)
+            except Exception:
+                pass
+
     cmd = (
         "import nuke\n"
         "import BCN_multishot_toolset.nuke_tools.render_hooks as rh\n"
         "rh.refresh_variable_group_links(nuke.thisNode())\n"
     )
     if "bcn_refresh" not in knobs:
-        p = nuke.PyScript_Knob("bcn_refresh", "Refresh Links")  # type: ignore[attr-defined]
-        p.setCommand(cmd)
-        group.addKnob(p)
+        button = nuke.PyScript_Knob("bcn_refresh", "Refresh Links")  # type: ignore[attr-defined]
+        button.setCommand(cmd)
+        button.setTooltip("Rebuild the Write tab links using the enabled checkboxes above")
+        group.addKnob(button)
     else:
         try:
             knobs["bcn_refresh"].setCommand(cmd)
         except Exception:
             pass
+
+
+def _get_group_screen(group: object) -> Optional[str]:
+    """Return the `__default__.screens` value stored on the VariableGroup."""
+
+    try:
+        gsv = group["gsv"]
+        return gsv.getGsvValue("__default__.screens")
+    except Exception:
+        return None
+
+
+def _set_group_screen(group: object, screen: Optional[str]) -> None:
+    """Assign `screen` to the VariableGroup-local GSV."""
+
+    if not screen:
+        return
+    try:
+        gsv = group["gsv"]
+        gsv.setGsvValue("__default__.screens", str(screen))
+    except Exception:
+        pass
+
+
+def _install_screen_selector_callback(group: object) -> None:
+    """Ensure the knobChanged script updates the local screen when selector changes."""
+
+    try:
+        script_knob = group["knobChanged"]
+    except Exception:
+        return
+    try:
+        current = script_knob.value()
+    except Exception:
+        current = ""
+    current = current or ""
+    if _SCREEN_SELECTOR_CALLBACK_SNIPPET in current:
+        return
+    new_script = current.rstrip()
+    if new_script and not new_script.endswith("\n"):
+        new_script += "\n"
+    new_script += _SCREEN_SELECTOR_CALLBACK_SNIPPET
+    try:
+        script_knob.setValue(new_script)
+    except Exception:
+        pass
+
+
+def _ensure_screen_selector(group: object) -> None:
+    """Add/update the Write tab pulldown for selecting the local screen."""
+
+    screens = gsv_utils.get_list_options("__default__.screens")
+    knobs = getattr(group, "knobs")()
+    selector = knobs.get(_SCREEN_SELECTOR_KNOB)
+    if not screens:
+        if selector is not None:
+            try:
+                selector.setVisible(False)
+            except Exception:
+                pass
+        return
+
+    if selector is None:
+        selector = nuke.Enumeration_Knob(_SCREEN_SELECTOR_KNOB, "Screen", screens)  # type: ignore[attr-defined]
+        selector.setTooltip("Select which screen this VariableGroup should render with. Only this node is affected.")
+        group.addKnob(selector)
+        knobs[_SCREEN_SELECTOR_KNOB] = selector
+    else:
+        try:
+            selector.setValues(screens)
+        except Exception:
+            return
+        selector.setVisible(True)
+
+    current = _get_group_screen(group)
+    if not current or current not in screens:
+        fallback = gsv_utils.get_current_screen() or (screens[0] if screens else None)
+        if fallback:
+            current = fallback
+            _set_group_screen(group, current)
+
+    try:
+        if current:
+            selector.setValue(current)
+    except Exception:
+        pass
+
+    _install_screen_selector_callback(group)
 
 
 @dataclass(frozen=True)
@@ -216,15 +446,28 @@ class WriteKnobPromoter:
         self.cfg = cfg
 
     def _group_whitelist(self, group: object) -> Optional[List[str]]:
-        """Read a CSV whitelist from the wrapper, if present."""
+        """Read selected write knobs from the wrapper's Boolean whitelist."""
 
         try:
-            if "bcn_knob_whitelist" in group.knobs():
-                raw = group["bcn_knob_whitelist"].value()
-                if isinstance(raw, str) and raw.strip():
-                    return [s.strip() for s in raw.split(",") if s.strip()]
+            knobs_map = getattr(group, "knobs")()
         except Exception:
             return None
+
+        selected: List[str] = []
+        any_toggle = False
+        for name, knob in list(knobs_map.items()):
+            if not name.startswith(_WHITELIST_TOGGLE_PREFIX):
+                continue
+            any_toggle = True
+            try:
+                enabled = bool(knob.value())
+            except Exception:
+                enabled = False
+            original = _original_name_from_toggle(name, knob)
+            if enabled:
+                selected.append(original)
+        if any_toggle:
+            return selected
         return None
 
     def _knob_list_for(self, group: object, write_node: object) -> List[str]:
@@ -247,13 +490,14 @@ class WriteKnobPromoter:
         Also ensures the BCN management tab exists. Returns the number of links added.
         """
 
-        # Ensure content tabs
+        knob_order = self._knob_list_for(group, write_node)
+        _ensure_management_tab(group, knob_order, write_node)
         _ensure_tab(group, self.cfg.write_tab_label, self.cfg.write_tab_label)
-        default_csv = ", ".join(self.cfg.default_knobs)
-        _ensure_management_tab(group, default_csv)
+        _activate_tab(group, self.cfg.write_tab_label)
+        _ensure_screen_selector(group)
 
         added = 0
-        for name in self._knob_list_for(group, write_node):
+        for name in knob_order:
             label = None
             try:
                 k = write_node[name]
@@ -387,12 +631,40 @@ def refresh_variable_group_links(group: Optional[object] = None) -> int:
     # Replaced by simplified _collapse_into_variable_group above
 
 
+def _on_screen_selector_changed(group: Optional[object], selection) -> None:
+    """Callback for the Write tab screen selector to update the local GSV."""
+
+    if group is None:
+        return
+    value = selection
+    if isinstance(value, (list, tuple)):
+        value = value[0] if value else None
+    if isinstance(value, (int, float)):
+        try:
+            knob = group[_SCREEN_SELECTOR_KNOB]
+            if hasattr(knob, "values"):
+                options = knob.values()
+                idx = int(value)
+                if 0 <= idx < len(options):
+                    value = options[idx]
+        except Exception:
+            value = None
+    if not value:
+        try:
+            knob = group[_SCREEN_SELECTOR_KNOB]
+            value = knob.value()
+        except Exception:
+            value = None
+    if value:
+        _set_group_screen(group, str(value))
+
+
 def encapsulate_write_with_variable_group(node: Optional[object] = None) -> Optional[object]:
     """Wrap a Write or publishable Group inside a VariableGroup and expose knobs.
 
     The wrapper gains:
     - A Write tab with selected Link_Knobs
-    - A "BCN Wrapper" tab with an editable CSV whitelist and a Refresh button
+    - A "BCN Wrapper" tab with checkbox whitelist controls and a Refresh button
     """
 
     target = node
