@@ -48,9 +48,9 @@ def set_knob_expression_for_screen_field(node: "nuke.Node", knob_name: str, fiel
         return
     try:
         expr = (
-            "python {g=nuke.root()['gsv']; s=g.getGsvValue('__default__.screens'); "
-            f"g.getGsvValue(s + '.{field}')}"  # field is literal in the expression
-        )
+            "python {{g=nuke.root()['gsv']; s=g.getGsvValue('__default__.screens'); "
+            "g.getGsvValue(s + '.{field}')}}"
+        ).format(field=field)
         node[knob_name].setExpression(expr)
     except Exception:
         pass

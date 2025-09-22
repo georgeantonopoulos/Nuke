@@ -61,10 +61,10 @@ _WHITELIST_TOGGLE_PREFIX = "bcn_whitelist__"
 _SCREEN_SELECTOR_KNOB = "bcn_screen_selector"
 _SCREEN_SELECTOR_CALLBACK_SNIPPET = (
     "import nuke\n"
-    "if knob and knob.name() == \"{}\":\n"
-    "    import BCN_multishot_toolset.nuke_tools.render_hooks as rh\n"
-    "    rh._on_screen_selector_changed(nuke.thisNode(), knob.value())\n"
-).format(_SCREEN_SELECTOR_KNOB)
+    f"if nuke.thisKnob() and nuke.thisKnob().name() == \"{_SCREEN_SELECTOR_KNOB}\":\n"
+    "    import render_hooks as rh\n"
+    "    rh._on_screen_selector_changed(nuke.thisNode(), nuke.thisKnob().value())\n"
+)
 _TOGGLE_TOOLTIP_PATTERN = re.compile(r"Expose the '([^']+)' knob")
 
 
