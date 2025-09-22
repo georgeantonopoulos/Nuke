@@ -15,7 +15,7 @@ import nuke
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Sequence
 
-from . import gsv_utils
+import gsv_utils
 
 
 # Knobs that should not be promoted because the VariableGroup already provides
@@ -52,6 +52,7 @@ _DEFAULT_WRITE_KNOBS: List[str] = [
     "last",
     "use_limit",
     "create_directories",
+    "Render"
 ]
 
 _BCN_MANAGEMENT_TAB = "bcn_wrapper"
